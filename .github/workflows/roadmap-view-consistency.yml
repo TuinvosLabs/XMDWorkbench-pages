@@ -1,0 +1,28 @@
+name: Roadmap view consistency
+
+on:
+  push:
+    paths:
+      - "roadmap/**"
+      - "scripts/check_roadmap_views.py"
+      - ".github/workflows/roadmap-view-consistency.yml"
+  pull_request:
+    paths:
+      - "roadmap/**"
+      - "scripts/check_roadmap_views.py"
+      - ".github/workflows/roadmap-view-consistency.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  shared-status-source:
+    runs-on:
+      - self-hosted
+      - linux
+      - x64
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify Roadmap and Periodic Table use the same history frames
+        run: python3 scripts/check_roadmap_views.py
