@@ -1,0 +1,166 @@
+{
+  "apis": {
+    "FockBasis": {
+      "signature": "FockBasis(n_orbitals: int, particle_number: int, restrictions: tuple[OccupationRestriction, ...] = (), max_dimension: int = 100000, max_bytes: int = 134217728)",
+      "parameters": [
+        {"name":"n_orbitals","type":"int","default":"required","description":"Number of fermionic spin-orbitals in the basis."},
+        {"name":"particle_number","type":"int","default":"required","description":"Fixed number of fermions in every determinant."},
+        {"name":"restrictions","type":"tuple[OccupationRestriction, ...]","default":"()","description":"Optional disjoint occupation constraints that project the model space."},
+        {"name":"max_dimension","type":"int","default":"100000","description":"Pre-enumeration guard on the number of determinants."},
+        {"name":"max_bytes","type":"int","default":"134217728","description":"Conservative storage guard in bytes for basis construction."}
+      ]
+    },
+    "OccupationRestriction": {
+      "signature": "OccupationRestriction(orbitals: tuple[int, ...], min_particles: int, max_particles: int)",
+      "parameters": [
+        {"name":"orbitals","type":"tuple[int, ...]","default":"required","description":"Unique spin-orbital indices covered by this restriction."},
+        {"name":"min_particles","type":"int","default":"required","description":"Minimum allowed occupation of the listed orbitals."},
+        {"name":"max_particles","type":"int","default":"required","description":"Maximum allowed occupation of the listed orbitals."}
+      ]
+    },
+    "FermionOperator": {
+      "signature": "FermionOperator.creation(orbital) / annihilation(orbital) / number(orbital) / identity() / zero()",
+      "parameters": [
+        {"name":"orbital","type":"int","default":"required for creation/annihilation/number","description":"Zero-based spin-orbital index. Operator products apply the right-hand factor first."}
+      ]
+    },
+    "FermionOperator.to_sparse": {
+      "signature": "operator.to_sparse(source_basis: FockBasis, target_basis: FockBasis | None = None, *, max_bytes: int = 536870912)",
+      "parameters": [
+        {"name":"source_basis","type":"FockBasis","default":"required","description":"Input determinant sector."},
+        {"name":"target_basis","type":"FockBasis | None","default":"None","description":"Output determinant sector; defaults to the source basis."},
+        {"name":"max_bytes","type":"int","default":"536870912","description":"Conservative allocation guard for sparse-matrix construction."}
+      ]
+    },
+    "dense_eigensystem": {
+      "signature": "dense_eigensystem(matrix, *, max_dimension: int = 2048, max_bytes: int = 536870912, hermitian_tolerance: float = 1e-10, backend: str = 'auto') -> EigenResult",
+      "parameters": [
+        {"name":"matrix","type":"numpy.ndarray | scipy.sparse matrix","default":"required","description":"Non-empty square Hermitian Hamiltonian."},
+        {"name":"max_dimension","type":"int","default":"2048","description":"Maximum dense matrix dimension accepted by the bounded solver."},
+        {"name":"max_bytes","type":"int","default":"536870912","description":"Conservative dense-solve storage guard in bytes."},
+        {"name":"hermitian_tolerance","type":"float","default":"1e-10","description":"Relative tolerance used to reject non-Hermitian input."},
+        {"name":"backend","type":"str","default":"'auto'","description":"Execution backend: 'auto', 'cpu' or 'cuda'. Explicit CUDA fails visibly if unavailable."}
+      ]
+    },
+    "run_atomic_2p3d": {
+      "signature": "run_atomic_2p3d(*, d_electrons=0, f2dd=0.0, f4dd=0.0, f2dd_final=0.0, f4dd_final=0.0, f2pd=0.0, g1pd=0.0, g3pd=0.0, zeta_d=0.0, zeta_d_final=0.0, zeta_p=8.0, ten_dq=0.0, b20=0.0, exchange_z=0.0, reduction=1.0, gamma=0.35, temperature_K=0.0, energy_min=-20.0, energy_max=30.0, energy_offset=0.0, points=1001, ion_label='Generic ion', parameter_source='Synthetic illustrative parameters; no element data', execution_backend='auto') -> CalculationResult",
+      "parameters": [
+        {"name":"d_electrons","type":"int","default":"0","description":"Initial 3d electron count; bounded 2p→3d absorption supports 0 through 9."},
+        {"name":"f2dd","type":"float (eV)","default":"0.0","description":"Initial-state 3d-3d Slater F2 integral."},
+        {"name":"f4dd","type":"float (eV)","default":"0.0","description":"Initial-state 3d-3d Slater F4 integral."},
+        {"name":"f2dd_final","type":"float (eV)","default":"0.0","description":"Final-state 3d-3d Slater F2 integral."},
+        {"name":"f4dd_final","type":"float (eV)","default":"0.0","description":"Final-state 3d-3d Slater F4 integral."},
+        {"name":"f2pd","type":"float (eV)","default":"0.0","description":"Final-state 2p-3d direct Slater F2 integral."},
+        {"name":"g1pd","type":"float (eV)","default":"0.0","description":"Final-state 2p-3d exchange G1 integral."},
+        {"name":"g3pd","type":"float (eV)","default":"0.0","description":"Final-state 2p-3d exchange G3 integral."},
+        {"name":"zeta_d","type":"float (eV)","default":"0.0","description":"Initial-state 3d spin-orbit strength."},
+        {"name":"zeta_d_final","type":"float (eV)","default":"0.0","description":"Final-state 3d spin-orbit strength."},
+        {"name":"zeta_p","type":"float (eV)","default":"8.0","description":"Final-state 2p core spin-orbit strength."},
+        {"name":"ten_dq","type":"float (eV)","default":"0.0","description":"Cubic crystal-field splitting parameter 10Dq."},
+        {"name":"b20","type":"float (eV)","default":"0.0","description":"Axial crystal-field coefficient multiplying C20."},
+        {"name":"exchange_z","type":"float (eV)","default":"0.0","description":"Effective z-directed exchange/Zeeman-like term applied to 3d spin."},
+        {"name":"reduction","type":"float","default":"1.0","description":"Single multiplicative reduction applied to Coulomb Slater parameters, not SOC or fields."},
+        {"name":"gamma","type":"float (eV)","default":"0.35","description":"Lorentzian full width at half maximum used for spectral broadening."},
+        {"name":"temperature_K","type":"float (K)","default":"0.0","description":"Initial-state canonical-ensemble temperature; positive values include all initial eigenstates."},
+        {"name":"energy_min","type":"float (eV)","default":"-20.0","description":"Lower relative transition-energy bound of the calculated spectrum."},
+        {"name":"energy_max","type":"float (eV)","default":"30.0","description":"Upper relative transition-energy bound of the calculated spectrum."},
+        {"name":"energy_offset","type":"float (eV)","default":"0.0","description":"Display/export shift added to the output energy axis."},
+        {"name":"points","type":"int","default":"1001","description":"Number of energy-grid points. Finite-temperature work is preflight-bounded."},
+        {"name":"ion_label","type":"str","default":"'Generic ion'","description":"User metadata label only; it does not load element parameters."},
+        {"name":"parameter_source","type":"str","default":"synthetic-source text","description":"Provenance text describing where the supplied parameters came from."},
+        {"name":"execution_backend","type":"str","default":"'auto'","description":"Dense eigensolver backend: 'auto', 'cpu' or 'cuda'."}
+      ]
+    },
+    "ClusterReferenceSpec": {
+      "signature": "ClusterReferenceSpec(schema_version='phase-a-1.0', nominal_d_electrons=8, max_ligand_holes=2, delta_eV=4.0, udd_eV=6.0, core_hole_attraction_eV=8.0, ligand_ten_dq_eV=0.0, hybridization_eg_eV=0.0, hybridization_t2g_eV=0.0, atomic_parameters=None)",
+      "parameters": [
+        {"name":"schema_version","type":"str","default":"'phase-a-1.0'","description":"Fixed Phase-A contract version."},
+        {"name":"nominal_d_electrons","type":"int","default":"8","description":"Nominal metal 3d occupation; Phase A currently supports d8 only."},
+        {"name":"max_ligand_holes","type":"int","default":"2","description":"Configuration cutoff: 0, 1 or 2 ligand holes in the initial sector."},
+        {"name":"delta_eV","type":"float (eV)","default":"4.0","description":"Charge-transfer configuration-centroid cost Δ."},
+        {"name":"udd_eV","type":"float (eV)","default":"6.0","description":"d-d charging contribution to configuration centroids."},
+        {"name":"core_hole_attraction_eV","type":"float (eV)","default":"8.0","description":"Positive core-hole attraction energy Q used in final-sector centroid costs."},
+        {"name":"ligand_ten_dq_eV","type":"float (eV)","default":"0.0","description":"Ligand-shell cubic crystal-field splitting."},
+        {"name":"hybridization_eg_eV","type":"float (eV)","default":"0.0","description":"Effective metal-ligand eg hybridization amplitude."},
+        {"name":"hybridization_t2g_eV","type":"float (eV)","default":"0.0","description":"Effective metal-ligand t2g hybridization amplitude."},
+        {"name":"atomic_parameters","type":"Mapping[str, float] | None","default":"None","description":"Validated scalar atomic parameters accepted by the bounded atomic builder."}
+      ]
+    },
+    "run_cluster_reference": {
+      "signature": "run_cluster_reference(spec: ClusterReferenceSpec | Mapping | None = None, *, gamma: float = 0.35, energy_min: float = -20.0, energy_max: float = 30.0, energy_offset: float = 0.0, points: int = 1001) -> dict",
+      "parameters": [
+        {"name":"spec","type":"ClusterReferenceSpec | Mapping | None","default":"None","description":"Phase-A cluster model specification; omitted values use explicit reference defaults."},
+        {"name":"gamma","type":"float (eV)","default":"0.35","description":"Lorentzian spectral FWHM."},
+        {"name":"energy_min","type":"float (eV)","default":"-20.0","description":"Lower relative spectral grid bound."},
+        {"name":"energy_max","type":"float (eV)","default":"30.0","description":"Upper relative spectral grid bound."},
+        {"name":"energy_offset","type":"float (eV)","default":"0.0","description":"Shift added to the exported energy axis."},
+        {"name":"points","type":"int","default":"1001","description":"Number of spectral grid points."}
+      ]
+    },
+    "lorentz_spectrum": {
+      "signature": "lorentz_spectrum(energy_eV, transition_energies_eV, strengths, fwhm_eV: float) -> numpy.ndarray",
+      "parameters": [
+        {"name":"energy_eV","type":"array-like","default":"required","description":"Strictly increasing output energy grid in eV."},
+        {"name":"transition_energies_eV","type":"array-like","default":"required","description":"Discrete line-center energies in eV."},
+        {"name":"strengths","type":"array-like","default":"required","description":"Transition strengths corresponding one-to-one with the line centers."},
+        {"name":"fwhm_eV","type":"float","default":"required","description":"Lorentzian full width at half maximum in eV."}
+      ]
+    },
+    "CalculationRequest": {
+      "signature": "CalculationRequest(model_id: str, parameters: dict, schema_version: str = '1.0')",
+      "parameters": [
+        {"name":"model_id","type":"str","default":"required","description":"Registered model identifier; current request models include 'hubbard-dimer' and 'atomic-2p3d'."},
+        {"name":"parameters","type":"dict","default":"required","description":"JSON-safe scalar parameters accepted by the selected model; unknown names are rejected."},
+        {"name":"schema_version","type":"str","default":"'1.0'","description":"Version of the portable request contract."}
+      ]
+    },
+    "run_calculation": {
+      "signature": "run_calculation(request: CalculationRequest | dict) -> CalculationResult",
+      "parameters": [
+        {"name":"request","type":"CalculationRequest | dict","default":"required","description":"Typed request or its serialized dictionary form."}
+      ]
+    },
+    "capabilities": {
+      "signature": "capabilities() -> dict",
+      "parameters": []
+    },
+    "hardware_info": {
+      "signature": "hardware_info() -> dict",
+      "parameters": []
+    },
+    "open_window": {
+      "signature": "xmd_quantum_qt.open_window() -> QuantumWindow",
+      "parameters": []
+    }
+  },
+  "capabilities": {
+    "MB1":{"apis":["FockBasis"],"relevant":["n_orbitals","particle_number","max_dimension","max_bytes"]},
+    "MB2":{"apis":["OccupationRestriction","FockBasis"],"relevant":["orbitals","min_particles","max_particles","restrictions"]},
+    "MB3":{"apis":["FermionOperator"],"relevant":["orbital"]},
+    "MB4":{"apis":["FockBasis","FermionOperator","dense_eigensystem"],"relevant":["matrix","backend"]},
+    "MB5":{"apis":["FermionOperator.to_sparse"],"relevant":["source_basis","target_basis","max_bytes"]},
+    "S1":{"apis":["dense_eigensystem"],"relevant":["matrix","max_dimension","max_bytes","hermitian_tolerance","backend"]},
+    "S3":{"apis":["dense_eigensystem"],"relevant":["matrix","max_dimension"]},
+    "S4":{"apis":["run_atomic_2p3d"],"relevant":["temperature_K","d_electrons","points"]},
+    "P1":{"apis":["run_atomic_2p3d"],"relevant":["d_electrons","f2dd","f4dd","f2dd_final","f4dd_final","f2pd","g1pd","g3pd"]},
+    "P2":{"apis":["run_atomic_2p3d"],"relevant":["f2dd","f4dd","f2dd_final","f4dd_final","f2pd","g1pd","g3pd","reduction"]},
+    "P3":{"apis":["run_atomic_2p3d"],"relevant":["zeta_d","zeta_d_final","zeta_p"]},
+    "P4":{"apis":["run_atomic_2p3d"],"relevant":["ten_dq","b20","exchange_z"]},
+    "P6":{"apis":["run_atomic_2p3d"],"relevant":["exchange_z","zeta_p","points"]},
+    "P8":{"apis":["ClusterReferenceSpec","run_cluster_reference"],"relevant":["delta_eV","udd_eV","core_hole_attraction_eV","hybridization_eg_eV","hybridization_t2g_eV","spec"]},
+    "X1":{"apis":["run_atomic_2p3d"],"relevant":["gamma","energy_min","energy_max","energy_offset","points"]},
+    "X2":{"apis":["run_atomic_2p3d"],"relevant":["ten_dq","b20","points"]},
+    "X3":{"apis":["run_atomic_2p3d"],"relevant":["exchange_z","zeta_p","points"]},
+    "X4":{"apis":["run_atomic_2p3d"],"relevant":["temperature_K","points"]},
+    "X5":{"apis":["lorentz_spectrum"],"relevant":["energy_eV","transition_energies_eV","strengths","fwhm_eV"]},
+    "M1":{"apis":["ClusterReferenceSpec","run_cluster_reference"],"relevant":["spec","max_ligand_holes","delta_eV","hybridization_eg_eV","hybridization_t2g_eV"]},
+    "R1":{"apis":["capabilities"],"relevant":[]},
+    "R2":{"apis":["CalculationRequest","run_calculation"],"relevant":["model_id","parameters","request"]},
+    "R3":{"apis":["CalculationRequest"],"relevant":["model_id","parameters","schema_version"]},
+    "R4":{"apis":["run_calculation"],"relevant":["request"]},
+    "R6":{"apis":["FockBasis","dense_eigensystem"],"relevant":["max_dimension","max_bytes"]},
+    "R8":{"apis":["hardware_info","dense_eigensystem"],"relevant":["backend"]},
+    "U1":{"apis":["CalculationRequest","run_calculation"],"relevant":["model_id","parameters","request"]},
+    "U3":{"apis":["open_window"],"relevant":[]}
+  }
+}
