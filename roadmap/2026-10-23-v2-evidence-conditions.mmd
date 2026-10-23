@@ -1,0 +1,30 @@
+flowchart TB
+    Q["Quanty functionality → XMD Quantum parity"]
+    MB["1. Many-Body Core<br/>🟢 basis/operators · 🟡 restrictions/wavefunctions · ⚪ generic brakets/expectation values · 🟠 bosons"]
+    SOL["2. Solvers<br/>🟢 dense · 🟡 Krylov/low-energy · 🟠 convergence/GPU"]
+    PHY["3. Hamiltonian & Physics<br/>🟢 atomic/Coulomb/SO · 🟡 crystal-field/geometry · 🟠 cluster Phase B"]
+    SPEC["4. Spectroscopy & Response<br/>🟢 XAS/XLD/XMCD/finite-T · 🟡 broadening · 🟠 Green's/Response · ⚪ RIXS/PES/XES/nIXS"]
+    MAT["5. Material Models<br/>🟡 bounded cluster · 🟠 general cluster · ⚪ TightBinding/DFT/hybridization"]
+    DYN["6. Density/Mean Field/Dynamics<br/>⚪ DensityMatrix/CalculateRho/mean-field/evolution"]
+    RUN["7. Runtime/API<br/>🟢 Python/typed JSON/provenance · 🟡 adapter/resources · 🟠 Linux/HPC/GPU · ⚪ Experimental Conditions"]
+    VAL["8. Validation<br/>🟢 atomic/finite-T Quanty evidence · 🟡 geometry/cluster/inventory + evidence dashboard · 🟠 auto cross-validation · ⚪ full semantic parity"]
+    UX["9. Product Layer<br/>🟢 Python · 🟡 CLI/Qt · 🟠 Workbench/HPC service"]
+    Q --> MB
+    Q --> SOL
+    Q --> PHY
+    Q --> SPEC
+    Q --> MAT
+    Q --> DYN
+    Q --> RUN
+    Q --> VAL
+    Q --> UX
+    MB --> SOL
+    SOL --> SPEC
+    PHY --> SPEC
+    MAT --> PHY
+    MAT --> SPEC
+    DYN --> SPEC
+    RUN --> SOL
+    RUN --> VAL
+    SPEC --> VAL
+    VAL --> UX
