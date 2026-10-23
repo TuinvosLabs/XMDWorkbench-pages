@@ -1,0 +1,90 @@
+{
+  "apis": {
+    "build_atomic_2p3d": {
+      "signature": "build_atomic_2p3d(*, d_electrons=0, f2dd=0.0, f4dd=0.0, f2dd_final=0.0, f4dd_final=0.0, f2pd=0.0, g1pd=0.0, g3pd=0.0, zeta_d=0.0, zeta_d_final=0.0, zeta_p=8.0, ten_dq=0.0, b20=0.0, exchange_z=0.0, reduction=1.0) -> Atomic2p3d",
+      "parameters": [
+        {"name":"d_electrons","type":"int","default":"0","description":"Initial 3d electron count; valid bounded sectors are 0 through 9."},
+        {"name":"f2dd","type":"float (eV)","default":"0.0","description":"Initial-state 3d-3d Slater F2 integral."},
+        {"name":"f4dd","type":"float (eV)","default":"0.0","description":"Initial-state 3d-3d Slater F4 integral."},
+        {"name":"f2dd_final","type":"float (eV)","default":"0.0","description":"Final-state 3d-3d Slater F2 integral."},
+        {"name":"f4dd_final","type":"float (eV)","default":"0.0","description":"Final-state 3d-3d Slater F4 integral."},
+        {"name":"f2pd","type":"float (eV)","default":"0.0","description":"Final-state 2p-3d direct Slater F2 integral."},
+        {"name":"g1pd","type":"float (eV)","default":"0.0","description":"Final-state 2p-3d exchange G1 integral."},
+        {"name":"g3pd","type":"float (eV)","default":"0.0","description":"Final-state 2p-3d exchange G3 integral."},
+        {"name":"zeta_d","type":"float (eV)","default":"0.0","description":"Initial-state 3d spin-orbit coupling."},
+        {"name":"zeta_d_final","type":"float (eV)","default":"0.0","description":"Final-state 3d spin-orbit coupling."},
+        {"name":"zeta_p","type":"float (eV)","default":"8.0","description":"Final-state 2p core spin-orbit coupling."},
+        {"name":"ten_dq","type":"float (eV)","default":"0.0","description":"Cubic crystal-field eg-t2g splitting."},
+        {"name":"b20","type":"float (eV)","default":"0.0","description":"Axial C20 crystal-field coefficient."},
+        {"name":"exchange_z","type":"float (eV)","default":"0.0","description":"Effective z-directed 3d spin term."},
+        {"name":"reduction","type":"float","default":"1.0","description":"Common Coulomb-integral reduction factor; SOC and fields are not scaled."}
+      ]
+    },
+    "transition_strengths": {
+      "signature": "transition_strengths(operator_matrix, initial_state, final_eigenvectors, *, max_bytes: int = 536870912) -> numpy.ndarray",
+      "parameters": [
+        {"name":"operator_matrix","type":"numpy.ndarray | scipy.sparse matrix","default":"required","description":"Transition operator mapping the initial basis to the final basis."},
+        {"name":"initial_state","type":"array-like","default":"required","description":"Normalized initial state vector."},
+        {"name":"final_eigenvectors","type":"array-like","default":"required","description":"Orthonormal final-state eigenvectors stored as columns."},
+        {"name":"max_bytes","type":"int","default":"536870912","description":"Workspace allocation guard used before computing amplitudes."}
+      ]
+    },
+    "SpectrumChannel": {
+      "signature": "SpectrumChannel(key: str, kind: str, label: str, energy_eV: tuple[float, ...], intensity: tuple[float, ...], intensity_unit: str)",
+      "parameters": [
+        {"name":"key","type":"str","default":"required","description":"Unique machine-readable channel key such as xas-isotropic."},
+        {"name":"kind","type":"str","default":"required","description":"Channel family such as xas, xld or xmcd."},
+        {"name":"label","type":"str","default":"required","description":"Human-readable channel label."},
+        {"name":"energy_eV","type":"tuple[float, ...]","default":"required","description":"Strictly increasing energy grid in eV."},
+        {"name":"intensity","type":"tuple[float, ...]","default":"required","description":"Intensity values matching the energy grid."},
+        {"name":"intensity_unit","type":"str","default":"required","description":"Declared intensity unit, e.g. 1/eV for the bounded atomic spectra."}
+      ]
+    },
+    "CalculationResult": {
+      "signature": "CalculationResult(model_id, model_parameters, eigenvalues_eV, observables, channels, diagnostics, provenance, engine='xmd-quantum', engine_version=__version__, schema_version='1.0')",
+      "parameters": [
+        {"name":"model_id","type":"str","default":"required","description":"Model identifier that produced the result."},
+        {"name":"model_parameters","type":"dict","default":"required","description":"Resolved JSON-safe model input parameters."},
+        {"name":"eigenvalues_eV","type":"tuple[float, ...]","default":"required","description":"Ordered eigenvalues in eV."},
+        {"name":"observables","type":"dict","default":"required","description":"JSON-safe scalar/structured observables."},
+        {"name":"channels","type":"tuple[SpectrumChannel, ...]","default":"required","description":"Named spectral channels with their own energy grids."},
+        {"name":"diagnostics","type":"dict","default":"required","description":"Numerical validation, convergence and execution diagnostics."},
+        {"name":"provenance","type":"dict","default":"required","description":"JSON-safe provenance for reproducibility/evidence."},
+        {"name":"engine","type":"str","default":"'xmd-quantum'","description":"Engine identifier."},
+        {"name":"engine_version","type":"str","default":"installed version","description":"Version of the engine that created the result."},
+        {"name":"schema_version","type":"str","default":"'1.0'","description":"Versioned result interchange contract."}
+      ]
+    },
+    "CalculationResult JSON": {
+      "signature": "result.to_json(*, indent: int | None = 2) -> str / CalculationResult.from_json(content: str) -> CalculationResult",
+      "parameters": [
+        {"name":"indent","type":"int | None","default":"2","description":"Optional JSON indentation used by to_json."},
+        {"name":"content","type":"str","default":"required for from_json","description":"Serialized result JSON; non-finite constants and oversized payloads are rejected."}
+      ]
+    },
+    "list_examples": {
+      "signature": "list_examples() -> tuple[dict, ...]",
+      "parameters": []
+    },
+    "load_example": {
+      "signature": "load_example(example_id: str) -> CalculationRequest",
+      "parameters": [
+        {"name":"example_id","type":"str","default":"required","description":"Bundled example id; currently synthetic-d0, synthetic-d1 or synthetic-d8."}
+      ]
+    },
+    "export_example": {
+      "signature": "export_example(example_id: str, destination: str | pathlib.Path) -> pathlib.Path",
+      "parameters": [
+        {"name":"example_id","type":"str","default":"required","description":"Bundled matched native/Quanty example id."},
+        {"name":"destination","type":"str | pathlib.Path","default":"required","description":"New output directory; existing targets are rejected to prevent overwrites."}
+      ]
+    }
+  },
+  "capabilities": {
+    "P1":{"apis":["build_atomic_2p3d"],"relevant":["d_electrons","f2dd","f4dd","f2pd","g1pd","g3pd","zeta_d","zeta_p","ten_dq","b20","exchange_z","reduction"]},
+    "X1":{"apis":["transition_strengths"],"relevant":["operator_matrix","initial_state","final_eigenvectors","max_bytes"]},
+    "R2":{"apis":["CalculationResult","SpectrumChannel"],"relevant":["model_id","model_parameters","channels","diagnostics","provenance"]},
+    "R3":{"apis":["CalculationResult JSON"],"relevant":["indent","content"]},
+    "U1":{"apis":["list_examples","load_example","export_example"],"relevant":["example_id","destination"]}
+  }
+}
