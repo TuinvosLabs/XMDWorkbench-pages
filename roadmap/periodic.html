@@ -6,6 +6,7 @@
 <title>Periodic Table of XMD Quantum Capabilities</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
 <link rel="stylesheet" href="periodic.css">
+<link rel="stylesheet" href="periodic-audit.css">
 </head>
 <body>
 <nav aria-label="Dashboard navigation">
@@ -26,7 +27,11 @@
     <button id="layout" title="Switch between classic periodic and dependency/integration grid">▦ Classic</button>
     <input class="timeline" id="timeline" type="range" min="0" max="1" value="0" step="1"><span class="badge" id="counter"></span>
   </div>
-  <div class="meta"><strong id="title"></strong> · <span id="date"></span><div id="note"></div></div>
+  <div class="meta">
+    <strong id="title"></strong> · <span id="date"></span>
+    <div id="note"></div>
+    <div><span class="badge" id="api-audit">Checking Python API documentation…</span></div>
+  </div>
   <div class="legend">
     <span><i class="sw" style="background:#b7e4c7"></i>implemented</span>
     <span><i class="sw" style="background:#fff3b0"></i>partial/reviewable</span>
@@ -81,5 +86,6 @@
 
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="periodic.js"></script>
+<script defer src="periodic-audit.js"></script>
 </body>
 </html>
