@@ -1,0 +1,114 @@
+{
+  "MB1": {
+    "note": "Public API on current main: xmd_quantum.FockBasis.",
+    "code": "from xmd_quantum import FockBasis\n\nbasis = FockBasis(n_orbitals=6, particle_number=2)\nprint(basis.dimension)\nprint(basis.states[:5])"
+  },
+  "MB2": {
+    "note": "Restrictions are explicit and must be disjoint.",
+    "code": "from xmd_quantum import FockBasis, OccupationRestriction\n\nrestriction = OccupationRestriction(\n    orbitals=(0, 1, 2),\n    min_particles=1,\n    max_particles=2,\n)\nbasis = FockBasis(\n    n_orbitals=6,\n    particle_number=2,\n    restrictions=(restriction,),\n)\nprint(basis.dimension)"
+  },
+  "MB3": {
+    "note": "FermionOperator is exported by the installed xmd_quantum package.",
+    "code": "from xmd_quantum import FermionOperator\n\nc = FermionOperator.annihilation\ncdag = FermionOperator.creation\nn = FermionOperator.number\n\nH = -(cdag(0) * c(1) + cdag(1) * c(0)) + 0.5 * n(1)"
+  },
+  "MB4": {
+    "note": "Current bounded solver returns state vectors as columns of EigenResult.vectors; a richer standalone wavefunction abstraction remains roadmap work.",
+    "code": "from xmd_quantum import FockBasis, FermionOperator, dense_eigensystem\n\nbasis = FockBasis(2, 1)\nH = FermionOperator.number(1).to_sparse(basis)\nresult = dense_eigensystem(H)\nground_state = result.vectors[:, 0]"
+  },
+  "MB5": {
+    "note": "Current public operator API converts composed operators to sparse matrices on explicit source/target bases.",
+    "code": "from xmd_quantum import FockBasis, FermionOperator\n\nbasis = FockBasis(2, 1)\nH = FermionOperator.number(0) + FermionOperator.number(1)\nmatrix = H.to_sparse(basis)\nprint(matrix.shape)"
+  },
+  "S1": {
+    "note": "dense_eigensystem is the current bounded exact Hermitian solver.",
+    "code": "import numpy as np\nfrom xmd_quantum import dense_eigensystem\n\nH = np.array([[0.0, 1.0], [1.0, 0.0]])\nsolution = dense_eigensystem(H, backend='cpu')\nprint(solution.energies)\nprint(solution.max_residual)"
+  },
+  "S3": {
+    "note": "There is not yet a dedicated public low-energy-only solver on main; the bounded dense solver can provide ordered eigenpairs for small systems.",
+    "code": "from xmd_quantum import dense_eigensystem\n\nsolution = dense_eigensystem(H)\nlowest_energies = solution.energies[:4]\nlowest_states = solution.vectors[:, :4]"
+  },
+  "S4": {
+    "note": "Complete finite-temperature initial-state ensembles are currently exposed by the bounded atomic calculation.",
+    "code": "from xmd_quantum import run_atomic_2p3d\n\nresult = run_atomic_2p3d(\n    d_electrons=8,\n    temperature_K=300.0,\n    points=301,\n)\nthermal = result.diagnostics['thermal_ensemble']"
+  },
+  "P1": {
+    "note": "run_atomic_2p3d is the bounded native atomic-multiplet entry point on current main.",
+    "code": "from xmd_quantum import run_atomic_2p3d\n\nresult = run_atomic_2p3d(\n    d_electrons=8,\n    f2dd=8.0,\n    f4dd=5.0,\n    zeta_d=0.08,\n    zeta_p=8.0,\n    points=301,\n)\nprint(result.eigenvalues_eV[:5])"
+  },
+  "P2": {
+    "note": "Slater parameters are explicit inputs to the bounded atomic model.",
+    "code": "from xmd_quantum import run_atomic_2p3d\n\nresult = run_atomic_2p3d(\n    d_electrons=8,\n    f2dd=8.0, f4dd=5.0,\n    f2dd_final=8.5, f4dd_final=5.2,\n    f2pd=5.5, g1pd=4.0, g3pd=2.4,\n    points=301,\n)"
+  },
+  "P3": {
+    "note": "Spin-orbit strengths are explicit atomic-model parameters.",
+    "code": "from xmd_quantum import run_atomic_2p3d\n\nresult = run_atomic_2p3d(\n    d_electrons=8,\n    zeta_d=0.08,\n    zeta_d_final=0.10,\n    zeta_p=8.0,\n    points=301,\n)"
+  },
+  "P4": {
+    "note": "Current main exposes bounded cubic/axial crystal-field parameters. The fully general crystal-field contract is broader roadmap work.",
+    "code": "from xmd_quantum import run_atomic_2p3d\n\nresult = run_atomic_2p3d(\n    d_electrons=8,\n    ten_dq=1.0,\n    b20=0.10,\n    points=301,\n)"
+  },
+  "P6": {
+    "note": "The bounded atomic runner produces fixed-axis linear/circular channels; arbitrary polarization geometry is not a stable public API on current main.",
+    "code": "from xmd_quantum import run_atomic_2p3d\n\nresult = run_atomic_2p3d(d_electrons=8, points=301)\nchannels = {c.key: c for c in result.channels}\nright = channels['xas-r']\nleft = channels['xas-l']"
+  },
+  "P8": {
+    "note": "The bounded Phase-A cluster reference is available from its explicit module-level API.",
+    "code": "from xmd_quantum.cluster_contract import ClusterReferenceSpec\nfrom xmd_quantum.cluster_reference import run_cluster_reference\n\nspec = ClusterReferenceSpec()\nresult = run_cluster_reference(spec)\nprint(result.observables)"
+  },
+  "X1": {
+    "note": "XAS channels are returned by the bounded atomic runner.",
+    "code": "from xmd_quantum import run_atomic_2p3d\n\nresult = run_atomic_2p3d(d_electrons=8, points=601)\nchannels = {c.key: c for c in result.channels}\nxas = channels['xas-isotropic']\nenergy = xas.energy_eV\nintensity = xas.intensity"
+  },
+  "X2": {
+    "note": "The bounded model exposes an x-minus-z XLD difference channel.",
+    "code": "from xmd_quantum import run_atomic_2p3d\n\nresult = run_atomic_2p3d(d_electrons=8, points=601)\nchannels = {c.key: c for c in result.channels}\nxld = channels['xld-x-minus-z']"
+  },
+  "X3": {
+    "note": "The bounded model exposes a right-minus-left XMCD channel with documented helicity conventions.",
+    "code": "from xmd_quantum import run_atomic_2p3d\n\nresult = run_atomic_2p3d(d_electrons=8, points=601)\nchannels = {c.key: c for c in result.channels}\nxmcd = channels['xmcd-r-minus-l']"
+  },
+  "X4": {
+    "note": "Set temperature_K explicitly; zero remains the default.",
+    "code": "from xmd_quantum import run_atomic_2p3d\n\nresult = run_atomic_2p3d(\n    d_electrons=8,\n    temperature_K=300.0,\n    points=301,\n)\nprint(result.observables['mean_energy_eV'])\nprint(result.diagnostics['thermal_ensemble'])"
+  },
+  "X5": {
+    "note": "lorentz_spectrum uses an explicit Lorentz FWHM in eV and does not silently renormalize a finite grid.",
+    "code": "import numpy as np\nfrom xmd_quantum import lorentz_spectrum\n\nenergy = np.linspace(-5.0, 5.0, 501)\ncenters = np.array([-1.0, 1.0])\nstrengths = np.array([1.0, 0.5])\nintensity = lorentz_spectrum(energy, centers, strengths, fwhm_eV=0.4)"
+  },
+  "M1": {
+    "note": "This is the bounded cluster reference API, not the future general cluster model.",
+    "code": "from xmd_quantum.cluster_contract import ClusterReferenceSpec\nfrom xmd_quantum.cluster_reference import run_cluster_reference\n\nresult = run_cluster_reference(ClusterReferenceSpec())"
+  },
+  "R1": {
+    "note": "The engine is independently importable and reports its machine-readable capability boundary.",
+    "code": "import xmd_quantum\n\nprint(xmd_quantum.__version__)\nprint(xmd_quantum.capabilities())"
+  },
+  "R2": {
+    "note": "CalculationRequest and CalculationResult are the versioned typed interchange contracts.",
+    "code": "from xmd_quantum import CalculationRequest, run_calculation\n\nrequest = CalculationRequest('atomic-2p3d', {\n    'd_electrons': 0,\n    'zeta_p': 8.0,\n    'points': 301,\n})\nresult = run_calculation(request)"
+  },
+  "R3": {
+    "note": "Requests and results serialize to data-only JSON with explicit schema versions.",
+    "code": "from xmd_quantum import CalculationRequest, CalculationResult, run_calculation\n\nrequest = CalculationRequest('atomic-2p3d', {'d_electrons': 0, 'points': 301})\nrequest_json = request.to_json()\nresult = run_calculation(request)\nresult_json = result.to_json()\nrestored = CalculationResult.from_json(result_json)"
+  },
+  "R4": {
+    "note": "CalculationResult exposes JSON-safe provenance and diagnostics produced by the engine.",
+    "code": "from xmd_quantum import CalculationRequest, run_calculation\n\nresult = run_calculation(CalculationRequest(\n    'atomic-2p3d', {'d_electrons': 0, 'points': 301}\n))\nprint(result.provenance)\nprint(result.diagnostics)"
+  },
+  "R6": {
+    "note": "Current bounded APIs expose explicit dimension and memory limits rather than silently reducing work.",
+    "code": "from xmd_quantum import FockBasis, dense_eigensystem\n\nbasis = FockBasis(\n    n_orbitals=12,\n    particle_number=6,\n    max_dimension=100_000,\n    max_bytes=128 * 1024**2,\n)\nsolution = dense_eigensystem(H, max_dimension=2048, max_bytes=512 * 1024**2)"
+  },
+  "R8": {
+    "note": "CUDA is optional. An explicit CUDA request fails visibly if the optional backend is unavailable.",
+    "code": "from xmd_quantum import dense_eigensystem, hardware_info\n\nprint(hardware_info())\nsolution = dense_eigensystem(H, backend='cuda')"
+  },
+  "U1": {
+    "note": "A portable high-level request can be run directly from Python.",
+    "code": "from xmd_quantum import CalculationRequest, run_calculation\n\nrequest = CalculationRequest('atomic-2p3d', {\n    'd_electrons': 8,\n    'temperature_K': 300.0,\n    'points': 301,\n    'execution_backend': 'auto',\n})\nresult = run_calculation(request)"
+  },
+  "U3": {
+    "note": "The GUI is a separate optional package. Inside an existing QGuiApplication, keep the returned handle alive.",
+    "code": "from xmd_quantum_qt import open_window\n\nhandle = open_window()\n# handle.window is the QQuickWindow\n# handle.close() stops both workers"
+  }
+}
