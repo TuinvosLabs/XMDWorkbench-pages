@@ -15,6 +15,13 @@
       "title": "v2 — evidence automation + Experimental Conditions",
       "file": "2026-10-23-v2-evidence-conditions.mmd",
       "note": "Expectation-value status corrected; Experimental Conditions and evidence/dashboard work surfaced without promoting unsupported physics."
+    },
+    {
+      "id": "2026-10-23-v3-progress-sync",
+      "date": "2026-10-23",
+      "title": "v3 — current development progress and platform separation",
+      "file": "2026-10-23-v3-progress-sync.mmd",
+      "note": "Preserves evidence-backed scientific maturity while surfacing active integration work. NAS evidence/dashboard, roadmap synchronization, API-catalog work and the bounded many-body density reference are shown under Workbench Platform / Scientific Operations rather than promoted as Quantum Core parity."
     }
   ]
 }
