@@ -1,201 +1,123 @@
 flowchart TB
     Q["Quanty functionality<br/>→ XMD Quantum parity"]
 
-    subgraph RUN["7. Runtime & Typed Model API"]
-        direction TB
-        subgraph RUNR1[""]
-            direction LR
-            R1["🟢 Python engine"]
-            R2["🟢 Versioned / typed models"]
-        end
-        subgraph RUNR2[""]
-            direction LR
-            R3["🟢 JSON contracts"]
-            R4["🟢 Provenance / evidence"]
-        end
-        subgraph RUNR3[""]
-            direction LR
-            R6["🟡 Resource limits"]
-            R7["🟠 Linux / HPC execution"]
-        end
-        subgraph RUNR4[""]
-            direction LR
-            R8["🟠 GPU execution"]
-            R5["🟡 Native ↔ Quanty adapter<br/>#40"]
-        end
-    end
-
     subgraph MB["1. Many-Body Core"]
-        direction TB
-        subgraph MBR1[""]
-            direction LR
-            MB7["🟠 Bosonic modes"]
-            MB1["🟢 Fermionic basis<br/>Fock spaces"]
-            MB2["🟡 Basis restrictions<br/>determinant spaces"]
-        end
-        subgraph MBR2[""]
-            direction LR
-            MB3["🟢 Fermionic operators<br/>second quantization"]
-            MB4["🟡 Wavefunctions<br/>state representations"]
-            MB5["🟡 Operator algebra<br/>matrix conversion"]
-        end
+        direction LR
+        MB1["🟢 Fermionic basis<br/>Fock spaces"]
+        MB2["🟡 Basis restrictions<br/>determinant spaces"]
+        MB3["🟢 Fermionic operators<br/>second quantization"]
+        MB4["🟡 Wavefunctions<br/>state representations"]
+        MB5["🟡 Operator algebra<br/>matrix conversion"]
         MB6["🟠 Expectation values<br/>Braket semantics"]
-    end
-
-    subgraph MAT["5. Cluster, Tight Binding & Material Models"]
-        direction TB
-        subgraph MATR1[""]
-            direction LR
-            M1["🟡 Bounded cluster reference"]
-            M2["🟠 General cluster Hamiltonian"]
-            M3["⚪ TightBinding object/model<br/>#45"]
-        end
-        subgraph MATR2[""]
-            direction LR
-            M4["⚪ Periodic/open clusters<br/>#45"]
-            M5["⚪ DFT / Wannier ingestion<br/>#45"]
-            M6["⚪ Hybridization functions<br/>#45"]
-        end
+        MB7["🟠 Bosonic modes"]
     end
 
     subgraph SOL["2. Solvers & Numerical Engine"]
-        direction TB
-        subgraph SOLR1[""]
-            direction LR
-            S1["🟢 Dense eigensolver"]
-            S3["🟡 Low-energy states"]
-        end
-        subgraph SOLR2[""]
-            direction LR
-            S6["🟠 GPU Krylov<br/>#29"]
-            S2["🟡 Matrix-free Krylov / Lanczos<br/>#19"]
-        end
-        subgraph SOLR3[""]
-            direction LR
-            S4["🟠 Complete ensemble semantics"]
-            S5["🟠 Convergence controls<br/>#37"]
-        end
+        direction LR
+        S1["🟢 Dense eigensolver"]
+        S2["🟡 Matrix-free Krylov / Lanczos<br/>#19"]
+        S3["🟡 Low-energy states"]
+        S4["🟠 Complete ensemble semantics"]
+        S5["🟠 Convergence controls<br/>#37"]
+        S6["🟠 GPU Krylov<br/>#29"]
     end
 
     subgraph PHY["3. Hamiltonian & Physics"]
-        direction TB
-        subgraph PHYR1[""]
-            direction LR
-            P1["🟢 Atomic multiplets"]
-            P2["🟢 Coulomb / Slater integrals"]
-            P3["🟢 Spin-orbit coupling"]
-        end
-        subgraph PHYR2[""]
-            direction LR
-            P4["🟡 General crystal fields<br/>#50"]
-            P5["🟡 Arbitrary geometry<br/>#17"]
-            P6["🟡 Polarization operators<br/>#17"]
-        end
-        subgraph PHYR3[""]
-            direction LR
-            P7["🟢 Ligand / charge transfer<br/>Phase A"]
-            P8["🟠 Cluster / Anderson models<br/>Phase B #13"]
-        end
-    end
-
-    subgraph DYN["6. Density, Mean Field & Dynamics"]
-        direction TB
-        subgraph DYNR1[""]
-            direction LR
-            D1["⚪ DensityMatrix"]
-            D2["⚪ CalculateRho"]
-        end
-        subgraph DYNR2[""]
-            direction LR
-            D3["⚪ Mean-field operators"]
-            D4["⚪ Mean-field ground state"]
-        end
-        subgraph DYNR3[""]
-            direction LR
-            D5["⚪ Ground-state evolution"]
-            D6["⚪ General time evolution"]
-        end
+        direction LR
+        P1["🟢 Atomic multiplets"]
+        P2["🟢 Coulomb / Slater integrals"]
+        P3["🟢 Spin-orbit coupling"]
+        P4["🟡 General crystal fields<br/>#50"]
+        P5["🟡 Arbitrary geometry<br/>#17"]
+        P6["🟡 Polarization operators<br/>#17"]
+        P7["🟢 Ligand / charge transfer<br/>Phase A"]
+        P8["🟠 Cluster / Anderson models<br/>Phase B #13"]
     end
 
     subgraph SPEC["4. Spectroscopy & Response"]
-        direction TB
-        subgraph SPECR1[""]
-            direction LR
-            X1["🟢 XAS"]
-            X2["🟢 XLD"]
-            X3["🟢 XMCD"]
-            X4["🟢 Finite temperature"]
-        end
-        subgraph SPECR2[""]
-            direction LR
-            X7["⚪ RIXS<br/>#34"]
-            X8["⚪ PES / IPES<br/>#35"]
-            X9["⚪ XES / nIXS<br/>#35"]
-        end
-        subgraph SPECR3[""]
-            direction LR
-            X5["🟡 Broadening / resolution<br/>#15"]
-            X11["🟠 Reusable ResponseFunction<br/>#44"]
-            X6["🟠 Green's functions<br/>continued fractions #33"]
-            X10["⚪ Fluorescence yield<br/>#44"]
-        end
+        direction LR
+        X1["🟢 XAS"]
+        X2["🟢 XLD"]
+        X3["🟢 XMCD"]
+        X4["🟢 Finite temperature"]
+        X5["🟡 Broadening / resolution<br/>#15"]
+        X6["🟠 Green's functions<br/>continued fractions #33"]
+        X7["⚪ RIXS<br/>#34"]
+        X8["⚪ PES / IPES<br/>#35"]
+        X9["⚪ XES / nIXS<br/>#35"]
+        X10["⚪ Fluorescence yield<br/>#44"]
+        X11["🟠 Reusable ResponseFunction<br/>#44"]
+    end
+
+    subgraph MAT["5. Cluster, Tight Binding & Material Models"]
+        direction LR
+        M1["🟡 Bounded cluster reference"]
+        M2["🟠 General cluster Hamiltonian"]
+        M3["⚪ TightBinding object/model<br/>#45"]
+        M4["⚪ Periodic/open clusters<br/>#45"]
+        M5["⚪ DFT / Wannier ingestion<br/>#45"]
+        M6["⚪ Hybridization functions<br/>#45"]
+    end
+
+    subgraph DYN["6. Density, Mean Field & Dynamics"]
+        direction LR
+        D1["⚪ DensityMatrix"]
+        D2["⚪ CalculateRho"]
+        D3["⚪ Mean-field operators"]
+        D4["⚪ Mean-field ground state"]
+        D5["⚪ Ground-state evolution"]
+        D6["⚪ General time evolution"]
+    end
+
+    subgraph RUN["7. Runtime & Typed Model API"]
+        direction LR
+        R1["🟢 Python engine"]
+        R2["🟢 Versioned / typed models"]
+        R3["🟢 JSON contracts"]
+        R4["🟢 Provenance / evidence"]
+        R5["🟡 Native ↔ Quanty adapter<br/>#40"]
+        R6["🟡 Resource limits"]
+        R7["🟠 Linux / HPC execution"]
+        R8["🟠 GPU execution"]
     end
 
     subgraph VAL["8. Validation & Quanty Parity"]
-        direction TB
-        subgraph VALR1[""]
-            direction LR
-            V2["🟢 Atomic parity tests"]
-            V3["🟢 Finite-T parity"]
-        end
-        subgraph VALR2[""]
-            direction LR
-            V4["🟡 Geometry parity"]
-            V5["🟡 Cluster parity"]
-        end
-        subgraph VALR3[""]
-            direction LR
-            V7["🟠 Automatic cross-validation"]
-            V8["⚪ Full semantic parity"]
-        end
-        subgraph VALR4[""]
-            direction LR
-            V6["🟡 Capability inventory<br/>#56 / #57"]
-            V1["🟢 Independent Quanty execution"]
-        end
+        direction LR
+        V1["🟢 Independent Quanty execution"]
+        V2["🟢 Atomic parity tests"]
+        V3["🟢 Finite-T parity"]
+        V4["🟡 Geometry parity"]
+        V5["🟡 Cluster parity"]
+        V6["🟡 Capability inventory<br/>#56 / #57"]
+        V7["🟠 Automatic cross-validation"]
+        V8["⚪ Full semantic parity"]
     end
 
     subgraph UX["9. User & Product Layer"]
-        direction TB
-        subgraph UXR1[""]
-            direction LR
-            U1["🟢 Python API"]
-            U2["🟡 CLI"]
-        end
-        subgraph UXR2[""]
-            direction LR
-            U3["🟡 XMD Quantum Qt GUI<br/>#49"]
-            U4["🟠 Workbench integration<br/>#39"]
-        end
+        direction LR
+        U1["🟢 Python API"]
+        U2["🟡 CLI"]
+        U3["🟡 XMD Quantum Qt GUI<br/>#49"]
+        U4["🟠 Workbench integration<br/>#39"]
         U5["🟠 HPC / service workflows"]
     end
 
-    Q --> RUN
     Q --> MB
+    Q --> SOL
+    Q --> PHY
+    Q --> SPEC
     Q --> MAT
-    RUN ~~~ MB
-    MB ~~~ MAT
-    RUN --> SOL
+    Q --> DYN
+    Q --> RUN
+    Q --> VAL
+    Q --> UX
     MB --> SOL
-    MB --> PHY
-    MAT --> PHY
-    MAT --> DYN
-    SOL ~~~ PHY
-    PHY ~~~ DYN
     SOL --> SPEC
     PHY --> SPEC
+    MAT --> PHY
     MAT --> SPEC
     DYN --> SPEC
+    RUN --> SOL
     RUN --> VAL
     SPEC --> VAL
     VAL --> UX
@@ -209,39 +131,3 @@ flowchart TB
     class MB2,MB4,MB5,S2,S3,P4,P5,P6,X5,M1,R5,R6,V4,V5,V6,U2,U3 partial
     class MB6,MB7,S4,S5,S6,P8,X6,X11,M2,R7,R8,V7,U4,U5 early
     class X7,X8,X9,X10,M3,M4,M5,M6,D1,D2,D3,D4,D5,D6,V8 todo
-
-    style RUN fill:#fffde7,stroke:#c9c39b
-    style MB fill:#fffde7,stroke:#c9c39b
-    style MAT fill:#fffde7,stroke:#c9c39b
-    style SOL fill:#fffde7,stroke:#c9c39b
-    style PHY fill:#fffde7,stroke:#c9c39b
-    style DYN fill:#fffde7,stroke:#c9c39b
-    style SPEC fill:#fffde7,stroke:#c9c39b
-    style VAL fill:#fffde7,stroke:#c9c39b
-    style UX fill:#fffde7,stroke:#c9c39b
-    style RUNR1 fill:transparent,stroke:transparent
-    style RUNR2 fill:transparent,stroke:transparent
-    style RUNR3 fill:transparent,stroke:transparent
-    style RUNR4 fill:transparent,stroke:transparent
-    style MBR1 fill:transparent,stroke:transparent
-    style MBR2 fill:transparent,stroke:transparent
-    style MATR1 fill:transparent,stroke:transparent
-    style MATR2 fill:transparent,stroke:transparent
-    style SOLR1 fill:transparent,stroke:transparent
-    style SOLR2 fill:transparent,stroke:transparent
-    style SOLR3 fill:transparent,stroke:transparent
-    style PHYR1 fill:transparent,stroke:transparent
-    style PHYR2 fill:transparent,stroke:transparent
-    style PHYR3 fill:transparent,stroke:transparent
-    style DYNR1 fill:transparent,stroke:transparent
-    style DYNR2 fill:transparent,stroke:transparent
-    style DYNR3 fill:transparent,stroke:transparent
-    style SPECR1 fill:transparent,stroke:transparent
-    style SPECR2 fill:transparent,stroke:transparent
-    style SPECR3 fill:transparent,stroke:transparent
-    style VALR1 fill:transparent,stroke:transparent
-    style VALR2 fill:transparent,stroke:transparent
-    style VALR3 fill:transparent,stroke:transparent
-    style VALR4 fill:transparent,stroke:transparent
-    style UXR1 fill:transparent,stroke:transparent
-    style UXR2 fill:transparent,stroke:transparent
