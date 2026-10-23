@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0-public",
+  "title": "XMDWorkbench Quanty functional roadmap evolution",
+  "frames": [
+    {
+      "id": "2026-10-23-v1-initial",
+      "date": "2026-10-23",
+      "title": "v1 — initial evidence-governed roadmap",
+      "file": "2026-10-23-v1-initial.mmd",
+      "note": "Initial evidence-governed maturity map."
+    },
+    {
+      "id": "2026-10-23-v2-evidence-conditions",
+      "date": "2026-10-23",
+      "title": "v2 — evidence automation + Experimental Conditions",
+      "file": "2026-10-23-v2-evidence-conditions.mmd",
+      "note": "Expectation-value status corrected; Experimental Conditions and evidence/dashboard work surfaced without promoting unsupported physics."
+    }
+  ]
+}
