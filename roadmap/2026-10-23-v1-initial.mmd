@@ -1,14 +1,107 @@
 flowchart TB
-    Q["Quanty functionality → XMD Quantum parity"]
-    MB["1. Many-Body Core<br/>🟢 basis/operators · 🟡 restrictions/wavefunctions · 🟠 brakets/bosons"]
-    SOL["2. Solvers<br/>🟢 dense · 🟡 Krylov/low-energy · 🟠 convergence/GPU"]
-    PHY["3. Hamiltonian & Physics<br/>🟢 atomic/Coulomb/SO · 🟡 crystal-field/geometry · 🟠 cluster Phase B"]
-    SPEC["4. Spectroscopy & Response<br/>🟢 XAS/XLD/XMCD/finite-T · 🟡 broadening · 🟠 Green's/Response · ⚪ RIXS/PES/XES/nIXS"]
-    MAT["5. Material Models<br/>🟡 bounded cluster · 🟠 general cluster · ⚪ TightBinding/DFT/hybridization"]
-    DYN["6. Density/Mean Field/Dynamics<br/>⚪ DensityMatrix/CalculateRho/mean-field/evolution"]
-    RUN["7. Runtime/API<br/>🟢 Python/typed JSON/provenance · 🟡 adapter/resources · 🟠 Linux/HPC/GPU"]
-    VAL["8. Validation<br/>🟢 atomic/finite-T Quanty evidence · 🟡 geometry/cluster/inventory · 🟠 auto cross-validation · ⚪ full semantic parity"]
-    UX["9. Product Layer<br/>🟢 Python · 🟡 CLI/Qt · 🟠 Workbench/HPC service"]
+    Q["Quanty functionality<br/>→ XMD Quantum parity"]
+
+    subgraph MB["1. Many-Body Core"]
+        direction LR
+        MB1["🟢 Fermionic basis<br/>Fock spaces"]
+        MB2["🟡 Basis restrictions<br/>determinant spaces"]
+        MB3["🟢 Fermionic operators<br/>second quantization"]
+        MB4["🟡 Wavefunctions<br/>state representations"]
+        MB5["🟡 Operator algebra<br/>matrix conversion"]
+        MB6["🟠 Expectation values<br/>Braket semantics"]
+        MB7["🟠 Bosonic modes"]
+    end
+
+    subgraph SOL["2. Solvers & Numerical Engine"]
+        direction LR
+        S1["🟢 Dense eigensolver"]
+        S2["🟡 Matrix-free Krylov / Lanczos<br/>#19"]
+        S3["🟡 Low-energy states"]
+        S4["🟠 Complete ensemble semantics"]
+        S5["🟠 Convergence controls<br/>#37"]
+        S6["🟠 GPU Krylov<br/>#29"]
+    end
+
+    subgraph PHY["3. Hamiltonian & Physics"]
+        direction LR
+        P1["🟢 Atomic multiplets"]
+        P2["🟢 Coulomb / Slater integrals"]
+        P3["🟢 Spin-orbit coupling"]
+        P4["🟡 General crystal fields<br/>#50"]
+        P5["🟡 Arbitrary geometry<br/>#17"]
+        P6["🟡 Polarization operators<br/>#17"]
+        P7["🟢 Ligand / charge transfer<br/>Phase A"]
+        P8["🟠 Cluster / Anderson models<br/>Phase B #13"]
+    end
+
+    subgraph SPEC["4. Spectroscopy & Response"]
+        direction LR
+        X1["🟢 XAS"]
+        X2["🟢 XLD"]
+        X3["🟢 XMCD"]
+        X4["🟢 Finite temperature"]
+        X5["🟡 Broadening / resolution<br/>#15"]
+        X6["🟠 Green's functions<br/>continued fractions #33"]
+        X7["⚪ RIXS<br/>#34"]
+        X8["⚪ PES / IPES<br/>#35"]
+        X9["⚪ XES / nIXS<br/>#35"]
+        X10["⚪ Fluorescence yield<br/>#44"]
+        X11["🟠 Reusable ResponseFunction<br/>#44"]
+    end
+
+    subgraph MAT["5. Cluster, Tight Binding & Material Models"]
+        direction LR
+        M1["🟡 Bounded cluster reference"]
+        M2["🟠 General cluster Hamiltonian"]
+        M3["⚪ TightBinding object/model<br/>#45"]
+        M4["⚪ Periodic/open clusters<br/>#45"]
+        M5["⚪ DFT / Wannier ingestion<br/>#45"]
+        M6["⚪ Hybridization functions<br/>#45"]
+    end
+
+    subgraph DYN["6. Density, Mean Field & Dynamics"]
+        direction LR
+        D1["⚪ DensityMatrix"]
+        D2["⚪ CalculateRho"]
+        D3["⚪ Mean-field operators"]
+        D4["⚪ Mean-field ground state"]
+        D5["⚪ Ground-state evolution"]
+        D6["⚪ General time evolution"]
+    end
+
+    subgraph RUN["7. Runtime & Typed Model API"]
+        direction LR
+        R1["🟢 Python engine"]
+        R2["🟢 Versioned / typed models"]
+        R3["🟢 JSON contracts"]
+        R4["🟢 Provenance / evidence"]
+        R5["🟡 Native ↔ Quanty adapter<br/>#40"]
+        R6["🟡 Resource limits"]
+        R7["🟠 Linux / HPC execution"]
+        R8["🟠 GPU execution"]
+    end
+
+    subgraph VAL["8. Validation & Quanty Parity"]
+        direction LR
+        V1["🟢 Independent Quanty execution"]
+        V2["🟢 Atomic parity tests"]
+        V3["🟢 Finite-T parity"]
+        V4["🟡 Geometry parity"]
+        V5["🟡 Cluster parity"]
+        V6["🟡 Capability inventory<br/>#56 / #57"]
+        V7["🟠 Automatic cross-validation"]
+        V8["⚪ Full semantic parity"]
+    end
+
+    subgraph UX["9. User & Product Layer"]
+        direction LR
+        U1["🟢 Python API"]
+        U2["🟡 CLI"]
+        U3["🟡 XMD Quantum Qt GUI<br/>#49"]
+        U4["🟠 Workbench integration<br/>#39"]
+        U5["🟠 HPC / service workflows"]
+    end
+
     Q --> MB
     Q --> SOL
     Q --> PHY
@@ -28,3 +121,13 @@ flowchart TB
     RUN --> VAL
     SPEC --> VAL
     VAL --> UX
+
+    classDef done fill:#b7e4c7,stroke:#238636,color:#000,stroke-width:2px
+    classDef partial fill:#fff3b0,stroke:#c69000,color:#000,stroke-width:2px
+    classDef early fill:#ffd6a5,stroke:#d97706,color:#000,stroke-width:2px
+    classDef todo fill:#eeeeee,stroke:#777,color:#222,stroke-width:1px
+
+    class MB1,MB3,S1,P1,P2,P3,P7,X1,X2,X3,X4,R1,R2,R3,R4,V1,V2,V3,U1 done
+    class MB2,MB4,MB5,S2,S3,P4,P5,P6,X5,M1,R5,R6,V4,V5,V6,U2,U3 partial
+    class MB6,MB7,S4,S5,S6,P8,X6,X11,M2,R7,R8,V7,U4,U5 early
+    class X7,X8,X9,X10,M3,M4,M5,M6,D1,D2,D3,D4,D5,D6,V8 todo
