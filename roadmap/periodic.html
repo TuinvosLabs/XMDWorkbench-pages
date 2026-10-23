@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Periodic Table of XMD Quantum Capabilities</title>
+<style>
+*{box-sizing:border-box}body{font-family:Segoe UI,Arial,sans-serif;margin:0;background:#f6f8fa;color:#24292f}header{padding:16px 22px;background:#0d1117;color:#fff}header h1{margin:0 0 4px;font-size:28px}header div{font-size:14px}main{padding:18px;max-width:1900px;margin:auto}.controls{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:12px}.controls a,button,select{font:inherit;padding:7px 11px;border:1px solid #8c959f;border-radius:6px;background:#fff;color:#24292f;text-decoration:none;cursor:pointer}.controls a:hover,button:hover{background:#f3f4f6}.timeline{flex:1;min-width:260px}.badge{padding:4px 9px;background:#ddf4ff;border-radius:999px;color:#0969da}.meta{margin:6px 0 12px;color:#57606a;line-height:1.45}.legend{display:flex;gap:16px;flex-wrap:wrap;margin:8px 0 14px;font-size:13px}.legend span{display:inline-flex;align-items:center;gap:5px}.sw{width:13px;height:13px;border:1px solid #777;display:inline-block}.table-wrap{background:#fff;border:1px solid #d0d7de;border-radius:10px;padding:18px;overflow:auto}.periodic{min-width:1500px;display:grid;grid-template-columns:180px repeat(18,minmax(64px,1fr));gap:7px;align-items:stretch}.domain{align-self:stretch;border:1px solid #d0d7de;background:#f6f8fa;padding:8px 10px;display:flex;flex-direction:column;justify-content:center;min-height:88px}.domain strong{font-size:13px}.domain small{color:#57606a;margin-top:4px}.el{position:relative;min-height:88px;border:2px solid;padding:7px 6px 6px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;line-height:1.08}.el.done{background:#b7e4c7;border-color:#238636}.el.partial{background:#fff3b0;border-color:#c69000}.el.early{background:#ffd6a5;border-color:#d97706}.el.todo{background:#eeeeee;border-color:#888}.el.changed{box-shadow:0 0 0 3px #54aeff88}.num{position:absolute;left:5px;top:4px;font-size:9px;color:#57606a}.sym{font-size:15px;font-weight:700;margin-bottom:3px}.name{font-size:10px;max-width:100%;overflow-wrap:anywhere}.domain-key{position:absolute;right:5px;top:4px;font-size:8px;color:#57606a}.gap{min-height:88px}.note{font-size:12px;color:#57606a;margin-top:12px}.empty{opacity:.13;border:1px dashed #8c959f;background:#f6f8fa}.row-sep{grid-column:1/-1;height:2px}.statusline{font-size:11px;margin-top:4px}.dot{font-size:9px}@media(max-width:800px){header h1{font-size:21px}main{padding:10px}.periodic{min-width:1250px;grid-template-columns:155px repeat(18,58px)}.el{min-height:78px}.domain{min-height:78px}}
+</style>
+</head>
+<body>
+<header><h1>Periodic Table of XMD Quantum Capabilities</h1><div>A playful periodic-system view of the evidence-governed roadmap</div></header>
+<main>
+<div class="controls"><a href="index.html">← Roadmap view</a><button id="first">⏮</button><button id="prev">◀ Previous</button><button id="play">▶ Play</button><button id="next">Next ▶</button><button id="last">⏭</button><label>Speed <select id="speed"><option value="5000">5s</option><option value="3000" selected>3s</option><option value="1800">1.8s</option><option value="900">0.9s</option></select></label><input class="timeline" id="timeline" type="range" min="0" max="1" value="0" step="1"><span class="badge" id="counter"></span></div>
+<div class="meta"><strong id="title"></strong> · <span id="date"></span><div id="note"></div></div>
+<div class="legend"><span><i class="sw" style="background:#b7e4c7"></i>implemented</span><span><i class="sw" style="background:#fff3b0"></i>partial/reviewable</span><span><i class="sw" style="background:#ffd6a5"></i>foundation/incomplete</span><span><i class="sw" style="background:#eee"></i>planned</span><span>Blue outline = changed since previous frame</span></div>
+<div class="table-wrap"><div class="periodic" id="periodic"></div></div>
+<div class="note">Visual metaphor only: rows are the real XMD Quantum capability domains, not chemical periods. Capability labels and maturity states are parsed from the same historical <code>.mmd</code> frames as the normal roadmap.</div>
+</main>
+<script>
+const $=id=>document.getElementById(id);
+const groups=[
+ {key:'MB',prefix:'MB',title:'1. Many-Body Core',start:1},
+ {key:'SOL',prefix:'S',title:'2. Solvers & Numerical Engine',start:2},
+ {key:'PHY',prefix:'P',title:'3. Hamiltonian & Physics',start:4},
+ {key:'SPEC',prefix:'X',title:'4. Spectroscopy & Response',start:1},
+ {key:'MAT',prefix:'M',title:'5. Cluster, Tight Binding & Material Models',start:3},
+ {key:'DYN',prefix:'D',title:'6. Density, Mean Field & Dynamics',start:7},
+ {key:'RUN',prefix:'R',title:'7. Runtime & Typed Model API',start:1},
+ {key:'VAL',prefix:'V',title:'8. Validation & Quanty Parity',start:4},
+ {key:'UX',prefix:'U',title:'9. User & Product Layer',start:8}
+];
+let frames=[],i=0,timer=null,previousNodes=null;
+function parseMmd(src){const nodes={};for(const line of src.split(/\r?\n/)){const m=line.match(/^\s*([A-Z]+\d+)\["(.+?)"\]\s*$/);if(!m)continue;const raw=m[2],emoji=raw.match(/^(🟢|🟡|🟠|⚪)\s*/)?.[1]||'',status=emoji==='🟢'?'done':emoji==='🟡'?'partial':emoji==='🟠'?'early':'todo';nodes[m[1]]={id:m[1],raw,label:raw.replace(/^(🟢|🟡|🟠|⚪)\s*/,''),emoji,status}}return nodes}
+function groupNodes(nodes,g){const rx=new RegExp('^'+g.prefix+'\\d+$');return Object.values(nodes).filter(n=>rx.test(n.id)).sort((a,b)=>parseInt(a.id.match(/\d+/)[0])-parseInt(b.id.match(/\d+/)[0]))}
+function changed(n){if(!previousNodes)return false;const p=previousNodes[n.id];return !p||p.raw!==n.raw}
+function cleanLabel(s){return s.replaceAll('<br/>',' ').replaceAll('<br>',' ').replace(/\s+/g,' ').trim()}
+function renderTable(nodes){const host=$('periodic');host.innerHTML='';let atomic=1;for(const g of groups){const lab=document.createElement('div');lab.className='domain';lab.innerHTML=`<strong>${g.title}</strong><small>${g.key} series</small>`;host.appendChild(lab);for(let c=1;c<g.start;c++){const gap=document.createElement('div');gap.className='gap';host.appendChild(gap)}const items=groupNodes(nodes,g);for(const n of items){const el=document.createElement('div');el.className=`el ${n.status}${changed(n)?' changed':''}`;const short=n.id;el.innerHTML=`<span class="num">${atomic++}</span><span class="domain-key">${g.key}</span><div class="sym">${short}</div><div class="name">${cleanLabel(n.label)}</div><div class="statusline"><span class="dot">${n.emoji}</span></div>`;host.appendChild(el)}const used=g.start-1+items.length;for(let c=used+1;c<=18;c++){const gap=document.createElement('div');gap.className='gap';host.appendChild(gap)}}}
+async function load(){const idx=await fetch('history.json',{cache:'no-store'}).then(r=>r.json());frames=await Promise.all(idx.frames.map(async f=>({...f,src:await fetch(f.file,{cache:'no-store'}).then(r=>r.text())})));$('timeline').max=frames.length-1;i=frames.length-1;render()}
+function render(){const f=frames[i],nodes=parseMmd(f.src);$('title').textContent=f.title;$('date').textContent=f.date;$('note').textContent=f.note;$('counter').textContent=`${i+1} / ${frames.length}`;$('timeline').value=i;renderTable(nodes);previousNodes=nodes}
+function stop(){if(timer){clearInterval(timer);timer=null;$('play').textContent='▶ Play'}}function setFrame(n){previousNodes=parseMmd(frames[i].src);i=Math.max(0,Math.min(frames.length-1,n));render()}function step(v){let n=i+v;if(n>=frames.length)n=0;if(n<0)n=frames.length-1;setFrame(n)}
+$('first').onclick=()=>{stop();setFrame(0)};$('last').onclick=()=>{stop();setFrame(frames.length-1)};$('prev').onclick=()=>{stop();step(-1)};$('next').onclick=()=>{stop();step(1)};$('timeline').oninput=e=>{stop();setFrame(+e.target.value)};$('play').onclick=()=>{if(timer){stop();return}$('play').textContent='⏸ Pause';timer=setInterval(()=>step(1),+$('speed').value)};$('speed').onchange=()=>{if(timer){stop();$('play').click()}};load();
+</script>
+</body></html>
