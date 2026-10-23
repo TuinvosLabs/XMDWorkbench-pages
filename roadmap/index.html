@@ -22,9 +22,9 @@
 </div>
 <div class="legend">Historical frames are presentation snapshots only. Scientific truth remains governed by reviewed private evidence and the canonical roadmap source.</div>
 </main>
-<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js"></script>
 <script>
-mermaid.initialize({startOnLoad:false,securityLevel:'strict',theme:'default',flowchart:{defaultRenderer:'dagre',htmlLabels:true,curve:'basis',nodeSpacing:34,rankSpacing:48}});
+mermaid.initialize({startOnLoad:false,securityLevel:'strict',theme:'default',flowchart:{htmlLabels:true,curve:'basis',nodeSpacing:34,rankSpacing:48}});
 let frames=[],i=0,timer=null,zoom=1;const $=id=>document.getElementById(id);
 function applyZoom(){zoom=Math.max(.35,Math.min(2.5,zoom));$('diagram-wrap').style.transform=`scale(${zoom})`;$('zoom-reset').textContent=Math.round(zoom*100)+'%'}
 function resetZoom(){zoom=1;applyZoom()}
