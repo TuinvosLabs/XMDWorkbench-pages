@@ -1,0 +1,142 @@
+{
+  "MB1": {
+    "title": "Enumerate a two-electron model space",
+    "summary": "Build a fixed-particle Fock space and inspect its determinants before constructing a Hamiltonian",
+    "code": "from xmd_quantum import FockBasis\nbasis = FockBasis(n_orbitals=4, particle_number=2)\nprint(\"dimension:\", basis.dimension)\nfor state in basis.states:\n    print(f\"{state:04b}\")\n"
+  },
+  "MB2": {
+    "title": "Reduce an active model space",
+    "summary": "Apply an occupation restriction and compare the reduced Hilbert-space size with the unrestricted basis",
+    "code": "from xmd_quantum import FockBasis, OccupationRestriction\nfull = FockBasis(6, 2)\nrestricted = FockBasis(6, 2, restrictions=(\n    OccupationRestriction(orbitals=(0,1,2), min_particles=1, max_particles=2),\n))\nprint(\"full:\", full.dimension, \"restricted:\", restricted.dimension)\n"
+  },
+  "MB3": {
+    "title": "Build a two-site hopping Hamiltonian",
+    "summary": "Compose fermionic operators into a minimal hopping Hamiltonian and solve it",
+    "code": "from xmd_quantum import FockBasis, FermionOperator, dense_eigensystem\nbasis = FockBasis(2, 1)\nc, cdag, n = FermionOperator.annihilation, FermionOperator.creation, FermionOperator.number\nH = -(cdag(0)*c(1) + cdag(1)*c(0)) + 0.5*n(1)\nsolution = dense_eigensystem(H.to_sparse(basis))\nprint(solution.energies)\n"
+  },
+  "MB4": {
+    "title": "Inspect a ground-state wavefunction",
+    "summary": "Extract the lowest eigenvector and evaluate one orbital occupation",
+    "code": "import numpy as np\nfrom xmd_quantum import FockBasis, FermionOperator, dense_eigensystem\nbasis = FockBasis(2, 1)\nc, cdag = FermionOperator.annihilation, FermionOperator.creation\nH = -(cdag(0)*c(1) + cdag(1)*c(0))\nsolution = dense_eigensystem(H.to_sparse(basis))\npsi0 = solution.vectors[:, 0]\nn1 = FermionOperator.number(1).to_sparse(basis)\nprint(\"orbital-1 occupation:\", np.vdot(psi0, n1 @ psi0).real)\n"
+  },
+  "MB5": {
+    "title": "Verify particle number in a fixed-N sector",
+    "summary": "Convert a composed operator to a sparse matrix and verify total particle number",
+    "code": "import numpy as np\nfrom xmd_quantum import FockBasis, FermionOperator\nbasis = FockBasis(4, 2)\nN = sum((FermionOperator.number(i) for i in range(4)), FermionOperator.zero())\nnp.testing.assert_allclose(N.to_sparse(basis).toarray(), 2*np.eye(basis.dimension))\nprint(\"particle-number check passed\")\n"
+  },
+  "S1": {
+    "title": "Solve a simple avoided crossing",
+    "summary": "Diagonalize a small Hermitian model and inspect energies and residual quality",
+    "code": "import numpy as np\nfrom xmd_quantum import dense_eigensystem\nH = np.array([[-0.15,0.12],[0.12,0.15]])\nsolution = dense_eigensystem(H, backend=\"cpu\")\nprint(solution.energies)\nprint(\"max residual:\", solution.max_residual)\n"
+  },
+  "S3": {
+    "title": "Select a low-energy subspace",
+    "summary": "Retain the lowest ordered eigenpairs of a bounded dense problem",
+    "code": "import numpy as np\nfrom xmd_quantum import dense_eigensystem\nH = np.array([[0,-.2,0,0],[-.2,.5,-.1,0],[0,-.1,1,-.15],[0,0,-.15,1.8]])\nsolution = dense_eigensystem(H)\nprint(\"lowest:\", solution.energies[:2])\nlow_states = solution.vectors[:, :2]\n"
+  },
+  "S4": {
+    "title": "Inspect a room-temperature ensemble",
+    "summary": "Run the atomic model at 300 K and inspect its Boltzmann ensemble",
+    "code": "from xmd_quantum import run_atomic_2p3d\nresult = run_atomic_2p3d(d_electrons=8, temperature_K=300.0, points=301)\nprint(result.observables[\"mean_energy_eV\"])\nprint(result.diagnostics[\"thermal_ensemble\"])\n"
+  },
+  "P1": {
+    "title": "Run a synthetic d8 atomic multiplet",
+    "summary": "Calculate a bounded 2p→3d multiplet spectrum and inspect low initial levels",
+    "code": "from xmd_quantum import run_atomic_2p3d\nresult = run_atomic_2p3d(d_electrons=8, f2dd=8.0, f4dd=5.0, zeta_d=.08, zeta_p=8.0, ten_dq=1.0, gamma=.4, points=301, ion_label=\"Synthetic d8\")\nprint(result.eigenvalues_eV[:5])\n"
+  },
+  "P2": {
+    "title": "Compare Coulomb screening assumptions",
+    "summary": "Compare isotropic spectra for two Slater-reduction factors",
+    "code": "import numpy as np\nfrom xmd_quantum import run_atomic_2p3d\ndef xas(reduction):\n    r=run_atomic_2p3d(d_electrons=8,f2dd=8.0,f4dd=5.0,f2pd=5.5,g1pd=4.0,g3pd=2.4,zeta_p=8.0,reduction=reduction,points=301)\n    return {c.key:c for c in r.channels}[\"xas-isotropic\"]\na,b=xas(1.0),xas(.8)\nprint(np.max(np.abs(a.intensity-b.intensity)))\n"
+  },
+  "P3": {
+    "title": "Expose core spin-orbit coupling",
+    "summary": "Compare isotropic XAS with and without the 2p spin-orbit term",
+    "code": "import numpy as np\nfrom xmd_quantum import run_atomic_2p3d\ndef xas(zeta_p):\n    r=run_atomic_2p3d(d_electrons=8,zeta_p=zeta_p,points=301)\n    return {c.key:c for c in r.channels}[\"xas-isotropic\"]\na,b=xas(0.0),xas(8.0)\nprint(np.max(np.abs(a.intensity-b.intensity)))\n"
+  },
+  "P4": {
+    "title": "Probe a crystal-field change",
+    "summary": "Compare an undistorted synthetic ion with a finite cubic crystal field",
+    "code": "import numpy as np\nfrom xmd_quantum import run_atomic_2p3d\ndef xas(ten_dq):\n    r=run_atomic_2p3d(d_electrons=8,ten_dq=ten_dq,zeta_p=8.0,points=301)\n    return {c.key:c for c in r.channels}[\"xas-isotropic\"]\na,b=xas(0.0),xas(1.0)\nprint(np.max(np.abs(a.intensity-b.intensity)))\n"
+  },
+  "P6": {
+    "title": "Check circular-polarization conventions",
+    "summary": "Verify that right-minus-left absorption matches the XMCD difference channel",
+    "code": "import numpy as np\nfrom xmd_quantum import run_atomic_2p3d\nr=run_atomic_2p3d(d_electrons=8,zeta_p=8.0,exchange_z=.03,points=301)\nch={c.key:c for c in r.channels}\nnp.testing.assert_allclose(ch[\"xas-r\"].intensity-ch[\"xas-l\"].intensity,ch[\"xmcd-r-minus-l\"].intensity)\nprint(\"helicity convention check passed\")\n"
+  },
+  "P8": {
+    "title": "Create a cluster regression baseline",
+    "summary": "Run the bounded cluster reference and inspect compact observables",
+    "code": "from xmd_quantum.cluster_contract import ClusterReferenceSpec\nfrom xmd_quantum.cluster_reference import run_cluster_reference\nresult=run_cluster_reference(ClusterReferenceSpec())\nfor key,value in result.observables.items(): print(key,value)\n"
+  },
+  "X1": {
+    "title": "Locate the strongest isotropic XAS feature",
+    "summary": "Calculate isotropic XAS and report the energy of its strongest feature",
+    "code": "import numpy as np\nfrom xmd_quantum import run_atomic_2p3d\nr=run_atomic_2p3d(d_electrons=8,zeta_p=8.0,gamma=.4,points=601)\nxas={c.key:c for c in r.channels}[\"xas-isotropic\"]\npeak=np.argmax(xas.intensity)\nprint(xas.energy_eV[peak],\"eV\")\n"
+  },
+  "X2": {
+    "title": "Measure the XLD contrast",
+    "summary": "Extract x-minus-z XLD and report its extrema",
+    "code": "from xmd_quantum import run_atomic_2p3d\nr=run_atomic_2p3d(d_electrons=8,ten_dq=1.0,b20=.10,points=601)\nxld={c.key:c for c in r.channels}[\"xld-x-minus-z\"]\nprint(xld.intensity.min(),xld.intensity.max())\n"
+  },
+  "X3": {
+    "title": "Quantify a synthetic XMCD signal",
+    "summary": "Add a small exchange field and report peak-to-peak dichroic response",
+    "code": "from xmd_quantum import run_atomic_2p3d\nr=run_atomic_2p3d(d_electrons=8,exchange_z=.03,zeta_p=8.0,points=601)\nxmcd={c.key:c for c in r.channels}[\"xmcd-r-minus-l\"]\nprint(xmcd.intensity.max()-xmcd.intensity.min())\n"
+  },
+  "X4": {
+    "title": "Compare cryogenic and room-temperature XAS",
+    "summary": "Quantify the spectral change between 20 K and 300 K",
+    "code": "import numpy as np\nfrom xmd_quantum import run_atomic_2p3d\ndef xas(T):\n    r=run_atomic_2p3d(d_electrons=8,temperature_K=T,zeta_p=8.0,points=301)\n    return {c.key:c for c in r.channels}[\"xas-isotropic\"]\ncold,room=xas(20.0),xas(300.0)\nprint(np.max(np.abs(cold.intensity-room.intensity)))\n"
+  },
+  "X5": {
+    "title": "Broaden discrete spectral lines",
+    "summary": "Convert line centers and strengths into a Lorentz-broadened spectrum",
+    "code": "import numpy as np\nfrom xmd_quantum import lorentz_spectrum\nenergy=np.linspace(-5,5,501)\ncenters=np.array([-1.2,.4,1.8])\nstrengths=np.array([1.0,.35,.7])\nintensity=lorentz_spectrum(energy,centers,strengths,fwhm_eV=.4)\nprint(intensity.max())\n"
+  },
+  "M1": {
+    "title": "Run the bounded cluster reference",
+    "summary": "Execute the current cluster reference and inspect its parity observables",
+    "code": "from xmd_quantum.cluster_contract import ClusterReferenceSpec\nfrom xmd_quantum.cluster_reference import run_cluster_reference\nresult=run_cluster_reference(ClusterReferenceSpec())\nprint(result.observables)\n"
+  },
+  "R1": {
+    "title": "Discover the installed engine boundary",
+    "summary": "Query the package version and machine-readable capability list",
+    "code": "import xmd_quantum\nprint(\"version:\",xmd_quantum.__version__)\nprint(xmd_quantum.capabilities())\n"
+  },
+  "R2": {
+    "title": "Create a portable calculation request",
+    "summary": "Describe and run a typed atomic calculation through the common engine entrypoint",
+    "code": "from xmd_quantum import CalculationRequest, run_calculation\nrequest=CalculationRequest(\"atomic-2p3d\",{\"d_electrons\":8,\"zeta_p\":8.0,\"temperature_K\":300.0,\"points\":301})\nresult=run_calculation(request)\nprint(result.observables[\"ground_energy_eV\"])\n"
+  },
+  "R3": {
+    "title": "Round-trip a calculation through JSON",
+    "summary": "Serialize a request/result and restore the result exactly",
+    "code": "from xmd_quantum import CalculationRequest, CalculationResult, run_calculation\nrequest=CalculationRequest(\"atomic-2p3d\",{\"d_electrons\":0,\"points\":301})\nrequest_json=request.to_json()\nresult=run_calculation(request)\nrestored=CalculationResult.from_json(result.to_json())\nassert restored.to_dict()==result.to_dict()\nprint(\"JSON round-trip passed\")\n"
+  },
+  "R4": {
+    "title": "Capture provenance with a result",
+    "summary": "Inspect provenance and diagnostics for reproducibility/evidence workflows",
+    "code": "from xmd_quantum import CalculationRequest, run_calculation\nresult=run_calculation(CalculationRequest(\"atomic-2p3d\",{\"d_electrons\":0,\"points\":301}))\nprint(result.provenance)\nprint(sorted(result.diagnostics))\n"
+  },
+  "R6": {
+    "title": "Fail early on an oversized model space",
+    "summary": "Use explicit resource limits so work is rejected rather than silently reduced",
+    "code": "from xmd_quantum import FockBasis\ntry:\n    basis=FockBasis(20,10,max_dimension=100_000,max_bytes=128*1024**2)\n    print(basis.dimension)\nexcept Exception as exc:\n    print(\"preflight rejected:\",exc)\n"
+  },
+  "R8": {
+    "title": "Request GPU execution explicitly",
+    "summary": "Inspect hardware and request CUDA for a small eigensystem",
+    "code": "import numpy as np\nfrom xmd_quantum import dense_eigensystem, hardware_info\nprint(hardware_info())\nH=np.array([[0.0,1.0],[1.0,0.0]])\nsolution=dense_eigensystem(H,backend=\"cuda\")\nprint(solution.energies)\n"
+  },
+  "U1": {
+    "title": "Run a full calculation from a notebook",
+    "summary": "Use the high-level request API as a notebook or automation workflow would",
+    "code": "from xmd_quantum import CalculationRequest, run_calculation\nrequest=CalculationRequest(\"atomic-2p3d\",{\"d_electrons\":8,\"temperature_K\":300.0,\"points\":301,\"execution_backend\":\"auto\"})\nresult=run_calculation(request)\nprint([channel.key for channel in result.channels])\n"
+  },
+  "U3": {
+    "title": "Embed the Qt window in Python",
+    "summary": "Open the optional GUI from Python and keep its handle for controlled shutdown",
+    "code": "from xmd_quantum_qt import open_window\nhandle=open_window()\nprint(handle.window)\n# ... interact with the GUI ...\n# handle.close() when done\n"
+  }
+}
