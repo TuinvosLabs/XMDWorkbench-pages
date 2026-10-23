@@ -1,0 +1,3 @@
+#api-audit{margin-left:8px;transition:background .2s,color .2s}
+#api-audit.audit-ok{background:#dafbe1;color:#116329;border:1px solid #4ac26b}
+#api-audit.audit-warn{background:#fff8c5;color:#633c01;border:1px solid #d4a72c}
