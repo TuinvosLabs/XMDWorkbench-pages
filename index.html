@@ -3,12 +3,20 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>XMDWorkbench public dashboards</title>
-<style>body{font-family:system-ui,sans-serif;max-width:960px;margin:3rem auto;padding:0 1rem;line-height:1.5}a{display:block;padding:1rem;margin:.75rem 0;border:1px solid #bbb;border-radius:.6rem;text-decoration:none}small{color:#666}</style>
+<style>
+*{box-sizing:border-box}body{font-family:Segoe UI,Arial,sans-serif;margin:0;background:#f6f8fa;color:#24292f}nav{display:flex;gap:8px;align-items:center;flex-wrap:wrap;padding:12px 18px;background:#0d1117}nav a,nav button{font:inherit;color:#fff;background:#21262d;border:1px solid #484f58;border-radius:6px;padding:7px 11px;text-decoration:none;cursor:pointer}nav a:hover,nav button:hover{background:#30363d}main{max-width:1000px;margin:42px auto;padding:0 20px}h1{margin-bottom:8px}.intro{color:#57606a;margin-bottom:24px}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}.card{display:block;background:#fff;border:1px solid #d0d7de;border-radius:10px;padding:18px;text-decoration:none;color:#24292f;box-shadow:0 1px 2px #0001}.card:hover{border-color:#8c959f;transform:translateY(-1px)}.card strong{display:block;font-size:17px;margin-bottom:7px}.card small{color:#57606a;line-height:1.45}.tag{display:inline-block;margin-top:10px;padding:3px 7px;border-radius:999px;background:#ddf4ff;color:#0969da;font-size:12px}
+</style>
 </head>
 <body>
+<nav aria-label="Dashboard navigation"><button type="button" id="back">← Back</button><a href="./">Home</a><a href="roadmap/">Roadmap</a><a href="roadmap/periodic.html">Periodic table</a><a href="evidence/">Evidence</a></nav>
+<main>
 <h1>XMDWorkbench public dashboards</h1>
-<p>Sanitized, derived presentation views. Private source code and raw scientific evidence are not published here.</p>
-<a href="roadmap/"><strong>Quanty functional roadmap evolution</strong><br><small>Play/Pause, Previous/Next and timeline view of roadmap snapshots.</small></a>
-<a href="roadmap/periodic.html"><strong>Periodic Table of XMD Quantum Capabilities</strong><br><small>Experimental periodic-system view using the same roadmap history and maturity states.</small></a>
-<a href="evidence/"><strong>Scientific evidence dashboard</strong><br><small>Sanitized single-file evidence report. Placeholder until the reviewed publication pipeline lands.</small></a>
+<p class="intro">Sanitized, derived presentation views. Private source code, raw scientific evidence, NAS paths and runner identities are not published here.</p>
+<div class="cards">
+<a class="card" href="roadmap/"><strong>Quanty functional roadmap evolution</strong><small>Historical roadmap player with TD/LR layouts, maturity states and capability evolution.</small><span class="tag">Roadmap</span></a>
+<a class="card" href="roadmap/periodic.html"><strong>Periodic Table of XMD Quantum Capabilities</strong><small>Experimental periodic-system view driven by the same evidence-governed roadmap history.</small><span class="tag">Experiment</span></a>
+<a class="card" href="evidence/"><strong>Scientific evidence dashboard</strong><small>Sanitized Quanty ↔ XMD comparison statistics, tolerance margins, convergence and evidence-family discovery.</small><span class="tag">Evidence</span></a>
+</div>
+</main>
+<script>document.getElementById('back').addEventListener('click',()=>{if(history.length>1)history.back();else location.href='./'});</script>
 </body></html>
