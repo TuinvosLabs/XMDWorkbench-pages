@@ -78,6 +78,25 @@
         {"name":"example_id","type":"str","default":"required","description":"Bundled matched native/Quanty example id."},
         {"name":"destination","type":"str | pathlib.Path","default":"required","description":"New output directory; existing targets are rejected to prevent overwrites."}
       ]
+    },
+    "hubbard_dimer": {
+      "signature": "hubbard_dimer(hopping_eV: float = 1.0, interaction_eV: float = 4.0) -> HubbardDimer",
+      "parameters": [
+        {"name":"hopping_eV","type":"float (eV)","default":"1.0","description":"Nearest-neighbour hopping amplitude t in the two-site reference Hamiltonian."},
+        {"name":"interaction_eV","type":"float (eV)","default":"4.0","description":"On-site Hubbard interaction U."}
+      ]
+    },
+    "run_hubbard_dimer": {
+      "signature": "run_hubbard_dimer(hopping_eV: float = 1.0, interaction_eV: float = 4.0, energy_min_eV: float = 0.0, energy_max_eV: float = 12.0, n_points: int = 601, lorentz_fwhm_eV: float = 0.2, execution_backend: str = 'auto') -> CalculationResult",
+      "parameters": [
+        {"name":"hopping_eV","type":"float (eV)","default":"1.0","description":"Nearest-neighbour hopping amplitude t."},
+        {"name":"interaction_eV","type":"float (eV)","default":"4.0","description":"On-site Hubbard interaction U."},
+        {"name":"energy_min_eV","type":"float (eV)","default":"0.0","description":"Lower density-response energy-grid bound."},
+        {"name":"energy_max_eV","type":"float (eV)","default":"12.0","description":"Upper density-response energy-grid bound."},
+        {"name":"n_points","type":"int","default":"601","description":"Number of density-response spectrum points."},
+        {"name":"lorentz_fwhm_eV","type":"float (eV)","default":"0.2","description":"Lorentzian FWHM for the reference density-response spectrum."},
+        {"name":"execution_backend","type":"str","default":"'auto'","description":"Dense eigensolver backend: auto, cpu or cuda."}
+      ]
     }
   },
   "capabilities": {
@@ -85,6 +104,6 @@
     "X1":{"apis":["transition_strengths"],"relevant":["operator_matrix","initial_state","final_eigenvectors","max_bytes"]},
     "R2":{"apis":["CalculationResult","SpectrumChannel"],"relevant":["model_id","model_parameters","channels","diagnostics","provenance"]},
     "R3":{"apis":["CalculationResult JSON"],"relevant":["indent","content"]},
-    "U1":{"apis":["list_examples","load_example","export_example"],"relevant":["example_id","destination"]}
+    "U1":{"apis":["list_examples","load_example","export_example","hubbard_dimer","run_hubbard_dimer"],"relevant":["example_id","destination","hopping_eV","interaction_eV","energy_min_eV","energy_max_eV","n_points","lorentz_fwhm_eV","execution_backend"]}
   }
 }
