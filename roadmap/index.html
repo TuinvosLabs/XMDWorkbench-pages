@@ -4,86 +4,37 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>XMDWorkbench Quanty roadmap evolution</title>
 <style>
-*{box-sizing:border-box}body{font-family:Segoe UI,Arial,sans-serif;margin:0;background:#f6f8fa;color:#24292f}header{padding:16px 22px;background:#0d1117;color:#fff}header h1{margin:0 0 4px;font-size:28px}header div{font-size:14px}main{padding:18px;max-width:1800px;margin:auto}.controls{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:12px}button,select,input{font:inherit}button{padding:7px 11px;border:1px solid #8c959f;border-radius:6px;background:#fff;color:#24292f;cursor:pointer}button:hover{background:#f3f4f6}.timeline{flex:1;min-width:260px}.badge{padding:4px 9px;background:#ddf4ff;border-radius:999px;color:#0969da}.meta{margin:6px 0 12px;color:#57606a;line-height:1.45}.frame{background:#fff;border:1px solid #d0d7de;border-radius:10px;min-height:720px;overflow:auto;box-shadow:0 1px 2px #0001;position:relative}.zoom-controls{position:sticky;left:calc(100% - 180px);top:8px;z-index:20;display:flex;gap:6px;width:max-content;margin:8px 8px 0 auto;background:#ffffffed;border:1px solid #d0d7de;border-radius:8px;padding:6px}.stage{position:relative}.canvas{position:absolute;left:0;top:0;width:1500px;height:1430px;transform-origin:top left}.edges{position:absolute;inset:0;width:1500px;height:1430px;z-index:0;overflow:visible}.root{position:absolute;z-index:3;background:#f1efff;border:2px solid #8d79d6;border-radius:2px;width:280px;height:72px;display:flex;align-items:center;justify-content:center;text-align:center;font-weight:600;line-height:1.35}.group{position:absolute;z-index:2;background:#fffde7;border:1.5px solid #c9c35b;padding:28px 16px 16px;border-radius:1px}.group-title{position:absolute;top:6px;left:0;right:0;text-align:center;font-size:14px;font-weight:500}.cards{display:grid;gap:12px;height:100%;align-content:start}.card{min-height:54px;padding:8px 9px;border:2px solid;display:flex;align-items:center;justify-content:center;text-align:center;line-height:1.22;font-size:13px;background:#eee;transition:box-shadow .3s,transform .3s}.card.done{background:#b7e4c7;border-color:#238636}.card.partial{background:#fff3b0;border-color:#c69000}.card.early{background:#ffd6a5;border-color:#d97706}.card.todo{background:#eeeeee;border-color:#888}.card.changed{box-shadow:0 0 0 4px #54aeff88;transform:translateY(-1px)}.dot{margin-right:6px;font-size:11px}.source-note{font-size:.88rem;margin:10px 2px;color:#57606a}.error{margin:20px;padding:16px;border:1px solid #cf222e;background:#ffebe9;color:#82071e;border-radius:8px}.legend{display:flex;gap:16px;flex-wrap:wrap;margin-top:8px;font-size:13px}.legend span{display:inline-flex;align-items:center;gap:5px}.sw{width:13px;height:13px;border:1px solid #777;display:inline-block}
-@media(max-width:900px){header h1{font-size:22px}main{padding:10px}.frame{min-height:600px}}
+*{box-sizing:border-box}body{font-family:Segoe UI,Arial,sans-serif;margin:0;background:#f6f8fa;color:#24292f}header{padding:16px 22px;background:#0d1117;color:#fff}header h1{margin:0 0 4px;font-size:28px}header div{font-size:14px}main{padding:18px;max-width:1800px;margin:auto}.controls{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:12px}button,select,input{font:inherit}button{padding:7px 11px;border:1px solid #8c959f;border-radius:6px;background:#fff;color:#24292f;cursor:pointer}button:hover{background:#f3f4f6}.timeline{flex:1;min-width:260px}.badge{padding:4px 9px;background:#ddf4ff;border-radius:999px;color:#0969da}.meta{margin:6px 0 12px;color:#57606a;line-height:1.45}.frame{background:#fff;border:1px solid #d0d7de;border-radius:10px;min-height:720px;overflow:auto;box-shadow:0 1px 2px #0001;position:relative}.zoom-controls{position:sticky;left:calc(100% - 180px);top:8px;z-index:20;display:flex;gap:6px;width:max-content;margin:8px 8px 0 auto;background:#ffffffed;border:1px solid #d0d7de;border-radius:8px;padding:6px}.stage{position:relative}.canvas{position:absolute;left:0;top:0;width:1500px;height:1430px;transform-origin:top left}.edges{position:absolute;inset:0;width:1500px;height:1430px;z-index:0;overflow:visible}.edges path{fill:none;stroke-linejoin:miter;stroke-linecap:square}.root{position:absolute;z-index:3;background:#f1efff;border:2px solid #8d79d6;border-radius:2px;width:280px;height:72px;display:flex;align-items:center;justify-content:center;text-align:center;font-weight:600;line-height:1.35}.group{position:absolute;z-index:2;background:#fffde7;border:1.5px solid #c9c35b;padding:28px 16px 16px;border-radius:1px}.group-title{position:absolute;top:6px;left:0;right:0;text-align:center;font-size:14px;font-weight:500}.cards{display:grid;gap:12px;height:100%;align-content:start}.card{min-height:54px;padding:8px 9px;border:2px solid;display:flex;align-items:center;justify-content:center;text-align:center;line-height:1.22;font-size:13px;background:#eee;transition:box-shadow .3s,transform .3s}.card.done{background:#b7e4c7;border-color:#238636}.card.partial{background:#fff3b0;border-color:#c69000}.card.early{background:#ffd6a5;border-color:#d97706}.card.todo{background:#eeeeee;border-color:#888}.card.changed{box-shadow:0 0 0 4px #54aeff88;transform:translateY(-1px)}.dot{margin-right:6px;font-size:11px}.source-note{font-size:.88rem;margin:10px 2px;color:#57606a}.error{margin:20px;padding:16px;border:1px solid #cf222e;background:#ffebe9;color:#82071e;border-radius:8px}.legend{display:flex;gap:16px;flex-wrap:wrap;margin-top:8px;font-size:13px}.legend span{display:inline-flex;align-items:center;gap:5px}.sw{width:13px;height:13px;border:1px solid #777;display:inline-block}@media(max-width:900px){header h1{font-size:22px}main{padding:10px}.frame{min-height:600px}}
 </style>
 </head>
 <body>
 <header><h1>Quanty functional roadmap evolution</h1><div>Evidence-governed XMDWorkbench roadmap history</div></header>
 <main>
-<div class="controls">
-<button id="first">⏮</button><button id="prev">◀ Previous</button><button id="play">▶ Play</button><button id="next">Next ▶</button><button id="last">⏭</button>
-<label>Speed <select id="speed"><option value="5000">5s</option><option value="3000" selected>3s</option><option value="1800">1.8s</option><option value="900">0.9s</option></select></label>
-<input class="timeline" id="timeline" type="range" min="0" max="1" value="0" step="1"><span class="badge" id="counter"></span>
-</div>
-<div class="meta"><strong id="title"></strong> · <span id="date"></span><div id="note"></div>
-<div class="legend"><span><i class="sw" style="background:#b7e4c7"></i>implemented</span><span><i class="sw" style="background:#fff3b0"></i>partial/reviewable</span><span><i class="sw" style="background:#ffd6a5"></i>foundation/incomplete</span><span><i class="sw" style="background:#eee"></i>planned</span></div></div>
-<div class="frame" id="frame">
-<div class="zoom-controls"><button id="zoom-out">−</button><button id="zoom-reset">Fit</button><button id="zoom-in">+</button></div>
-<div class="stage" id="stage"><div class="canvas" id="canvas"></div></div>
-</div>
-<div class="source-note">The historical <code>.mmd</code> files remain the source for capability labels and status. This viewer only fixes presentation geometry so roadmap history stays visually comparable.</div>
+<div class="controls"><button id="first">⏮</button><button id="prev">◀ Previous</button><button id="play">▶ Play</button><button id="next">Next ▶</button><button id="last">⏭</button><label>Speed <select id="speed"><option value="5000">5s</option><option value="3000" selected>3s</option><option value="1800">1.8s</option><option value="900">0.9s</option></select></label><input class="timeline" id="timeline" type="range" min="0" max="1" value="0" step="1"><span class="badge" id="counter"></span></div>
+<div class="meta"><strong id="title"></strong> · <span id="date"></span><div id="note"></div><div class="legend"><span><i class="sw" style="background:#b7e4c7"></i>implemented</span><span><i class="sw" style="background:#fff3b0"></i>partial/reviewable</span><span><i class="sw" style="background:#ffd6a5"></i>foundation/incomplete</span><span><i class="sw" style="background:#eee"></i>planned</span></div></div>
+<div class="frame" id="frame"><div class="zoom-controls"><button id="zoom-out">−</button><button id="zoom-reset">Fit</button><button id="zoom-in">+</button></div><div class="stage" id="stage"><div class="canvas" id="canvas"></div></div></div>
+<div class="source-note">The historical <code>.mmd</code> files remain the source for capability labels and status. This viewer fixes presentation geometry and orthogonal connector routing so roadmap history stays visually comparable.</div>
 </main>
 <script>
-const $=id=>document.getElementById(id);
-const CW=1500,CH=1430;
-const layout={
- RUN:{title:'7. Runtime & Typed Model API',x:35,y:155,w:420,h:350,cols:2},
- MB:{title:'1. Many-Body Core',x:500,y:155,w:485,h:300,cols:3},
- MAT:{title:'5. Cluster, Tight Binding & Material Models',x:1030,y:155,w:435,h:260,cols:3},
- SOL:{title:'2. Solvers & Numerical Engine',x:260,y:550,w:410,h:240,cols:2},
- PHY:{title:'3. Hamiltonian & Physics',x:715,y:510,w:515,h:280,cols:3},
- DYN:{title:'6. Density, Mean Field & Dynamics',x:1260,y:505,w:220,h:285,cols:2},
- SPEC:{title:'4. Spectroscopy & Response',x:565,y:840,w:650,h:285,cols:4},
- VAL:{title:'8. Validation & Quanty Parity',x:330,y:1180,w:565,h:225,cols:3},
- UX:{title:'9. User & Product Layer',x:980,y:1180,w:450,h:225,cols:2}
-};
+const $=id=>document.getElementById(id),CW=1500,CH=1430;
+const layout={RUN:{title:'7. Runtime & Typed Model API',x:35,y:155,w:420,h:350,cols:2},MB:{title:'1. Many-Body Core',x:500,y:155,w:485,h:300,cols:3},MAT:{title:'5. Cluster, Tight Binding & Material Models',x:1030,y:155,w:435,h:260,cols:3},SOL:{title:'2. Solvers & Numerical Engine',x:260,y:550,w:410,h:240,cols:2},PHY:{title:'3. Hamiltonian & Physics',x:715,y:510,w:515,h:280,cols:3},DYN:{title:'6. Density, Mean Field & Dynamics',x:1260,y:505,w:220,h:285,cols:2},SPEC:{title:'4. Spectroscopy & Response',x:565,y:840,w:650,h:285,cols:4},VAL:{title:'8. Validation & Quanty Parity',x:330,y:1180,w:565,h:225,cols:3},UX:{title:'9. User & Product Layer',x:980,y:1180,w:450,h:225,cols:2}};
 const prefix=[['MB','MB'],['RUN','R'],['SOL','S'],['PHY','P'],['SPEC','X'],['MAT','M'],['DYN','D'],['VAL','V'],['UX','U']];
-const deps=[['MB','SOL'],['SOL','SPEC'],['PHY','SPEC'],['MAT','PHY'],['MAT','SPEC'],['DYN','SPEC'],['RUN','SOL'],['RUN','VAL'],['SPEC','VAL'],['VAL','UX']];
 let frames=[],i=0,timer=null,zoom=1,previousNodes=null;
 function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
-function parseMmd(src){
- const nodes={};
- for(const line of src.split(/\r?\n/)){
-  const m=line.match(/^\s*([A-Z]+\d+)\["(.+?)"\]\s*$/); if(!m)continue;
-  const raw=m[2],emoji=raw.match(/^(🟢|🟡|🟠|⚪)\s*/)?.[1]||'';
-  const status=emoji==='🟢'?'done':emoji==='🟡'?'partial':emoji==='🟠'?'early':'todo';
-  nodes[m[1]]={id:m[1],raw,label:raw.replace(/^(🟢|🟡|🟠|⚪)\s*/,''),emoji,status};
- }
- return nodes;
-}
-function groupNodes(nodes,key){
- const p=prefix.find(x=>x[0]===key)[1];
- return Object.values(nodes).filter(n=>n.id.startsWith(p)&&(/^\D+\d+$/.test(n.id))).sort((a,b)=>parseInt(a.id.match(/\d+/)[0])-parseInt(b.id.match(/\d+/)[0]));
-}
-function centre(g,side){const l=layout[g];return side==='top'?[l.x+l.w/2,l.y]:side==='bottom'?[l.x+l.w/2,l.y+l.h]:[l.x+l.w/2,l.y+l.h/2]}
-function path(a,b){const [x1,y1]=centre(a,'bottom'),[x2,y2]=centre(b,'top'),dy=Math.max(45,(y2-y1)*.45);return `M ${x1} ${y1} C ${x1} ${y1+dy}, ${x2} ${y2-dy}, ${x2} ${y2}`}
-function drawEdges(){
- let s='<svg class="edges" viewBox="0 0 1500 1430"><defs><marker id="arr" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 Z" fill="#57606a"/></marker></defs>';
- const qx=750,qy=105;
- for(const g of ['RUN','MB','MAT','SOL','PHY','SPEC','DYN','VAL','UX']){const [x2,y2]=centre(g,'top');s+=`<path d="M ${qx} ${qy} C ${qx} ${qy+55}, ${x2} ${Math.max(120,y2-60)}, ${x2} ${y2}" fill="none" stroke="#8c959f" stroke-width="1.1" marker-end="url(#arr)"/>`}
- for(const [a,b] of deps)s+=`<path d="${path(a,b)}" fill="none" stroke="#57606a" stroke-width="1.2" marker-end="url(#arr)"/>`;
- return s+'</svg>';
-}
+function parseMmd(src){const nodes={};for(const line of src.split(/\r?\n/)){const m=line.match(/^\s*([A-Z]+\d+)\["(.+?)"\]\s*$/);if(!m)continue;const raw=m[2],emoji=raw.match(/^(🟢|🟡|🟠|⚪)\s*/)?.[1]||'',status=emoji==='🟢'?'done':emoji==='🟡'?'partial':emoji==='🟠'?'early':'todo';nodes[m[1]]={id:m[1],raw,label:raw.replace(/^(🟢|🟡|🟠|⚪)\s*/,''),emoji,status}}return nodes}
+function groupNodes(nodes,key){const p=prefix.find(x=>x[0]===key)[1];return Object.values(nodes).filter(n=>n.id.startsWith(p)&&(/^\D+\d+$/.test(n.id))).sort((a,b)=>parseInt(a.id.match(/\d+/)[0])-parseInt(b.id.match(/\d+/)[0]))}
+function pt(g,side){const l=layout[g];if(side==='top')return[l.x+l.w/2,l.y];if(side==='bottom')return[l.x+l.w/2,l.y+l.h];if(side==='left')return[l.x,l.y+l.h/2];return[l.x+l.w,l.y+l.h/2]}
+function d(points){return 'M '+points.map((p,j)=>`${p[0]} ${p[1]}`).join(' L ')}
+function depRoute(a,b){const A=pt(a,'bottom'),B=pt(b,'top'),mid=Math.round((A[1]+B[1])/2);return d([A,[A[0],mid],[B[0],mid],B])}
+function rootRoute(g){const start=[750,97],B=pt(g,'top');if(['RUN','MB','MAT'].includes(g))return d([start,[750,130],[B[0],130],B]);if(g==='SOL')return d([start,[750,120],[475,120],[475,535],[B[0],535],B]);if(g==='PHY')return d([start,[750,120],[1005,120],[1005,495],[B[0],495],B]);if(g==='DYN')return d([start,[750,120],[1490,120],[1490,490],[B[0],490],B]);if(g==='SPEC')return d([start,[750,120],[690,120],[690,825],[B[0],825],B]);if(g==='VAL')return d([start,[750,120],[20,120],[20,1165],[B[0],1165],B]);return d([start,[750,120],[1490,120],[1490,1165],[B[0],1165],B])}
+function specialDep(a,b){if(a==='MAT'&&b==='SPEC'){const A=pt('MAT','bottom'),B=pt('SPEC','top');return d([A,[A[0],475],[1240,475],[1240,825],[B[0],825],B])}if(a==='RUN'&&b==='VAL'){const A=pt('RUN','bottom'),B=pt('VAL','top');return d([A,[A[0],520],[230,520],[230,1165],[B[0],1165],B])}if(a==='VAL'&&b==='UX'){const A=pt('VAL','right'),B=pt('UX','left');return d([A,B])}return depRoute(a,b)}
+function drawEdges(){let s='<svg class="edges" viewBox="0 0 1500 1430"><defs><marker id="arr" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,4 L0,8 Z" fill="#57606a"/></marker></defs>';for(const g of ['RUN','MB','MAT','SOL','PHY','DYN','SPEC','VAL','UX'])s+=`<path d="${rootRoute(g)}" stroke="#8c959f" stroke-width="1.1" marker-end="url(#arr)"/>`;for(const [a,b] of [['MB','SOL'],['SOL','SPEC'],['PHY','SPEC'],['MAT','PHY'],['MAT','SPEC'],['DYN','SPEC'],['RUN','SOL'],['RUN','VAL'],['SPEC','VAL'],['VAL','UX']])s+=`<path d="${specialDep(a,b)}" stroke="#57606a" stroke-width="1.2" marker-end="url(#arr)"/>`;return s+'</svg>'}
 function cardChanged(n){if(!previousNodes)return false;const p=previousNodes[n.id];return !p||p.raw!==n.raw}
-function renderCanvas(nodes){
- const c=$('canvas');c.innerHTML=drawEdges();
- const root=document.createElement('div');root.className='root';root.style.left='610px';root.style.top='25px';root.innerHTML='Quanty functionality<br>→ XMD Quantum parity';c.appendChild(root);
- for(const key of Object.keys(layout)){
-  const g=layout[key],box=document.createElement('section');box.className='group';Object.assign(box.style,{left:g.x+'px',top:g.y+'px',width:g.w+'px',height:g.h+'px'});
-  box.innerHTML=`<div class="group-title">${g.title}</div><div class="cards"></div>`;const cards=box.querySelector('.cards');cards.style.gridTemplateColumns=`repeat(${g.cols},minmax(0,1fr))`;
-  for(const n of groupNodes(nodes,key)){
-   const d=document.createElement('div');d.className=`card ${n.status}${cardChanged(n)?' changed':''}`;d.innerHTML=`<span class="dot">${n.emoji}</span><span>${n.label.replaceAll('<br/>','<br>').replaceAll('<br>','<br>')}</span>`;cards.appendChild(d);
-  }
-  c.appendChild(box);
- }
-}
-function fitZoom(){const avail=Math.max(320,$('frame').clientWidth-28);zoom=Math.min(1,avail/CW);applyZoom()}
-function applyZoom(){zoom=Math.max(.28,Math.min(1.8,zoom));$('canvas').style.transform=`scale(${zoom})`;$('stage').style.width=(CW*zoom)+'px';$('stage').style.height=(CH*zoom)+'px';$('zoom-reset').textContent=Math.round(zoom*100)+'%'}
+function renderCanvas(nodes){const c=$('canvas');c.innerHTML=drawEdges();const root=document.createElement('div');root.className='root';root.style.left='610px';root.style.top='25px';root.innerHTML='Quanty functionality<br>→ XMD Quantum parity';c.appendChild(root);for(const key of Object.keys(layout)){const g=layout[key],box=document.createElement('section');box.className='group';Object.assign(box.style,{left:g.x+'px',top:g.y+'px',width:g.w+'px',height:g.h+'px'});box.innerHTML=`<div class="group-title">${g.title}</div><div class="cards"></div>`;const cards=box.querySelector('.cards');cards.style.gridTemplateColumns=`repeat(${g.cols},minmax(0,1fr))`;for(const n of groupNodes(nodes,key)){const e=document.createElement('div');e.className=`card ${n.status}${cardChanged(n)?' changed':''}`;e.innerHTML=`<span class="dot">${n.emoji}</span><span>${n.label.replaceAll('<br/>','<br>').replaceAll('<br>','<br>')}</span>`;cards.appendChild(e)}c.appendChild(box)}}
+function fitZoom(){const avail=Math.max(320,$('frame').clientWidth-28);zoom=Math.min(1,avail/CW);applyZoom()}function applyZoom(){zoom=Math.max(.28,Math.min(1.8,zoom));$('canvas').style.transform=`scale(${zoom})`;$('stage').style.width=(CW*zoom)+'px';$('stage').style.height=(CH*zoom)+'px';$('zoom-reset').textContent=Math.round(zoom*100)+'%'}
 async function load(){const idx=await fetch('history.json',{cache:'no-store'}).then(r=>r.json());frames=await Promise.all(idx.frames.map(async f=>({...f,src:await fetch(f.file,{cache:'no-store'}).then(r=>r.text())})));$('timeline').max=frames.length-1;i=frames.length-1;render()}
 function render(){const f=frames[i],nodes=parseMmd(f.src);$('title').textContent=f.title;$('date').textContent=f.date;$('note').textContent=f.note;$('counter').textContent=`${i+1} / ${frames.length}`;$('timeline').value=i;renderCanvas(nodes);previousNodes=nodes;fitZoom()}
-function stop(){if(timer){clearInterval(timer);timer=null;$('play').textContent='▶ Play'}}function setFrame(n){previousNodes=parseMmd(frames[i].src);i=Math.max(0,Math.min(frames.length-1,n));render()}function step(d){let n=i+d;if(n>=frames.length)n=0;if(n<0)n=frames.length-1;setFrame(n)}
-$('first').onclick=()=>{stop();setFrame(0)};$('last').onclick=()=>{stop();setFrame(frames.length-1)};$('prev').onclick=()=>{stop();step(-1)};$('next').onclick=()=>{stop();step(1)};$('timeline').oninput=e=>{stop();setFrame(+e.target.value)};$('play').onclick=()=>{if(timer){stop();return}$('play').textContent='⏸ Pause';timer=setInterval(()=>step(1),+$('speed').value)};$('speed').onchange=()=>{if(timer){stop();$('play').click()}};$('zoom-in').onclick=()=>{zoom+=.1;applyZoom()};$('zoom-out').onclick=()=>{zoom-=.1;applyZoom()};$('zoom-reset').onclick=fitZoom;window.addEventListener('resize',()=>{if(zoom<=1)fitZoom()});
-load().catch(e=>$('canvas').innerHTML=`<div class="error">Unable to load roadmap: ${esc(String(e))}</div>`);
+function stop(){if(timer){clearInterval(timer);timer=null;$('play').textContent='▶ Play'}}function setFrame(n){previousNodes=parseMmd(frames[i].src);i=Math.max(0,Math.min(frames.length-1,n));render()}function step(v){let n=i+v;if(n>=frames.length)n=0;if(n<0)n=frames.length-1;setFrame(n)}
+$('first').onclick=()=>{stop();setFrame(0)};$('last').onclick=()=>{stop();setFrame(frames.length-1)};$('prev').onclick=()=>{stop();step(-1)};$('next').onclick=()=>{stop();step(1)};$('timeline').oninput=e=>{stop();setFrame(+e.target.value)};$('play').onclick=()=>{if(timer){stop();return}$('play').textContent='⏸ Pause';timer=setInterval(()=>step(1),+$('speed').value)};$('speed').onchange=()=>{if(timer){stop();$('play').click()}};$('zoom-in').onclick=()=>{zoom+=.1;applyZoom()};$('zoom-out').onclick=()=>{zoom-=.1;applyZoom()};$('zoom-reset').onclick=fitZoom;window.addEventListener('resize',()=>{if(zoom<=1)fitZoom()});load().catch(e=>$('canvas').innerHTML=`<div class="error">Unable to load roadmap: ${esc(String(e))}</div>`);
 </script>
 </body></html>
