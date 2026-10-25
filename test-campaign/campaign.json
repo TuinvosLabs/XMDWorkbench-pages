@@ -1,0 +1,5066 @@
+{
+  "schema_version": "xmd-public-test-campaign-v1",
+  "publication_state": "candidate-not-approved",
+  "disclaimer": "Evidence-first test PLAN. Canonical status is not test acceptance. No QES, full Quanty parity or material validation is claimed.",
+  "counts": {
+    "canonical_quanty_statuses": {
+      "intentionally-out-of-scope": 1,
+      "partial": 13,
+      "planned": 16,
+      "unassessed": 378
+    },
+    "canonical_capability_statuses": {
+      "green": 19,
+      "orange": 13,
+      "white": 17,
+      "yellow": 18
+    },
+    "quanty_record_kinds": {
+      "basic_component": 8,
+      "constant": 77,
+      "global_function": 65,
+      "object_callable": 70,
+      "object_operation": 17,
+      "object_property": 35,
+      "runtime": 3,
+      "standard_operator": 33,
+      "taxonomy_index": 60,
+      "tutorial_case": 40
+    },
+    "quanty_records": 408,
+    "callable_candidates": 135,
+    "global_functions": 65,
+    "object_callables": 70,
+    "capability_nodes": 67,
+    "proposed_product_tests": 29,
+    "campaign_accepted": 0
+  },
+  "gate_labels": {
+    "T0": "Documented semantic and parameter contract",
+    "T1": "Independent analytic / numerical reference",
+    "T2": "Adversarial, edge and resource-limit controls",
+    "T3": "Executable-SHA-pinned genuine Quanty comparison",
+    "T4": "Exact-head Windows and Linux CI",
+    "T5": "Reviewed stable public API and catalogue",
+    "T6": "End-to-end Workbench / user workflow",
+    "T7": "Typed accepted provenance and independent review",
+    "T8": "Independent experimental material validation"
+  },
+  "quanty": [
+    {
+      "id": "QT-1FB0513E22E1A178",
+      "name": "Basis",
+      "area": "Basic components",
+      "family": "MB-BASICS",
+      "kind": "basic_component",
+      "canonical_status": "partial",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/basics/basis"
+    },
+    {
+      "id": "QT-5FAC3B765189EEAA",
+      "name": "Eigen states",
+      "area": "Basic components",
+      "family": "MB-BASICS",
+      "kind": "basic_component",
+      "canonical_status": "partial",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/basics/eigen_states"
+    },
+    {
+      "id": "QT-60DC25D6C8CF9AB6",
+      "name": "Expectation values",
+      "area": "Basic components",
+      "family": "MB-BASICS",
+      "kind": "basic_component",
+      "canonical_status": "planned",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/basics/expectation_values"
+    },
+    {
+      "id": "QT-59BDC50C2A6FFE4F",
+      "name": "Fluorescence yield",
+      "area": "Basic components",
+      "family": "MB-BASICS",
+      "kind": "basic_component",
+      "canonical_status": "planned",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/basics/fluorescence_yield"
+    },
+    {
+      "id": "QT-1128A251A82B2243",
+      "name": "Operators",
+      "area": "Basic components",
+      "family": "MB-BASICS",
+      "kind": "basic_component",
+      "canonical_status": "partial",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/basics/operators"
+    },
+    {
+      "id": "QT-1243A1355F5B8EA3",
+      "name": "Resonant spectra",
+      "area": "Basic components",
+      "family": "MB-BASICS",
+      "kind": "basic_component",
+      "canonical_status": "planned",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/basics/resonant_spectra"
+    },
+    {
+      "id": "QT-4DE54CE41C04218E",
+      "name": "Spectra",
+      "area": "Basic components",
+      "family": "MB-BASICS",
+      "kind": "basic_component",
+      "canonical_status": "partial",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/basics/spectra"
+    },
+    {
+      "id": "QT-1C5695C678A89BA6",
+      "name": "Basic components",
+      "area": "Basic components",
+      "family": "DOC",
+      "kind": "taxonomy_index",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/basics/start"
+    },
+    {
+      "id": "QT-DFC94756E1FF0899",
+      "name": "Wave functions",
+      "area": "Basic components",
+      "family": "MB-BASICS",
+      "kind": "basic_component",
+      "canonical_status": "planned",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/basics/wave_functions"
+    },
+    {
+      "id": "QT-979547E974C65672",
+      "name": "Download a set of tutorials",
+      "area": "Documentation taxonomy",
+      "family": "DOC",
+      "kind": "taxonomy_index",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/download"
+    },
+    {
+      "id": "QT-101252AE3B60F477",
+      "name": "Getting started",
+      "area": "Documentation taxonomy",
+      "family": "DOC",
+      "kind": "taxonomy_index",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/getting_started"
+    },
+    {
+      "id": "QT-B81EC91E041DC882",
+      "name": "How to install Quanty",
+      "area": "Documentation taxonomy",
+      "family": "DOC",
+      "kind": "taxonomy_index",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/install"
+    },
+    {
+      "id": "QT-BB6E0CAE837DC90B",
+      "name": "Linux",
+      "area": "Documentation taxonomy",
+      "family": "DOC",
+      "kind": "taxonomy_index",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/install/linux"
+    },
+    {
+      "id": "QT-DDE9CD386271FC6C",
+      "name": "Mac",
+      "area": "Documentation taxonomy",
+      "family": "DOC",
+      "kind": "taxonomy_index",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/install/mac"
+    },
+    {
+      "id": "QT-B344DADA0D224626",
+      "name": "Mathematica",
+      "area": "Documentation taxonomy",
+      "family": "DOC",
+      "kind": "taxonomy_index",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/install/mathematica"
+    },
+    {
+      "id": "QT-D893C8DD5C4FC1BE",
+      "name": "Windows",
+      "area": "Documentation taxonomy",
+      "family": "DOC",
+      "kind": "taxonomy_index",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/install/windows"
+    },
+    {
+      "id": "QT-1D1DD2070EBE7A06",
+      "name": "EnergyUnits",
+      "area": "Constants",
+      "family": "DOC",
+      "kind": "taxonomy_index",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/energy_units"
+    },
+    {
+      "id": "QT-F400234064A95839",
+      "name": "EnergyUnits.Ha",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/energy_units"
+    },
+    {
+      "id": "QT-FFB23FD6BB403771",
+      "name": "EnergyUnits.Hartree",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/energy_units"
+    },
+    {
+      "id": "QT-EC2BCECA3680E78A",
+      "name": "EnergyUnits.J",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/energy_units"
+    },
+    {
+      "id": "QT-85834638CA127676",
+      "name": "EnergyUnits.Joule",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/energy_units"
+    },
+    {
+      "id": "QT-1E361719A21CEEBF",
+      "name": "EnergyUnits.K",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/energy_units"
+    },
+    {
+      "id": "QT-AB43E97499344092",
+      "name": "EnergyUnits.Kelvin",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/energy_units"
+    },
+    {
+      "id": "QT-9530EBB22ECF6315",
+      "name": "EnergyUnits.Ryd",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/energy_units"
+    },
+    {
+      "id": "QT-764CF9A753705107",
+      "name": "EnergyUnits.Ryd.description",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/energy_units"
+    },
+    {
+      "id": "QT-17B6C3FAAF31557D",
+      "name": "EnergyUnits.Ryd.units",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/energy_units"
+    },
+    {
+      "id": "QT-F8C40DA6CBA7E45C",
+      "name": "EnergyUnits.Ryd.value",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/energy_units"
+    },
+    {
+      "id": "QT-E0FC3F4A971C8E83",
+      "name": "EnergyUnits.Rydberg",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/energy_units"
+    },
+    {
+      "id": "QT-C033FB8632DD6C3E",
+      "name": "EnergyUnits.Set",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/energy_units"
+    },
+    {
+      "id": "QT-BF7536DEABE9D1A1",
+      "name": "EnergyUnits.T",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/energy_units"
+    },
+    {
+      "id": "QT-DB4C00C65E1254B4",
+      "name": "EnergyUnits.THz",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/energy_units"
+    },
+    {
+      "id": "QT-B1A76066531D20BC",
+      "name": "EnergyUnits.TeraHz",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/energy_units"
+    },
+    {
+      "id": "QT-A94391ED2751F3BA",
+      "name": "EnergyUnits.Tesla",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/energy_units"
+    },
+    {
+      "id": "QT-7CE1F9E9185538AA",
+      "name": "EnergyUnits.cm^-1",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/energy_units"
+    },
+    {
+      "id": "QT-1AC56FF962D3BB95",
+      "name": "EnergyUnits.eV",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/energy_units"
+    },
+    {
+      "id": "QT-9D9F3B183A19E8BD",
+      "name": "EnergyUnits.electron Volt",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/energy_units"
+    },
+    {
+      "id": "QT-8767C2322002FFC1",
+      "name": "EnergyUnits.fs^-1",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/energy_units"
+    },
+    {
+      "id": "QT-0FD94DC3CF5ED55C",
+      "name": "EnergyUnits.nm^-1",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/energy_units"
+    },
+    {
+      "id": "QT-DEE95B90772B068F",
+      "name": "EnergyUnits.percm",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/energy_units"
+    },
+    {
+      "id": "QT-8058A01EE7D0F4FB",
+      "name": "EnergyUnits.perfs",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/energy_units"
+    },
+    {
+      "id": "QT-2F09B3E6972A8183",
+      "name": "EnergyUnits.pernm",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/energy_units"
+    },
+    {
+      "id": "QT-2C868B082B0E4139",
+      "name": "PhysicalConstants",
+      "area": "Constants",
+      "family": "DOC",
+      "kind": "taxonomy_index",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/physical_constants"
+    },
+    {
+      "id": "QT-656B70665CAFBC9A",
+      "name": "PhysicalConstants.F",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/physical_constants"
+    },
+    {
+      "id": "QT-04DD06A212E9DCDF",
+      "name": "PhysicalConstants.G",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/physical_constants"
+    },
+    {
+      "id": "QT-A21261C41049A504",
+      "name": "PhysicalConstants.G0",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/physical_constants"
+    },
+    {
+      "id": "QT-CACA9E27D9049503",
+      "name": "PhysicalConstants.KJ",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/physical_constants"
+    },
+    {
+      "id": "QT-2BDC1CF15AFD5DDF",
+      "name": "PhysicalConstants.NA",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/physical_constants"
+    },
+    {
+      "id": "QT-204A1151566A574C",
+      "name": "PhysicalConstants.Phi0",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/physical_constants"
+    },
+    {
+      "id": "QT-7E06A122A632EC95",
+      "name": "PhysicalConstants.R",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/physical_constants"
+    },
+    {
+      "id": "QT-18A0AA3BC0E23505",
+      "name": "PhysicalConstants.R0",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/physical_constants"
+    },
+    {
+      "id": "QT-A84AA60C78E5B983",
+      "name": "PhysicalConstants.RK",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/physical_constants"
+    },
+    {
+      "id": "QT-AF3E0EEE6B1A5D1F",
+      "name": "PhysicalConstants.TPlanck",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/physical_constants"
+    },
+    {
+      "id": "QT-81784C0B69268E8F",
+      "name": "PhysicalConstants.Z0",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/physical_constants"
+    },
+    {
+      "id": "QT-4CE9D1C984569CF6",
+      "name": "PhysicalConstants.a0",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/physical_constants"
+    },
+    {
+      "id": "QT-3CE39C2B0EAE8BBB",
+      "name": "PhysicalConstants.alpha",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/physical_constants"
+    },
+    {
+      "id": "QT-873E6A337D5EFCF6",
+      "name": "PhysicalConstants.c",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/physical_constants"
+    },
+    {
+      "id": "QT-9621FE1A08BD740A",
+      "name": "PhysicalConstants.e",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/physical_constants"
+    },
+    {
+      "id": "QT-2957EDAA4411D1B4",
+      "name": "PhysicalConstants.epsilon0",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/physical_constants"
+    },
+    {
+      "id": "QT-DD1C75387068E429",
+      "name": "PhysicalConstants.gd",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/physical_constants"
+    },
+    {
+      "id": "QT-6DF5BA4D048E3324",
+      "name": "PhysicalConstants.ge",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/physical_constants"
+    },
+    {
+      "id": "QT-0EB5D3CC6FA66E7F",
+      "name": "PhysicalConstants.gmu",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/physical_constants"
+    },
+    {
+      "id": "QT-DC2F00BFCB8FD55A",
+      "name": "PhysicalConstants.gn",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/physical_constants"
+    },
+    {
+      "id": "QT-943D054897A0352C",
+      "name": "PhysicalConstants.gp",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/physical_constants"
+    },
+    {
+      "id": "QT-91795410D7941981",
+      "name": "PhysicalConstants.h",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/physical_constants"
+    },
+    {
+      "id": "QT-5D54C5F0D90239D8",
+      "name": "PhysicalConstants.hbar",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/physical_constants"
+    },
+    {
+      "id": "QT-9501E97024C361A6",
+      "name": "PhysicalConstants.kB",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/physical_constants"
+    },
+    {
+      "id": "QT-E482C2F2887547D8",
+      "name": "PhysicalConstants.lPlanck",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/physical_constants"
+    },
+    {
+      "id": "QT-CF37DECA588F76EF",
+      "name": "PhysicalConstants.lambdaCe",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/physical_constants"
+    },
+    {
+      "id": "QT-92A673A67E4965A0",
+      "name": "PhysicalConstants.lambdaCmu",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/physical_constants"
+    },
+    {
+      "id": "QT-1C41F8361286EAFC",
+      "name": "PhysicalConstants.lambdaCn",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/physical_constants"
+    },
+    {
+      "id": "QT-5B3BE1DF95D1996F",
+      "name": "PhysicalConstants.lambdaCp",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/physical_constants"
+    },
+    {
+      "id": "QT-53D1A35549D9A8B2",
+      "name": "PhysicalConstants.lambdaCtau",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/physical_constants"
+    },
+    {
+      "id": "QT-BA8CF49FEC217CE0",
+      "name": "PhysicalConstants.mPlanck",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/physical_constants"
+    },
+    {
+      "id": "QT-596AFE05DC09B16F",
+      "name": "PhysicalConstants.malpha",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/physical_constants"
+    },
+    {
+      "id": "QT-74D87FA50302DF97",
+      "name": "PhysicalConstants.md",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/physical_constants"
+    },
+    {
+      "id": "QT-5ED813BB6C698783",
+      "name": "PhysicalConstants.me",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/physical_constants"
+    },
+    {
+      "id": "QT-399C914E6B3B7F37",
+      "name": "PhysicalConstants.me.description",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/physical_constants"
+    },
+    {
+      "id": "QT-7088F3A302BC3CA6",
+      "name": "PhysicalConstants.me.units",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/physical_constants"
+    },
+    {
+      "id": "QT-2E972BF7219E54D5",
+      "name": "PhysicalConstants.me.value",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/physical_constants"
+    },
+    {
+      "id": "QT-5C5DAFC16DA3130C",
+      "name": "PhysicalConstants.mmu",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/physical_constants"
+    },
+    {
+      "id": "QT-F3941C505467BABE",
+      "name": "PhysicalConstants.mn",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/physical_constants"
+    },
+    {
+      "id": "QT-2495EC3301D782FC",
+      "name": "PhysicalConstants.mp",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/physical_constants"
+    },
+    {
+      "id": "QT-55AC050FB00C847D",
+      "name": "PhysicalConstants.mtau",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/physical_constants"
+    },
+    {
+      "id": "QT-25B5AAB28192ECEB",
+      "name": "PhysicalConstants.mu",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/physical_constants"
+    },
+    {
+      "id": "QT-447A390D9CB2B41C",
+      "name": "PhysicalConstants.mu0",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/physical_constants"
+    },
+    {
+      "id": "QT-A2E01298F486DE51",
+      "name": "PhysicalConstants.muB",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/physical_constants"
+    },
+    {
+      "id": "QT-D1C2D0995F54057F",
+      "name": "PhysicalConstants.muN",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/physical_constants"
+    },
+    {
+      "id": "QT-8128B6BE83FE568A",
+      "name": "PhysicalConstants.mud",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/physical_constants"
+    },
+    {
+      "id": "QT-14B7B089912FB1D9",
+      "name": "PhysicalConstants.mue",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/physical_constants"
+    },
+    {
+      "id": "QT-7A2AA1ED8C1F20BA",
+      "name": "PhysicalConstants.mumu",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/physical_constants"
+    },
+    {
+      "id": "QT-DE45F2264BDFC182",
+      "name": "PhysicalConstants.mun",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/physical_constants"
+    },
+    {
+      "id": "QT-5697B37FB0B25FB6",
+      "name": "PhysicalConstants.mup",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/physical_constants"
+    },
+    {
+      "id": "QT-D7598EDC25D49194",
+      "name": "PhysicalConstants.re",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/physical_constants"
+    },
+    {
+      "id": "QT-81FAA4E5B4E0FDFE",
+      "name": "PhysicalConstants.sigma",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/physical_constants"
+    },
+    {
+      "id": "QT-5D7E47F9285C181A",
+      "name": "PhysicalConstants.tPlanck",
+      "area": "Constants",
+      "family": "CONST",
+      "kind": "constant",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/physical_constants"
+    },
+    {
+      "id": "QT-3E1E6C43B5010C03",
+      "name": "Constants",
+      "area": "Constants",
+      "family": "DOC",
+      "kind": "taxonomy_index",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/constants/start"
+    },
+    {
+      "id": "QT-94A06B0B3E1EF962",
+      "name": "AtomicNumberOperators",
+      "area": "Global functions",
+      "family": "F02",
+      "kind": "global_function",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/functions/atomicnumberoperators"
+    },
+    {
+      "id": "QT-248647342684E8F4",
+      "name": "BitMaskToIndex",
+      "area": "Global functions",
+      "family": "F01",
+      "kind": "global_function",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/functions/bitmasktoindex"
+    },
+    {
+      "id": "QT-ACDAFD5129452B84",
+      "name": "BlockBandDiagonalize",
+      "area": "Global functions",
+      "family": "F03",
+      "kind": "global_function",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/functions/blockbanddiagonalize"
+    },
+    {
+      "id": "QT-B1C933AB4559BADF",
+      "name": "Braket",
+      "area": "Global functions",
+      "family": "F01",
+      "kind": "global_function",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/functions/braket"
+    },
+    {
+      "id": "QT-195C72EDC661770B",
+      "name": "BraketDiagonal",
+      "area": "Global functions",
+      "family": "F01",
+      "kind": "global_function",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/functions/braketdiagonal"
+    },
+    {
+      "id": "QT-2777903BA31BE8F2",
+      "name": "CalculateG",
+      "area": "Global functions",
+      "family": "F04",
+      "kind": "global_function",
+      "canonical_status": "planned",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/functions/calculateg"
+    },
+    {
+      "id": "QT-1187E7F2F0781984",
+      "name": "CalculateRho",
+      "area": "Global functions",
+      "family": "F06",
+      "kind": "global_function",
+      "canonical_status": "planned",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/functions/calculaterho"
+    },
+    {
+      "id": "QT-00BBDA30FFC4729D",
+      "name": "Chop",
+      "area": "Global functions",
+      "family": "F02",
+      "kind": "global_function",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/functions/chop"
+    },
+    {
+      "id": "QT-A8F0D01172CB5EAF",
+      "name": "Clone",
+      "area": "Global functions",
+      "family": "F02",
+      "kind": "global_function",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/functions/clone"
+    },
+    {
+      "id": "QT-3F488A0D1C56FBFC",
+      "name": "Conjugate",
+      "area": "Global functions",
+      "family": "F02",
+      "kind": "global_function",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/functions/conjugate"
+    },
+    {
+      "id": "QT-55E742409D0EACF8",
+      "name": "ConjugateTranspose",
+      "area": "Global functions",
+      "family": "F02",
+      "kind": "global_function",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/functions/conjugatetranspose"
+    },
+    {
+      "id": "QT-E8786EB1BCD193A2",
+      "name": "Copy",
+      "area": "Global functions",
+      "family": "F02",
+      "kind": "global_function",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/functions/copy"
+    },
+    {
+      "id": "QT-05021B2F356B46DE",
+      "name": "CreateAtomicIndicesDict",
+      "area": "Global functions",
+      "family": "F01",
+      "kind": "global_function",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/functions/createatomicindicesdict"
+    },
+    {
+      "id": "QT-F5E025DFA988BCF8",
+      "name": "CreateAtomicIndicesList",
+      "area": "Global functions",
+      "family": "F01",
+      "kind": "global_function",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/functions/createatomicindiceslist"
+    },
+    {
+      "id": "QT-40FA828EC41423E1",
+      "name": "CreateClusterHamiltonian",
+      "area": "Global functions",
+      "family": "F05",
+      "kind": "global_function",
+      "canonical_status": "planned",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/functions/createclusterhamiltonian"
+    },
+    {
+      "id": "QT-1B3A2339F0FA7091",
+      "name": "CreateFluorescenceYield",
+      "area": "Global functions",
+      "family": "F04",
+      "kind": "global_function",
+      "canonical_status": "planned",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/functions/createfluorescenceyield"
+    },
+    {
+      "id": "QT-8BAC027A62DA83FE",
+      "name": "CreateResonantSpectra",
+      "area": "Global functions",
+      "family": "F04",
+      "kind": "global_function",
+      "canonical_status": "planned",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/functions/createresonantspectra"
+    },
+    {
+      "id": "QT-CC61F529260F03F9",
+      "name": "CreateSpectra",
+      "area": "Global functions",
+      "family": "F04",
+      "kind": "global_function",
+      "canonical_status": "partial",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/functions/createspectra"
+    },
+    {
+      "id": "QT-987416E4B717EF3D",
+      "name": "DensityMatrix",
+      "area": "Global functions",
+      "family": "F06",
+      "kind": "global_function",
+      "canonical_status": "planned",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/functions/densitymatrix"
+    },
+    {
+      "id": "QT-B9C3BD0DA4256321",
+      "name": "DeterminantString",
+      "area": "Global functions",
+      "family": "F01",
+      "kind": "global_function",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/functions/determinantstring"
+    },
+    {
+      "id": "QT-54A1909339DB2971",
+      "name": "Eigensystem",
+      "area": "Global functions",
+      "family": "F03",
+      "kind": "global_function",
+      "canonical_status": "partial",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/functions/eigensystem"
+    },
+    {
+      "id": "QT-1D5176F3E87C284C",
+      "name": "EvolveToGroundstate",
+      "area": "Global functions",
+      "family": "F03",
+      "kind": "global_function",
+      "canonical_status": "planned",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/functions/evolvetogroundstate"
+    },
+    {
+      "id": "QT-F6DBAFF729AAB309",
+      "name": "Expand",
+      "area": "Global functions",
+      "family": "F01",
+      "kind": "global_function",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/functions/expand"
+    },
+    {
+      "id": "QT-BF74E278613A11CC",
+      "name": "ExpandToBasis",
+      "area": "Global functions",
+      "family": "F01",
+      "kind": "global_function",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/functions/expandtobasis"
+    },
+    {
+      "id": "QT-6739091B367360F5",
+      "name": "FileReadDresdenFPLO",
+      "area": "Global functions",
+      "family": "F05",
+      "kind": "global_function",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/functions/filereaddresdenfplo"
+    },
+    {
+      "id": "QT-272103C8C46FC648",
+      "name": "FileReadStuttgartCTRL",
+      "area": "Global functions",
+      "family": "F05",
+      "kind": "global_function",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/functions/filereadstuttgartctrl"
+    },
+    {
+      "id": "QT-C5710ED8CC77FE37",
+      "name": "FileReadStuttgartHAMR",
+      "area": "Global functions",
+      "family": "F05",
+      "kind": "global_function",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/functions/filereadstuttgarthamr"
+    },
+    {
+      "id": "QT-E4D0DC91EB6BDFD3",
+      "name": "FindAllAtomsInsideSphere",
+      "area": "Global functions",
+      "family": "F05",
+      "kind": "global_function",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/functions/findallatomsinsidesphere"
+    },
+    {
+      "id": "QT-53C3907C9D29219D",
+      "name": "GetMultipoleBesselIntegral",
+      "area": "Global functions",
+      "family": "F04",
+      "kind": "global_function",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/functions/getmultipolebesselintegral"
+    },
+    {
+      "id": "QT-D4370C758074FC4A",
+      "name": "GetMultipoleIntegral",
+      "area": "Global functions",
+      "family": "F04",
+      "kind": "global_function",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/functions/getmultipoleintegral"
+    },
+    {
+      "id": "QT-DD491952D17D938B",
+      "name": "GetSlaterIntegrals",
+      "area": "Global functions",
+      "family": "F04",
+      "kind": "global_function",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/functions/getslaterintegrals"
+    },
+    {
+      "id": "QT-D438A7947389C0D3",
+      "name": "HybridizationFunctionFromFPLO",
+      "area": "Global functions",
+      "family": "F05",
+      "kind": "global_function",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/functions/hybridizationfunctionfromfplo"
+    },
+    {
+      "id": "QT-FC4795AC95893114",
+      "name": "IndexToBitMask",
+      "area": "Global functions",
+      "family": "F01",
+      "kind": "global_function",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/functions/indextobitmask"
+    },
+    {
+      "id": "QT-99A31B575591C348",
+      "name": "Inverse",
+      "area": "Global functions",
+      "family": "F02",
+      "kind": "global_function",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/functions/inverse"
+    },
+    {
+      "id": "QT-94A753C9A840AC26",
+      "name": "io.Get",
+      "area": "Global functions",
+      "family": "F07",
+      "kind": "global_function",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/functions/io.get"
+    },
+    {
+      "id": "QT-447FDC59245C8777",
+      "name": "io.put",
+      "area": "Global functions",
+      "family": "F07",
+      "kind": "global_function",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/functions/io.put"
+    },
+    {
+      "id": "QT-DBF117D9811E487B",
+      "name": "MeanFieldGroundstate",
+      "area": "Global functions",
+      "family": "F06",
+      "kind": "global_function",
+      "canonical_status": "planned",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/functions/meanfieldgroundstate"
+    },
+    {
+      "id": "QT-A43E338BC2C7E894",
+      "name": "MeanFieldOperator",
+      "area": "Global functions",
+      "family": "F06",
+      "kind": "global_function",
+      "canonical_status": "planned",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/functions/meanfieldoperator"
+    },
+    {
+      "id": "QT-C1F0CBACA05E4218",
+      "name": "NewOperator",
+      "area": "Global functions",
+      "family": "F02",
+      "kind": "global_function",
+      "canonical_status": "partial",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/functions/newoperator"
+    },
+    {
+      "id": "QT-6B57138EF357B4F7",
+      "name": "NewTightBinding",
+      "area": "Global functions",
+      "family": "F05",
+      "kind": "global_function",
+      "canonical_status": "planned",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/functions/newtightbinding"
+    },
+    {
+      "id": "QT-BDB7BE8C9F8C6F45",
+      "name": "NewWavefunction",
+      "area": "Global functions",
+      "family": "F01",
+      "kind": "global_function",
+      "canonical_status": "planned",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/functions/newwavefunction"
+    },
+    {
+      "id": "QT-FF108151F54DDF3E",
+      "name": "OperatorSetOnsiteEnergy",
+      "area": "Global functions",
+      "family": "F02",
+      "kind": "global_function",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/functions/operatorsetonsiteenergy"
+    },
+    {
+      "id": "QT-E82E3A72E324A5EB",
+      "name": "OperatorSetTrace",
+      "area": "Global functions",
+      "family": "F02",
+      "kind": "global_function",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/functions/operatorsettrace"
+    },
+    {
+      "id": "QT-A42E28E8B710D6C1",
+      "name": "OperatorToMatrix",
+      "area": "Global functions",
+      "family": "F02",
+      "kind": "global_function",
+      "canonical_status": "partial",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/functions/operatortomatrix"
+    },
+    {
+      "id": "QT-EBB47B9365D3CF1D",
+      "name": "OrbitalRotationMatrix",
+      "area": "Global functions",
+      "family": "F02",
+      "kind": "global_function",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/functions/orbitalrotationmatrix"
+    },
+    {
+      "id": "QT-DF04F863B12CB6C6",
+      "name": "OrbToMultiplicity",
+      "area": "Global functions",
+      "family": "F01",
+      "kind": "global_function",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/functions/orbtomultiplicity"
+    },
+    {
+      "id": "QT-8DE602DEF06709C6",
+      "name": "Orthonormalize",
+      "area": "Global functions",
+      "family": "F01",
+      "kind": "global_function",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/functions/orthonormalize"
+    },
+    {
+      "id": "QT-10B80502F628505D",
+      "name": "PartialMeanFieldOperator",
+      "area": "Global functions",
+      "family": "F06",
+      "kind": "global_function",
+      "canonical_status": "planned",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/functions/partialmeanfieldoperator"
+    },
+    {
+      "id": "QT-8579F8F00868C914",
+      "name": "PartialOperator",
+      "area": "Global functions",
+      "family": "F02",
+      "kind": "global_function",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/functions/partialoperator"
+    },
+    {
+      "id": "QT-C27F4B1754F4F777",
+      "name": "PotentialExpandedOnClm",
+      "area": "Global functions",
+      "family": "F04",
+      "kind": "global_function",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/functions/potentialexpandedonclm"
+    },
+    {
+      "id": "QT-AA54BE337A63F5E0",
+      "name": "PrintExpectationValues",
+      "area": "Global functions",
+      "family": "F01",
+      "kind": "global_function",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/functions/printexpectationvalues"
+    },
+    {
+      "id": "QT-2DEF6094D30E4491",
+      "name": "ReadFPLO",
+      "area": "Global functions",
+      "family": "F05",
+      "kind": "global_function",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/functions/readfplo"
+    },
+    {
+      "id": "QT-DD0B5F083852558A",
+      "name": "ReadFPLOBasisFunctions",
+      "area": "Global functions",
+      "family": "F05",
+      "kind": "global_function",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/functions/readfplobasisfunctions"
+    },
+    {
+      "id": "QT-2C307258BB40FF26",
+      "name": "Rotate",
+      "area": "Global functions",
+      "family": "F02",
+      "kind": "global_function",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/functions/rotate"
+    },
+    {
+      "id": "QT-70CA2D98486D05E1",
+      "name": "Functions",
+      "area": "Global functions",
+      "family": "DOC",
+      "kind": "taxonomy_index",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/functions/start"
+    },
+    {
+      "id": "QT-4E838689E16030FA",
+      "name": "Statistics",
+      "area": "Global functions",
+      "family": "F07",
+      "kind": "global_function",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/functions/statistics"
+    },
+    {
+      "id": "QT-970CB351043D1AA3",
+      "name": "TightBindingDefFromDresdenFPLO",
+      "area": "Global functions",
+      "family": "F05",
+      "kind": "global_function",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/functions/tightbindingdeffromdresdenfplo"
+    },
+    {
+      "id": "QT-B63B736555B86005",
+      "name": "TightBindingDefFromStuttgartCTRLHAMR",
+      "area": "Global functions",
+      "family": "F05",
+      "kind": "global_function",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/functions/tightbindingdeffromstuttgartctrlhamr"
+    },
+    {
+      "id": "QT-598DF1564B21BB81",
+      "name": "TimeEnd",
+      "area": "Global functions",
+      "family": "F07",
+      "kind": "global_function",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/functions/timeend"
+    },
+    {
+      "id": "QT-D443D75738585AAB",
+      "name": "TimePrint",
+      "area": "Global functions",
+      "family": "F07",
+      "kind": "global_function",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/functions/timeprint"
+    },
+    {
+      "id": "QT-9764EF564C1145DF",
+      "name": "TimeStart",
+      "area": "Global functions",
+      "family": "F07",
+      "kind": "global_function",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/functions/timestart"
+    },
+    {
+      "id": "QT-13F87D41AA5B0A0E",
+      "name": "Transpose",
+      "area": "Global functions",
+      "family": "F02",
+      "kind": "global_function",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/functions/transpose"
+    },
+    {
+      "id": "QT-CFB7DFF0C33C0159",
+      "name": "Verbosity",
+      "area": "Global functions",
+      "family": "F07",
+      "kind": "global_function",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/functions/verbosity"
+    },
+    {
+      "id": "QT-DCF36AFF9A72F499",
+      "name": "YtojjzMatrix",
+      "area": "Global functions",
+      "family": "F02",
+      "kind": "global_function",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/functions/ytojjzmatrix"
+    },
+    {
+      "id": "QT-88632ABF3704D5FA",
+      "name": "YtoKMatrix",
+      "area": "Global functions",
+      "family": "F02",
+      "kind": "global_function",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/functions/ytokmatrix"
+    },
+    {
+      "id": "QT-05E2BD6F25EA5D65",
+      "name": "YtoZMatrix",
+      "area": "Global functions",
+      "family": "F02",
+      "kind": "global_function",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/functions/ytozmatrix"
+    },
+    {
+      "id": "QT-F8EEC0E108AF5F1E",
+      "name": "I",
+      "area": "Objects / complex / functions",
+      "family": "O-COMPLEX",
+      "kind": "object_callable",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/complex/functions/i"
+    },
+    {
+      "id": "QT-97F720539C087607",
+      "name": "Im",
+      "area": "Objects / complex / functions",
+      "family": "O-COMPLEX",
+      "kind": "object_callable",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/complex/functions/im"
+    },
+    {
+      "id": "QT-91995EF7E231BF29",
+      "name": "Complex.New",
+      "area": "Objects / complex / functions",
+      "family": "O-COMPLEX",
+      "kind": "object_callable",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/complex/functions/new"
+    },
+    {
+      "id": "QT-893266D320ED6DAD",
+      "name": "Re",
+      "area": "Objects / complex / functions",
+      "family": "O-COMPLEX",
+      "kind": "object_callable",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/complex/functions/re"
+    },
+    {
+      "id": "QT-362ACD9741618D03",
+      "name": "Functions",
+      "area": "Objects / complex / functions",
+      "family": "DOC",
+      "kind": "taxonomy_index",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/complex/functions/start"
+    },
+    {
+      "id": "QT-341F53FFD64110FE",
+      "name": "Methods",
+      "area": "Objects / complex / methods",
+      "family": "DOC",
+      "kind": "taxonomy_index",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/complex/methods/start"
+    },
+    {
+      "id": "QT-21868F5548B5D061",
+      "name": "Im",
+      "area": "Objects / complex / properties",
+      "family": "O-COMPLEX",
+      "kind": "object_property",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/complex/properties/im"
+    },
+    {
+      "id": "QT-02BF9A0A6638B6CA",
+      "name": "Re",
+      "area": "Objects / complex / properties",
+      "family": "O-COMPLEX",
+      "kind": "object_property",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/complex/properties/re"
+    },
+    {
+      "id": "QT-60A04B4A9C8AD1FB",
+      "name": "Properties",
+      "area": "Objects / complex / properties",
+      "family": "DOC",
+      "kind": "taxonomy_index",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/complex/properties/start"
+    },
+    {
+      "id": "QT-77593ADD4D870B3E",
+      "name": "Complex",
+      "area": "Objects / complex",
+      "family": "DOC",
+      "kind": "taxonomy_index",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/complex/start"
+    },
+    {
+      "id": "QT-B12B4AF640A6E7D1",
+      "name": "B-Spline",
+      "area": "Objects / interpolatingfunction / functions",
+      "family": "O-INTERPOLATINGFUNCTION",
+      "kind": "object_callable",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/interpolatingfunction/functions/bspline"
+    },
+    {
+      "id": "QT-5B22D7B89E3C1870",
+      "name": "Integrate",
+      "area": "Objects / interpolatingfunction / functions",
+      "family": "O-INTERPOLATINGFUNCTION",
+      "kind": "object_callable",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/interpolatingfunction/functions/integrate"
+    },
+    {
+      "id": "QT-025EB9B158FA3C87",
+      "name": "HermiteCSpline",
+      "area": "Objects / interpolatingfunction / functions",
+      "family": "O-INTERPOLATINGFUNCTION",
+      "kind": "object_callable",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/interpolatingfunction/functions/monotoniccspline"
+    },
+    {
+      "id": "QT-EBE3C69B04E6BE66",
+      "name": "Spline",
+      "area": "Objects / interpolatingfunction / functions",
+      "family": "O-INTERPOLATINGFUNCTION",
+      "kind": "object_callable",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/interpolatingfunction/functions/spline"
+    },
+    {
+      "id": "QT-22611236A0F6470A",
+      "name": "Functions",
+      "area": "Objects / interpolatingfunction / functions",
+      "family": "DOC",
+      "kind": "taxonomy_index",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/interpolatingfunction/functions/start"
+    },
+    {
+      "id": "QT-5EA2ADCDF3D9FF43",
+      "name": "Methods",
+      "area": "Objects / interpolatingfunction / methods",
+      "family": "DOC",
+      "kind": "taxonomy_index",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/interpolatingfunction/methods/start"
+    },
+    {
+      "id": "QT-F78D1ADAE1C88AC4",
+      "name": "Properties",
+      "area": "Objects / interpolatingfunction / properties",
+      "family": "DOC",
+      "kind": "taxonomy_index",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/interpolatingfunction/properties/start"
+    },
+    {
+      "id": "QT-6DF7F9B7816F660F",
+      "name": "Interpolating function",
+      "area": "Objects / interpolatingfunction",
+      "family": "DOC",
+      "kind": "taxonomy_index",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/interpolatingfunction/start"
+    },
+    {
+      "id": "QT-D449AE8915B6E4BF",
+      "name": "AddSpin",
+      "area": "Objects / matrix / functions",
+      "family": "O-MATRIX",
+      "kind": "object_callable",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/matrix/functions/addspin"
+    },
+    {
+      "id": "QT-6FF0B9FE9B66B463",
+      "name": "Conjugate",
+      "area": "Objects / matrix / functions",
+      "family": "O-MATRIX",
+      "kind": "object_callable",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/matrix/functions/conjugate"
+    },
+    {
+      "id": "QT-3052303CB6C45872",
+      "name": "ConjugateTranspose",
+      "area": "Objects / matrix / functions",
+      "family": "O-MATRIX",
+      "kind": "object_callable",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/matrix/functions/conjugatetranspose"
+    },
+    {
+      "id": "QT-A729A44676870096",
+      "name": "Diagonal",
+      "area": "Objects / matrix / functions",
+      "family": "O-MATRIX",
+      "kind": "object_callable",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/matrix/functions/diagonal"
+    },
+    {
+      "id": "QT-624D7A640849518C",
+      "name": "Matrix.Eigensystem",
+      "area": "Objects / matrix / functions",
+      "family": "O-MATRIX",
+      "kind": "object_callable",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/matrix/functions/eigensystem"
+    },
+    {
+      "id": "QT-F17A3ADE77DCA08D",
+      "name": "Enlarge",
+      "area": "Objects / matrix / functions",
+      "family": "O-MATRIX",
+      "kind": "object_callable",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/matrix/functions/enlarge"
+    },
+    {
+      "id": "QT-1B2576E06CBC0859",
+      "name": "Exp",
+      "area": "Objects / matrix / functions",
+      "family": "O-MATRIX",
+      "kind": "object_callable",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/matrix/functions/exp"
+    },
+    {
+      "id": "QT-4323BFD93B489A98",
+      "name": "Expand",
+      "area": "Objects / matrix / functions",
+      "family": "O-MATRIX",
+      "kind": "object_callable",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/matrix/functions/expand"
+    },
+    {
+      "id": "QT-AE41C2051450F0ED",
+      "name": "Flatten",
+      "area": "Objects / matrix / functions",
+      "family": "O-MATRIX",
+      "kind": "object_callable",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/matrix/functions/flatten"
+    },
+    {
+      "id": "QT-E89BC5C6B498A631",
+      "name": "Identity",
+      "area": "Objects / matrix / functions",
+      "family": "O-MATRIX",
+      "kind": "object_callable",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/matrix/functions/identity"
+    },
+    {
+      "id": "QT-FDBF6D68DA6F4C23",
+      "name": "Inverse",
+      "area": "Objects / matrix / functions",
+      "family": "O-MATRIX",
+      "kind": "object_callable",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/matrix/functions/inverse"
+    },
+    {
+      "id": "QT-CE0278BB35E41D3C",
+      "name": "Matrix.New",
+      "area": "Objects / matrix / functions",
+      "family": "O-MATRIX",
+      "kind": "object_callable",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/matrix/functions/new"
+    },
+    {
+      "id": "QT-8ED557F9911E6DE3",
+      "name": "Random",
+      "area": "Objects / matrix / functions",
+      "family": "O-MATRIX",
+      "kind": "object_callable",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/matrix/functions/random"
+    },
+    {
+      "id": "QT-9B9F09522017E35F",
+      "name": "RemoveSpin",
+      "area": "Objects / matrix / functions",
+      "family": "O-MATRIX",
+      "kind": "object_callable",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/matrix/functions/removespin"
+    },
+    {
+      "id": "QT-95B22E3DE679D673",
+      "name": "Rotate",
+      "area": "Objects / matrix / functions",
+      "family": "O-MATRIX",
+      "kind": "object_callable",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/matrix/functions/rotate"
+    },
+    {
+      "id": "QT-0EFFB8AFE085563E",
+      "name": "Sqrt",
+      "area": "Objects / matrix / functions",
+      "family": "O-MATRIX",
+      "kind": "object_callable",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/matrix/functions/sqrt"
+    },
+    {
+      "id": "QT-3620380D3BFED186",
+      "name": "Functions",
+      "area": "Objects / matrix / functions",
+      "family": "DOC",
+      "kind": "taxonomy_index",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/matrix/functions/start"
+    },
+    {
+      "id": "QT-4F6EFC96733E5BFD",
+      "name": "Sub",
+      "area": "Objects / matrix / functions",
+      "family": "O-MATRIX",
+      "kind": "object_callable",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/matrix/functions/sub"
+    },
+    {
+      "id": "QT-12F8567FC7A7DD3C",
+      "name": "ToOperator",
+      "area": "Objects / matrix / functions",
+      "family": "O-MATRIX",
+      "kind": "object_callable",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/matrix/functions/tooperator"
+    },
+    {
+      "id": "QT-E3A87ACB11C9AB0F",
+      "name": "Matrix.ToTable",
+      "area": "Objects / matrix / functions",
+      "family": "O-MATRIX",
+      "kind": "object_callable",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/matrix/functions/totable"
+    },
+    {
+      "id": "QT-BF1FD25315449592",
+      "name": "Matrix.ToUserdata",
+      "area": "Objects / matrix / functions",
+      "family": "O-MATRIX",
+      "kind": "object_callable",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/matrix/functions/touserdata"
+    },
+    {
+      "id": "QT-56B3A464E12414A8",
+      "name": "Transpose",
+      "area": "Objects / matrix / functions",
+      "family": "O-MATRIX",
+      "kind": "object_callable",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/matrix/functions/transpose"
+    },
+    {
+      "id": "QT-8587D7D01D220E6E",
+      "name": "Tridiagonalize",
+      "area": "Objects / matrix / functions",
+      "family": "O-MATRIX",
+      "kind": "object_callable",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/matrix/functions/tridiagonalize"
+    },
+    {
+      "id": "QT-98B3D3810A8E1399",
+      "name": "Zero",
+      "area": "Objects / matrix / functions",
+      "family": "O-MATRIX",
+      "kind": "object_callable",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/matrix/functions/zero"
+    },
+    {
+      "id": "QT-9F0F6FFB6CF0C2C5",
+      "name": "Add",
+      "area": "Objects / matrix / operations",
+      "family": "O-MATRIX",
+      "kind": "object_operation",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/matrix/operations/add"
+    },
+    {
+      "id": "QT-24532EF5690E58DF",
+      "name": "Div",
+      "area": "Objects / matrix / operations",
+      "family": "O-MATRIX",
+      "kind": "object_operation",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/matrix/operations/div"
+    },
+    {
+      "id": "QT-633DBB61ACD1AF17",
+      "name": "Eq",
+      "area": "Objects / matrix / operations",
+      "family": "O-MATRIX",
+      "kind": "object_operation",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/matrix/operations/eq"
+    },
+    {
+      "id": "QT-97AF5E292356E69F",
+      "name": "Index",
+      "area": "Objects / matrix / operations",
+      "family": "O-MATRIX",
+      "kind": "object_operation",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/matrix/operations/index"
+    },
+    {
+      "id": "QT-779231AE679B4DF5",
+      "name": "Len",
+      "area": "Objects / matrix / operations",
+      "family": "O-MATRIX",
+      "kind": "object_operation",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/matrix/operations/len"
+    },
+    {
+      "id": "QT-0D0FA945007A6A11",
+      "name": "Mul",
+      "area": "Objects / matrix / operations",
+      "family": "O-MATRIX",
+      "kind": "object_operation",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/matrix/operations/mul"
+    },
+    {
+      "id": "QT-9B0724625956AA5A",
+      "name": "Newindex",
+      "area": "Objects / matrix / operations",
+      "family": "O-MATRIX",
+      "kind": "object_operation",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/matrix/operations/newindex"
+    },
+    {
+      "id": "QT-345C157B8254927A",
+      "name": "Pow",
+      "area": "Objects / matrix / operations",
+      "family": "O-MATRIX",
+      "kind": "object_operation",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/matrix/operations/pow"
+    },
+    {
+      "id": "QT-11FC1926C3D9D524",
+      "name": "Operations",
+      "area": "Objects / matrix / operations",
+      "family": "DOC",
+      "kind": "taxonomy_index",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/matrix/operations/start"
+    },
+    {
+      "id": "QT-2B24FE41387923DA",
+      "name": "Sub",
+      "area": "Objects / matrix / operations",
+      "family": "O-MATRIX",
+      "kind": "object_operation",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/matrix/operations/sub"
+    },
+    {
+      "id": "QT-D736B08A7F846B98",
+      "name": "Tostring",
+      "area": "Objects / matrix / operations",
+      "family": "O-MATRIX",
+      "kind": "object_operation",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/matrix/operations/tostring"
+    },
+    {
+      "id": "QT-610D6E8E8802912A",
+      "name": "Unm",
+      "area": "Objects / matrix / operations",
+      "family": "O-MATRIX",
+      "kind": "object_operation",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/matrix/operations/unm"
+    },
+    {
+      "id": "QT-6989A48C5A6D87E9",
+      "name": "Matrix",
+      "area": "Objects / matrix",
+      "family": "DOC",
+      "kind": "taxonomy_index",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/matrix/start"
+    },
+    {
+      "id": "QT-02813BB89F7B352B",
+      "name": "Functions",
+      "area": "Objects / operator / functions",
+      "family": "DOC",
+      "kind": "taxonomy_index",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/operator/functions/start"
+    },
+    {
+      "id": "QT-AF4FFA8483E093BA",
+      "name": "Chop",
+      "area": "Objects / operator / methods",
+      "family": "O-OPERATOR",
+      "kind": "object_callable",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/operator/methods/chop"
+    },
+    {
+      "id": "QT-829459409B452FED",
+      "name": "Conjugate",
+      "area": "Objects / operator / methods",
+      "family": "O-OPERATOR",
+      "kind": "object_callable",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/operator/methods/conjugate"
+    },
+    {
+      "id": "QT-90B1194E83BED3DE",
+      "name": "ConjugateTranspose",
+      "area": "Objects / operator / methods",
+      "family": "O-OPERATOR",
+      "kind": "object_callable",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/operator/methods/conjugatetranspose"
+    },
+    {
+      "id": "QT-8790C14FF161C60C",
+      "name": "Print",
+      "area": "Objects / operator / methods",
+      "family": "O-OPERATOR",
+      "kind": "object_callable",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/operator/methods/print"
+    },
+    {
+      "id": "QT-8D73EB9D7BE1258D",
+      "name": "Methods",
+      "area": "Objects / operator / methods",
+      "family": "DOC",
+      "kind": "taxonomy_index",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/operator/methods/start"
+    },
+    {
+      "id": "QT-8E7F72CA3DB15F1D",
+      "name": "Transpose",
+      "area": "Objects / operator / methods",
+      "family": "O-OPERATOR",
+      "kind": "object_callable",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/operator/methods/transpose"
+    },
+    {
+      "id": "QT-4BB18EBD6A7A8005",
+      "name": "Complex",
+      "area": "Objects / operator / properties",
+      "family": "O-OPERATOR",
+      "kind": "object_property",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/operator/properties/complex"
+    },
+    {
+      "id": "QT-8526DF6120F9C6FA",
+      "name": "Name",
+      "area": "Objects / operator / properties",
+      "family": "O-OPERATOR",
+      "kind": "object_property",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/operator/properties/name"
+    },
+    {
+      "id": "QT-54A07EBBAC800C5F",
+      "name": "NB",
+      "area": "Objects / operator / properties",
+      "family": "O-OPERATOR",
+      "kind": "object_property",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/operator/properties/nb"
+    },
+    {
+      "id": "QT-8EF4EBEA2076C876",
+      "name": "NF",
+      "area": "Objects / operator / properties",
+      "family": "O-OPERATOR",
+      "kind": "object_property",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/operator/properties/nf"
+    },
+    {
+      "id": "QT-71A3D692C05756B9",
+      "name": "Restrictions",
+      "area": "Objects / operator / properties",
+      "family": "O-OPERATOR",
+      "kind": "object_property",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/operator/properties/restrictions"
+    },
+    {
+      "id": "QT-A966A9769AD2496B",
+      "name": "Properties",
+      "area": "Objects / operator / properties",
+      "family": "DOC",
+      "kind": "taxonomy_index",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/operator/properties/start"
+    },
+    {
+      "id": "QT-DE2FE006CEF8CAAC",
+      "name": "Operator",
+      "area": "Objects / operator",
+      "family": "DOC",
+      "kind": "taxonomy_index",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/operator/start"
+    },
+    {
+      "id": "QT-7B4978BD81DBC865",
+      "name": "CalculateHybridizationFunction",
+      "area": "Objects / responsefunction / functions",
+      "family": "O-RESPONSEFUNCTION",
+      "kind": "object_callable",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/responsefunction/functions/calculatehybridizationfunction"
+    },
+    {
+      "id": "QT-DE4E966D1E09578D",
+      "name": "CalculateSelfEnergy",
+      "area": "Objects / responsefunction / functions",
+      "family": "O-RESPONSEFUNCTION",
+      "kind": "object_callable",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/responsefunction/functions/calculateselfenergy"
+    },
+    {
+      "id": "QT-C8BE59EFBE3DA312",
+      "name": "ChangeType",
+      "area": "Objects / responsefunction / functions",
+      "family": "O-RESPONSEFUNCTION",
+      "kind": "object_callable",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/responsefunction/functions/changetype"
+    },
+    {
+      "id": "QT-5C9F14C91F60DDA7",
+      "name": "Chop",
+      "area": "Objects / responsefunction / functions",
+      "family": "O-RESPONSEFUNCTION",
+      "kind": "object_callable",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/responsefunction/functions/chop"
+    },
+    {
+      "id": "QT-3DF5324E11E62EAD",
+      "name": "CreateBitMasks",
+      "area": "Objects / responsefunction / functions",
+      "family": "O-RESPONSEFUNCTION",
+      "kind": "object_callable",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/responsefunction/functions/createbitmasks"
+    },
+    {
+      "id": "QT-5AE7BB5471A887AB",
+      "name": "InvertEnergy",
+      "area": "Objects / responsefunction / functions",
+      "family": "O-RESPONSEFUNCTION",
+      "kind": "object_callable",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/responsefunction/functions/invertenergy"
+    },
+    {
+      "id": "QT-E32C783100FD7804",
+      "name": "MergePolesInInterval",
+      "area": "Objects / responsefunction / functions",
+      "family": "O-RESPONSEFUNCTION",
+      "kind": "object_callable",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/responsefunction/functions/mergepolesininterval"
+    },
+    {
+      "id": "QT-CD3ADC65883AFFC6",
+      "name": "ResponseFunction.New",
+      "area": "Objects / responsefunction / functions",
+      "family": "O-RESPONSEFUNCTION",
+      "kind": "object_callable",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/responsefunction/functions/new"
+    },
+    {
+      "id": "QT-5BE3D79F99AE5DA4",
+      "name": "PlaceOnMesh",
+      "area": "Objects / responsefunction / functions",
+      "family": "O-RESPONSEFUNCTION",
+      "kind": "object_callable",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/responsefunction/functions/placeonmesh"
+    },
+    {
+      "id": "QT-D136441F2B38B92F",
+      "name": "ReducePoles",
+      "area": "Objects / responsefunction / functions",
+      "family": "O-RESPONSEFUNCTION",
+      "kind": "object_callable",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/responsefunction/functions/reducepoles"
+    },
+    {
+      "id": "QT-455DA3B2CA894636",
+      "name": "Functions",
+      "area": "Objects / responsefunction / functions",
+      "family": "DOC",
+      "kind": "taxonomy_index",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/responsefunction/functions/start"
+    },
+    {
+      "id": "QT-F84DF89BB2A70F8F",
+      "name": "ToMatrix",
+      "area": "Objects / responsefunction / functions",
+      "family": "O-RESPONSEFUNCTION",
+      "kind": "object_callable",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/responsefunction/functions/tomatrix"
+    },
+    {
+      "id": "QT-4072D56050123979",
+      "name": "ToOperator",
+      "area": "Objects / responsefunction / functions",
+      "family": "O-RESPONSEFUNCTION",
+      "kind": "object_callable",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/responsefunction/functions/tooperator"
+    },
+    {
+      "id": "QT-E16CC1BE6A56A01C",
+      "name": "ToSpectra",
+      "area": "Objects / responsefunction / functions",
+      "family": "O-RESPONSEFUNCTION",
+      "kind": "object_callable",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/responsefunction/functions/tospectra"
+    },
+    {
+      "id": "QT-88D422A6F488B5AC",
+      "name": "ResponseFunction.ToTable",
+      "area": "Objects / responsefunction / functions",
+      "family": "O-RESPONSEFUNCTION",
+      "kind": "object_callable",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/responsefunction/functions/totable"
+    },
+    {
+      "id": "QT-CC49005F85781534",
+      "name": "ToTightBinding",
+      "area": "Objects / responsefunction / functions",
+      "family": "O-RESPONSEFUNCTION",
+      "kind": "object_callable",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/responsefunction/functions/totightbinding"
+    },
+    {
+      "id": "QT-A10AAC93171E9522",
+      "name": "Responsefunctions.ToUserdata",
+      "area": "Objects / responsefunction / functions",
+      "family": "O-RESPONSEFUNCTION",
+      "kind": "object_callable",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/responsefunction/functions/touserdata"
+    },
+    {
+      "id": "QT-9A58517DFD751307",
+      "name": "Chop",
+      "area": "Objects / responsefunction / methods",
+      "family": "O-RESPONSEFUNCTION",
+      "kind": "object_callable",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/responsefunction/methods/chop"
+    },
+    {
+      "id": "QT-1FDC3455CD53F3C0",
+      "name": "Methods",
+      "area": "Objects / responsefunction / methods",
+      "family": "DOC",
+      "kind": "taxonomy_index",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/responsefunction/methods/start"
+    },
+    {
+      "id": "QT-1D916924C458A963",
+      "name": "Add",
+      "area": "Objects / responsefunction / operations",
+      "family": "O-RESPONSEFUNCTION",
+      "kind": "object_operation",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/responsefunction/operations/add"
+    },
+    {
+      "id": "QT-7B24626B1D1E3023",
+      "name": "Div",
+      "area": "Objects / responsefunction / operations",
+      "family": "O-RESPONSEFUNCTION",
+      "kind": "object_operation",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/responsefunction/operations/div"
+    },
+    {
+      "id": "QT-17C1D45EADE93B3F",
+      "name": "Eq",
+      "area": "Objects / responsefunction / operations",
+      "family": "O-RESPONSEFUNCTION",
+      "kind": "object_operation",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/responsefunction/operations/eq"
+    },
+    {
+      "id": "QT-2F55F749950FF228",
+      "name": "Len",
+      "area": "Objects / responsefunction / operations",
+      "family": "O-RESPONSEFUNCTION",
+      "kind": "object_operation",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/responsefunction/operations/len"
+    },
+    {
+      "id": "QT-1206A0D680FD04FD",
+      "name": "Mul",
+      "area": "Objects / responsefunction / operations",
+      "family": "O-RESPONSEFUNCTION",
+      "kind": "object_operation",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/responsefunction/operations/mul"
+    },
+    {
+      "id": "QT-5F02E3DE509A03F0",
+      "name": "Operations",
+      "area": "Objects / responsefunction / operations",
+      "family": "DOC",
+      "kind": "taxonomy_index",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/responsefunction/operations/start"
+    },
+    {
+      "id": "QT-40D6E1AD9D93E439",
+      "name": "Sub",
+      "area": "Objects / responsefunction / operations",
+      "family": "O-RESPONSEFUNCTION",
+      "kind": "object_operation",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/responsefunction/operations/sub"
+    },
+    {
+      "id": "QT-6808654250888E08",
+      "name": "mu",
+      "area": "Objects / responsefunction / properties",
+      "family": "O-RESPONSEFUNCTION",
+      "kind": "object_property",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/responsefunction/properties/mu"
+    },
+    {
+      "id": "QT-33BF72834D9A1D75",
+      "name": "name",
+      "area": "Objects / responsefunction / properties",
+      "family": "O-RESPONSEFUNCTION",
+      "kind": "object_property",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/responsefunction/properties/name"
+    },
+    {
+      "id": "QT-D846BE0DFE4DAC17",
+      "name": "Properties",
+      "area": "Objects / responsefunction / properties",
+      "family": "DOC",
+      "kind": "taxonomy_index",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/responsefunction/properties/start"
+    },
+    {
+      "id": "QT-5A60BFFF81239873",
+      "name": "type",
+      "area": "Objects / responsefunction / properties",
+      "family": "O-RESPONSEFUNCTION",
+      "kind": "object_property",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/responsefunction/properties/type"
+    },
+    {
+      "id": "QT-5783FD4B22E3AD5E",
+      "name": "Response function",
+      "area": "Objects / responsefunction",
+      "family": "DOC",
+      "kind": "taxonomy_index",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/responsefunction/start"
+    },
+    {
+      "id": "QT-1377C1198DB77ECB",
+      "name": "Broaden",
+      "area": "Objects / spectra / functions",
+      "family": "O-SPECTRA",
+      "kind": "object_callable",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/spectra/functions/broaden"
+    },
+    {
+      "id": "QT-B111776E9569A4C6",
+      "name": "Clone",
+      "area": "Objects / spectra / functions",
+      "family": "O-SPECTRA",
+      "kind": "object_callable",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/spectra/functions/clone"
+    },
+    {
+      "id": "QT-8614519ABAE59DCA",
+      "name": "Copy",
+      "area": "Objects / spectra / functions",
+      "family": "O-SPECTRA",
+      "kind": "object_callable",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/spectra/functions/copy"
+    },
+    {
+      "id": "QT-F4FCBEDE08D03320",
+      "name": "Element",
+      "area": "Objects / spectra / functions",
+      "family": "O-SPECTRA",
+      "kind": "object_callable",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/spectra/functions/element"
+    },
+    {
+      "id": "QT-87BE87458D0BABCA",
+      "name": "MultiplyByEnergy",
+      "area": "Objects / spectra / functions",
+      "family": "O-SPECTRA",
+      "kind": "object_callable",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/spectra/functions/multiplybyenergy"
+    },
+    {
+      "id": "QT-4D773B082A2A4360",
+      "name": "Shift",
+      "area": "Objects / spectra / functions",
+      "family": "O-SPECTRA",
+      "kind": "object_callable",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/spectra/functions/shift"
+    },
+    {
+      "id": "QT-E24E99B2D83FEE56",
+      "name": "Functions",
+      "area": "Objects / spectra / functions",
+      "family": "DOC",
+      "kind": "taxonomy_index",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/spectra/functions/start"
+    },
+    {
+      "id": "QT-2724B7C33FF382ED",
+      "name": "Sum",
+      "area": "Objects / spectra / functions",
+      "family": "O-SPECTRA",
+      "kind": "object_callable",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/spectra/functions/sum"
+    },
+    {
+      "id": "QT-92144693BD88ACC2",
+      "name": "ToTable",
+      "area": "Objects / spectra / functions",
+      "family": "O-SPECTRA",
+      "kind": "object_callable",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/spectra/functions/totable"
+    },
+    {
+      "id": "QT-B07702AD72EA7E05",
+      "name": "Broaden",
+      "area": "Objects / spectra / methods",
+      "family": "O-SPECTRA",
+      "kind": "object_callable",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/spectra/methods/broaden"
+    },
+    {
+      "id": "QT-804F6AFCF680EF49",
+      "name": "MultiplyByEnergy",
+      "area": "Objects / spectra / methods",
+      "family": "O-SPECTRA",
+      "kind": "object_callable",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/spectra/methods/multiplybyenergy"
+    },
+    {
+      "id": "QT-2A78CBEA84D50463",
+      "name": "Print",
+      "area": "Objects / spectra / methods",
+      "family": "O-SPECTRA",
+      "kind": "object_callable",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/spectra/methods/print"
+    },
+    {
+      "id": "QT-320FBAEF7336C357",
+      "name": "Shift",
+      "area": "Objects / spectra / methods",
+      "family": "O-SPECTRA",
+      "kind": "object_callable",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/spectra/methods/shift"
+    },
+    {
+      "id": "QT-DA10EE45FE398002",
+      "name": "Methods",
+      "area": "Objects / spectra / methods",
+      "family": "DOC",
+      "kind": "taxonomy_index",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/spectra/methods/start"
+    },
+    {
+      "id": "QT-E955EC0F2E6C8E08",
+      "name": "dE",
+      "area": "Objects / spectra / properties",
+      "family": "O-SPECTRA",
+      "kind": "object_property",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/spectra/properties/de"
+    },
+    {
+      "id": "QT-C8AD1932015BCFFD",
+      "name": "Emax",
+      "area": "Objects / spectra / properties",
+      "family": "O-SPECTRA",
+      "kind": "object_property",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/spectra/properties/emax"
+    },
+    {
+      "id": "QT-DA8955C7FDB6A9F4",
+      "name": "EMaxPole",
+      "area": "Objects / spectra / properties",
+      "family": "O-SPECTRA",
+      "kind": "object_property",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/spectra/properties/emaxpole"
+    },
+    {
+      "id": "QT-73748D68674078C4",
+      "name": "EMin",
+      "area": "Objects / spectra / properties",
+      "family": "O-SPECTRA",
+      "kind": "object_property",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/spectra/properties/emin"
+    },
+    {
+      "id": "QT-D8E35C8E2D8FE636",
+      "name": "EMinPole",
+      "area": "Objects / spectra / properties",
+      "family": "O-SPECTRA",
+      "kind": "object_property",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/spectra/properties/eminpole"
+    },
+    {
+      "id": "QT-D88EF30ABA4042B4",
+      "name": "Gamma",
+      "area": "Objects / spectra / properties",
+      "family": "O-SPECTRA",
+      "kind": "object_property",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/spectra/properties/gamma"
+    },
+    {
+      "id": "QT-C3FDEFFF6601DFA1",
+      "name": "Integral",
+      "area": "Objects / spectra / properties",
+      "family": "O-SPECTRA",
+      "kind": "object_property",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/spectra/properties/integral"
+    },
+    {
+      "id": "QT-29111725D16FB3C6",
+      "name": "N",
+      "area": "Objects / spectra / properties",
+      "family": "O-SPECTRA",
+      "kind": "object_property",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/spectra/properties/n"
+    },
+    {
+      "id": "QT-A7E9CA66734A8CBB",
+      "name": "NE",
+      "area": "Objects / spectra / properties",
+      "family": "O-SPECTRA",
+      "kind": "object_property",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/spectra/properties/ne"
+    },
+    {
+      "id": "QT-61E1A01FC5FD7060",
+      "name": "Properties",
+      "area": "Objects / spectra / properties",
+      "family": "DOC",
+      "kind": "taxonomy_index",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/spectra/properties/start"
+    },
+    {
+      "id": "QT-FC8C20C4704D5491",
+      "name": "Spectra",
+      "area": "Objects / spectra",
+      "family": "DOC",
+      "kind": "taxonomy_index",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/spectra/start"
+    },
+    {
+      "id": "QT-AE7266F475E3C7B5",
+      "name": "Objects",
+      "area": "Object taxonomy",
+      "family": "DOC",
+      "kind": "taxonomy_index",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/start"
+    },
+    {
+      "id": "QT-3685211EF1E8DFBE",
+      "name": "Functions",
+      "area": "Objects / tightbinding / functions",
+      "family": "DOC",
+      "kind": "taxonomy_index",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/tightbinding/functions/start"
+    },
+    {
+      "id": "QT-F89FAACDD003A67A",
+      "name": "Methods",
+      "area": "Objects / tightbinding / methods",
+      "family": "DOC",
+      "kind": "taxonomy_index",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/tightbinding/methods/start"
+    },
+    {
+      "id": "QT-86758EF9DF386B24",
+      "name": "Atoms",
+      "area": "Objects / tightbinding / properties",
+      "family": "O-TIGHTBINDING",
+      "kind": "object_property",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/tightbinding/properties/atoms"
+    },
+    {
+      "id": "QT-8BA937FAD9034214",
+      "name": "Cell",
+      "area": "Objects / tightbinding / properties",
+      "family": "O-TIGHTBINDING",
+      "kind": "object_property",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/tightbinding/properties/cell"
+    },
+    {
+      "id": "QT-96B753F2975271E6",
+      "name": "Hk",
+      "area": "Objects / tightbinding / properties",
+      "family": "O-TIGHTBINDING",
+      "kind": "object_property",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/tightbinding/properties/hk"
+    },
+    {
+      "id": "QT-A1D1949319D889B0",
+      "name": "Hopping",
+      "area": "Objects / tightbinding / properties",
+      "family": "O-TIGHTBINDING",
+      "kind": "object_property",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/tightbinding/properties/hopping"
+    },
+    {
+      "id": "QT-C2001CF762AC907A",
+      "name": "Name",
+      "area": "Objects / tightbinding / properties",
+      "family": "O-TIGHTBINDING",
+      "kind": "object_property",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/tightbinding/properties/name"
+    },
+    {
+      "id": "QT-CEE441A6B3D78EDB",
+      "name": "NAtoms",
+      "area": "Objects / tightbinding / properties",
+      "family": "O-TIGHTBINDING",
+      "kind": "object_property",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/tightbinding/properties/natoms"
+    },
+    {
+      "id": "QT-9BAE6D4512C990D7",
+      "name": "NF",
+      "area": "Objects / tightbinding / properties",
+      "family": "O-TIGHTBINDING",
+      "kind": "object_property",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/tightbinding/properties/nf"
+    },
+    {
+      "id": "QT-7A973A92F55BAC1F",
+      "name": "ReciprocalCell",
+      "area": "Objects / tightbinding / properties",
+      "family": "O-TIGHTBINDING",
+      "kind": "object_property",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/tightbinding/properties/reciprocalcell"
+    },
+    {
+      "id": "QT-17F2A08D01C04044",
+      "name": "Properties",
+      "area": "Objects / tightbinding / properties",
+      "family": "DOC",
+      "kind": "taxonomy_index",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/tightbinding/properties/start"
+    },
+    {
+      "id": "QT-4AD940180A162901",
+      "name": "Units",
+      "area": "Objects / tightbinding / properties",
+      "family": "O-TIGHTBINDING",
+      "kind": "object_property",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/tightbinding/properties/units"
+    },
+    {
+      "id": "QT-F33424DD231C6E6B",
+      "name": "Tight binding",
+      "area": "Objects / tightbinding",
+      "family": "DOC",
+      "kind": "taxonomy_index",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/tightbinding/start"
+    },
+    {
+      "id": "QT-6C000A7B5DA1DB78",
+      "name": "Functions",
+      "area": "Objects / wavefunction / functions",
+      "family": "DOC",
+      "kind": "taxonomy_index",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/wavefunction/functions/start"
+    },
+    {
+      "id": "QT-44660CAEC8E6DAD1",
+      "name": "Chop",
+      "area": "Objects / wavefunction / methods",
+      "family": "O-WAVEFUNCTION",
+      "kind": "object_callable",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/wavefunction/methods/chop"
+    },
+    {
+      "id": "QT-4BBD866AA09AD6FD",
+      "name": "Conjugate",
+      "area": "Objects / wavefunction / methods",
+      "family": "O-WAVEFUNCTION",
+      "kind": "object_callable",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/wavefunction/methods/conjugate"
+    },
+    {
+      "id": "QT-A027536CB8EEE392",
+      "name": "Normalize",
+      "area": "Objects / wavefunction / methods",
+      "family": "O-WAVEFUNCTION",
+      "kind": "object_callable",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/wavefunction/methods/normalize"
+    },
+    {
+      "id": "QT-797A36FB79535EFD",
+      "name": "Print",
+      "area": "Objects / wavefunction / methods",
+      "family": "O-WAVEFUNCTION",
+      "kind": "object_callable",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/wavefunction/methods/print"
+    },
+    {
+      "id": "QT-AAADA053ADBBA33D",
+      "name": "Randomize",
+      "area": "Objects / wavefunction / methods",
+      "family": "O-WAVEFUNCTION",
+      "kind": "object_callable",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/wavefunction/methods/randomize"
+    },
+    {
+      "id": "QT-77B7CE34008BA392",
+      "name": "Methods",
+      "area": "Objects / wavefunction / methods",
+      "family": "DOC",
+      "kind": "taxonomy_index",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/wavefunction/methods/start"
+    },
+    {
+      "id": "QT-1DA663F79856E1BF",
+      "name": "Complex",
+      "area": "Objects / wavefunction / properties",
+      "family": "O-WAVEFUNCTION",
+      "kind": "object_property",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/wavefunction/properties/complex"
+    },
+    {
+      "id": "QT-D4D70EEB69BADCDA",
+      "name": "Det(i)",
+      "area": "Objects / wavefunction / properties",
+      "family": "O-WAVEFUNCTION",
+      "kind": "object_property",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/wavefunction/properties/det"
+    },
+    {
+      "id": "QT-67D0DC4879989B54",
+      "name": "N",
+      "area": "Objects / wavefunction / properties",
+      "family": "O-WAVEFUNCTION",
+      "kind": "object_property",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/wavefunction/properties/n"
+    },
+    {
+      "id": "QT-65450530EA623F64",
+      "name": "Name",
+      "area": "Objects / wavefunction / properties",
+      "family": "O-WAVEFUNCTION",
+      "kind": "object_property",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/wavefunction/properties/name"
+    },
+    {
+      "id": "QT-7C437FA9B54F3E2A",
+      "name": "NB",
+      "area": "Objects / wavefunction / properties",
+      "family": "O-WAVEFUNCTION",
+      "kind": "object_property",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/wavefunction/properties/nb"
+    },
+    {
+      "id": "QT-8009E8A2EC96A075",
+      "name": "NBitsKey",
+      "area": "Objects / wavefunction / properties",
+      "family": "O-WAVEFUNCTION",
+      "kind": "object_property",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/wavefunction/properties/nbitskey"
+    },
+    {
+      "id": "QT-1841966DEE18437C",
+      "name": "NF",
+      "area": "Objects / wavefunction / properties",
+      "family": "O-WAVEFUNCTION",
+      "kind": "object_property",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/wavefunction/properties/nf"
+    },
+    {
+      "id": "QT-886A2C38C06A40DB",
+      "name": "Properties",
+      "area": "Objects / wavefunction / properties",
+      "family": "DOC",
+      "kind": "taxonomy_index",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/wavefunction/properties/start"
+    },
+    {
+      "id": "QT-A6AB04B834CE6CD9",
+      "name": "Wavefunction",
+      "area": "Objects / wavefunction",
+      "family": "DOC",
+      "kind": "taxonomy_index",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/objects/wavefunction/start"
+    },
+    {
+      "id": "QT-392F6861A304F903",
+      "name": "Language Reference",
+      "area": "Documentation taxonomy",
+      "family": "DOC",
+      "kind": "taxonomy_index",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/language_reference/start"
+    },
+    {
+      "id": "QT-5E510AA632482B21",
+      "name": "Lua",
+      "area": "Runtime",
+      "family": "R-RUNTIME",
+      "kind": "runtime",
+      "canonical_status": "intentionally-out-of-scope",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/lua"
+    },
+    {
+      "id": "QT-684031C70B7BA905",
+      "name": "Memory management",
+      "area": "Runtime",
+      "family": "R-RUNTIME",
+      "kind": "runtime",
+      "canonical_status": "partial",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/memory"
+    },
+    {
+      "id": "QT-1E15B518396BDE93",
+      "name": "Parallelization",
+      "area": "Runtime",
+      "family": "R-RUNTIME",
+      "kind": "runtime",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/parallel"
+    },
+    {
+      "id": "QT-F680C5ACAD680055",
+      "name": "Atomic coulomb repulsion",
+      "area": "Standard operators",
+      "family": "P-OPERATORS",
+      "kind": "standard_operator",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/standard_operators/atomic_coulomb_repulsion"
+    },
+    {
+      "id": "QT-BA9F5FC19448A289",
+      "name": "Qxx",
+      "area": "Standard operators",
+      "family": "P-OPERATORS",
+      "kind": "standard_operator",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/standard_operators/charge_quadrupole/qxx"
+    },
+    {
+      "id": "QT-5C29C627782EA394",
+      "name": "Qxy",
+      "area": "Standard operators",
+      "family": "P-OPERATORS",
+      "kind": "standard_operator",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/standard_operators/charge_quadrupole/qxy"
+    },
+    {
+      "id": "QT-07B9F1347D3D2CB7",
+      "name": "Qxz",
+      "area": "Standard operators",
+      "family": "P-OPERATORS",
+      "kind": "standard_operator",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/standard_operators/charge_quadrupole/qxz"
+    },
+    {
+      "id": "QT-D30763C3D910328E",
+      "name": "Qyy",
+      "area": "Standard operators",
+      "family": "P-OPERATORS",
+      "kind": "standard_operator",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/standard_operators/charge_quadrupole/qyy"
+    },
+    {
+      "id": "QT-3B5C236A69B67C1A",
+      "name": "Qyz",
+      "area": "Standard operators",
+      "family": "P-OPERATORS",
+      "kind": "standard_operator",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/standard_operators/charge_quadrupole/qyz"
+    },
+    {
+      "id": "QT-46BAE31F383B90BB",
+      "name": "Qzz",
+      "area": "Standard operators",
+      "family": "P-OPERATORS",
+      "kind": "standard_operator",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/standard_operators/charge_quadrupole/qzz"
+    },
+    {
+      "id": "QT-BF8B07662E686C7C",
+      "name": "Charge quadrupole operators (Q)",
+      "area": "Standard operators",
+      "family": "DOC",
+      "kind": "taxonomy_index",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/standard_operators/charge_quadrupole/start"
+    },
+    {
+      "id": "QT-3D1B97CC51127EE9",
+      "name": "Coulomb repulsion operator (U)",
+      "area": "Standard operators",
+      "family": "P-OPERATORS",
+      "kind": "standard_operator",
+      "canonical_status": "partial",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/standard_operators/coulomb_repulsion"
+    },
+    {
+      "id": "QT-97C68808C98B2B94",
+      "name": "Crystal field operator",
+      "area": "Standard operators",
+      "family": "P-OPERATORS",
+      "kind": "standard_operator",
+      "canonical_status": "partial",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/standard_operators/crystal_field"
+    },
+    {
+      "id": "QT-4C685E8FE66EFF3C",
+      "name": "Ligand field",
+      "area": "Standard operators",
+      "family": "P-OPERATORS",
+      "kind": "standard_operator",
+      "canonical_status": "partial",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/standard_operators/ligand_field"
+    },
+    {
+      "id": "QT-9B4243E05C06B55A",
+      "name": "Magnetic dipole operators (T)",
+      "area": "Standard operators",
+      "family": "DOC",
+      "kind": "taxonomy_index",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/standard_operators/magnetic_dipole/start"
+    },
+    {
+      "id": "QT-0EECABA0CAA941F2",
+      "name": "Tx",
+      "area": "Standard operators",
+      "family": "P-OPERATORS",
+      "kind": "standard_operator",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/standard_operators/magnetic_dipole/tx"
+    },
+    {
+      "id": "QT-80939479051DF0CA",
+      "name": "Ty",
+      "area": "Standard operators",
+      "family": "P-OPERATORS",
+      "kind": "standard_operator",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/standard_operators/magnetic_dipole/ty"
+    },
+    {
+      "id": "QT-3E186A375BD878CD",
+      "name": "Tz",
+      "area": "Standard operators",
+      "family": "P-OPERATORS",
+      "kind": "standard_operator",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/standard_operators/magnetic_dipole/tz"
+    },
+    {
+      "id": "QT-CBE5FC99AEA37BF3",
+      "name": "Lmin",
+      "area": "Standard operators",
+      "family": "P-OPERATORS",
+      "kind": "standard_operator",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/standard_operators/orbital_angular_momuntum/lmin"
+    },
+    {
+      "id": "QT-16DBB731CA331950",
+      "name": "Lplus",
+      "area": "Standard operators",
+      "family": "P-OPERATORS",
+      "kind": "standard_operator",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/standard_operators/orbital_angular_momuntum/lplus"
+    },
+    {
+      "id": "QT-9B2F75534D7E8CDA",
+      "name": "Lsqr",
+      "area": "Standard operators",
+      "family": "P-OPERATORS",
+      "kind": "standard_operator",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/standard_operators/orbital_angular_momuntum/lsqr"
+    },
+    {
+      "id": "QT-68F94AE0A3EA37FB",
+      "name": "Lx",
+      "area": "Standard operators",
+      "family": "P-OPERATORS",
+      "kind": "standard_operator",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/standard_operators/orbital_angular_momuntum/lx"
+    },
+    {
+      "id": "QT-F302B892581B6E5A",
+      "name": "Ly",
+      "area": "Standard operators",
+      "family": "P-OPERATORS",
+      "kind": "standard_operator",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/standard_operators/orbital_angular_momuntum/ly"
+    },
+    {
+      "id": "QT-603352CFE0077430",
+      "name": "Lz",
+      "area": "Standard operators",
+      "family": "P-OPERATORS",
+      "kind": "standard_operator",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/standard_operators/orbital_angular_momuntum/lz"
+    },
+    {
+      "id": "QT-1F2F1C95F939D7F6",
+      "name": "Orbital angular momentum operators (L)",
+      "area": "Standard operators",
+      "family": "DOC",
+      "kind": "taxonomy_index",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/standard_operators/orbital_angular_momuntum/start"
+    },
+    {
+      "id": "QT-F86B5BF5AB2B5CFF",
+      "name": "Smin",
+      "area": "Standard operators",
+      "family": "P-OPERATORS",
+      "kind": "standard_operator",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/standard_operators/spin/smin"
+    },
+    {
+      "id": "QT-4FC36A687ACB36E8",
+      "name": "Splus",
+      "area": "Standard operators",
+      "family": "P-OPERATORS",
+      "kind": "standard_operator",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/standard_operators/spin/splus"
+    },
+    {
+      "id": "QT-1524F91477F22E44",
+      "name": "Ssqr",
+      "area": "Standard operators",
+      "family": "P-OPERATORS",
+      "kind": "standard_operator",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/standard_operators/spin/ssqr"
+    },
+    {
+      "id": "QT-407C3C992AAD0173",
+      "name": "Spin operators (S)",
+      "area": "Standard operators",
+      "family": "DOC",
+      "kind": "taxonomy_index",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/standard_operators/spin/start"
+    },
+    {
+      "id": "QT-F1356360C70F618F",
+      "name": "Sx",
+      "area": "Standard operators",
+      "family": "P-OPERATORS",
+      "kind": "standard_operator",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/standard_operators/spin/sx"
+    },
+    {
+      "id": "QT-F27594CEA995C10D",
+      "name": "Sy",
+      "area": "Standard operators",
+      "family": "P-OPERATORS",
+      "kind": "standard_operator",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/standard_operators/spin/sy"
+    },
+    {
+      "id": "QT-0A8A524ADFA0CC5B",
+      "name": "Sz",
+      "area": "Standard operators",
+      "family": "P-OPERATORS",
+      "kind": "standard_operator",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/standard_operators/spin/sz"
+    },
+    {
+      "id": "QT-245EB5BB9CE50388",
+      "name": "Spin orbit coupling operator (l.s)",
+      "area": "Standard operators",
+      "family": "P-OPERATORS",
+      "kind": "standard_operator",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/standard_operators/spin_orbit_coupling"
+    },
+    {
+      "id": "QT-942051891B0D5E7F",
+      "name": "Standard Operators",
+      "area": "Standard operators",
+      "family": "DOC",
+      "kind": "taxonomy_index",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/standard_operators/start"
+    },
+    {
+      "id": "QT-9CF8E57926356FBB",
+      "name": "Jmin",
+      "area": "Standard operators",
+      "family": "P-OPERATORS",
+      "kind": "standard_operator",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/standard_operators/total_angular_momentum/jmin"
+    },
+    {
+      "id": "QT-1472D76D490D409F",
+      "name": "Jplus",
+      "area": "Standard operators",
+      "family": "P-OPERATORS",
+      "kind": "standard_operator",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/standard_operators/total_angular_momentum/jplus"
+    },
+    {
+      "id": "QT-6562DE0EF4A8D7E7",
+      "name": "Jsqr",
+      "area": "Standard operators",
+      "family": "P-OPERATORS",
+      "kind": "standard_operator",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/standard_operators/total_angular_momentum/jsqr"
+    },
+    {
+      "id": "QT-F2396C4D7E4F3A22",
+      "name": "Jx",
+      "area": "Standard operators",
+      "family": "P-OPERATORS",
+      "kind": "standard_operator",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/standard_operators/total_angular_momentum/jx"
+    },
+    {
+      "id": "QT-57119192C6A6DD07",
+      "name": "Jy",
+      "area": "Standard operators",
+      "family": "P-OPERATORS",
+      "kind": "standard_operator",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/standard_operators/total_angular_momentum/jy"
+    },
+    {
+      "id": "QT-39F553146BDDD96C",
+      "name": "Jz",
+      "area": "Standard operators",
+      "family": "P-OPERATORS",
+      "kind": "standard_operator",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/standard_operators/total_angular_momentum/jz"
+    },
+    {
+      "id": "QT-BE6AA41A4D63871D",
+      "name": "Total angular momentum operators (J)",
+      "area": "Standard operators",
+      "family": "DOC",
+      "kind": "taxonomy_index",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/standard_operators/total_angular_momentum/start"
+    },
+    {
+      "id": "QT-B4769C112C104015",
+      "name": "Transition operators for photon spectroscopy",
+      "area": "Standard operators",
+      "family": "P-OPERATORS",
+      "kind": "standard_operator",
+      "canonical_status": "partial",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/standard_operators/transition_operators_for_photon_spectroscopy"
+    },
+    {
+      "id": "QT-49CD6A177EB74F3B",
+      "name": "Documentation",
+      "area": "Documentation taxonomy",
+      "family": "DOC",
+      "kind": "taxonomy_index",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/start"
+    },
+    {
+      "id": "QT-B644B9E9A88E3EA9",
+      "name": "H atom",
+      "area": "Tutorials",
+      "family": "TUTORIAL",
+      "kind": "tutorial_case",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/tutorials/connection_to_dft/h_atom"
+    },
+    {
+      "id": "QT-CFB3FD13EF9F0895",
+      "name": "Connection to DFT and radial integrals",
+      "area": "Tutorials",
+      "family": "DOC",
+      "kind": "taxonomy_index",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/tutorials/connection_to_dft/start"
+    },
+    {
+      "id": "QT-F96BF75107A73E69",
+      "name": "Eigenstates",
+      "area": "Tutorials",
+      "family": "TUTORIAL",
+      "kind": "tutorial_case",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/tutorials/introduction_to_quanty/eigenstates"
+    },
+    {
+      "id": "QT-220850081A75651F",
+      "name": "Expectation values",
+      "area": "Tutorials",
+      "family": "TUTORIAL",
+      "kind": "tutorial_case",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/tutorials/introduction_to_quanty/expectation_values"
+    },
+    {
+      "id": "QT-CF3B75EEFF1BB7E2",
+      "name": "Operators",
+      "area": "Tutorials",
+      "family": "TUTORIAL",
+      "kind": "tutorial_case",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/tutorials/introduction_to_quanty/operators_1"
+    },
+    {
+      "id": "QT-DBB01FB914CEC8F5",
+      "name": "Operators continued",
+      "area": "Tutorials",
+      "family": "TUTORIAL",
+      "kind": "tutorial_case",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/tutorials/introduction_to_quanty/operators_2"
+    },
+    {
+      "id": "QT-BE79A4257145D10D",
+      "name": "Orbitals",
+      "area": "Tutorials",
+      "family": "TUTORIAL",
+      "kind": "tutorial_case",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/tutorials/introduction_to_quanty/orbitals"
+    },
+    {
+      "id": "QT-01E1320F852DCD8A",
+      "name": "Introduction to Quanty",
+      "area": "Tutorials",
+      "family": "DOC",
+      "kind": "taxonomy_index",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/tutorials/introduction_to_quanty/start"
+    },
+    {
+      "id": "QT-9BEE67C97A4005F4",
+      "name": "Wavefunctions",
+      "area": "Tutorials",
+      "family": "TUTORIAL",
+      "kind": "tutorial_case",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/tutorials/introduction_to_quanty/wavefunctions"
+    },
+    {
+      "id": "QT-6DBFD7535D479E56",
+      "name": "Harmonic oscillator",
+      "area": "Tutorials",
+      "family": "TUTORIAL",
+      "kind": "tutorial_case",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/tutorials/model_examples_from_physics/harmonic_oscillator"
+    },
+    {
+      "id": "QT-638D90ED55A87730",
+      "name": "Hubbard model on a dimer",
+      "area": "Tutorials",
+      "family": "TUTORIAL",
+      "kind": "tutorial_case",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/tutorials/model_examples_from_physics/hubbard_model_on_a_dimer"
+    },
+    {
+      "id": "QT-27A84D6051F351C0",
+      "name": "Model examples from physics",
+      "area": "Tutorials",
+      "family": "DOC",
+      "kind": "taxonomy_index",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/tutorials/model_examples_from_physics/start"
+    },
+    {
+      "id": "QT-903E316F19225E9C",
+      "name": "Density matrix plot",
+      "area": "Tutorials",
+      "family": "TUTORIAL",
+      "kind": "tutorial_case",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/tutorials/nio_crystal_field/density_matrix_plot"
+    },
+    {
+      "id": "QT-444075C0F5D7F373",
+      "name": "Energy level diagram",
+      "area": "Tutorials",
+      "family": "TUTORIAL",
+      "kind": "tutorial_case",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/tutorials/nio_crystal_field/energy_level_diagram"
+    },
+    {
+      "id": "QT-7AEAC525AA9231FF",
+      "name": "FY $L_{2,3}M_{1}$",
+      "area": "Tutorials",
+      "family": "TUTORIAL",
+      "kind": "tutorial_case",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/tutorials/nio_crystal_field/fy_l23m1"
+    },
+    {
+      "id": "QT-3A89C58BDAAF28BA",
+      "name": "FY $L_{2,3}M_{4,5}$",
+      "area": "Tutorials",
+      "family": "TUTORIAL",
+      "kind": "tutorial_case",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/tutorials/nio_crystal_field/fy_l23m45"
+    },
+    {
+      "id": "QT-721E1E4E4A2C9B53",
+      "name": "Groundstate",
+      "area": "Tutorials",
+      "family": "TUTORIAL",
+      "kind": "tutorial_case",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/tutorials/nio_crystal_field/groundstate"
+    },
+    {
+      "id": "QT-2EA362F92B5B7C7E",
+      "name": "nIXS $L_{2,3}$",
+      "area": "Tutorials",
+      "family": "TUTORIAL",
+      "kind": "tutorial_case",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/tutorials/nio_crystal_field/nixs_l23"
+    },
+    {
+      "id": "QT-C021EC36A672C6CD",
+      "name": "nIXS $M_{4,5}$ ($d$-$d$ excitations)",
+      "area": "Tutorials",
+      "family": "TUTORIAL",
+      "kind": "tutorial_case",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/tutorials/nio_crystal_field/nixs_m45"
+    },
+    {
+      "id": "QT-AB71E423E181A7D5",
+      "name": "RIXS $L_{2,3}M_{1}$",
+      "area": "Tutorials",
+      "family": "TUTORIAL",
+      "kind": "tutorial_case",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/tutorials/nio_crystal_field/rixs_l23m1"
+    },
+    {
+      "id": "QT-6B9DA7871117E9EB",
+      "name": "RIXS $L_{2,3}M_{4,5}$",
+      "area": "Tutorials",
+      "family": "TUTORIAL",
+      "kind": "tutorial_case",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/tutorials/nio_crystal_field/rixs_l23m45"
+    },
+    {
+      "id": "QT-AA57F2744D077057",
+      "name": "NiO crystal field",
+      "area": "Tutorials",
+      "family": "DOC",
+      "kind": "taxonomy_index",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/tutorials/nio_crystal_field/start"
+    },
+    {
+      "id": "QT-B389D0513D1689D1",
+      "name": "Temperature",
+      "area": "Tutorials",
+      "family": "TUTORIAL",
+      "kind": "tutorial_case",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/tutorials/nio_crystal_field/temperature"
+    },
+    {
+      "id": "QT-4103EE4A4D555754",
+      "name": "XAS $L_{2,3}$",
+      "area": "Tutorials",
+      "family": "TUTORIAL",
+      "kind": "tutorial_case",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/tutorials/nio_crystal_field/xas_l23"
+    },
+    {
+      "id": "QT-FF39034B753BE196",
+      "name": "XAS $L_{2,3}$ as conductivity tensor",
+      "area": "Tutorials",
+      "family": "TUTORIAL",
+      "kind": "tutorial_case",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/tutorials/nio_crystal_field/xas_l23_as_conductivity_tensor"
+    },
+    {
+      "id": "QT-DB159346378B0385",
+      "name": "XAS $L_{2,3}$ partial excitations",
+      "area": "Tutorials",
+      "family": "TUTORIAL",
+      "kind": "tutorial_case",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/tutorials/nio_crystal_field/xas_l23_partial_excitations"
+    },
+    {
+      "id": "QT-38610652FB0BA52C",
+      "name": "Density matrix plot",
+      "area": "Tutorials",
+      "family": "TUTORIAL",
+      "kind": "tutorial_case",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/tutorials/nio_ligand_field/density_matrix_plot"
+    },
+    {
+      "id": "QT-67809A174B189F9C",
+      "name": "Energy level diagram",
+      "area": "Tutorials",
+      "family": "TUTORIAL",
+      "kind": "tutorial_case",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/tutorials/nio_ligand_field/energy_level_diagram"
+    },
+    {
+      "id": "QT-331D15048D1BB2AA",
+      "name": "FY $L_{2,3}M_{1}$",
+      "area": "Tutorials",
+      "family": "TUTORIAL",
+      "kind": "tutorial_case",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/tutorials/nio_ligand_field/fy_l23m1"
+    },
+    {
+      "id": "QT-249A888CA1836B7B",
+      "name": "FY $L_{2,3}M_{4,5}$",
+      "area": "Tutorials",
+      "family": "TUTORIAL",
+      "kind": "tutorial_case",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/tutorials/nio_ligand_field/fy_l23m45"
+    },
+    {
+      "id": "QT-AA70D9A9F6A34BC4",
+      "name": "FY RIXS nIXS include",
+      "area": "Tutorials",
+      "family": "TUTORIAL",
+      "kind": "tutorial_case",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/tutorials/nio_ligand_field/fy_rixs_nixs_include"
+    },
+    {
+      "id": "QT-F56B55F749831676",
+      "name": "Groundstate",
+      "area": "Tutorials",
+      "family": "TUTORIAL",
+      "kind": "tutorial_case",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/tutorials/nio_ligand_field/groundstate"
+    },
+    {
+      "id": "QT-20B964DFE2124D47",
+      "name": "nIXS $L_{2,3}$",
+      "area": "Tutorials",
+      "family": "TUTORIAL",
+      "kind": "tutorial_case",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/tutorials/nio_ligand_field/nixs_l23"
+    },
+    {
+      "id": "QT-992DB1EC0DF3E9AB",
+      "name": "nIXS $M_{4,5}$",
+      "area": "Tutorials",
+      "family": "TUTORIAL",
+      "kind": "tutorial_case",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/tutorials/nio_ligand_field/nixs_m45"
+    },
+    {
+      "id": "QT-1CF7ABE9A1669F23",
+      "name": "RIXS $L_{2,3}M_{1}$",
+      "area": "Tutorials",
+      "family": "TUTORIAL",
+      "kind": "tutorial_case",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/tutorials/nio_ligand_field/rixs_l23m1"
+    },
+    {
+      "id": "QT-C6759FB54B7D9B46",
+      "name": "RIXS $L_{2,3}M_{4,5}$",
+      "area": "Tutorials",
+      "family": "TUTORIAL",
+      "kind": "tutorial_case",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/tutorials/nio_ligand_field/rixs_l23m45"
+    },
+    {
+      "id": "QT-6F6217E642C11FD6",
+      "name": "NiO ligand field",
+      "area": "Tutorials",
+      "family": "DOC",
+      "kind": "taxonomy_index",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/tutorials/nio_ligand_field/start"
+    },
+    {
+      "id": "QT-B52EC4C3EB35029D",
+      "name": "Temperature",
+      "area": "Tutorials",
+      "family": "TUTORIAL",
+      "kind": "tutorial_case",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/tutorials/nio_ligand_field/temperature"
+    },
+    {
+      "id": "QT-0367BB64E187F08F",
+      "name": "XAS $L_{2,3}$",
+      "area": "Tutorials",
+      "family": "TUTORIAL",
+      "kind": "tutorial_case",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/tutorials/nio_ligand_field/xas_l23"
+    },
+    {
+      "id": "QT-B1CA57598A3628E3",
+      "name": "XAS $L_{2,3}$ as conductivity tensor",
+      "area": "Tutorials",
+      "family": "TUTORIAL",
+      "kind": "tutorial_case",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/tutorials/nio_ligand_field/xas_l23_as_conductivity_tensor"
+    },
+    {
+      "id": "QT-3CEC8A17DB3DECB5",
+      "name": "XAS $L_{2,3}$ partial excitations",
+      "area": "Tutorials",
+      "family": "TUTORIAL",
+      "kind": "tutorial_case",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/tutorials/nio_ligand_field/xas_l23_partial_excitations"
+    },
+    {
+      "id": "QT-07E2BDEDE21C66CC",
+      "name": "Eigenstates of Coulomb",
+      "area": "Tutorials",
+      "family": "TUTORIAL",
+      "kind": "tutorial_case",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/tutorials/small_programs_a_quick_start/eigenstates_of_coulomb"
+    },
+    {
+      "id": "QT-6E8CD382CD7331D8",
+      "name": "Energy level diagram",
+      "area": "Tutorials",
+      "family": "TUTORIAL",
+      "kind": "tutorial_case",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/tutorials/small_programs_a_quick_start/energy_level_diagram"
+    },
+    {
+      "id": "QT-4264B0BD1926ECD2",
+      "name": "Operators as matrices",
+      "area": "Tutorials",
+      "family": "TUTORIAL",
+      "kind": "tutorial_case",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/tutorials/small_programs_a_quick_start/operators_as_matrices"
+    },
+    {
+      "id": "QT-D6019F9C39B8EDB8",
+      "name": "Small programs: A quick start",
+      "area": "Tutorials",
+      "family": "DOC",
+      "kind": "taxonomy_index",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/tutorials/small_programs_a_quick_start/start"
+    },
+    {
+      "id": "QT-6635B854E235ABA0",
+      "name": "XAS",
+      "area": "Tutorials",
+      "family": "TUTORIAL",
+      "kind": "tutorial_case",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/tutorials/small_programs_a_quick_start/xas"
+    },
+    {
+      "id": "QT-6DE8332B33F35E84",
+      "name": "Tutorials",
+      "area": "Tutorials",
+      "family": "DOC",
+      "kind": "taxonomy_index",
+      "canonical_status": "unassessed",
+      "campaign_state": "not_assessed",
+      "doc_url": "https://www.quanty.org/documentation/tutorials/start"
+    }
+  ],
+  "capabilities": [
+    {
+      "id": "CAP-D1",
+      "name": "D1",
+      "area": "Density, mean field and dynamics",
+      "family": "D",
+      "kind": "capability",
+      "canonical_status": "white",
+      "campaign_state": "not_assessed",
+      "taxonomy_note": ""
+    },
+    {
+      "id": "CAP-D2",
+      "name": "D2",
+      "area": "Density, mean field and dynamics",
+      "family": "D",
+      "kind": "capability",
+      "canonical_status": "white",
+      "campaign_state": "not_assessed",
+      "taxonomy_note": ""
+    },
+    {
+      "id": "CAP-D3",
+      "name": "D3",
+      "area": "Density, mean field and dynamics",
+      "family": "D",
+      "kind": "capability",
+      "canonical_status": "white",
+      "campaign_state": "not_assessed",
+      "taxonomy_note": ""
+    },
+    {
+      "id": "CAP-D4",
+      "name": "D4",
+      "area": "Density, mean field and dynamics",
+      "family": "D",
+      "kind": "capability",
+      "canonical_status": "white",
+      "campaign_state": "not_assessed",
+      "taxonomy_note": ""
+    },
+    {
+      "id": "CAP-D5",
+      "name": "D5",
+      "area": "Density, mean field and dynamics",
+      "family": "D",
+      "kind": "capability",
+      "canonical_status": "white",
+      "campaign_state": "not_assessed",
+      "taxonomy_note": ""
+    },
+    {
+      "id": "CAP-D6",
+      "name": "D6",
+      "area": "Density, mean field and dynamics",
+      "family": "D",
+      "kind": "capability",
+      "canonical_status": "white",
+      "campaign_state": "not_assessed",
+      "taxonomy_note": ""
+    },
+    {
+      "id": "CAP-M1",
+      "name": "M1",
+      "area": "Material models",
+      "family": "M",
+      "kind": "capability",
+      "canonical_status": "yellow",
+      "campaign_state": "not_assessed",
+      "taxonomy_note": ""
+    },
+    {
+      "id": "CAP-M2",
+      "name": "M2",
+      "area": "Material models",
+      "family": "M",
+      "kind": "capability",
+      "canonical_status": "orange",
+      "campaign_state": "not_assessed",
+      "taxonomy_note": ""
+    },
+    {
+      "id": "CAP-M3",
+      "name": "M3",
+      "area": "Material models",
+      "family": "M",
+      "kind": "capability",
+      "canonical_status": "white",
+      "campaign_state": "not_assessed",
+      "taxonomy_note": ""
+    },
+    {
+      "id": "CAP-M4",
+      "name": "M4",
+      "area": "Material models",
+      "family": "M",
+      "kind": "capability",
+      "canonical_status": "white",
+      "campaign_state": "not_assessed",
+      "taxonomy_note": ""
+    },
+    {
+      "id": "CAP-M5",
+      "name": "M5",
+      "area": "Material models",
+      "family": "M",
+      "kind": "capability",
+      "canonical_status": "white",
+      "campaign_state": "not_assessed",
+      "taxonomy_note": ""
+    },
+    {
+      "id": "CAP-M6",
+      "name": "M6",
+      "area": "Material models",
+      "family": "M",
+      "kind": "capability",
+      "canonical_status": "white",
+      "campaign_state": "not_assessed",
+      "taxonomy_note": ""
+    },
+    {
+      "id": "CAP-MB1",
+      "name": "MB1",
+      "area": "Many-body core",
+      "family": "MB",
+      "kind": "capability",
+      "canonical_status": "green",
+      "campaign_state": "not_assessed",
+      "taxonomy_note": ""
+    },
+    {
+      "id": "CAP-MB2",
+      "name": "MB2",
+      "area": "Many-body core",
+      "family": "MB",
+      "kind": "capability",
+      "canonical_status": "yellow",
+      "campaign_state": "not_assessed",
+      "taxonomy_note": ""
+    },
+    {
+      "id": "CAP-MB3",
+      "name": "MB3",
+      "area": "Many-body core",
+      "family": "MB",
+      "kind": "capability",
+      "canonical_status": "green",
+      "campaign_state": "not_assessed",
+      "taxonomy_note": ""
+    },
+    {
+      "id": "CAP-MB4",
+      "name": "MB4",
+      "area": "Many-body core",
+      "family": "MB",
+      "kind": "capability",
+      "canonical_status": "yellow",
+      "campaign_state": "not_assessed",
+      "taxonomy_note": ""
+    },
+    {
+      "id": "CAP-MB5",
+      "name": "MB5",
+      "area": "Many-body core",
+      "family": "MB",
+      "kind": "capability",
+      "canonical_status": "yellow",
+      "campaign_state": "not_assessed",
+      "taxonomy_note": ""
+    },
+    {
+      "id": "CAP-MB6",
+      "name": "MB6",
+      "area": "Many-body core",
+      "family": "MB",
+      "kind": "capability",
+      "canonical_status": "white",
+      "campaign_state": "not_assessed",
+      "taxonomy_note": ""
+    },
+    {
+      "id": "CAP-MB7",
+      "name": "MB7",
+      "area": "Many-body core",
+      "family": "MB",
+      "kind": "capability",
+      "canonical_status": "orange",
+      "campaign_state": "not_assessed",
+      "taxonomy_note": ""
+    },
+    {
+      "id": "CAP-P1",
+      "name": "P1",
+      "area": "Hamiltonian and physics",
+      "family": "P",
+      "kind": "capability",
+      "canonical_status": "green",
+      "campaign_state": "not_assessed",
+      "taxonomy_note": ""
+    },
+    {
+      "id": "CAP-P2",
+      "name": "P2",
+      "area": "Hamiltonian and physics",
+      "family": "P",
+      "kind": "capability",
+      "canonical_status": "green",
+      "campaign_state": "not_assessed",
+      "taxonomy_note": ""
+    },
+    {
+      "id": "CAP-P3",
+      "name": "P3",
+      "area": "Hamiltonian and physics",
+      "family": "P",
+      "kind": "capability",
+      "canonical_status": "green",
+      "campaign_state": "not_assessed",
+      "taxonomy_note": ""
+    },
+    {
+      "id": "CAP-P4",
+      "name": "P4",
+      "area": "Hamiltonian and physics",
+      "family": "P",
+      "kind": "capability",
+      "canonical_status": "yellow",
+      "campaign_state": "not_assessed",
+      "taxonomy_note": ""
+    },
+    {
+      "id": "CAP-P5",
+      "name": "P5",
+      "area": "Hamiltonian and physics",
+      "family": "P",
+      "kind": "capability",
+      "canonical_status": "yellow",
+      "campaign_state": "not_assessed",
+      "taxonomy_note": ""
+    },
+    {
+      "id": "CAP-P6",
+      "name": "P6",
+      "area": "Hamiltonian and physics",
+      "family": "P",
+      "kind": "capability",
+      "canonical_status": "yellow",
+      "campaign_state": "not_assessed",
+      "taxonomy_note": ""
+    },
+    {
+      "id": "CAP-P7",
+      "name": "P7",
+      "area": "Hamiltonian and physics",
+      "family": "P",
+      "kind": "capability",
+      "canonical_status": "green",
+      "campaign_state": "not_assessed",
+      "taxonomy_note": ""
+    },
+    {
+      "id": "CAP-P8",
+      "name": "P8",
+      "area": "Hamiltonian and physics",
+      "family": "P",
+      "kind": "capability",
+      "canonical_status": "orange",
+      "campaign_state": "not_assessed",
+      "taxonomy_note": ""
+    },
+    {
+      "id": "CAP-R1",
+      "name": "R1",
+      "area": "Runtime and API",
+      "family": "R",
+      "kind": "capability",
+      "canonical_status": "green",
+      "campaign_state": "not_assessed",
+      "taxonomy_note": ""
+    },
+    {
+      "id": "CAP-R2",
+      "name": "R2",
+      "area": "Runtime and API",
+      "family": "R",
+      "kind": "capability",
+      "canonical_status": "green",
+      "campaign_state": "not_assessed",
+      "taxonomy_note": ""
+    },
+    {
+      "id": "CAP-R3",
+      "name": "R3",
+      "area": "Runtime and API",
+      "family": "R",
+      "kind": "capability",
+      "canonical_status": "green",
+      "campaign_state": "not_assessed",
+      "taxonomy_note": ""
+    },
+    {
+      "id": "CAP-R4",
+      "name": "R4",
+      "area": "Runtime and API",
+      "family": "R",
+      "kind": "capability",
+      "canonical_status": "green",
+      "campaign_state": "not_assessed",
+      "taxonomy_note": ""
+    },
+    {
+      "id": "CAP-R5",
+      "name": "R5",
+      "area": "Runtime and API",
+      "family": "R",
+      "kind": "capability",
+      "canonical_status": "yellow",
+      "campaign_state": "not_assessed",
+      "taxonomy_note": ""
+    },
+    {
+      "id": "CAP-R6",
+      "name": "R6",
+      "area": "Runtime and API",
+      "family": "R",
+      "kind": "capability",
+      "canonical_status": "yellow",
+      "campaign_state": "not_assessed",
+      "taxonomy_note": ""
+    },
+    {
+      "id": "CAP-R7",
+      "name": "R7",
+      "area": "Runtime and API",
+      "family": "R",
+      "kind": "capability",
+      "canonical_status": "orange",
+      "campaign_state": "not_assessed",
+      "taxonomy_note": ""
+    },
+    {
+      "id": "CAP-R8",
+      "name": "R8",
+      "area": "Runtime and API",
+      "family": "R",
+      "kind": "capability",
+      "canonical_status": "orange",
+      "campaign_state": "not_assessed",
+      "taxonomy_note": ""
+    },
+    {
+      "id": "CAP-R9",
+      "name": "R9",
+      "area": "Runtime and API",
+      "family": "R",
+      "kind": "capability",
+      "canonical_status": "white",
+      "campaign_state": "not_assessed",
+      "taxonomy_note": ""
+    },
+    {
+      "id": "CAP-S1",
+      "name": "S1",
+      "area": "Solvers",
+      "family": "S",
+      "kind": "capability",
+      "canonical_status": "green",
+      "campaign_state": "not_assessed",
+      "taxonomy_note": ""
+    },
+    {
+      "id": "CAP-S2",
+      "name": "S2",
+      "area": "Solvers",
+      "family": "S",
+      "kind": "capability",
+      "canonical_status": "yellow",
+      "campaign_state": "not_assessed",
+      "taxonomy_note": ""
+    },
+    {
+      "id": "CAP-S3",
+      "name": "S3",
+      "area": "Solvers",
+      "family": "S",
+      "kind": "capability",
+      "canonical_status": "yellow",
+      "campaign_state": "not_assessed",
+      "taxonomy_note": ""
+    },
+    {
+      "id": "CAP-S4",
+      "name": "S4",
+      "area": "Solvers",
+      "family": "S",
+      "kind": "capability",
+      "canonical_status": "orange",
+      "campaign_state": "not_assessed",
+      "taxonomy_note": ""
+    },
+    {
+      "id": "CAP-S5",
+      "name": "S5",
+      "area": "Solvers",
+      "family": "S",
+      "kind": "capability",
+      "canonical_status": "orange",
+      "campaign_state": "not_assessed",
+      "taxonomy_note": ""
+    },
+    {
+      "id": "CAP-S6",
+      "name": "S6",
+      "area": "Solvers",
+      "family": "S",
+      "kind": "capability",
+      "canonical_status": "orange",
+      "campaign_state": "not_assessed",
+      "taxonomy_note": ""
+    },
+    {
+      "id": "CAP-U1",
+      "name": "U1",
+      "area": "Product and UX",
+      "family": "U",
+      "kind": "capability",
+      "canonical_status": "green",
+      "campaign_state": "not_assessed",
+      "taxonomy_note": ""
+    },
+    {
+      "id": "CAP-U2",
+      "name": "U2",
+      "area": "Product and UX",
+      "family": "U",
+      "kind": "capability",
+      "canonical_status": "yellow",
+      "campaign_state": "not_assessed",
+      "taxonomy_note": ""
+    },
+    {
+      "id": "CAP-U3",
+      "name": "U3",
+      "area": "Product and UX",
+      "family": "U",
+      "kind": "capability",
+      "canonical_status": "yellow",
+      "campaign_state": "not_assessed",
+      "taxonomy_note": ""
+    },
+    {
+      "id": "CAP-U4",
+      "name": "U4",
+      "area": "Product and UX",
+      "family": "U",
+      "kind": "capability",
+      "canonical_status": "orange",
+      "campaign_state": "not_assessed",
+      "taxonomy_note": ""
+    },
+    {
+      "id": "CAP-U5",
+      "name": "U5",
+      "area": "Product and UX",
+      "family": "U",
+      "kind": "capability",
+      "canonical_status": "orange",
+      "campaign_state": "not_assessed",
+      "taxonomy_note": ""
+    },
+    {
+      "id": "CAP-V1",
+      "name": "V1",
+      "area": "Verification and validation",
+      "family": "V",
+      "kind": "capability",
+      "canonical_status": "green",
+      "campaign_state": "not_assessed",
+      "taxonomy_note": ""
+    },
+    {
+      "id": "CAP-V2",
+      "name": "V2",
+      "area": "Verification and validation",
+      "family": "V",
+      "kind": "capability",
+      "canonical_status": "green",
+      "campaign_state": "not_assessed",
+      "taxonomy_note": ""
+    },
+    {
+      "id": "CAP-V3",
+      "name": "V3",
+      "area": "Verification and validation",
+      "family": "V",
+      "kind": "capability",
+      "canonical_status": "green",
+      "campaign_state": "not_assessed",
+      "taxonomy_note": ""
+    },
+    {
+      "id": "CAP-V4",
+      "name": "V4",
+      "area": "Verification and validation",
+      "family": "V",
+      "kind": "capability",
+      "canonical_status": "yellow",
+      "campaign_state": "not_assessed",
+      "taxonomy_note": ""
+    },
+    {
+      "id": "CAP-V5",
+      "name": "V5",
+      "area": "Verification and validation",
+      "family": "V",
+      "kind": "capability",
+      "canonical_status": "yellow",
+      "campaign_state": "not_assessed",
+      "taxonomy_note": ""
+    },
+    {
+      "id": "CAP-V6",
+      "name": "V6",
+      "area": "Verification and validation",
+      "family": "V",
+      "kind": "capability",
+      "canonical_status": "yellow",
+      "campaign_state": "not_assessed",
+      "taxonomy_note": ""
+    },
+    {
+      "id": "CAP-V7",
+      "name": "V7",
+      "area": "Verification and validation",
+      "family": "V",
+      "kind": "capability",
+      "canonical_status": "orange",
+      "campaign_state": "not_assessed",
+      "taxonomy_note": ""
+    },
+    {
+      "id": "CAP-V8",
+      "name": "V8",
+      "area": "Verification and validation",
+      "family": "V",
+      "kind": "capability",
+      "canonical_status": "white",
+      "campaign_state": "not_assessed",
+      "taxonomy_note": ""
+    },
+    {
+      "id": "CAP-V9",
+      "name": "V9",
+      "area": "Verification and validation",
+      "family": "V",
+      "kind": "capability",
+      "canonical_status": "yellow",
+      "campaign_state": "not_assessed",
+      "taxonomy_note": "Pending #71: classify as Workbench Platform/Scientific Operations"
+    },
+    {
+      "id": "CAP-X1",
+      "name": "X1",
+      "area": "Spectroscopy and response",
+      "family": "X",
+      "kind": "capability",
+      "canonical_status": "green",
+      "campaign_state": "not_assessed",
+      "taxonomy_note": ""
+    },
+    {
+      "id": "CAP-X10",
+      "name": "X10",
+      "area": "Spectroscopy and response",
+      "family": "X",
+      "kind": "capability",
+      "canonical_status": "white",
+      "campaign_state": "not_assessed",
+      "taxonomy_note": ""
+    },
+    {
+      "id": "CAP-X11",
+      "name": "X11",
+      "area": "Spectroscopy and response",
+      "family": "X",
+      "kind": "capability",
+      "canonical_status": "orange",
+      "campaign_state": "not_assessed",
+      "taxonomy_note": ""
+    },
+    {
+      "id": "CAP-X2",
+      "name": "X2",
+      "area": "Spectroscopy and response",
+      "family": "X",
+      "kind": "capability",
+      "canonical_status": "green",
+      "campaign_state": "not_assessed",
+      "taxonomy_note": ""
+    },
+    {
+      "id": "CAP-X3",
+      "name": "X3",
+      "area": "Spectroscopy and response",
+      "family": "X",
+      "kind": "capability",
+      "canonical_status": "green",
+      "campaign_state": "not_assessed",
+      "taxonomy_note": ""
+    },
+    {
+      "id": "CAP-X4",
+      "name": "X4",
+      "area": "Spectroscopy and response",
+      "family": "X",
+      "kind": "capability",
+      "canonical_status": "green",
+      "campaign_state": "not_assessed",
+      "taxonomy_note": ""
+    },
+    {
+      "id": "CAP-X5",
+      "name": "X5",
+      "area": "Spectroscopy and response",
+      "family": "X",
+      "kind": "capability",
+      "canonical_status": "yellow",
+      "campaign_state": "not_assessed",
+      "taxonomy_note": ""
+    },
+    {
+      "id": "CAP-X6",
+      "name": "X6",
+      "area": "Spectroscopy and response",
+      "family": "X",
+      "kind": "capability",
+      "canonical_status": "orange",
+      "campaign_state": "not_assessed",
+      "taxonomy_note": ""
+    },
+    {
+      "id": "CAP-X7",
+      "name": "X7",
+      "area": "Spectroscopy and response",
+      "family": "X",
+      "kind": "capability",
+      "canonical_status": "white",
+      "campaign_state": "not_assessed",
+      "taxonomy_note": ""
+    },
+    {
+      "id": "CAP-X8",
+      "name": "X8",
+      "area": "Spectroscopy and response",
+      "family": "X",
+      "kind": "capability",
+      "canonical_status": "white",
+      "campaign_state": "not_assessed",
+      "taxonomy_note": ""
+    },
+    {
+      "id": "CAP-X9",
+      "name": "X9",
+      "area": "Spectroscopy and response",
+      "family": "X",
+      "kind": "capability",
+      "canonical_status": "white",
+      "campaign_state": "not_assessed",
+      "taxonomy_note": ""
+    }
+  ],
+  "product": [
+    {
+      "id": "UX-AI-01",
+      "name": "Local service status and model discovery",
+      "area": "Local AI and Ollama",
+      "family": "Workbench",
+      "kind": "product_test",
+      "canonical_status": "proposed",
+      "campaign_state": "not_assessed"
+    },
+    {
+      "id": "UX-AI-02",
+      "name": "Model download, storage and removal",
+      "area": "Local AI and Ollama",
+      "family": "Workbench",
+      "kind": "product_test",
+      "canonical_status": "proposed",
+      "campaign_state": "not_assessed"
+    },
+    {
+      "id": "UX-AI-03",
+      "name": "Context-aware model chat with attribution",
+      "area": "Local AI and Ollama",
+      "family": "Workbench",
+      "kind": "product_test",
+      "canonical_status": "proposed",
+      "campaign_state": "not_assessed"
+    },
+    {
+      "id": "UX-AI-04",
+      "name": "LaTeX and Mermaid safe rendering",
+      "area": "Local AI and Ollama",
+      "family": "Workbench",
+      "kind": "product_test",
+      "canonical_status": "proposed",
+      "campaign_state": "not_assessed"
+    },
+    {
+      "id": "UX-AN-01",
+      "name": "LH/LV alignment, subtraction and interpretation limits",
+      "area": "Spectral analysis",
+      "family": "Workbench",
+      "kind": "product_test",
+      "canonical_status": "proposed",
+      "campaign_state": "not_assessed"
+    },
+    {
+      "id": "UX-AN-02",
+      "name": "Peak and minimum detection",
+      "area": "Spectral analysis",
+      "family": "Workbench",
+      "kind": "product_test",
+      "canonical_status": "proposed",
+      "campaign_state": "not_assessed"
+    },
+    {
+      "id": "UX-AN-03",
+      "name": "Fit residuals and model-sensitivity diagnostics",
+      "area": "Spectral analysis",
+      "family": "Workbench",
+      "kind": "product_test",
+      "canonical_status": "proposed",
+      "campaign_state": "not_assessed"
+    },
+    {
+      "id": "UX-AN-04",
+      "name": "Spectral comparison and uncertainty",
+      "area": "Spectral analysis",
+      "family": "Workbench",
+      "kind": "product_test",
+      "canonical_status": "proposed",
+      "campaign_state": "not_assessed"
+    },
+    {
+      "id": "UX-API-01",
+      "name": "Typed request/result API contracts",
+      "area": "API and CLI",
+      "family": "Workbench",
+      "kind": "product_test",
+      "canonical_status": "proposed",
+      "campaign_state": "not_assessed"
+    },
+    {
+      "id": "UX-API-02",
+      "name": "Source-derived illustrated API catalogue",
+      "area": "API and CLI",
+      "family": "Workbench",
+      "kind": "product_test",
+      "canonical_status": "proposed",
+      "campaign_state": "not_assessed"
+    },
+    {
+      "id": "UX-API-03",
+      "name": "CLI argument and error handling",
+      "area": "API and CLI",
+      "family": "Workbench",
+      "kind": "product_test",
+      "canonical_status": "proposed",
+      "campaign_state": "not_assessed"
+    },
+    {
+      "id": "UX-DATA-01",
+      "name": "Data import and format validation",
+      "area": "Data and preprocessing",
+      "family": "Workbench",
+      "kind": "product_test",
+      "canonical_status": "proposed",
+      "campaign_state": "not_assessed"
+    },
+    {
+      "id": "UX-DATA-02",
+      "name": "Energy-grid identities and units",
+      "area": "Data and preprocessing",
+      "family": "Workbench",
+      "kind": "product_test",
+      "canonical_status": "proposed",
+      "campaign_state": "not_assessed"
+    },
+    {
+      "id": "UX-DATA-03",
+      "name": "I0 normalization and provenance",
+      "area": "Data and preprocessing",
+      "family": "Workbench",
+      "kind": "product_test",
+      "canonical_status": "proposed",
+      "campaign_state": "not_assessed"
+    },
+    {
+      "id": "UX-DATA-04",
+      "name": "Background model selection and correction",
+      "area": "Data and preprocessing",
+      "family": "Workbench",
+      "kind": "product_test",
+      "canonical_status": "proposed",
+      "campaign_state": "not_assessed"
+    },
+    {
+      "id": "UX-EV-01",
+      "name": "Exact-head evidence and checksum integrity",
+      "area": "Evidence and publication",
+      "family": "Workbench",
+      "kind": "product_test",
+      "canonical_status": "proposed",
+      "campaign_state": "not_assessed"
+    },
+    {
+      "id": "UX-EV-02",
+      "name": "Typed provenance and QES hard gates",
+      "area": "Evidence and publication",
+      "family": "Workbench",
+      "kind": "product_test",
+      "canonical_status": "proposed",
+      "campaign_state": "not_assessed"
+    },
+    {
+      "id": "UX-EV-03",
+      "name": "Roadmap/Periodic Table/Pages provenance",
+      "area": "Evidence and publication",
+      "family": "Workbench",
+      "kind": "product_test",
+      "canonical_status": "proposed",
+      "campaign_state": "not_assessed"
+    },
+    {
+      "id": "UX-INST-01",
+      "name": "Windows installation and repeatability",
+      "area": "Installation",
+      "family": "Workbench",
+      "kind": "product_test",
+      "canonical_status": "proposed",
+      "campaign_state": "not_assessed"
+    },
+    {
+      "id": "UX-INST-02",
+      "name": "Linux installation and repeatability",
+      "area": "Installation",
+      "family": "Workbench",
+      "kind": "product_test",
+      "canonical_status": "proposed",
+      "campaign_state": "not_assessed"
+    },
+    {
+      "id": "UX-MODEL-01",
+      "name": "Model parameter and convention editing",
+      "area": "Quanty modelling UI",
+      "family": "Workbench",
+      "kind": "product_test",
+      "canonical_status": "proposed",
+      "campaign_state": "not_assessed"
+    },
+    {
+      "id": "UX-MODEL-02",
+      "name": "Execution status, cancellation and errors",
+      "area": "Quanty modelling UI",
+      "family": "Workbench",
+      "kind": "product_test",
+      "canonical_status": "proposed",
+      "campaign_state": "not_assessed"
+    },
+    {
+      "id": "UX-MODEL-03",
+      "name": "Native versus Quanty result comparison",
+      "area": "Quanty modelling UI",
+      "family": "Workbench",
+      "kind": "product_test",
+      "canonical_status": "proposed",
+      "campaign_state": "not_assessed"
+    },
+    {
+      "id": "UX-PLOT-01",
+      "name": "Pan and zoom preserve physical coordinates",
+      "area": "Graphs and visualization",
+      "family": "Workbench",
+      "kind": "product_test",
+      "canonical_status": "proposed",
+      "campaign_state": "not_assessed"
+    },
+    {
+      "id": "UX-PLOT-02",
+      "name": "Energy peak markers follow data-space positions",
+      "area": "Graphs and visualization",
+      "family": "Workbench",
+      "kind": "product_test",
+      "canonical_status": "proposed",
+      "campaign_state": "not_assessed"
+    },
+    {
+      "id": "UX-PLOT-03",
+      "name": "Multi-curve and energy-level views",
+      "area": "Graphs and visualization",
+      "family": "Workbench",
+      "kind": "product_test",
+      "canonical_status": "proposed",
+      "campaign_state": "not_assessed"
+    },
+    {
+      "id": "UX-PLOT-04",
+      "name": "Scientific plot and figure export",
+      "area": "Graphs and visualization",
+      "family": "Workbench",
+      "kind": "product_test",
+      "canonical_status": "proposed",
+      "campaign_state": "not_assessed"
+    },
+    {
+      "id": "UX-UX-01",
+      "name": "Progress, loading and long-running tasks",
+      "area": "User experience",
+      "family": "Workbench",
+      "kind": "product_test",
+      "canonical_status": "proposed",
+      "campaign_state": "not_assessed"
+    },
+    {
+      "id": "UX-UX-02",
+      "name": "Actionable and safe error messages",
+      "area": "User experience",
+      "family": "Workbench",
+      "kind": "product_test",
+      "canonical_status": "proposed",
+      "campaign_state": "not_assessed"
+    }
+  ]
+}
