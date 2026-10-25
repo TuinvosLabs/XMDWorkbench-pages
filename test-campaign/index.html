@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light">
+<meta name="description" content="XMD Workbench evidence-first scientific test campaign, derived from reviewed Quanty and capability inventories.">
+<title>XMD Workbench | Scientific Test Campaign</title>
+<style>
+:root{font-family:Inter,"Segoe UI",system-ui,-apple-system,sans-serif;color:#172332;background:#f5f7fa;line-height:1.5}
+*{box-sizing:border-box}body{margin:0}a{color:#1254a6}a:focus-visible,button:focus-visible,select:focus-visible,input:focus-visible{outline:3px solid #487fe1;outline-offset:3px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+header{background:#142439;color:#fff;padding:20px clamp(18px,4vw,64px) 36px}
+nav{display:flex;flex-wrap:wrap;gap:9px;align-items:center;margin-bottom:34px}
+nav a{display:inline-block;color:#e3ebf5;text-decoration:none;border:1px solid #52647b;border-radius:7px;padding:6px 12px;font-size:13px}
+nav a[aria-current="page"]{background:#eef4ff;color:#10223c}
+.eyebrow{text-transform:uppercase;font-size:12px;letter-spacing:.13em;color:#9cc8f3;font-weight:700}
+h1{font-weight:750;letter-spacing:-.04em;font-size:clamp(30px,4vw,52px);margin:8px 0;line-height:1.13}
+.lead{max-width:790px;color:#d0dce8;font-size:16px}
+.notice{max-width:800px;margin-top:20px;border-left:3px solid #f4b856;padding:8px 14px;background:#203550;color:#e8f1fd;font-size:13px}
+main{max-width:1460px;margin:0 auto;padding:28px clamp(14px,3vw,40px) 68px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(175px,1fr));gap:12px;margin-bottom:24px}
+.card{border:1px solid #dae1e9;border-radius:10px;background:#fff;padding:15px 17px;min-height:116px;box-shadow:0 2px 8px #15273c07}
+.kpi-label{display:block;color:#607083;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.06em}
+.kpi-value{font-size:32px;font-weight:740;display:block;line-height:1.26;margin:8px 0 4px;font-variant-numeric:tabular-nums}
+.kpi-detail{font-size:12px;color:#657487}
+.panel{background:white;border:1px solid #dbe2ea;border-radius:12px;padding:20px;margin:20px 0;box-shadow:0 2px 10px #15273c07}
+h2{font-size:20px;letter-spacing:-.015em;margin:0 0 12px}
+h3{font-size:15px;margin:0 0 9px}
+.muted{font-size:13px;color:#637286;max-width:950px}
+.split{display:grid;grid-template-columns:minmax(300px,1fr) minmax(300px,1fr);gap:18px}
+.bars{display:grid;gap:9px}
+.bar-row{display:grid;grid-template-columns:minmax(140px,1fr) minmax(130px,3fr) 55px;gap:11px;align-items:center;font-size:13px}
+.track{height:12px;background:#edf1f5;border-radius:10px;overflow:hidden}
+.fill{height:100%;background:#5a7ea5;min-width:0}
+.bar-row strong{text-align:right;font-variant-numeric:tabular-nums}
+.foot-note{margin:15px 0 0;color:#526276;font-size:12px}
+.gates{display:grid;grid-template-columns:repeat(auto-fit,minmax(225px,1fr));gap:8px}
+.gate{display:flex;gap:9px;align-items:flex-start;padding:9px 11px;border:1px solid #e1e6ed;border-radius:7px;font-size:12px}
+.gate b{font-size:12px;color:#31577c}
+.controls{display:grid;grid-template-columns:minmax(220px,2fr) repeat(3,minmax(130px,1fr));gap:13px;margin-top:15px}
+label{display:block;font-size:12px;font-weight:700;color:#48596e}
+input,select{font:inherit;font-size:14px;border:1px solid #b6c2d1;border-radius:7px;background:#fff;padding:10px;color:#182838;width:100%;margin-top:5px}
+.table-top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin:19px 0 8px}
+.table-top span{color:#5d6a7a;font-size:13px}
+button{font:inherit;border:1px solid #b1bfd0;background:#fff;color:#233c5b;border-radius:7px;padding:8px 12px;cursor:pointer}
+button:hover:not(:disabled){background:#e8eff8}button:disabled{opacity:.4;cursor:not-allowed}
+.table-scroll{overflow:auto;border:1px solid #dce3eb;border-radius:8px}
+table{width:100%;border-collapse:collapse;min-width:840px;font-size:13px}
+thead{background:#f0f4f8;color:#485e78}th{text-align:left;padding:11px 10px;white-space:nowrap}
+td{padding:10px;border-top:1px solid #e8edf2;vertical-align:top}
+tbody tr:nth-child(even){background:#fafbfd}
+td:first-child{white-space:nowrap;font:12px ui-monospace,SFMono-Regular,Consolas,monospace;color:#496174}
+td:nth-child(4){font-weight:600}.pill{display:inline-block;padding:2px 9px;border:1px solid #d4dce6;border-radius:999px;background:#f5f8fb;white-space:nowrap;font-size:11px}
+.pill.green{background:#e9f5ed;border-color:#a3d0b3;color:#27623c}
+.pill.yellow{background:#fff6df;border-color:#f2d28a;color:#735414}
+.pill.orange{background:#fff0e1;border-color:#f0c39c;color:#855026}
+.pill.white{background:#fff;color:#56677b}
+small.details{display:block;color:#6b7c90;font-weight:400}
+.pagination{display:flex;align-items:center;justify-content:flex-end;gap:11px;margin-top:12px;font-size:13px;color:#5d6d80}
+footer{text-align:center;color:#6b7a8d;font-size:12px;padding:18px}
+.error{color:#8d2b2b;background:#fff2f2;border:1px solid #ecc8c8;border-radius:7px;padding:12px}
+@media(max-width:800px){.split,.controls{grid-template-columns:1fr 1fr}.controls>label:first-child{grid-column:1/-1}}
+@media(max-width:520px){.split,.controls{grid-template-columns:1fr}.controls>label:first-child{grid-column:auto}.bar-row{grid-template-columns:100px minmax(100px,1fr) 40px}header{padding-bottom:24px}}
+</style>
+</head>
+<body>
+<header>
+<nav aria-label="Dashboard navigation">
+<a href="../">Home</a><a href="../roadmap/">Roadmap</a><a href="../roadmap/periodic.html">Periodic Table</a>
+<a href="../evidence/">Evidence</a><a aria-current="page" href="./">Test Campaign</a>
+</nav>
+<div class="eyebrow">XMD Workbench / scientific operations</div>
+<h1>Master Test &amp; Capability Campaign</h1>
+<p class="lead">A complete, evidence-first acceptance programme for documented Quanty semantics, Quantum Core capabilities and Workbench product workflows.</p>
+<div class="notice" role="status" id="publication">Loading review-state and source-backed inventory. This page must not be interpreted as released scientific parity.</div>
+</header>
+<main>
+<section aria-label="Source-backed overview" class="cards" id="summary"></section>
+<div class="split">
+<section class="panel" aria-labelledby="kinds-head">
+<h2 id="kinds-head">Quanty record types</h2>
+<p class="muted">Function/method leaves are separate from taxonomy pages. One record belongs to one type only.</p>
+<div id="kinds" class="bars"></div>
+</section>
+<section class="panel" aria-labelledby="status-head">
+<h2 id="status-head">Existing canonical capability colours</h2>
+<p class="muted">Colour is a maturity classification, not proof that the new T0–T8 campaign has been accepted. V9 is pending operational reclassification.</p>
+<div id="status-bars" class="bars"></div>
+</section>
+</div>
+<section class="panel" aria-labelledby="gates-head">
+<h2 id="gates-head">Evidence gates T0–T8</h2>
+<p class="muted">Each row has an applicable profile in the private register. Quanty executable parity (T3) and experimental material validation (T8) are different, conditional claims.</p>
+<div class="gates" id="gate-list"></div>
+</section>
+<section class="panel" aria-labelledby="explore-head">
+<h2 id="explore-head">Explore the test register</h2>
+<p class="muted">Canonical status mirrors the accepted inventory. All new campaign checks remain <strong>not assessed</strong> until independently reviewed evidence has been reconciled. Neither draft PRs nor green CI automatically certify a test.</p>
+<div class="controls">
+<label for="search">Find test, function or capability<input id="search" type="search" placeholder="e.g. Ssqr, Eigensystem, X5, background" autocomplete="off"></label>
+<label for="domain">Inventory<select id="domain"><option value="all">All inventories</option><option value="quanty">Quanty records</option><option value="capabilities">Quantum Core nodes</option><option value="product">Workbench product tests</option></select></label>
+<label for="kind">Record type<select id="kind"><option value="all">All record types</option></select></label>
+<label for="status">Canonical maturity<select id="status"><option value="all">All canonical statuses</option></select></label>
+</div>
+<div class="table-top"><span id="match-count" aria-live="polite">Loading source-backed rows…</span><button id="csv" type="button">Export current selection (CSV)</button></div>
+<div class="table-scroll">
+<table aria-label="Test register" id="register"><thead><tr><th scope="col">Test ID</th><th scope="col">Area / family</th><th scope="col">Kind</th><th scope="col">Function / capability</th><th scope="col">Canonical status</th><th scope="col">Test acceptance</th><th scope="col">Reference</th></tr></thead><tbody id="rows"></tbody></table>
+</div>
+<div class="pagination"><button id="previous" type="button">Previous</button><span id="page-count">—</span><button id="next" type="button">Next</button></div>
+</section>
+<section class="panel" aria-labelledby="scope-head">
+<h2 id="scope-head">Interpretation and release boundary</h2>
+<p class="muted">This dashboard is a planned test register, not a released Quanty-parity certificate. An implemented function, a passing test, a scientific model matching an executable reference and a material validated against experimental measurement are distinct outcomes. QES is intentionally omitted until the typed, feature-bound evidence validator and Roadmap/Periodic Table publication contract have been approved.</p>
+<p class="muted">Existing accepted history remains immutable. Only the canonical sources can change maturity statuses. The public dashboard is a sanitized projection and never a source of truth.</p>
+</section>
+</main>
+<footer>Sanitized, deterministic source-backed preview · XMD Workbench · No private NAS paths, raw case logs or secrets are published here.</footer>
+<script>
+"use strict";
+const $ = (name) => document.getElementById(name);
+const PAGE_SIZE = 50;
+const state = {items:[],filtered:[],page:0,data:null};
+function text(node,content){node.textContent=String(content);return node;}
+function element(name,parent,cls,content){
+  const n=document.createElement(name);
+  if(cls)n.className=cls;
+  if(content!==undefined)text(n,content);
+  if(parent)parent.appendChild(n);
+  return n;
+}
+function card(label,value,detail){
+  const p=element("article",$("summary"),"card");
+  element("span",p,"kpi-label",label);
+  element("strong",p,"kpi-value",value);
+  element("span",p,"kpi-detail",detail);
+}
+function bar(parent,label,count,total){
+  const row=element("div",parent,"bar-row");
+  element("span",row,"",label.replace(/_/g," "));
+  const track=element("div",row,"track");
+  const fill=element("div",track,"fill");
+  fill.style.width=(total ? 100*count/total:0)+"%";
+  element("strong",row,"",count);
+}
+function makeOption(select,value,title){
+  const o=document.createElement("option");o.value=value;text(o,title);select.appendChild(o);
+}
+function badge(cell,status){
+  const className=["green","yellow","orange","white"].includes(status)?status:"";
+  element("span",cell,"pill "+className,status.replace(/_/g," "));
+}
+function safeDocLink(url){
+  try{const parsed=new URL(url);
+    if(parsed.protocol==="https:" && parsed.hostname==="www.quanty.org" &&
+       parsed.pathname.startsWith("/documentation/") && !parsed.username && !parsed.password && !parsed.search && !parsed.hash)
+      return parsed.href;
+  }catch(_e){}
+  return null;
+}
+function asRows(data){
+  const all=[];
+  for(const item of data.quanty){
+    all.push(Object.assign({inventory:"quanty"},item));
+  }
+  for(const item of data.capabilities){
+    all.push(Object.assign({inventory:"capabilities"},item));
+  }
+  for(const item of data.product){
+    all.push(Object.assign({inventory:"product"},item));
+  }
+  return all;
+}
+function displayRow(r,parent){
+  const tr=element("tr",parent);
+  element("td",tr,"",r.id);
+  const area=element("td",tr,"",r.area);
+  element("small",area,"details",r.family||"");
+  element("td",tr,"",r.kind.replace(/_/g," "));
+  const named=element("td",tr,"",r.name);
+  if(r.taxonomy_note)element("small",named,"details",r.taxonomy_note);
+  badge(element("td",tr),r.canonical_status);
+  badge(element("td",tr),r.campaign_state);
+  const ref=element("td",tr);
+  const url=r.doc_url&&safeDocLink(r.doc_url);
+  if(url){const link=element("a",ref,"","Quanty docs");link.href=url;link.target="_blank";link.rel="noopener noreferrer";}
+  else text(ref,"—");
+}
+function draw(){
+  const query=$("search").value.trim().toLowerCase();
+  const domain=$("domain").value, kind=$("kind").value, status=$("status").value;
+  state.filtered=state.items.filter(r=>
+    (domain==="all"||r.inventory===domain)&&
+    (kind==="all"||r.kind===kind)&&
+    (status==="all"||r.canonical_status===status)&&
+    (!query||[r.id,r.name,r.area,r.family,r.kind].join(" ").toLowerCase().includes(query))
+  );
+  const maxPage=Math.max(0,Math.ceil(state.filtered.length/PAGE_SIZE)-1);
+  if(state.page>maxPage)state.page=maxPage;
+  const tbody=$("rows");tbody.replaceChildren();
+  const begin=state.page*PAGE_SIZE;
+  state.filtered.slice(begin,begin+PAGE_SIZE).forEach(r=>displayRow(r,tbody));
+  $("match-count").textContent=state.filtered.length+" matching tests · accepted in this campaign: 0 (not yet evidence-reviewed)";
+  $("page-count").textContent="Page "+(state.page+1)+" of "+(maxPage+1);
+  $("previous").disabled=state.page===0;
+  $("next").disabled=state.page>=maxPage;
+}
+function csvCell(v){
+  let cell=String(v??"");
+  if(/^[\s\u0000-\u001f]*[=+\-@]/.test(cell))cell="'"+cell;
+  return '"'+cell.replace(/"/g,'""')+'"';
+}
+function exportCsv(){
+  const fields=["id","name","area","family","kind","canonical_status","campaign_state"];
+  const rows=[fields.join(",")].concat(state.filtered.map(row=>fields.map(k=>csvCell(row[k])).join(",")));
+  const blob=new Blob([rows.join("\r\n")+"\r\n"],{type:"text/csv;charset=utf-8"});
+  const href=URL.createObjectURL(blob);
+  const anchor=document.createElement("a");anchor.href=href;anchor.download="xmd-test-campaign-selected.csv";
+  document.body.appendChild(anchor);anchor.click();anchor.remove();URL.revokeObjectURL(href);
+}
+function render(data){
+  if(data.schema_version!=="xmd-public-test-campaign-v1" || data.publication_state!=="candidate-not-approved" ||
+     !Array.isArray(data.quanty)||!Array.isArray(data.capabilities)||!Array.isArray(data.product))
+    throw Error("Unreviewed or malformed public campaign manifest");
+  state.data=data;
+  const c=data.counts;state.items=asRows(data);
+  if(data.quanty.length!==c.quanty_records || data.capabilities.length!==c.capability_nodes ||
+     data.product.length!==c.proposed_product_tests || c.campaign_accepted!==0)
+    throw Error("Campaign counts or acceptance state do not match the source manifest");
+  $("publication").textContent="REVIEW CANDIDATE — "+data.disclaimer+" Publication is gated by the independent #71 source/history/QES review.";
+  $("summary").replaceChildren();
+  card("Canonical Quanty records",c.quanty_records,"Every documentation record is tracked");
+  card("Callable candidates",c.callable_candidates,c.global_functions+" global functions · "+c.object_callables+" object callables");
+  card("Quantum Core nodes",c.capability_nodes,"Source maturity remains separate from testing");
+  card("Proposed Workbench tests",c.proposed_product_tests,"Product integration and user workflows");
+  card("Campaign accepted",c.campaign_accepted,"No inferred passes from historical CI");
+  const k=$("kinds");k.replaceChildren();
+  Object.entries(c.quanty_record_kinds).sort((a,b)=>b[1]-a[1]).forEach(([name,n])=>bar(k,name,n,c.quanty_records));
+  const s=$("status-bars");s.replaceChildren();
+  for(const category of ["green","yellow","orange","white"])
+    bar(s,category,c.canonical_capability_statuses[category]||0,c.capability_nodes);
+  const gates=$("gate-list");gates.replaceChildren();
+  for(const [id,label] of Object.entries(data.gate_labels)){
+    const outer=element("div",gates,"gate");
+    element("b",outer,"",id);element("span",outer,"",label);
+  }
+  const kinds=[...new Set(state.items.map(r=>r.kind))].sort();
+  for(const kind of kinds)makeOption($("kind"),kind,kind.replace(/_/g," "));
+  const statuses=[...new Set(state.items.map(r=>r.canonical_status))].sort();
+  for(const value of statuses)makeOption($("status"),value,value.replace(/_/g," "));
+  draw();
+}
+for(const name of ["search","domain","kind","status"])
+  $(name).addEventListener(name==="search"?"input":"change",()=>{state.page=0;draw();});
+$("previous").addEventListener("click",()=>{state.page--;draw();});
+$("next").addEventListener("click",()=>{state.page++;draw();});
+$("csv").addEventListener("click",exportCsv);
+fetch("./campaign.json",{cache:"no-store"})
+  .then(r=>{if(!r.ok)throw Error("Public campaign manifest unavailable");return r.json();})
+  .then(render)
+  .catch(error=>{
+    $("publication").className="notice error";
+    $("publication").textContent="Unable to render the reviewed campaign manifest: "+error.message+
+      ". No status or acceptance claims are displayed.";
+    $("match-count").textContent="Manifest validation unavailable";
+  });
+</script>
+</body>
+</html>
