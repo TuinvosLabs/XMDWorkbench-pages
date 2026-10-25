@@ -18,10 +18,9 @@ permissions:
 
 jobs:
   evidence-catalog:
-    runs-on:
-      - self-hosted
-      - linux
-      - x64
+    # Pure static/Python validation: no NAS, Quanty, private packages or local
+    # hardware required. Keep this off scarce XMD self-hosted science runners.
+    runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
