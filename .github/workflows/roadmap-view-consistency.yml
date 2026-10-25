@@ -1,15 +1,23 @@
-name: Roadmap view consistency
+name: Roadmap and public dashboard consistency
 
 on:
   push:
     paths:
       - "roadmap/**"
+      - "qes/**"
+      - "evidence/**"
+      - "index.html"
       - "scripts/check_roadmap_views.py"
+      - "scripts/check_public_dashboards.py"
       - ".github/workflows/roadmap-view-consistency.yml"
   pull_request:
     paths:
       - "roadmap/**"
+      - "qes/**"
+      - "evidence/**"
+      - "index.html"
       - "scripts/check_roadmap_views.py"
+      - "scripts/check_public_dashboards.py"
       - ".github/workflows/roadmap-view-consistency.yml"
   workflow_dispatch:
 
@@ -26,3 +34,5 @@ jobs:
       - uses: actions/checkout@v4
       - name: Verify Roadmap and Periodic Table use the same history frames
         run: python3 scripts/check_roadmap_views.py
+      - name: Verify QES and Evidence public publication contract
+        run: python3 scripts/check_public_dashboards.py
