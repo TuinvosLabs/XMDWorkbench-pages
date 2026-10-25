@@ -6,6 +6,7 @@
       "id": "2026-10-23-v1-initial",
       "date": "2026-10-23",
       "title": "v1 — initial evidence-governed roadmap",
+      "blob_sha": "64254e5899c494f07983d278c2fc94b3e23219a1",
       "file": "2026-10-23-v1-initial.mmd",
       "note": "Initial evidence-governed maturity map."
     },
@@ -13,8 +14,17 @@
       "id": "2026-10-23-v2-evidence-conditions",
       "date": "2026-10-23",
       "title": "v2 — evidence automation + Experimental Conditions",
+      "blob_sha": "950a67c3acf37a2a9a352fe5d2298a4e006d60e9",
       "file": "2026-10-23-v2-evidence-conditions.mmd",
       "note": "Expectation-value status corrected; Experimental Conditions and evidence/dashboard work surfaced without promoting unsupported physics."
+    },
+    {
+      "id": "2026-10-23-v3-shared-capability-graph",
+      "date": "2026-10-23",
+      "title": "v3 — shared bounded capability graph",
+      "blob_sha": "8eacefb0ecf23f8fa6c8b056222f8f6a90808ed5",
+      "file": "2026-10-23-v3-shared-capability-graph.mmd",
+      "note": "Detailed bounded capability graph becomes the shared Roadmap and Periodic Table frame; no scientific status promotion."
     }
   ]
 }
