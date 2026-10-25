@@ -6,19 +6,23 @@
 <link rel="stylesheet" href="catalog.css">
 </head>
 <body>
-<nav aria-label="Site navigation"><a href="../">Home</a><a href="../roadmap/">Roadmap</a><a href="../roadmap/periodic.html">Periodic table</a><a href="./">Evidence</a></nav>
+<nav aria-label="Site navigation"><a href="../">Home</a><a href="../roadmap/">Roadmap</a><a href="../roadmap/periodic.html">Periodic table</a><a href="./">Evidence</a><a href="overview/">Accepted analytics overview</a></nav>
 <header>
 <h1>Scientific evidence catalog</h1>
-<p class="muted">Executed Quanty ↔ XMD comparison evidence. Choose an item to inspect its measured results, provenance, checksums and graphs.</p>
+<p class="muted">Retained Quanty ↔ XMD comparison records. Choose an item to inspect measured results, provenance identifiers, checksums and graphs.</p>
 </header>
 <main>
 <div class="notice"><strong id="run">Loading retained run…</strong><br><span id="scope"></span></div>
 <div class="filters" aria-label="Filter evidence family"><button class="active" data-filter="all">All evidence</button><button data-filter="atomic">Atomic + thermal</button><button data-filter="cluster">Cluster</button></div>
 <section id="catalog" class="catalog" aria-live="polite"><div class="empty">Loading evidence catalog…</div></section>
 <section class="panel">
+<h2>Accepted analytics are retained</h2>
+<p>The previously accepted Evidence dashboard, including spectrum-margin, cluster-cutoff and drill-down visualizations, remains available at <a href="overview/">Accepted analytics overview</a>. The catalog adds case-oriented navigation rather than replacing that view.</p>
+</section>
+<section class="panel">
 <h2>What appears here?</h2>
-<p>Only executed retained comparison cases appear in this catalog. Planned or not-assessed Quanty capabilities belong in the Test Campaign view and are not presented here as evidence.</p>
-<p class="scope">This catalog currently represents a historical retained dual-platform run. It does not by itself promote current QES, full Quanty parity, production maturity or material validation.</p>
+<p>Only retained comparison cases appear in this catalog. Planned or not-assessed Quanty capabilities belong in the Test Campaign view and are not presented here as evidence.</p>
+<p class="scope">This catalog is a static projection of a historical retained dual-platform run. Its hashes and imported run status are not independently re-attested by this Pages PR; the catalog therefore does not itself grant current QES, full Quanty parity, production maturity or material validation.</p>
 </section>
 </main>
 <script src="catalog.js"></script>
