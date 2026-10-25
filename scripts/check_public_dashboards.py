@@ -82,18 +82,22 @@ def main() -> int:
             fail(f"QES page missing required publication marker: {token}")
 
     required_evidence = (
-        "408", "378", "13", "16", "18 / 18", "not", "material validation", "QES matrix"
+        "408", "378", "13", "16", "18 / 18", "material validation", "QES matrix",
+        "Evidence drill-down", "synthetic-d0", "xld-x-minus-z", "Run 39916681449",
+        "atomic/comparison.json", "atomic-level-max-error.png", "atomic-spectrum-max-error.png",
+        "atomic-runtime-seconds.png", "evidence-family-file-counts.png",
+        "raw NAS paths", "coverage state"
     )
     lower_evidence = evidence.lower()
     for token in required_evidence:
         if token.lower() not in lower_evidence:
-            fail(f"Evidence page missing required correction/coverage marker: {token}")
+            fail(f"Evidence page missing required correction/drill-down marker: {token}")
 
     for href in ('href="qes/"', 'href="evidence/"', 'href="roadmap/periodic.html"'):
         if href not in home:
             fail(f"Home page missing dashboard link: {href}")
 
-    print(f"public dashboards OK: capabilities={len(EXPECTED_IDS)} qes_records={len(records)}")
+    print(f"public dashboards OK: capabilities={len(EXPECTED_IDS)} qes_records={len(records)} evidence_drilldown=present")
     return 0
 
 
