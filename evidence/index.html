@@ -4,14 +4,14 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>XMDWorkbench evidence</title>
 <style>
-*{box-sizing:border-box}body{margin:0;font-family:Segoe UI,Arial,sans-serif;background:#f6f8fa;color:#24292f}nav{display:flex;gap:8px;flex-wrap:wrap;padding:12px 18px;background:#0d1117}nav a{color:#fff;background:#21262d;border:1px solid #484f58;border-radius:6px;padding:7px 11px;text-decoration:none}main{max-width:1450px;margin:auto;padding:22px}.hero h1{margin:0 0 6px}.muted{color:#57606a}.notice{margin:14px 0;padding:12px 14px;border-left:4px solid #0969da;background:#ddf4ff;border-radius:6px;line-height:1.5}.warn{border-left-color:#bf8700;background:#fff8c5}.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:10px;margin:16px 0}.kpi,.panel{background:#fff;border:1px solid #d0d7de;border-radius:10px;padding:14px;box-shadow:0 1px 2px #0001}.kpi strong{display:block;font-size:25px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:12px}.panel h2{font-size:17px;margin:0 0 9px}.metric{display:grid;grid-template-columns:minmax(160px,1fr) auto;gap:8px;padding:7px 0;border-bottom:1px solid #d8dee4;font-size:13px}.metric:last-child{border-bottom:0}.good{color:#1a7f37}.bar{height:10px;background:#d8dee4;border-radius:999px;overflow:hidden;margin-top:6px}.bar span{display:block;height:100%;background:#57606a}.families{display:flex;gap:7px;flex-wrap:wrap}.tag{padding:4px 8px;border:1px solid #d0d7de;border-radius:999px;font-size:12px;background:#f6f8fa}.tag.good{background:#dafbe1;border-color:#4ac26b}.tag.warn{background:#fff8c5;border-color:#d4a72c}.boundary{font-size:13px;line-height:1.55;color:#57606a}.links a{display:inline-block;margin:4px 8px 0 0}.source{font-size:12px;color:#57606a;margin-top:16px}
+*{box-sizing:border-box}body{margin:0;font-family:Segoe UI,Arial,sans-serif;background:#f6f8fa;color:#24292f}nav{display:flex;gap:8px;flex-wrap:wrap;padding:12px 18px;background:#0d1117}nav a{color:#fff;background:#21262d;border:1px solid #484f58;border-radius:6px;padding:7px 11px;text-decoration:none}main{max-width:1500px;margin:auto;padding:22px}.hero h1{margin:0 0 6px}.muted{color:#57606a}.notice{margin:14px 0;padding:12px 14px;border-left:4px solid #0969da;background:#ddf4ff;border-radius:6px;line-height:1.5}.warn{border-left-color:#bf8700;background:#fff8c5}.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:10px;margin:16px 0}.kpi,.panel,.case{background:#fff;border:1px solid #d0d7de;border-radius:10px;padding:14px;box-shadow:0 1px 2px #0001}.kpi strong{display:block;font-size:25px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:12px}.panel h2,.case h3{font-size:17px;margin:0 0 9px}.metric{display:grid;grid-template-columns:minmax(160px,1fr) auto;gap:8px;padding:7px 0;border-bottom:1px solid #d8dee4;font-size:13px}.metric:last-child{border-bottom:0}.good{color:#1a7f37}.bar{height:10px;background:#d8dee4;border-radius:999px;overflow:hidden;margin-top:6px}.bar span{display:block;height:100%;background:#57606a}.families{display:flex;gap:7px;flex-wrap:wrap}.tag{padding:4px 8px;border:1px solid #d0d7de;border-radius:999px;font-size:12px;background:#f6f8fa}.tag.good{background:#dafbe1;border-color:#4ac26b}.tag.warn{background:#fff8c5;border-color:#d4a72c}.boundary{font-size:13px;line-height:1.55;color:#57606a}.links a{display:inline-block;margin:4px 8px 0 0}.source{font-size:12px;color:#57606a;margin-top:16px}.drill{margin-top:22px}.drill h2{margin:0 0 8px}.case{margin:12px 0}.case-head{display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap}.badge{display:inline-block;border-radius:999px;padding:3px 8px;border:1px solid #4ac26b;background:#dafbe1;color:#1a7f37;font-size:12px;font-weight:600}.case-grid{display:grid;grid-template-columns:minmax(280px,1fr) minmax(360px,1.5fr);gap:14px;margin-top:12px}.evidence-list{font-size:13px;line-height:1.55}.evidence-list code{font-size:12px}.chart{width:100%;height:auto;display:block;border:1px solid #d8dee4;border-radius:8px;background:#fff}.chart text{font-family:Segoe UI,Arial,sans-serif;font-size:11px;fill:#57606a}.chart .axis{stroke:#8c959f;stroke-width:1}.chart .gridline{stroke:#d8dee4;stroke-width:1}.chart .mark{fill:#24292f}.chart .ok{fill:#1a7f37}.chartfiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:10px;margin-top:12px}.chartfile{border:1px solid #d8dee4;border-radius:8px;padding:10px;background:#f6f8fa}.chartfile code{font-size:11px}.small{font-size:12px;color:#57606a}.public-boundary{font-size:12px;color:#57606a;border-top:1px solid #d8dee4;margin-top:12px;padding-top:10px}@media(max-width:850px){.case-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 <nav><a href="../">Home</a><a href="../roadmap/">Roadmap</a><a href="../roadmap/periodic.html">Periodic table</a><a href="../qes/">QES matrix</a><a href="./">Evidence</a></nav>
 <main>
 <div class="hero"><h1>Scientific evidence & acceptance dashboard</h1><div class="muted">Sanitized public view. Numerical acceptance, capability maturity, QES, Quanty parity and material validation are reported as separate evidence axes.</div></div>
-<div class="notice warn"><strong>Correction to the previous page:</strong> “18 / 18 passing” describes the published bounded atomic/cluster comparison snapshot only. It is <strong>not</strong> 18/18 coverage of Quanty, not full-platform parity, and not material validation.</div>
+<div class="notice warn"><strong>Scope correction:</strong> “18 / 18 passing” describes the published bounded atomic/cluster comparison snapshot only. It is <strong>not</strong> 18/18 coverage of Quanty, not full-platform parity, and not material validation.</div>
 <section class="kpis">
 <div class="kpi"><strong>408</strong><span>canonical Quanty inventory rows</span></div>
 <div class="kpi"><strong>378</strong><span>currently unassessed inventory rows</span></div>
@@ -25,8 +25,60 @@
 <article class="panel"><h2>Bounded cluster acceptance</h2><div class="metric"><span>Comparison cases</span><strong class="good">6 / 6 pass</strong></div><div class="metric"><span>Largest normalized error</span><code>4.57×10⁻5 of tolerance</code></div><div class="metric"><span>Published cutoff-2 delta</span><strong class="good">0 / 0</strong></div><p class="boundary">Cluster evidence is synthetic/reference acceptance for its declared bounded model. Production registration, general bath semantics and material validation remain separate questions.</p></article>
 <article class="panel"><h2>Evidence families</h2><div class="families"><span class="tag good">atomic / thermal</span><span class="tag good">cluster reference</span><span class="tag">CI source + wheel</span><span class="tag">independent Quanty execution</span><span class="tag">convergence</span><span class="tag">provenance / retained manifests</span><span class="tag warn">future families require reviewed semantics</span></div><p class="boundary">Unknown evidence families may be discovered operationally, but are not assigned scientific meaning until a reviewed parser/contract defines that meaning.</p></article>
 <article class="panel"><h2>QES is a separate quality axis</h2><p class="boundary">Quality Evidence Score evaluates implementation, science, tests, engineering and provenance for a bounded capability. It never substitutes for the capability colour and never implies Quanty parity or material validation. Numeric scores are published only from accepted canonical QES records.</p><div class="links"><a href="../qes/">Open QES matrix →</a></div></article>
-<article class="panel"><h2>Publication boundary</h2><p class="boundary">This public view excludes raw evidence payloads, internal filesystem/NAS paths, runner identities, secrets and private execution details. Public numbers are sanitized summaries. Exact internal evidence remains subject to repository CI/review and provenance controls.</p><div class="notice"><strong>Material validation:</strong> numerical/reference acceptance is not experimental-sample validation. No material-validation claim is inferred from this dashboard.</div></article>
+<article class="panel"><h2>Publication boundary</h2><p class="boundary">This public view excludes raw NAS paths, runner identities, secrets and private execution details. Public evidence uses sanitized relative artifact names, accepted numeric summaries and derived figures only.</p><div class="notice"><strong>Material validation:</strong> numerical/reference acceptance is not experimental-sample validation. No material-validation claim is inferred from this dashboard.</div></article>
 </section>
+
+<section class="drill" id="drilldown">
+<h2>Evidence drill-down</h2>
+<p class="muted">Function/case-level view restored from the evidence-dashboard contract. Public presentation shows sanitized retained artifact identities, recorded metrics and derived chart outputs; authoritative raw bytes remain on the NAS.</p>
+
+<article class="case">
+<div class="case-head"><div><h3>Atomic / thermal Quanty ↔ XMD — published acceptance example</h3><div class="small">Run 39916681449 · case <code>synthetic-d0</code> · worst published spectrum channel <code>xld-x-minus-z</code></div></div><span class="badge">accepted bounded example</span></div>
+<div class="case-grid">
+<div class="evidence-list">
+<div class="metric"><span>Quanty ↔ XMD spectrum error</span><code>5.653537947221671e-13</code></div>
+<div class="metric"><span>Published spectrum tolerance</span><code>2e-6</code></div>
+<div class="metric"><span>Error / tolerance</span><code>2.83e-7</code></div>
+<div class="metric"><span>Max level error</span><code>6.661338148e-14 eV</code></div>
+<div class="metric"><span>Max transition-strength abs error</span><code>1.931788063e-14</code></div>
+<p><strong>Retained evidence files (sanitized relative names)</strong></p>
+<ul><li><code>atomic/comparison.json</code> — canonical suite-level comparison, tolerances and Quanty executable identity</li><li><code>atomic/&lt;case&gt;/comparison.json</code> — per-case retained comparison cross-checked against the aggregate</li><li><code>manifest.json</code> — retained provenance metadata</li><li><code>sha256.json / sha256.txt</code> — platform checksum inventory</li></ul>
+<p class="public-boundary">The public page does not expose the NAS root, runner name or raw payload. The internal collector verifies those before deriving this presentation.</p>
+</div>
+<div>
+<svg class="chart" role="img" aria-label="Atomic Quanty versus XMD spectrum error compared with tolerance" viewBox="0 0 700 250">
+<line class="axis" x1="75" y1="195" x2="650" y2="195"/><text x="75" y="220">10⁻14</text><text x="218" y="220">10⁻12</text><text x="361" y="220">10⁻10</text><text x="504" y="220">10⁻8</text><text x="627" y="220">10⁻6</text>
+<line class="gridline" x1="75" y1="72" x2="650" y2="72"/><circle class="mark" cx="150" cy="72" r="8"/><text x="90" y="50">observed 5.65×10⁻13</text>
+<line class="gridline" x1="75" y1="135" x2="650" y2="135"/><circle class="ok" cx="635" cy="135" r="8"/><text x="476" y="158">tolerance 2×10⁻6</text>
+</svg>
+<p class="small">Sanitized summary rendering of the retained comparison. The production evidence generator also emits case/platform/run-labelled PNGs from verified <code>analysis.json</code>.</p>
+</div>
+</div>
+</article>
+
+<article class="case">
+<div class="case-head"><div><h3>Cluster Quanty ↔ XMD — bounded reference acceptance</h3><div class="small">6 / 6 published bounded comparison cases passing</div></div><span class="badge">accepted bounded example</span></div>
+<div class="case-grid"><div class="evidence-list">
+<div class="metric"><span>Largest normalized error</span><code>4.57e-5 of tolerance</code></div><div class="metric"><span>Cutoff 2 energy delta</span><code>0</code></div><div class="metric"><span>Cutoff 2 spectrum delta</span><code>0</code></div>
+<p>Cluster evidence is evaluated with its own contract and convergence controls. Atomic thresholds are not reused as cluster acceptance criteria.</p>
+</div><div>
+<svg class="chart" role="img" aria-label="Cluster cutoff convergence" viewBox="0 0 700 280"><line class="axis" x1="75" y1="220" x2="650" y2="220"/><line class="axis" x1="75" y1="35" x2="75" y2="220"/><text x="145" y="245">cutoff 0</text><text x="315" y="245">cutoff 1</text><text x="485" y="245">cutoff 2</text><polyline points="175,48 345,208 515,220" fill="none" stroke="#24292f" stroke-width="3"/><circle class="mark" cx="175" cy="48" r="6"/><circle class="mark" cx="345" cy="208" r="6"/><circle class="mark" cx="515" cy="220" r="6"/><polyline points="175,66 345,172 515,220" fill="none" stroke="#57606a" stroke-width="3" stroke-dasharray="7 5"/><circle cx="175" cy="66" r="6" fill="#57606a"/><circle cx="345" cy="172" r="6" fill="#57606a"/><circle cx="515" cy="220" r="6" fill="#57606a"/><text x="90" y="22">solid: energy delta · dashed: spectrum delta</text></svg>
+</div></div>
+</article>
+
+<div class="panel">
+<h2>Derived evidence chart set</h2>
+<p class="boundary">The reviewed evidence pipeline derives the following figures from checksum-verified <code>analysis.json</code>. Labels include case, platform, run identity and coverage state; figures are generated under the derived analysis namespace, never in raw retained evidence.</p>
+<div class="chartfiles">
+<div class="chartfile"><strong>Atomic level agreement</strong><br><code>atomic-level-max-error.png</code><p class="small">Maximum recorded initial/final level error by case, platform and run.</p></div>
+<div class="chartfile"><strong>Atomic spectrum agreement</strong><br><code>atomic-spectrum-max-error.png</code><p class="small">Maximum reference-peak-normalized spectrum-channel difference by case/platform/run.</p></div>
+<div class="chartfile"><strong>Evidence runtime</strong><br><code>atomic-runtime-seconds.png</code><p class="small">Recorded comparison execution duration where present.</p></div>
+<div class="chartfile"><strong>Evidence family coverage</strong><br><code>evidence-family-file-counts.png</code><p class="small">Verified file-count coverage by family, platform and run. Unknown families remain generic.</p></div>
+</div>
+<div class="notice"><strong>Next live-NAS integration:</strong> after the #62/#98 live candidate passes its remaining publication-label and dual-platform acceptance gates, these per-case figures can be copied into the public sanitized drill-down without exposing raw NAS paths or private runner identity.</div>
+</div>
+</section>
+
 <div class="source"><strong>Public source frame:</strong> canonical Quanty inventory currently contains 408 rows with 378 unassessed, 13 partial, 16 planned and 1 intentionally out of scope. The 18/18 comparison result is retained only as the bounded published atomic/cluster acceptance snapshot and is deliberately not presented as overall parity coverage.</div>
 </main>
 </body></html>
