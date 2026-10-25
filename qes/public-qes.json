@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0-public",
+  "generated_from": {
+    "repository": "TuinvosLabs/XMDWorkbench",
+    "contract_pr": 121,
+    "contract_head": "bb24a03a6aa1709f52b0e407e4ef8503468152ec",
+    "issue": 109
+  },
+  "publication_state": "awaiting-accepted-canonical-backfill",
+  "policy": "Only accepted, reconciled canonical QES records may carry numeric scores. Missing records render as incomplete; no score is inferred from capability colour, tests, PR state or prose evidence.",
+  "dimensions": [
+    {"key":"implementation_score","label":"Implementation","max":25},
+    {"key":"science_score","label":"Science","max":30},
+    {"key":"test_score","label":"Tests","max":20},
+    {"key":"engineering_score","label":"Engineering","max":15},
+    {"key":"provenance_score","label":"Provenance","max":10}
+  ],
+  "levels": [
+    {"min":0,"max":39,"label":"Experimental"},
+    {"min":40,"max":59,"label":"Bounded / partial"},
+    {"min":60,"max":74,"label":"Functional"},
+    {"min":75,"max":84,"label":"Validated"},
+    {"min":85,"max":94,"label":"Production-grade bounded capability"},
+    {"min":95,"max":100,"label":"Reference-grade"}
+  ],
+  "records": {}
+}
