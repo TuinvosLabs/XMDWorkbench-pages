@@ -154,8 +154,6 @@ def main() -> int:
         digest = item.get("comparison_sha256")
         if not isinstance(digest, str) or len(digest) != 64 or any(c not in HEX for c in digest):
             raise SystemExit(f"invalid recorded comparison SHA-256: {ident}")
-        # This imported marker is retained historical metadata only. The UI must not
-        # render it as an independently attested pass claim from this static PR.
         if item.get("status") != "executed-passed":
             raise SystemExit(f"unexpected imported historical status: {ident}")
         family = item.get("family")
@@ -199,16 +197,21 @@ def main() -> int:
     catalog_js = (EVIDENCE / "catalog.js").read_text(encoding="utf-8")
     if "Scientific evidence catalog" not in index or "Loading evidence catalog" not in index:
         raise SystemExit("Evidence landing page is no longer catalog-first")
-    if "overview/" not in index or "historical retained result" not in catalog_js or "executed · passed" in catalog_js:
+    if "overview.html" not in index or "historical retained result" not in catalog_js or "executed · passed" in catalog_js:
         raise SystemExit("catalog must retain overview and avoid self-attested pass badges")
 
-    overview = EVIDENCE / "overview" / "index.html"
+    overview = EVIDENCE / "overview.html"
     if not overview.is_file():
         raise SystemExit("previously accepted Evidence overview is not retained")
     overview_text = overview.read_text(encoding="utf-8")
     for marker in ("Scientific evidence dashboard", "Atomic spectrum margin", "Cluster cutoff convergence", "Evidence drill-down", "<dialog"):
         if marker not in overview_text:
             raise SystemExit(f"retained Evidence overview lost accepted feature: {marker}")
+    # At /evidence/overview.html the snapshot's original relative navigation is
+    # still correct: ../ -> site root, ../roadmap/ -> roadmap, ./ -> catalog.
+    for marker in ('href="../"', 'href="../roadmap/"', 'href="./"'):
+        if marker not in overview_text:
+            raise SystemExit(f"retained Evidence overview navigation drifted: {marker}")
 
     print("Evidence catalog OK: 9 typed historical cases, safe routes, retained analytics overview")
     return 0
