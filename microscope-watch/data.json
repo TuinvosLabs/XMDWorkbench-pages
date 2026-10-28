@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-28T14:33:12+01:00",
-  "discovery_status": "degraded",
-  "message": "Zoekbronnen leverden geen controleerbare kandidaatlinks; marktafdekking niet aangetoond.",
+  "checked_at": "2026-10-28T15:17:03+01:00",
+  "discovery_status": "healthy",
+  "message": "Kandidaten zijn ontdekt. Advertentiebeschikbaarheid is niet door verkopers bevestigd.",
   "listings": []
 }
