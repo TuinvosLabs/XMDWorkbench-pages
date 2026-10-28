@@ -46,9 +46,9 @@ function render(){
 }
 fetch('./data.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('HTTP '+r.status);return r.json()}).then(d=>{
  data=d;
- byId('checked').textContent=d.checked_at||'Niet gepubliceerd';
+ byId('checked').textContent=d.checked_at?new Intl.DateTimeFormat('nl-NL',{day:'numeric',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit',timeZone:'Europe/Amsterdam'}).format(new Date(d.checked_at)):'Niet gepubliceerd';
  byId('coverage').textContent=d.discovery_status==='healthy'?'Beschikbaar':d.discovery_status==='degraded'?'Beperkt':'Niet aangetoond';
- byId('health').textContent=d.discovery_status==='healthy'?'Bronnen bereikbaar':'Zoekdekking onbekend';
+ byId('health').textContent=d.discovery_status==='healthy'?'Kandidaten ontdekt':d.discovery_status==='degraded'?'Bronnen beperkt bruikbaar':'Geen gecontroleerde zoekdekking';
  byId('health').className='status '+(d.discovery_status==='healthy'?'ok':'warn');
  byId('message').textContent=d.message||'Nog geen geverifieerde gegevens gepubliceerd.';
  render();
