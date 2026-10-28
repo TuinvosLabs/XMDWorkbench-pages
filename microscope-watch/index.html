@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="nl">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Microscope Watch · Nikon Eclipse</title>
+<style>
+:root{color-scheme:light;font-family:system-ui,-apple-system,Segoe UI,sans-serif;color:#172536;background:#f4f7fa}*{box-sizing:border-box}body{margin:0}header{background:#132b44;color:white;padding:24px max(24px,calc((100vw - 1100px)/2))}header a{color:#cbdff5}header h1{margin:14px 0 6px;font-size:clamp(1.7rem,3vw,2.5rem)}header p{color:#ccdaea;margin:0}.wrap{max-width:1100px;margin:0 auto;padding:22px}.metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px}.metric,.panel,.listing{background:white;border:1px solid #dce5ed;border-radius:13px;padding:19px;box-shadow:0 2px 9px #132b440b}.metric strong{font-size:1.8rem;display:block}.label,.subtle{color:#52677b}.panel{margin-top:19px}.status{display:inline-block;background:#edf3f7;color:#304e65;border-radius:20px;padding:5px 12px;font-weight:600;font-size:.86rem}.status.ok{background:#e1f5ed;color:#126a49}.status.warn{background:#fff2d7;color:#805400}.filters{display:flex;gap:12px;flex-wrap:wrap;margin-top:16px}label{display:grid;gap:4px}select{font:inherit;border:1px solid #bdcad6;border-radius:6px;padding:8px;background:white}.listings{display:grid;gap:12px;margin-top:12px}.listing h3{margin:0 0 6px}.listing a{color:#075bab}.kv{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:12px 0}.kv span{color:#52677b;display:block;font-size:.8rem}.notice{border-left:4px solid #d89a26;padding:12px;background:#fff8e8;margin-top:18px}footer{color:#52677b;margin:24px 0;font-size:.88rem}a:focus-visible,select:focus-visible{outline:3px solid #1676cb}h2{font-size:1.15rem}
+</style></head>
+<body>
+<header><a href="../">← Terug naar de dashboardindex</a><h1>Microscope Watch</h1><p>Tweedehands Nikon Eclipse E200, E400, E600 en 50i · Nederland · maximaal € 450</p></header>
+<main class="wrap">
+<section class="metrics" aria-label="Overzicht">
+<div class="metric"><span class="label">Gepubliceerde kandidaten</span><strong id="count">—</strong></div>
+<div class="metric"><span class="label">Laatste controle</span><strong id="checked" style="font-size:1.1rem">—</strong></div>
+<div class="metric"><span class="label">Zoekdekking</span><strong id="coverage" style="font-size:1.1rem">—</strong></div>
+<div class="metric"><span class="label">Prijsgrens</span><strong>€ 450</strong></div>
+</section>
+<section class="panel"><h2>Zoekstatus <span id="health" class="status">Laden</span></h2><p id="message" class="subtle">De gepubliceerde brongegevens worden geladen.</p><div class="notice">Advertenties zijn openbare aanbiedingen van derden. Een bereikbare URL bevestigt niet dat de microscoop nog beschikbaar is. Fasecontrast en 100× olie blijven onbekend totdat de configuratie aantoonbaar is geverifieerd.</div></section>
+<section class="panel"><h2>Beschikbare kandidaten</h2>
+<div class="filters"><label>Model<select id="model"><option value="all">Alle modellen</option><option>E200</option><option>E400</option><option>E600</option><option>50i</option></select></label><label>Fasecontrast<select id="phase"><option value="all">Ongeacht</option><option value="yes">Genoemd</option></select></label></div>
+<div id="list" class="listings" aria-live="polite"><p>Resultaten laden...</p></div></section>
+<footer>Publieke presentatie, geen autoritatieve bron. Alleen door de private zoekrepository expliciet vrijgegeven advertentiegegevens mogen worden gepubliceerd. Geen namen, contactgegevens van verkopers, runnerlogs of private zoekhistorie.</footer>
+</main>
+<script>
+"use strict";
+let data={listings:[]};
+const byId=id=>document.getElementById(id);
+const text=(tag,value)=>{const e=document.createElement(tag);e.textContent=value;return e};
+const info=(parent,label,value)=>{const d=document.createElement('div');d.append(text('span',label),text('strong',String(value??'Onbekend')));parent.append(d)};
+function render(){
+ const model=byId('model').value,phase=byId('phase').value;
+ const rows=(Array.isArray(data.listings)?data.listings:[]).filter(x=>(model==='all'||x.model?.includes(model))&&(phase==='all'||x.phase_contrast==='mentioned_unverified'));
+ byId('count').textContent=String(rows.length);
+ const host=byId('list');host.replaceChildren();
+ if(!rows.length){host.append(text('p','Geen gepubliceerde kandidaten voor deze selectie. Dit bewijst niet dat er niets te koop is.'));return;}
+ for(const item of rows){
+  const card=document.createElement('article');card.className='listing';
+  card.append(text('h3',item.model||'Nikon Eclipse'));
+  const kv=document.createElement('div');kv.className='kv';
+  info(kv,'Vraagprijs',Number.isFinite(item.price_eur)?'€ '+item.price_eur:'Onbekend');
+  info(kv,'Plaats',item.location);info(kv,'Fasecontrast',item.phase_contrast==='mentioned_unverified'?'Genoemd, niet bevestigd':'Onbekend');
+  info(kv,'100× olie',item.oil_100x==='mentioned_unverified'?'Genoemd, niet bevestigd':'Onbekend');
+  info(kv,'Verkoperbevestiging','Niet bevestigd');card.append(kv);
+  try{const url=new URL(item.url);if(url.protocol==='https:'){const a=document.createElement('a');a.href=url.href;a.target='_blank';a.rel='noopener noreferrer';a.textContent='Bekijk oorspronkelijke advertentie';card.append(a)}}catch{}
+  host.append(card);
+ }
+}
+fetch('./data.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('HTTP '+r.status);return r.json()}).then(d=>{
+ data=d;
+ byId('checked').textContent=d.checked_at||'Niet gepubliceerd';
+ byId('coverage').textContent=d.discovery_status==='healthy'?'Beschikbaar':d.discovery_status==='degraded'?'Beperkt':'Niet aangetoond';
+ byId('health').textContent=d.discovery_status==='healthy'?'Bronnen bereikbaar':'Zoekdekking onbekend';
+ byId('health').className='status '+(d.discovery_status==='healthy'?'ok':'warn');
+ byId('message').textContent=d.message||'Nog geen geverifieerde gegevens gepubliceerd.';
+ render();
+}).catch(e=>{byId('health').textContent='Publicatiefout';byId('health').className='status warn';byId('coverage').textContent='Onbekend';byId('message').textContent='Dashboardgegevens konden niet geladen worden ('+e.message+').';byId('list').replaceChildren(text('p','Geen betrouwbare gegevens beschikbaar.'))});
+byId('model').addEventListener('change',render);byId('phase').addEventListener('change',render);
+</script></body></html>
