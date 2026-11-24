@@ -9,4 +9,6 @@ This repository intentionally contains only derived viewer artifacts. Private so
 - `roadmap/` — Quanty functional roadmap evolution player.
 - `evidence/` — reserved for the sanitized single-file scientific evidence dashboard.
 
+- `hypertreesolver/` — public HyperTreeSolver research map, with animated node focus, mathematical formula cards and typed relationships.
+
 Publication from the private source repository must remain a reviewed, sanitizing step; this repository is never the scientific source of truth.
