@@ -1395,6 +1395,89 @@
           "status": "checkpoint"
         }
       ]
+    },
+    {
+      "id": "s26-all-goals-short-optima",
+      "date": "2026-11-26T13:00:43Z",
+      "track": "solver",
+      "wave": "S26",
+      "title": "Drie exacte state-only oplossingen voor alle doelen",
+      "summary": "Voor drie ontwikkelstanden sluiten de uitputtende Color-ondergrenzen en fysiek geverifieerde Full-woorden op 9, 8 en 12 primitieve QTM. Daardoor zijn Color, Labels, Oriented en Full op die drie standen exact opgelost volgens het producentbewijs. Geen populatieclaim; onafhankelijke beoordeling open.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "S26",
+          "status": "checkpoint"
+        }
+      ]
+    },
+    {
+      "id": "s31-s32-final-producer-handoff",
+      "date": "2026-11-26T13:07:13Z",
+      "track": "solver",
+      "wave": "S31/S32",
+      "title": "Constructieve discovery en geïntegreerde solveroverdracht",
+      "summary": "De begrensde nominatieproeven en geïntegreerde solvercontroles zijn afgerond op producentniveau. De overdracht registreert controle van 86 eerdere artefactdigests en 44 gewijzigde wetenschappelijke bestanden. Onafhankelijke review en representatieve evaluatie blijven open; geen productintegratie.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "S31",
+          "status": "checkpoint"
+        },
+        {
+          "id": "S32",
+          "status": "checkpoint"
+        }
+      ]
+    },
+    {
+      "id": "s30-finite-projection-independent-review",
+      "date": "2026-11-26T13:29:29Z",
+      "track": "joint",
+      "wave": "S30/K32",
+      "title": "Onafhankelijke controle van doelprojectie",
+      "summary": "Een onafhankelijk orakel reproduceert 1.280 bereikbare projectietoestanden, 230.400 overgangen en 691.200 consistentiecontroles. Strikte winst boven afzonderlijke maxima op 992 Color-, 100 Labels- en 689 Full-toestanden. Wiskundige geldigheid binnen het vaste 3^5-projectiemodel is onafhankelijk bevestigd; C#-uitvoering en bredere geometrieën blijven open. Oriented valt buiten deze controle.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "S30",
+          "status": "checkpoint"
+        }
+      ]
+    },
+    {
+      "id": "k33-k34-integrated-prototype-handoff",
+      "date": "2026-11-26T13:31:14Z",
+      "track": "knowledge",
+      "wave": "K33/K34",
+      "title": "Interactieve discovery-werkruimte en reproduceerbare overdracht",
+      "summary": "Zeven gebruikstaken op de lokale rekenlaag, zeven bedieningsscenario’s met testdubbels en acht negatieve invoer- en toegangscontroles. De herhaalrun vergelijkt 22 nieuwe en 54 historische bestanden. Echte browser- en HTTP-acceptatie blijven open. Het kennisprototype en de afzonderlijke kandidaatuitbreiding zijn producentonderzoek, geen productie-integratie.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "K33",
+          "status": "checkpoint"
+        },
+        {
+          "id": "K34",
+          "status": "checkpoint"
+        }
+      ]
+    },
+    {
+      "id": "s26-historical-b-state-only-17",
+      "date": "2026-11-26T13:46:45Z",
+      "track": "solver",
+      "wave": "S26/S30",
+      "title": "Tweede historische stand: state-only oplossing en exacte Full-grens",
+      "summary": "Een uitsluitend fysiek gegeven historische ontwikkelstand bereikt alle vier doelen in 17 primitieve QTM; de eerdere constructieve Full-oplossing telde 30.853 QTM. Vijf additieve axiale projectieafstanden sommeren tot 16; oneven pariteit verhoogt de grens tot 17. Voor Oriented en Full sluit het producentbewijs daarmee exact. Twee producentimplementaties bevestigen de afstanden; forward/inverse replay is geslaagd. Color en Labels kunnen nog 13, 15 of 17 zijn. Onafhankelijke beoordeling open; geen algemene prestatieclaim.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "S26",
+          "status": "checkpoint"
+        }
+      ]
     }
   ]
 }
