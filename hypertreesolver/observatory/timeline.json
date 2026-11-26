@@ -1478,6 +1478,21 @@
           "status": "checkpoint"
         }
       ]
+    },
+    {
+      "id": "s26-historical-b-visible-exclusion-13",
+      "date": "2026-11-26T14:50:46Z",
+      "track": "solver",
+      "wave": "S26/S30",
+      "title": "Zichtbare doelen: ondergrens historische stand aangescherpt",
+      "summary": "Voor dezelfde historische ontwikkelstand sluit een afzonderlijke producentproef de primitieve laag 13 uit voor Color en Labels. Minstens vier middendraaien zijn nodig; de hoekframes kunnen niet met hoogstens negen buitendraaien worden hersteld. De uitsluiting vindt plaats aan de wortel na 5.386 hoekcontroles, zonder volledige toestandsuitbreidingen. Een positieve controle bereikt alle vier doelen in 9 QTM. De proef op laag 15 blijft onbeslist. Voor Color en Labels resteert 15 of 17 QTM; Oriented en Full blijven volgens het eerdere producentbewijs exact 17. Onafhankelijke review open; geen algemene snelheids- of optimaliteitsclaim.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "S26",
+          "status": "checkpoint"
+        }
+      ]
     }
   ]
 }
