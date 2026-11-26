@@ -36,6 +36,33 @@
       "relations": 544,
       "sources": 88,
       "date": "2026-11-26"
+    },
+    {
+      "id": "v5",
+      "layer": 4,
+      "label": "S08 onderzoekslaag",
+      "nodes": 606,
+      "relations": 555,
+      "sources": 100,
+      "date": "2026-11-26"
+    },
+    {
+      "id": "v6",
+      "layer": 5,
+      "label": "Solver-vervolglaag",
+      "nodes": 612,
+      "relations": 561,
+      "sources": 106,
+      "date": "2026-11-26"
+    },
+    {
+      "id": "v7",
+      "layer": 6,
+      "label": "Neutrale tweestapslaag",
+      "nodes": 613,
+      "relations": 562,
+      "sources": 107,
+      "date": "2026-11-26"
     }
   ],
   "nodes": [
@@ -4202,6 +4229,132 @@
       "kind": "counterexample",
       "layer": 3,
       "label": "Grenzen van typehistogrammen",
+      "named": true
+    },
+    {
+      "id": "N0596",
+      "kind": "result",
+      "layer": 4,
+      "label": "Gepaarde ontwikkelproef",
+      "named": true
+    },
+    {
+      "id": "N0597",
+      "kind": "result",
+      "layer": 4,
+      "label": "Fysieke replay van solverroutes",
+      "named": true
+    },
+    {
+      "id": "N0598",
+      "kind": "result",
+      "layer": 4,
+      "label": "Vrije ruwe catalogusgrens",
+      "named": true
+    },
+    {
+      "id": "N0599",
+      "kind": "lemma",
+      "layer": 4,
+      "label": "Gedeelde prefix bij conjugatie",
+      "named": true
+    },
+    {
+      "id": "N0600",
+      "kind": "algorithm",
+      "layer": 4,
+      "label": "Exacte betaalde suffixprojecties",
+      "named": true
+    },
+    {
+      "id": "N0601",
+      "kind": "counterexample",
+      "layer": 4,
+      "label": "Getypeerde fysieke contextcache",
+      "named": true
+    },
+    {
+      "id": "N0602",
+      "kind": "lemma",
+      "layer": 4,
+      "label": "Dominantie van eerste doeltijden",
+      "named": true
+    },
+    {
+      "id": "N0603",
+      "kind": "lemma",
+      "layer": 4,
+      "label": "Selectorstraalpariteit",
+      "named": true
+    },
+    {
+      "id": "N0604",
+      "kind": "result",
+      "layer": 4,
+      "label": "Nominatie en retentie",
+      "named": true
+    },
+    {
+      "id": "N0605",
+      "kind": "result",
+      "layer": 4,
+      "label": "Volgorde van disjuncte reparaties",
+      "named": true
+    },
+    {
+      "id": "N0606",
+      "kind": "result",
+      "layer": 4,
+      "label": "Fysieke toets van gezamenlijke grenzen",
+      "named": true
+    },
+    {
+      "id": "N0607",
+      "kind": "result",
+      "layer": 5,
+      "label": "Herinvestering in zoekalternatieven",
+      "named": true
+    },
+    {
+      "id": "N0608",
+      "kind": "counterexample",
+      "layer": 5,
+      "label": "Volledige rescue bij overdracht",
+      "named": true
+    },
+    {
+      "id": "N0609",
+      "kind": "counterexample",
+      "layer": 5,
+      "label": "Doelafhankelijke terminalrangorde",
+      "named": true
+    },
+    {
+      "id": "N0610",
+      "kind": "result",
+      "layer": 5,
+      "label": "Gemengde catalogusprofielen",
+      "named": true
+    },
+    {
+      "id": "N0611",
+      "kind": "lemma",
+      "layer": 5,
+      "label": "Gewogen projectiedekking",
+      "named": true
+    },
+    {
+      "id": "N0612",
+      "kind": "result",
+      "layer": 5,
+      "label": "Kennisknoop N0612",
+      "named": false
+    },
+    {
+      "id": "N0613",
+      "kind": "result",
+      "layer": 6,
+      "label": "Neutrale tweestapsroute",
       "named": true
     }
   ],
@@ -10537,6 +10690,240 @@
       ],
       "conclusions": [
         "N0595"
+      ]
+    },
+    {
+      "id": "H0545",
+      "kind": "dependency",
+      "layer": 4,
+      "premises": [
+        "N0404",
+        "N0591",
+        "N0590"
+      ],
+      "conclusions": [
+        "N0596"
+      ]
+    },
+    {
+      "id": "H0546",
+      "kind": "dependency",
+      "layer": 4,
+      "premises": [
+        "N0596",
+        "N0589",
+        "N0579"
+      ],
+      "conclusions": [
+        "N0597"
+      ]
+    },
+    {
+      "id": "H0547",
+      "kind": "dependency",
+      "layer": 4,
+      "premises": [
+        "N0582",
+        "N0592",
+        "N0584"
+      ],
+      "conclusions": [
+        "N0598"
+      ]
+    },
+    {
+      "id": "H0548",
+      "kind": "dependency",
+      "layer": 4,
+      "premises": [
+        "N0592",
+        "N0587",
+        "N0595"
+      ],
+      "conclusions": [
+        "N0599"
+      ]
+    },
+    {
+      "id": "H0549",
+      "kind": "dependency",
+      "layer": 4,
+      "premises": [
+        "N0584",
+        "N0588",
+        "N0599"
+      ],
+      "conclusions": [
+        "N0600"
+      ]
+    },
+    {
+      "id": "H0550",
+      "kind": "dependency",
+      "layer": 4,
+      "premises": [
+        "N0596",
+        "N0404",
+        "N0600"
+      ],
+      "conclusions": [
+        "N0601"
+      ]
+    },
+    {
+      "id": "H0551",
+      "kind": "dependency",
+      "layer": 4,
+      "premises": [
+        "N0404",
+        "N0596",
+        "N0601"
+      ],
+      "conclusions": [
+        "N0602"
+      ]
+    },
+    {
+      "id": "H0552",
+      "kind": "dependency",
+      "layer": 4,
+      "premises": [
+        "N0594",
+        "N0587",
+        "N0595"
+      ],
+      "conclusions": [
+        "N0603"
+      ]
+    },
+    {
+      "id": "H0553",
+      "kind": "dependency",
+      "layer": 4,
+      "premises": [
+        "N0597",
+        "N0404",
+        "N0602"
+      ],
+      "conclusions": [
+        "N0604"
+      ]
+    },
+    {
+      "id": "H0554",
+      "kind": "dependency",
+      "layer": 4,
+      "premises": [
+        "N0596",
+        "N0591",
+        "N0590"
+      ],
+      "conclusions": [
+        "N0605"
+      ]
+    },
+    {
+      "id": "H0555",
+      "kind": "dependency",
+      "layer": 4,
+      "premises": [
+        "N0596",
+        "N0602",
+        "N0600"
+      ],
+      "conclusions": [
+        "N0606"
+      ]
+    },
+    {
+      "id": "H0556",
+      "kind": "dependency",
+      "layer": 5,
+      "premises": [
+        "N0596",
+        "N0601",
+        "N0597"
+      ],
+      "conclusions": [
+        "N0607"
+      ]
+    },
+    {
+      "id": "H0557",
+      "kind": "dependency",
+      "layer": 5,
+      "premises": [
+        "N0607",
+        "N0591",
+        "N0596"
+      ],
+      "conclusions": [
+        "N0608"
+      ]
+    },
+    {
+      "id": "H0558",
+      "kind": "dependency",
+      "layer": 5,
+      "premises": [
+        "N0602",
+        "N0597",
+        "N0404"
+      ],
+      "conclusions": [
+        "N0609"
+      ]
+    },
+    {
+      "id": "H0559",
+      "kind": "dependency",
+      "layer": 5,
+      "premises": [
+        "N0598",
+        "N0592",
+        "N0582"
+      ],
+      "conclusions": [
+        "N0610"
+      ]
+    },
+    {
+      "id": "H0560",
+      "kind": "dependency",
+      "layer": 5,
+      "premises": [
+        "N0610",
+        "N0600",
+        "N0584"
+      ],
+      "conclusions": [
+        "N0611"
+      ]
+    },
+    {
+      "id": "H0561",
+      "kind": "dependency",
+      "layer": 5,
+      "premises": [
+        "N0589",
+        "N0591",
+        "N0597"
+      ],
+      "conclusions": [
+        "N0612"
+      ]
+    },
+    {
+      "id": "H0562",
+      "kind": "dependency",
+      "layer": 6,
+      "premises": [
+        "N0591",
+        "N0593",
+        "N0595"
+      ],
+      "conclusions": [
+        "N0613"
       ]
     }
   ],
