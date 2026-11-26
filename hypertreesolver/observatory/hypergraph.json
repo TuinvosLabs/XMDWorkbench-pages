@@ -72,6 +72,15 @@
       "relations": 567,
       "sources": 111,
       "date": "2026-11-26"
+    },
+    {
+      "id": "v9",
+      "layer": 8,
+      "label": "Solver-vervolg en gezamenlijke verliesgrenzen",
+      "nodes": 624,
+      "relations": 573,
+      "sources": 119,
+      "date": "2026-11-26"
     }
   ],
   "nodes": [
@@ -4399,6 +4408,48 @@
       "kind": "result",
       "layer": 7,
       "label": "Binaire vertalingstegeling voor Full",
+      "named": true
+    },
+    {
+      "id": "N0619",
+      "kind": "result",
+      "layer": 8,
+      "label": "Korte exacte doelquotientzoekactie",
+      "named": true
+    },
+    {
+      "id": "N0620",
+      "kind": "result",
+      "layer": 8,
+      "label": "Retentieverlies op historische standen",
+      "named": true
+    },
+    {
+      "id": "N0621",
+      "kind": "lemma",
+      "layer": 8,
+      "label": "Meerwaardige gezamenlijke verliesgrens",
+      "named": true
+    },
+    {
+      "id": "N0622",
+      "kind": "algorithm",
+      "layer": 8,
+      "label": "Iteratieve minimale conflictgeneratie",
+      "named": true
+    },
+    {
+      "id": "N0623",
+      "kind": "lemma",
+      "layer": 8,
+      "label": "Georiënteerde marker-pariteitsprojectie",
+      "named": true
+    },
+    {
+      "id": "N0624",
+      "kind": "result",
+      "layer": 8,
+      "label": "Zichtbaar eerste doel in solverprototype",
       "named": true
     }
   ],
@@ -11033,6 +11084,84 @@
       ],
       "conclusions": [
         "N0618"
+      ]
+    },
+    {
+      "id": "H0568",
+      "kind": "dependency",
+      "layer": 8,
+      "premises": [
+        "N0596",
+        "N0597",
+        "N0609"
+      ],
+      "conclusions": [
+        "N0619"
+      ]
+    },
+    {
+      "id": "H0569",
+      "kind": "dependency",
+      "layer": 8,
+      "premises": [
+        "N0607",
+        "N0604",
+        "N0608"
+      ],
+      "conclusions": [
+        "N0620"
+      ]
+    },
+    {
+      "id": "H0570",
+      "kind": "dependency",
+      "layer": 8,
+      "premises": [
+        "N0616",
+        "N0611",
+        "N0606"
+      ],
+      "conclusions": [
+        "N0621"
+      ]
+    },
+    {
+      "id": "H0571",
+      "kind": "dependency",
+      "layer": 8,
+      "premises": [
+        "N0621",
+        "N0615",
+        "N0616"
+      ],
+      "conclusions": [
+        "N0622"
+      ]
+    },
+    {
+      "id": "H0572",
+      "kind": "dependency",
+      "layer": 8,
+      "premises": [
+        "N0603",
+        "N0594",
+        "N0595"
+      ],
+      "conclusions": [
+        "N0623"
+      ]
+    },
+    {
+      "id": "H0573",
+      "kind": "dependency",
+      "layer": 8,
+      "premises": [
+        "N0619",
+        "N0609",
+        "N0612"
+      ],
+      "conclusions": [
+        "N0624"
       ]
     }
   ],
