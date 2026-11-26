@@ -250,6 +250,86 @@
       "id": "K26",
       "track": "knowledge",
       "title": "Discovery Engine en evaluatie"
+    },
+    {
+      "id": "S25",
+      "track": "solver",
+      "title": "Retentie en zoekverlies"
+    },
+    {
+      "id": "S26",
+      "track": "solver",
+      "title": "Langere state-only zoekactie"
+    },
+    {
+      "id": "S27",
+      "track": "solver",
+      "title": "Resterende raw-catalogusprofielen"
+    },
+    {
+      "id": "S28",
+      "track": "solver",
+      "title": "Macrotransport en plateau-exit"
+    },
+    {
+      "id": "S29",
+      "track": "solver",
+      "title": "Conflictgestuurde fysieke zoekgrenzen"
+    },
+    {
+      "id": "S30",
+      "track": "solver",
+      "title": "Doelgerichte productprojecties"
+    },
+    {
+      "id": "S31",
+      "track": "solver",
+      "title": "Constructieve discovery"
+    },
+    {
+      "id": "S32",
+      "track": "solver",
+      "title": "Geïntegreerde evaluatie"
+    },
+    {
+      "id": "K27",
+      "track": "knowledge",
+      "title": "Versiegebonden interactieve leesmodellen"
+    },
+    {
+      "id": "K28",
+      "track": "knowledge",
+      "title": "Meervoudige doelqueries"
+    },
+    {
+      "id": "K29",
+      "track": "knowledge",
+      "title": "Contextgebonden kennisalgebra"
+    },
+    {
+      "id": "K30",
+      "track": "knowledge",
+      "title": "Structurele hotspots en bruggen"
+    },
+    {
+      "id": "K31",
+      "track": "knowledge",
+      "title": "Analytische kaart en communities"
+    },
+    {
+      "id": "K32",
+      "track": "knowledge",
+      "title": "Onderzoeksinteresse en nominatie"
+    },
+    {
+      "id": "K33",
+      "track": "knowledge",
+      "title": "Interactief onderzoeksprototype"
+    },
+    {
+      "id": "K34",
+      "track": "knowledge",
+      "title": "Wetenschappelijke evaluatie en overdracht"
     }
   ]
 }

@@ -1147,6 +1147,254 @@
           "status": "checkpoint"
         }
       ]
+    },
+    {
+      "id": "s24-visible-first-diagnostic",
+      "date": "2026-11-26T12:00:31Z",
+      "track": "solver",
+      "wave": "S24",
+      "title": "Geïntegreerd solverprototype en zichtbaar eerste doel",
+      "summary": "Een afzonderlijke diagnostische constructor bereikt Color en Labels op alle zes hergebruikte korte ontwikkelstanden in 7,42–9,03 s met 22.648–40.398 QTM. Full bleef in deze arm open. De korte exacte oplossingen blijven behouden. Geen bevestigende populatieproef; producentcheckpoint, onafhankelijke beoordeling open.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "S24",
+          "status": "checkpoint"
+        }
+      ]
+    },
+    {
+      "id": "k19-second-solver-overlay-replay",
+      "date": "2026-11-26T12:12:16Z",
+      "track": "joint",
+      "wave": "K19/S17–S24",
+      "title": "Tweede solverlaag afzonderlijk gereproduceerd",
+      "summary": "Zes nieuwe knopen en zes hyperrelaties zijn op de solverlijn gereproduceerd; deze onderzoekslaag telt 624 knopen, 573 relaties en 119 bronnen. De technische herinname controleert 2.728 bronverwijzingen. Dit beschrijft een producentcheckpoint, niet automatisch de gepubliceerde graaf of wetenschappelijke acceptatie.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "K19",
+          "status": "checkpoint"
+        }
+      ]
+    },
+    {
+      "id": "s17-s24-producer-handoff",
+      "date": "2026-11-26T12:15:04Z",
+      "track": "solver",
+      "wave": "S17–S24",
+      "title": "Geïntegreerd solveronderzoek: producentoverdracht",
+      "summary": "Acht onderzoeksonderdelen hebben een producentoverdracht, met afzonderlijke wiskundige, computationele, fysieke en empirische resultaten. De zes korte ontwikkelstanden hebben bewezen primitieve optima 2, 4 of 6 QTM op alle vier doelen. Op de twee langere historische standen bleef de eerdere zoekmethode zonder verbetering. Onafhankelijke wetenschappelijke beoordeling open.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "S24",
+          "status": "checkpoint"
+        }
+      ]
+    },
+    {
+      "id": "k19-k26-producer-handoff",
+      "date": "2026-11-26T12:24:29Z",
+      "track": "knowledge",
+      "wave": "K19–K26",
+      "title": "Discovery Engine: producentoverdracht en versie-isolatie",
+      "summary": "De geïntegreerde engine reproduceert 23 nieuwe en 31 historische resultaatbestanden. Twee geordende onderzoeksforks hebben gelijke inhoud per revisie maar verschillende versie-identiteiten; hergebruik van verouderde verzoeken wordt afgewezen. Een kandidaat blijft buiten de publieke graaf. Werkelijke modelinferentie en onafhankelijke trainingslabels ontbreken; onafhankelijke wetenschappelijke beoordeling open.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "K20",
+          "status": "checkpoint"
+        },
+        {
+          "id": "K26",
+          "status": "checkpoint"
+        }
+      ]
+    },
+    {
+      "id": "k27-versioned-read-model",
+      "date": "2026-11-26T12:38:45Z",
+      "track": "knowledge",
+      "wave": "K27",
+      "title": "Versiegebonden leesmodellen en oorsprongsankers",
+      "summary": "Vier afzonderlijke onderzoeksleesmodellen zijn gereproduceerd; gelijkheid van inhoud per revisie is onderscheiden van gelijkheid van geordende historie. Bij oudere records met uitsluitend een documentanker is een letterlijke teksttreffer een navigatiehint, geen bewijs. Producentcheckpoint; onafhankelijke beoordeling open.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "K27",
+          "status": "checkpoint"
+        }
+      ]
+    },
+    {
+      "id": "s25-retention-regression",
+      "date": "2026-11-26T12:38:51Z",
+      "track": "solver",
+      "wave": "S25",
+      "title": "Retentieverlies bij langere state-only standen",
+      "summary": "Retrospectieve diagnose van twee historische ontwikkelstanden: bij breedte 128 verdwijnt de bekende getuige op respectievelijk laag 3 en laag 2, ook bij vergelijking op fysieke toestand plus laatste generator. Historische getuigen zijn uitsluitend diagnostiek, geen solverinput. Producentcheckpoint; onafhankelijke beoordeling open.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "S25",
+          "status": "checkpoint"
+        }
+      ]
+    },
+    {
+      "id": "k28-multitarget-query",
+      "date": "2026-11-26T12:41:45Z",
+      "track": "knowledge",
+      "wave": "K28",
+      "title": "Meervoudige kennisqueries en alternatieve verificatieroutes",
+      "summary": "Het onderzoeksprototype reconstrueert gezamenlijke premissen en alternatieve verificatieroutes voor samengestelde doelen. Symbolische werkprijzen horen bij verificatieplanning, niet bij QTM. Ontbrekende voorwaarden laten de uitkomst onbekend. Geen bewijs uit louter structurele bereikbaarheid; onafhankelijke beoordeling open.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "K28",
+          "status": "checkpoint"
+        }
+      ]
+    },
+    {
+      "id": "k29-context-restriction",
+      "date": "2026-11-26T12:45:36Z",
+      "track": "joint",
+      "wave": "K29/S29",
+      "title": "Conflictgrenzen onder veranderende vervolgtalen",
+      "summary": "Bij onveranderde kosten blijven conflicten geldig onder taalrestrictie, maar een oude bovengrens vereist een opnieuw legale getuige. Taaluitbreiding kan de vroegere ondergrens ongeldig maken. 6.561 eindige orakelvergelijkingen en 19.683 begrensde controles ondersteunen het producentresultaat; onafhankelijke beoordeling open.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "K29",
+          "status": "checkpoint"
+        }
+      ]
+    },
+    {
+      "id": "s26-frame-ida-full-optima",
+      "date": "2026-11-26T12:46:18Z",
+      "track": "solver",
+      "wave": "S26",
+      "title": "State-only framezoekactie bereikt korte Full-optima",
+      "summary": "Op historische ontwikkelstand A vindt de state-only methode een fysiek gecontroleerde Full-oplossing van 9 QTM, tegenover het eerdere constructieve incumbent van 31.077; de frameondergrens sluit het primitieve Full-optimum. Op B zijn 11 en 13 uitgesloten en even lengten onmogelijk: ondergrens 15, geen korte oplossing binnen de onderzochte horizon. Een afzonderlijk bevroren vervolg op twee openbare ontwikkelstanden bereikt Full-optima 8 en 12 QTM; de voorafgaande beam-arm gaf geen winst. De zichtbare referentie bereikte Color/Labels met 38.766 en 38.428 QTM, niet Full. Geen populatieclaim of optimumclaim voor de overige doelen; onafhankelijke beoordeling open.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "S26",
+          "status": "checkpoint"
+        }
+      ]
+    },
+    {
+      "id": "k30-structural-analysis-prototype",
+      "date": "2026-11-26T12:48:32Z",
+      "track": "knowledge",
+      "wave": "K30",
+      "title": "Structurele hypergraafanalyse als onderzoeksprototype",
+      "summary": "Op een afzonderlijke onderzoekskandidaat zijn gerichte incidentie, centrale posities, zwakke componenten en bruggen op de ongerichte projectie onderscheiden. Structurele centraliteit is geen bewijs van wetenschappelijke waarde. Geen publieke graafwijziging of productie-integratie; onafhankelijke beoordeling open.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "K30",
+          "status": "checkpoint"
+        }
+      ]
+    },
+    {
+      "id": "s27-partial-raw-frontier",
+      "date": "2026-11-26T12:53:49Z",
+      "track": "solver",
+      "wave": "S27",
+      "title": "Gedeeltelijke dekking van het zesmacroprofiel",
+      "summary": "235.929.600 geordende raw-cataloguswoorden in een begrensde prefixfamilie zijn onderzocht zonder treffer onder 800 QTM. De complementaire frontier blijft open; geen volledige uitsluiting of gewijzigde vrije raw-ondergrens. Producentcheckpoint; onafhankelijke beoordeling open.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "S27",
+          "status": "checkpoint"
+        }
+      ]
+    },
+    {
+      "id": "s28-heterogeneous-tile",
+      "date": "2026-11-26T12:53:49Z",
+      "track": "solver",
+      "wave": "S28",
+      "title": "Gemengde labeltoewijzing in disjuncte tegels",
+      "summary": "Per tegel kunnen twee inverse labelvarianten worden gekozen: 256 onderscheidbare doeltoewijzingen in het ontwerp. Eén afwisselende gemengde toewijzing is fysiek vooruit en invers gecontroleerd op 5.440 raw QTM. Overlappende vertalingen voldoen niet aan het disjunctiecontract. Geen algemene optimumclaim; producentcheckpoint, onafhankelijke beoordeling open.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "S28",
+          "status": "checkpoint"
+        }
+      ]
+    },
+    {
+      "id": "k31-map-quality-tradeoff",
+      "date": "2026-11-26T12:54:01Z",
+      "track": "knowledge",
+      "wave": "K31",
+      "title": "Analytische kaart en communityvergelijking",
+      "summary": "In een afzonderlijk onderzoeksprototype daalt de gemeten afstandsstress van 0,616 naar 0,432 na relaxatie, terwijl behoud van directe buren daalt van 11,8% naar 4,4%. De twee communitymethoden stemmen beperkt overeen (co-toewijzing Jaccard 0,113). Voronoi en ruimtelijke nabijheid zijn geen bewijsrelaties. Geen productie-integratie; onafhankelijke beoordeling open.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "K31",
+          "status": "checkpoint"
+        }
+      ]
+    },
+    {
+      "id": "k32-research-nomination-prototype",
+      "date": "2026-11-26T12:57:37Z",
+      "track": "knowledge",
+      "wave": "K32",
+      "title": "Onderzoeksnominatie met expliciete toetsvoorwaarden",
+      "summary": "Drie rangschikkingsmethoden vergelijken dezelfde 56 combinaties van drie ontwikkelclaims en nomineren elk vier kandidaten. De voorstellen bevatten premissen, een toets en een falsificatiecriterium. Onafhankelijke beoordeling van bruikbaarheid en nieuwheid ontbreekt; geen claim van betere ontdekkingsopbrengst.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "K32",
+          "status": "checkpoint"
+        }
+      ]
+    },
+    {
+      "id": "s29-k29-protected-w28-conflict",
+      "date": "2026-11-26T12:57:37Z",
+      "track": "joint",
+      "wave": "S29/K29",
+      "title": "Hogere-orde conflict in werkelijke beschermde W28-kosten",
+      "summary": "Bij één gedeelde vervolgstap en een betaald beschermd prefix bedragen de afzonderlijke maxima samen 9 QTM en het gezamenlijke maximum 7 QTM; alle drie suffixen zijn optimaal en ieder paar is compatibel. De kenniswerklijn reproduceert de kosten met 21.870 commutatiecontroles. Restrictie behoudt verlies 2 maar kan de getuige verwijderen; uitbreiding kan het verlies naar nul brengen. De eerdere onbeschermde W28-nulcontrole blijft geldig. Geen algemene fysieke snoeigarantie; onafhankelijke beoordeling open.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "S29",
+          "status": "checkpoint"
+        },
+        {
+          "id": "K29",
+          "status": "checkpoint"
+        }
+      ]
+    },
+    {
+      "id": "s30-goal-specific-product-projection",
+      "date": "2026-11-26T12:57:37Z",
+      "track": "joint",
+      "wave": "S30",
+      "title": "Doelafhankelijke productprojectie",
+      "summary": "Op een ontwikkelprojectie met 1.280 toestanden geeft de gezamenlijke ondergrens voor Color 3 tegenover 1 en voor Full 4 tegenover 1. De som van losse grenzen is niet algemeen veilig. Dit zijn doelgebonden projectiegrenzen, geen algemene oplossingslengtes; volledige onafhankelijke transitietoets staat open.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "S30",
+          "status": "checkpoint"
+        }
+      ]
     }
   ]
 }
