@@ -2,15 +2,15 @@
   "schema": "observatory-publication/1",
   "version": "1.0",
   "lastEvent": "2026-11-26T09:52:04Z",
-  "graphVersion": "v3",
+  "graphVersion": "v4",
   "timelineCount": 37,
   "graphCounts": {
-    "id": "v3",
-    "layer": 2,
-    "label": "CHAIN-04 onderzoekslaag",
-    "nodes": 588,
-    "relations": 537,
-    "sources": 80,
+    "id": "v4",
+    "layer": 3,
+    "label": "S-programma onderzoekslaag",
+    "nodes": 595,
+    "relations": 544,
+    "sources": 88,
     "date": "2026-11-26"
   },
   "notice": "Publieke afgeleide onderzoeksweergave. Geen interne bronregisters of ruwe bewijzen. Wetenschappelijke resultaten zijn gebonden aan de getoonde onderzoekscontracten."

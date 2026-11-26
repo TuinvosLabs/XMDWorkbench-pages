@@ -27,6 +27,15 @@
       "relations": 537,
       "sources": 80,
       "date": "2026-11-26"
+    },
+    {
+      "id": "v4",
+      "layer": 3,
+      "label": "S-programma onderzoekslaag",
+      "nodes": 595,
+      "relations": 544,
+      "sources": 88,
+      "date": "2026-11-26"
     }
   ],
   "nodes": [
@@ -4144,6 +4153,55 @@
       "kind": "experiment",
       "layer": 2,
       "label": "Gemeten zoekkosten",
+      "named": true
+    },
+    {
+      "id": "N0589",
+      "kind": "algorithm",
+      "layer": 3,
+      "label": "Compatibiliteit van macrospellingen en sneden",
+      "named": true
+    },
+    {
+      "id": "N0590",
+      "kind": "result",
+      "layer": 3,
+      "label": "Kortere constructieve buiten-cut-routes",
+      "named": true
+    },
+    {
+      "id": "N0591",
+      "kind": "algorithm",
+      "layer": 3,
+      "label": "Exacte disjuncte macroselectie",
+      "named": true
+    },
+    {
+      "id": "N0592",
+      "kind": "result",
+      "layer": 3,
+      "label": "Uitsluiting van twee raw-prijsprofielen",
+      "named": true
+    },
+    {
+      "id": "N0593",
+      "kind": "result",
+      "layer": 3,
+      "label": "Vijfcyclusbetegeling en reparatieprijs",
+      "named": true
+    },
+    {
+      "id": "N0594",
+      "kind": "lemma",
+      "layer": 3,
+      "label": "Primitieve ondergrens uit projectie en pariteit",
+      "named": true
+    },
+    {
+      "id": "N0595",
+      "kind": "counterexample",
+      "layer": 3,
+      "label": "Grenzen van typehistogrammen",
       "named": true
     }
   ],
@@ -10390,7 +10448,97 @@
       "conclusions": [
         "N0588"
       ]
+    },
+    {
+      "id": "H0538",
+      "kind": "dependency",
+      "layer": 3,
+      "premises": [
+        "N0579",
+        "N0580"
+      ],
+      "conclusions": [
+        "N0589"
+      ]
+    },
+    {
+      "id": "H0539",
+      "kind": "dependency",
+      "layer": 3,
+      "premises": [
+        "N0589",
+        "N0581",
+        "N0407"
+      ],
+      "conclusions": [
+        "N0590"
+      ]
+    },
+    {
+      "id": "H0540",
+      "kind": "dependency",
+      "layer": 3,
+      "premises": [
+        "N0589",
+        "N0584",
+        "N0540"
+      ],
+      "conclusions": [
+        "N0591"
+      ]
+    },
+    {
+      "id": "H0541",
+      "kind": "dependency",
+      "layer": 3,
+      "premises": [
+        "N0582",
+        "N0587",
+        "N0591"
+      ],
+      "conclusions": [
+        "N0592"
+      ]
+    },
+    {
+      "id": "H0542",
+      "kind": "dependency",
+      "layer": 3,
+      "premises": [
+        "N0591",
+        "N0410",
+        "N0580"
+      ],
+      "conclusions": [
+        "N0593"
+      ]
+    },
+    {
+      "id": "H0543",
+      "kind": "dependency",
+      "layer": 3,
+      "premises": [
+        "N0590",
+        "N0407",
+        "N0587"
+      ],
+      "conclusions": [
+        "N0594"
+      ]
+    },
+    {
+      "id": "H0544",
+      "kind": "dependency",
+      "layer": 3,
+      "premises": [
+        "N0593",
+        "N0587",
+        "N0410"
+      ],
+      "conclusions": [
+        "N0595"
+      ]
     }
   ],
-  "description": "Gesaneerde actieve incidentietopologie. Alle actieve knopen en hyperrelaties in de drie gecontroleerde versies zijn opgenomen. Alleen geselecteerde onderzoekslabels zijn publiek gemaakt. Overige labels, bronpinnen, guards, bewijsdata en interne toelatingsstatus blijven privé. Een relationele verbinding is geen formele bewijsacceptatie. CHAIN-03/04 zijn research-overlays, geen nieuwe canonieke toelatingen."
+  "description": "Gesaneerde actieve incidentietopologie. Alle actieve knopen en hyperrelaties in de vier gecontroleerde versies zijn opgenomen. Alleen geselecteerde onderzoekslabels zijn publiek gemaakt. Overige labels, bronpinnen, guards, bewijsdata en interne toelatingsstatus blijven privé. Een relationele verbinding is geen formele bewijsacceptatie. CHAIN-03/04 en het S-programma zijn research-overlays, geen nieuwe canonieke toelatingen."
 }

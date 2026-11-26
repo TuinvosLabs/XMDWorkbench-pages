@@ -589,6 +589,13 @@
     "N0585": "K02 · constraint propagation",
     "N0586": "Dominantieblokken tot vier sites",
     "N0587": "Chronologische getypeerde pariteit",
-    "N0588": "Gemeten zoekkosten"
+    "N0588": "Gemeten zoekkosten",
+    "N0589": "Compatibiliteit van macrospellingen en sneden",
+    "N0590": "Kortere constructieve buiten-cut-routes",
+    "N0591": "Exacte disjuncte macroselectie",
+    "N0592": "Uitsluiting van twee raw-prijsprofielen",
+    "N0593": "Vijfcyclusbetegeling en reparatieprijs",
+    "N0594": "Primitieve ondergrens uit projectie en pariteit",
+    "N0595": "Grenzen van typehistogrammen"
   }
 }
