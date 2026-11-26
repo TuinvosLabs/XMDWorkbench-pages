@@ -63,6 +63,15 @@
       "relations": 562,
       "sources": 107,
       "date": "2026-11-26"
+    },
+    {
+      "id": "v8",
+      "layer": 7,
+      "label": "Geavanceerde solverlaag",
+      "nodes": 618,
+      "relations": 567,
+      "sources": 111,
+      "date": "2026-11-26"
     }
   ],
   "nodes": [
@@ -4355,6 +4364,41 @@
       "kind": "result",
       "layer": 6,
       "label": "Neutrale tweestapsroute",
+      "named": true
+    },
+    {
+      "id": "N0614",
+      "kind": "result",
+      "layer": 7,
+      "label": "Volledige uitsluiting gemengd vijfmacroprofiel",
+      "named": true
+    },
+    {
+      "id": "N0615",
+      "kind": "lemma",
+      "layer": 7,
+      "label": "Reguliere vervolgtalen en betaalde extrema",
+      "named": true
+    },
+    {
+      "id": "N0616",
+      "kind": "algorithm",
+      "layer": 7,
+      "label": "Behoud van alle maximale vervolggetuigen",
+      "named": true
+    },
+    {
+      "id": "N0617",
+      "kind": "result",
+      "layer": 7,
+      "label": "Gemengde drieblokreparatie",
+      "named": true
+    },
+    {
+      "id": "N0618",
+      "kind": "result",
+      "layer": 7,
+      "label": "Binaire vertalingstegeling voor Full",
       "named": true
     }
   ],
@@ -10924,6 +10968,71 @@
       ],
       "conclusions": [
         "N0613"
+      ]
+    },
+    {
+      "id": "H0563",
+      "kind": "dependency",
+      "layer": 7,
+      "premises": [
+        "N0610",
+        "N0611",
+        "N0598"
+      ],
+      "conclusions": [
+        "N0614"
+      ]
+    },
+    {
+      "id": "H0564",
+      "kind": "dependency",
+      "layer": 7,
+      "premises": [
+        "N0600",
+        "N0606",
+        "N0602"
+      ],
+      "conclusions": [
+        "N0615"
+      ]
+    },
+    {
+      "id": "H0565",
+      "kind": "dependency",
+      "layer": 7,
+      "premises": [
+        "N0615",
+        "N0602",
+        "N0606"
+      ],
+      "conclusions": [
+        "N0616"
+      ]
+    },
+    {
+      "id": "H0566",
+      "kind": "dependency",
+      "layer": 7,
+      "premises": [
+        "N0613",
+        "N0593",
+        "N0591"
+      ],
+      "conclusions": [
+        "N0617"
+      ]
+    },
+    {
+      "id": "H0567",
+      "kind": "dependency",
+      "layer": 7,
+      "premises": [
+        "N0617",
+        "N0593",
+        "N0589"
+      ],
+      "conclusions": [
+        "N0618"
       ]
     }
   ],

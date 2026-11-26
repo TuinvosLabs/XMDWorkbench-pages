@@ -170,6 +170,86 @@
       "id": "K18",
       "track": "knowledge",
       "title": "ResearchAtlas"
+    },
+    {
+      "id": "S17",
+      "track": "solver",
+      "title": "Exacte indexering en restprofielen"
+    },
+    {
+      "id": "S18",
+      "track": "solver",
+      "title": "Short-first en constructief portfolio"
+    },
+    {
+      "id": "S19",
+      "track": "solver",
+      "title": "Reguliere vervolgtalen"
+    },
+    {
+      "id": "S20",
+      "track": "solver",
+      "title": "Plateau-exit en niet-monotone macro’s"
+    },
+    {
+      "id": "S21",
+      "track": "solver",
+      "title": "Automatische macrocompositie"
+    },
+    {
+      "id": "S22",
+      "track": "solver",
+      "title": "Adaptief doelportfolio"
+    },
+    {
+      "id": "S23",
+      "track": "solver",
+      "title": "Geometrische ondergrenzen"
+    },
+    {
+      "id": "S24",
+      "track": "solver",
+      "title": "Geïntegreerde onderzoeksarchitectuur"
+    },
+    {
+      "id": "K19",
+      "track": "knowledge",
+      "title": "Verliesloze kennisinname"
+    },
+    {
+      "id": "K20",
+      "track": "knowledge",
+      "title": "Geïntegreerde kennisengine"
+    },
+    {
+      "id": "K21",
+      "track": "knowledge",
+      "title": "Exacte geordende bewijsroutes"
+    },
+    {
+      "id": "K22",
+      "track": "knowledge",
+      "title": "Hogere-orde ontdekking"
+    },
+    {
+      "id": "K23",
+      "track": "knowledge",
+      "title": "Brongebonden retrieval"
+    },
+    {
+      "id": "K24",
+      "track": "knowledge",
+      "title": "Lokale modelintegratie"
+    },
+    {
+      "id": "K25",
+      "track": "knowledge",
+      "title": "Onderzoeksnominatie en data-audit"
+    },
+    {
+      "id": "K26",
+      "track": "knowledge",
+      "title": "Discovery Engine en evaluatie"
     }
   ]
 }

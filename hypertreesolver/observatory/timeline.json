@@ -895,6 +895,258 @@
       "summary": "De broninversen van 9 en 17 QTM zijn na afloop van de ontwikkelproef fysiek in beide richtingen gecontroleerd. Deze controle ligt buiten de oorspronkelijke solverarmen. De constructieve winst is daarom uitsluitend een vergelijking binnen het afgebakende solvercontract, geen bewijs van nabijheid tot een primitief optimum. Producentcheckpoint.",
       "status": "result",
       "updates": []
+    },
+    {
+      "id": "k19-reproduced-intake",
+      "date": "2026-11-26T11:22:27Z",
+      "track": "knowledge",
+      "wave": "K19",
+      "title": "Verliesloze reconstructie van de onderzoekslagen",
+      "summary": "De producent reproduceert zes opeenvolgende overgangen tot 613 knopen, 562 relaties en 107 bronnen. Herhaalde inname is idempotent. Voor 54 records bestaat uitsluitend een documentbreed bronanker. Onafhankelijke wetenschappelijke beoordeling blijft open.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "K19",
+          "status": "checkpoint"
+        }
+      ]
+    },
+    {
+      "id": "s17-mixed-five-exclusion",
+      "date": "2026-11-26T11:26:33Z",
+      "track": "solver",
+      "wave": "S17",
+      "title": "Volledige uitsluiting van vier K-macro’s met één paarmacro",
+      "summary": "Voor uniform zes zijn alle vijf posities van het paarmacrotype afgedekt door drie genormaliseerde ordeningen, telkens 1.920 vertegenwoordigers zonder strikte verbetering. Acht vrije raw-catalogusprofielen blijven open; de raw-grenzen 480–800 QTM blijven onveranderd. De eerdere gereduceerde 588 QTM is een ander contract. Producentcheckpoint; onafhankelijke beoordeling open.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "S17",
+          "status": "checkpoint"
+        }
+      ]
+    },
+    {
+      "id": "k20-integrated-replay",
+      "date": "2026-11-26T11:27:05Z",
+      "track": "knowledge",
+      "wave": "K20",
+      "title": "Uitvoerbare discovery-engine en regressiecontrole",
+      "summary": "Het prototype combineert brongebonden bewijsroutes, planning en lokaal werkbeheer. Alle 31 historische resultaatbestanden zijn byte-identiek gereproduceerd. Twee verificatieroutes hebben dezelfde symbolische werkprijs 3. Een gewijzigde onderzoekshorizon blijft onbeslist. Producentcheckpoint; onafhankelijke beoordeling open.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "K20",
+          "status": "checkpoint"
+        }
+      ]
+    },
+    {
+      "id": "s19-regular-envelope",
+      "date": "2026-11-26T11:28:41Z",
+      "track": "solver",
+      "wave": "S19",
+      "title": "Exacte extrema in reguliere vervolgtalen",
+      "summary": "Een automaat vindt haalbare extrema van betaalde vrije woordreductie en kan alle gelijkgeprijsde vervolggetuigen behouden. De stack-oracle controleert 15.648 gevallen, inclusief 2.589 lege talen. Twee hergebruikte fysieke ontwikkelcontexten geven geen extra aanscherping. Geen uitspraak over algemene fysieke optimaliteit. Producentcheckpoint; onafhankelijke beoordeling open.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "S19",
+          "status": "checkpoint"
+        }
+      ]
+    },
+    {
+      "id": "k21-all-ordered-witnesses",
+      "date": "2026-11-26T11:33:12Z",
+      "track": "knowledge",
+      "wave": "K21",
+      "title": "Exacte geordende alternatieve bewijswoorden",
+      "summary": "In 96 begrensde gevallen komen optimumprijzen en alle letterlijke optimale getuigen overeen met onafhankelijke implementaties. Veertig gevallen hebben meerdere gelijkwaardige getuigen. Vier bekende-taalfalen blijven onbeslist bij onbekende voorwaarden. Producentcheckpoint; onafhankelijke wetenschappelijke beoordeling open.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "K21",
+          "status": "checkpoint"
+        }
+      ]
+    },
+    {
+      "id": "k22-higher-order-conflicts",
+      "date": "2026-11-26T11:37:36Z",
+      "track": "knowledge",
+      "wave": "K22",
+      "title": "Hogere-orde conflicten en gezamenlijke extremagrenzen",
+      "summary": "Gewogen transversalen zijn exact bij tweewaardige verliezen en alle minimale conflicten. Alle 343 kleine geconstrueerde systemen bevestigen het resultaat; in zes is uitsluitend paarsgewijze analyse te zwak. Dit is een eindig gemeenschappelijk taalcontract, geen fysieke snoeigarantie. Producentcheckpoint; onafhankelijke beoordeling open.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "K22",
+          "status": "checkpoint"
+        }
+      ]
+    },
+    {
+      "id": "s20-s21-mixed-tiling",
+      "date": "2026-11-26T11:39:17Z",
+      "track": "solver",
+      "wave": "S20/S21",
+      "title": "Gemengde plateau-exit en binaire vertalingstegeling",
+      "summary": "Een gemengde drieblokroute repareert vier homogene vijfcycli voor 680 letterlijke QTM. Acht disjuncte, kostenbehoudende kopieën geven een fysiek gecontroleerde Full-oplossing van 5.440 raw QTM tegenover 7.680 singleton-QTM. Alle 24 homogene labels zijn vooruit en invers gecontroleerd. Zowel de intern beschermde als de buiten-cut-reductie geven afzonderlijk 5.440 QTM. Geen primitieve optimaliteit; de eerdere tweestapsuitsluiting blijft geldig. Producentcheckpoint; onafhankelijke beoordeling open.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "S20",
+          "status": "checkpoint"
+        },
+        {
+          "id": "S21",
+          "status": "checkpoint"
+        }
+      ]
+    },
+    {
+      "id": "s23-joint-marker-parity",
+      "date": "2026-11-26T11:39:17Z",
+      "track": "solver",
+      "wave": "S23",
+      "title": "Gezamenlijke marker- en pariteitsondergrens",
+      "summary": "Op een ontworpen 7×7×7-bron sluit de gezamenlijke projectie samen met een fysiek geverifieerd invers woord het primitieve Full-optimum op 7 QTM; de maximumwaarde van de twee afzonderlijke ondergrenzen is 3. Een ontworpen 5×5×5-voorbeeld sluit op 6 tegenover 3; een even vierdimensionale controle toont geen winst. Niet overdraagbaar naar Color zonder doelprojectie. Producentcheckpoint; onafhankelijke beoordeling open.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "S23",
+          "status": "checkpoint"
+        }
+      ]
+    },
+    {
+      "id": "k23-revision-aware-retrieval",
+      "date": "2026-11-26T11:42:39Z",
+      "track": "knowledge",
+      "wave": "K23",
+      "title": "Letterlijk brongebonden retrieval",
+      "summary": "Een gemeenschappelijke index van 1.057 tekst- en veldeenheden levert bij de hybride methode 6 van 8 historische ankers op, inclusief twee eerder gemiste velden. Eén relevante revisiefout blijft. De eerdere K09-methoden bereikten ook 6 van 8; geen verbetering van het historische totaal. Producentcheckpoint; onafhankelijke beoordeling open.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "K23",
+          "status": "checkpoint"
+        }
+      ]
+    },
+    {
+      "id": "k24-mock-runtime-gate",
+      "date": "2026-11-26T11:44:55Z",
+      "track": "knowledge",
+      "wave": "K24",
+      "title": "Modelprotocol getest, werkelijke inferentie nog open",
+      "summary": "Vier ontwikkelvragen testen het lokale protocol met gesimuleerde modelantwoorden; twee kandidaten worden voorbereid, één vraag wordt vooraf gestopt en één onthouden. Vervalste bronverwijzingen zijn afgewezen. Geen echte modelinferentie of kwaliteitsmeting; de runtime is niet beschikbaar. Producentcheckpoint; onafhankelijke beoordeling open.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "K24",
+          "status": "partial"
+        }
+      ]
+    },
+    {
+      "id": "s18-s22-quotient-optima",
+      "date": "2026-11-26T11:46:12Z",
+      "track": "solver",
+      "wave": "S18/S22",
+      "title": "Doelgerichte korte zoekactie en behoud van oplossingen",
+      "summary": "Zes korte ontwikkelgevallen hebben exacte Color-doelafstanden 2, 4 en 6 QTM (twee per afstand), met fysiek gecontroleerde Full-getuigen. Een radius-vijf-methode mist de twee zessen; uitbreiding naar twee zijden van drie bereikt ze. Op twee hergebruikte historische ontwikkelstanden is geen kortere route gevonden binnen de onderzochte horizon. Geen populatieclaim. Producentcheckpoint; onafhankelijke beoordeling open.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "S18",
+          "status": "checkpoint"
+        },
+        {
+          "id": "S22",
+          "status": "checkpoint"
+        }
+      ]
+    },
+    {
+      "id": "k25-label-audit",
+      "date": "2026-11-26T11:48:15Z",
+      "track": "knowledge",
+      "wave": "K25",
+      "title": "Data-audit voor onderzoeksnominatie",
+      "summary": "Elf producentvoorstellen vormen één verbonden ontwikkelgroep, zonder onafhankelijke uitkomstlabels. De synthetische controles tonen dat rangschikking onder een familieverschuiving kan verslechteren. Een volledige vervolgzoekactie blijft noodzakelijk; geen getraind model of kalibratieclaim. Producentcheckpoint; onafhankelijke beoordeling open.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "K25",
+          "status": "checkpoint"
+        }
+      ]
+    },
+    {
+      "id": "k19-solver-overlay-replay",
+      "date": "2026-11-26T11:48:15Z",
+      "track": "joint",
+      "wave": "K19/S17–S21",
+      "title": "Nieuwe solver-onderzoekslaag afzonderlijk gereproduceerd",
+      "summary": "De kenniswerklijn reproduceert vijf nieuwe knopen en vijf nieuwe hyperrelaties: de onderzoeksprojectie telt 618 knopen, 567 relaties en 111 bronnen. Dit is technische herinname van een research-overlay, geen onafhankelijke wetenschappelijke acceptatie.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "K19",
+          "status": "checkpoint"
+        }
+      ]
+    },
+    {
+      "id": "s19-k22-multilevel-conflicts",
+      "date": "2026-11-26T11:52:25Z",
+      "track": "joint",
+      "wave": "S19/K22",
+      "title": "Meerniveauverliezen en een driewegconflict",
+      "summary": "De drempelexpansie komt in alle 19.683 geconstrueerde driewegtabellen overeen met enumeratie; 10.422 bevatten echt meerwaardige verliezen. Op een gemeenschappelijke fysieke cut is de som van afzonderlijke vrije-woordmaxima 12 en het gezamenlijke maximum 10; alle paren zijn compatibel. Voor dezelfde woorden geeft de afzonderlijke W28-reductie nul verschil. Producentcheckpoint; onafhankelijke beoordeling open.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "S19",
+          "status": "checkpoint"
+        },
+        {
+          "id": "K22",
+          "status": "checkpoint"
+        }
+      ]
+    },
+    {
+      "id": "k26-transport-campaign",
+      "date": "2026-11-26T11:54:01Z",
+      "track": "joint",
+      "wave": "K26/S21",
+      "title": "Brongebonden transportcontrole en discovery-campagne",
+      "summary": "De kenniswerklijn controleert acht disjuncte transporten en 24 homogene labelvarianten aan de hand van de solverreceipt; de raw-prijs 5.440 QTM blijft behouden. Dit is geen nieuwe onafhankelijke fysieke replay. Een solver- en fictieve materiaalcasus leveren elk twee symbolische verificatieroutes onder hun eigen contract. Producentcheckpoint; wetenschappelijke beoordeling open.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "K26",
+          "status": "checkpoint"
+        }
+      ]
+    },
+    {
+      "id": "k22-iterative-conflict-refinement",
+      "date": "2026-11-26T11:58:09Z",
+      "track": "joint",
+      "wave": "K22/S19",
+      "title": "Iteratieve exacte conflictgeneratie",
+      "summary": "De iteratieve gewogen transversal vindt bij 986 eindige tabellen dezelfde optimumprijs als directe enumeratie; alle 1.972 begrensde controles behouden geldige onder- en bovengrenzen. De gedeelde solverreceipt bevestigt vrije-woordmaxima 12 afzonderlijk en 10 gezamenlijk; de W28-afwijking blijft nul. Producentcheckpoint; onafhankelijke beoordeling open. Een verdere kandidaat blijft buiten de gevalideerde graaf.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "K22",
+          "status": "checkpoint"
+        }
+      ]
     }
   ]
 }
