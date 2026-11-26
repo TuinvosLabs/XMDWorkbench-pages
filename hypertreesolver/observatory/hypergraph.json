@@ -1,0 +1,10396 @@
+{
+  "schema": "observatory-hypergraph/1",
+  "versions": [
+    {
+      "id": "v1",
+      "layer": 0,
+      "label": "Canonieke KH/KM-basis",
+      "nodes": 565,
+      "relations": 518,
+      "sources": 56,
+      "date": "2026-11-26"
+    },
+    {
+      "id": "v2",
+      "layer": 1,
+      "label": "CHAIN-03 onderzoekslaag",
+      "nodes": 578,
+      "relations": 527,
+      "sources": 67,
+      "date": "2026-11-26"
+    },
+    {
+      "id": "v3",
+      "layer": 2,
+      "label": "CHAIN-04 onderzoekslaag",
+      "nodes": 588,
+      "relations": 537,
+      "sources": 80,
+      "date": "2026-11-26"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "N0001",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0001",
+      "named": false
+    },
+    {
+      "id": "N0002",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0002",
+      "named": false
+    },
+    {
+      "id": "N0003",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0003",
+      "named": false
+    },
+    {
+      "id": "N0004",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0004",
+      "named": false
+    },
+    {
+      "id": "N0005",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0005",
+      "named": false
+    },
+    {
+      "id": "N0006",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0006",
+      "named": false
+    },
+    {
+      "id": "N0007",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0007",
+      "named": false
+    },
+    {
+      "id": "N0008",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0008",
+      "named": false
+    },
+    {
+      "id": "N0009",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0009",
+      "named": false
+    },
+    {
+      "id": "N0010",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0010",
+      "named": false
+    },
+    {
+      "id": "N0011",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0011",
+      "named": false
+    },
+    {
+      "id": "N0012",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0012",
+      "named": false
+    },
+    {
+      "id": "N0013",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0013",
+      "named": false
+    },
+    {
+      "id": "N0014",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0014",
+      "named": false
+    },
+    {
+      "id": "N0015",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0015",
+      "named": false
+    },
+    {
+      "id": "N0016",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0016",
+      "named": false
+    },
+    {
+      "id": "N0017",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0017",
+      "named": false
+    },
+    {
+      "id": "N0018",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0018",
+      "named": false
+    },
+    {
+      "id": "N0019",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0019",
+      "named": false
+    },
+    {
+      "id": "N0020",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0020",
+      "named": false
+    },
+    {
+      "id": "N0021",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0021",
+      "named": false
+    },
+    {
+      "id": "N0022",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0022",
+      "named": false
+    },
+    {
+      "id": "N0023",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0023",
+      "named": false
+    },
+    {
+      "id": "N0024",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0024",
+      "named": false
+    },
+    {
+      "id": "N0025",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0025",
+      "named": false
+    },
+    {
+      "id": "N0026",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0026",
+      "named": false
+    },
+    {
+      "id": "N0027",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0027",
+      "named": false
+    },
+    {
+      "id": "N0028",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0028",
+      "named": false
+    },
+    {
+      "id": "N0029",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0029",
+      "named": false
+    },
+    {
+      "id": "N0030",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0030",
+      "named": false
+    },
+    {
+      "id": "N0031",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0031",
+      "named": false
+    },
+    {
+      "id": "N0032",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0032",
+      "named": false
+    },
+    {
+      "id": "N0033",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0033",
+      "named": false
+    },
+    {
+      "id": "N0034",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0034",
+      "named": false
+    },
+    {
+      "id": "N0035",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0035",
+      "named": false
+    },
+    {
+      "id": "N0036",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0036",
+      "named": false
+    },
+    {
+      "id": "N0037",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0037",
+      "named": false
+    },
+    {
+      "id": "N0038",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0038",
+      "named": false
+    },
+    {
+      "id": "N0039",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0039",
+      "named": false
+    },
+    {
+      "id": "N0040",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0040",
+      "named": false
+    },
+    {
+      "id": "N0041",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0041",
+      "named": false
+    },
+    {
+      "id": "N0042",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0042",
+      "named": false
+    },
+    {
+      "id": "N0043",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0043",
+      "named": false
+    },
+    {
+      "id": "N0044",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0044",
+      "named": false
+    },
+    {
+      "id": "N0045",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0045",
+      "named": false
+    },
+    {
+      "id": "N0046",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0046",
+      "named": false
+    },
+    {
+      "id": "N0047",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0047",
+      "named": false
+    },
+    {
+      "id": "N0048",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0048",
+      "named": false
+    },
+    {
+      "id": "N0049",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0049",
+      "named": false
+    },
+    {
+      "id": "N0050",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0050",
+      "named": false
+    },
+    {
+      "id": "N0051",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0051",
+      "named": false
+    },
+    {
+      "id": "N0052",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0052",
+      "named": false
+    },
+    {
+      "id": "N0053",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0053",
+      "named": false
+    },
+    {
+      "id": "N0054",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0054",
+      "named": false
+    },
+    {
+      "id": "N0055",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0055",
+      "named": false
+    },
+    {
+      "id": "N0056",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0056",
+      "named": false
+    },
+    {
+      "id": "N0057",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0057",
+      "named": false
+    },
+    {
+      "id": "N0058",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0058",
+      "named": false
+    },
+    {
+      "id": "N0059",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0059",
+      "named": false
+    },
+    {
+      "id": "N0060",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0060",
+      "named": false
+    },
+    {
+      "id": "N0061",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0061",
+      "named": false
+    },
+    {
+      "id": "N0062",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0062",
+      "named": false
+    },
+    {
+      "id": "N0063",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0063",
+      "named": false
+    },
+    {
+      "id": "N0064",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0064",
+      "named": false
+    },
+    {
+      "id": "N0065",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0065",
+      "named": false
+    },
+    {
+      "id": "N0066",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0066",
+      "named": false
+    },
+    {
+      "id": "N0067",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0067",
+      "named": false
+    },
+    {
+      "id": "N0068",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0068",
+      "named": false
+    },
+    {
+      "id": "N0069",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0069",
+      "named": false
+    },
+    {
+      "id": "N0070",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0070",
+      "named": false
+    },
+    {
+      "id": "N0071",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0071",
+      "named": false
+    },
+    {
+      "id": "N0072",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0072",
+      "named": false
+    },
+    {
+      "id": "N0073",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0073",
+      "named": false
+    },
+    {
+      "id": "N0074",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0074",
+      "named": false
+    },
+    {
+      "id": "N0075",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0075",
+      "named": false
+    },
+    {
+      "id": "N0076",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0076",
+      "named": false
+    },
+    {
+      "id": "N0077",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0077",
+      "named": false
+    },
+    {
+      "id": "N0078",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0078",
+      "named": false
+    },
+    {
+      "id": "N0079",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0079",
+      "named": false
+    },
+    {
+      "id": "N0080",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0080",
+      "named": false
+    },
+    {
+      "id": "N0081",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0081",
+      "named": false
+    },
+    {
+      "id": "N0082",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0082",
+      "named": false
+    },
+    {
+      "id": "N0083",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0083",
+      "named": false
+    },
+    {
+      "id": "N0084",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0084",
+      "named": false
+    },
+    {
+      "id": "N0085",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0085",
+      "named": false
+    },
+    {
+      "id": "N0086",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0086",
+      "named": false
+    },
+    {
+      "id": "N0087",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0087",
+      "named": false
+    },
+    {
+      "id": "N0088",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0088",
+      "named": false
+    },
+    {
+      "id": "N0089",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0089",
+      "named": false
+    },
+    {
+      "id": "N0090",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0090",
+      "named": false
+    },
+    {
+      "id": "N0091",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0091",
+      "named": false
+    },
+    {
+      "id": "N0092",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0092",
+      "named": false
+    },
+    {
+      "id": "N0093",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0093",
+      "named": false
+    },
+    {
+      "id": "N0094",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0094",
+      "named": false
+    },
+    {
+      "id": "N0095",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0095",
+      "named": false
+    },
+    {
+      "id": "N0096",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0096",
+      "named": false
+    },
+    {
+      "id": "N0097",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0097",
+      "named": false
+    },
+    {
+      "id": "N0098",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0098",
+      "named": false
+    },
+    {
+      "id": "N0099",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0099",
+      "named": false
+    },
+    {
+      "id": "N0100",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0100",
+      "named": false
+    },
+    {
+      "id": "N0101",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0101",
+      "named": false
+    },
+    {
+      "id": "N0102",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0102",
+      "named": false
+    },
+    {
+      "id": "N0103",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0103",
+      "named": false
+    },
+    {
+      "id": "N0104",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0104",
+      "named": false
+    },
+    {
+      "id": "N0105",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0105",
+      "named": false
+    },
+    {
+      "id": "N0106",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0106",
+      "named": false
+    },
+    {
+      "id": "N0107",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0107",
+      "named": false
+    },
+    {
+      "id": "N0108",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0108",
+      "named": false
+    },
+    {
+      "id": "N0109",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0109",
+      "named": false
+    },
+    {
+      "id": "N0110",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0110",
+      "named": false
+    },
+    {
+      "id": "N0111",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0111",
+      "named": false
+    },
+    {
+      "id": "N0112",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0112",
+      "named": false
+    },
+    {
+      "id": "N0113",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0113",
+      "named": false
+    },
+    {
+      "id": "N0114",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0114",
+      "named": false
+    },
+    {
+      "id": "N0115",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0115",
+      "named": false
+    },
+    {
+      "id": "N0116",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0116",
+      "named": false
+    },
+    {
+      "id": "N0117",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0117",
+      "named": false
+    },
+    {
+      "id": "N0118",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0118",
+      "named": false
+    },
+    {
+      "id": "N0119",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0119",
+      "named": false
+    },
+    {
+      "id": "N0120",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0120",
+      "named": false
+    },
+    {
+      "id": "N0121",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0121",
+      "named": false
+    },
+    {
+      "id": "N0122",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0122",
+      "named": false
+    },
+    {
+      "id": "N0123",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0123",
+      "named": false
+    },
+    {
+      "id": "N0124",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0124",
+      "named": false
+    },
+    {
+      "id": "N0125",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0125",
+      "named": false
+    },
+    {
+      "id": "N0126",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0126",
+      "named": false
+    },
+    {
+      "id": "N0127",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0127",
+      "named": false
+    },
+    {
+      "id": "N0128",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0128",
+      "named": false
+    },
+    {
+      "id": "N0129",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0129",
+      "named": false
+    },
+    {
+      "id": "N0130",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0130",
+      "named": false
+    },
+    {
+      "id": "N0131",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0131",
+      "named": false
+    },
+    {
+      "id": "N0132",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0132",
+      "named": false
+    },
+    {
+      "id": "N0133",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0133",
+      "named": false
+    },
+    {
+      "id": "N0134",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0134",
+      "named": false
+    },
+    {
+      "id": "N0135",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0135",
+      "named": false
+    },
+    {
+      "id": "N0136",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0136",
+      "named": false
+    },
+    {
+      "id": "N0137",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0137",
+      "named": false
+    },
+    {
+      "id": "N0138",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0138",
+      "named": false
+    },
+    {
+      "id": "N0139",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0139",
+      "named": false
+    },
+    {
+      "id": "N0140",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0140",
+      "named": false
+    },
+    {
+      "id": "N0141",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0141",
+      "named": false
+    },
+    {
+      "id": "N0142",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0142",
+      "named": false
+    },
+    {
+      "id": "N0143",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0143",
+      "named": false
+    },
+    {
+      "id": "N0144",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0144",
+      "named": false
+    },
+    {
+      "id": "N0145",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0145",
+      "named": false
+    },
+    {
+      "id": "N0146",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0146",
+      "named": false
+    },
+    {
+      "id": "N0147",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0147",
+      "named": false
+    },
+    {
+      "id": "N0148",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0148",
+      "named": false
+    },
+    {
+      "id": "N0149",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0149",
+      "named": false
+    },
+    {
+      "id": "N0150",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0150",
+      "named": false
+    },
+    {
+      "id": "N0151",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0151",
+      "named": false
+    },
+    {
+      "id": "N0152",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0152",
+      "named": false
+    },
+    {
+      "id": "N0153",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0153",
+      "named": false
+    },
+    {
+      "id": "N0154",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0154",
+      "named": false
+    },
+    {
+      "id": "N0155",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0155",
+      "named": false
+    },
+    {
+      "id": "N0156",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0156",
+      "named": false
+    },
+    {
+      "id": "N0157",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0157",
+      "named": false
+    },
+    {
+      "id": "N0158",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0158",
+      "named": false
+    },
+    {
+      "id": "N0159",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0159",
+      "named": false
+    },
+    {
+      "id": "N0160",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0160",
+      "named": false
+    },
+    {
+      "id": "N0161",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0161",
+      "named": false
+    },
+    {
+      "id": "N0162",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0162",
+      "named": false
+    },
+    {
+      "id": "N0163",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0163",
+      "named": false
+    },
+    {
+      "id": "N0164",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0164",
+      "named": false
+    },
+    {
+      "id": "N0165",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0165",
+      "named": false
+    },
+    {
+      "id": "N0166",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0166",
+      "named": false
+    },
+    {
+      "id": "N0167",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0167",
+      "named": false
+    },
+    {
+      "id": "N0168",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0168",
+      "named": false
+    },
+    {
+      "id": "N0169",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0169",
+      "named": false
+    },
+    {
+      "id": "N0170",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0170",
+      "named": false
+    },
+    {
+      "id": "N0171",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Geometrische capaciteitsgrens",
+      "named": true
+    },
+    {
+      "id": "N0172",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0172",
+      "named": false
+    },
+    {
+      "id": "N0173",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0173",
+      "named": false
+    },
+    {
+      "id": "N0174",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0174",
+      "named": false
+    },
+    {
+      "id": "N0175",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0175",
+      "named": false
+    },
+    {
+      "id": "N0176",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0176",
+      "named": false
+    },
+    {
+      "id": "N0177",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0177",
+      "named": false
+    },
+    {
+      "id": "N0178",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0178",
+      "named": false
+    },
+    {
+      "id": "N0179",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0179",
+      "named": false
+    },
+    {
+      "id": "N0180",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0180",
+      "named": false
+    },
+    {
+      "id": "N0181",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0181",
+      "named": false
+    },
+    {
+      "id": "N0182",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0182",
+      "named": false
+    },
+    {
+      "id": "N0183",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0183",
+      "named": false
+    },
+    {
+      "id": "N0184",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0184",
+      "named": false
+    },
+    {
+      "id": "N0185",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0185",
+      "named": false
+    },
+    {
+      "id": "N0186",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0186",
+      "named": false
+    },
+    {
+      "id": "N0187",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0187",
+      "named": false
+    },
+    {
+      "id": "N0188",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0188",
+      "named": false
+    },
+    {
+      "id": "N0189",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0189",
+      "named": false
+    },
+    {
+      "id": "N0190",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0190",
+      "named": false
+    },
+    {
+      "id": "N0191",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0191",
+      "named": false
+    },
+    {
+      "id": "N0192",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0192",
+      "named": false
+    },
+    {
+      "id": "N0193",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0193",
+      "named": false
+    },
+    {
+      "id": "N0194",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0194",
+      "named": false
+    },
+    {
+      "id": "N0195",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0195",
+      "named": false
+    },
+    {
+      "id": "N0196",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0196",
+      "named": false
+    },
+    {
+      "id": "N0197",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0197",
+      "named": false
+    },
+    {
+      "id": "N0198",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0198",
+      "named": false
+    },
+    {
+      "id": "N0199",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0199",
+      "named": false
+    },
+    {
+      "id": "N0200",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0200",
+      "named": false
+    },
+    {
+      "id": "N0201",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0201",
+      "named": false
+    },
+    {
+      "id": "N0202",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0202",
+      "named": false
+    },
+    {
+      "id": "N0203",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0203",
+      "named": false
+    },
+    {
+      "id": "N0204",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0204",
+      "named": false
+    },
+    {
+      "id": "N0205",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0205",
+      "named": false
+    },
+    {
+      "id": "N0206",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0206",
+      "named": false
+    },
+    {
+      "id": "N0207",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0207",
+      "named": false
+    },
+    {
+      "id": "N0208",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0208",
+      "named": false
+    },
+    {
+      "id": "N0209",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0209",
+      "named": false
+    },
+    {
+      "id": "N0210",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0210",
+      "named": false
+    },
+    {
+      "id": "N0211",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0211",
+      "named": false
+    },
+    {
+      "id": "N0212",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0212",
+      "named": false
+    },
+    {
+      "id": "N0213",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0213",
+      "named": false
+    },
+    {
+      "id": "N0214",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0214",
+      "named": false
+    },
+    {
+      "id": "N0215",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0215",
+      "named": false
+    },
+    {
+      "id": "N0216",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0216",
+      "named": false
+    },
+    {
+      "id": "N0217",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0217",
+      "named": false
+    },
+    {
+      "id": "N0218",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0218",
+      "named": false
+    },
+    {
+      "id": "N0219",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0219",
+      "named": false
+    },
+    {
+      "id": "N0220",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0220",
+      "named": false
+    },
+    {
+      "id": "N0221",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0221",
+      "named": false
+    },
+    {
+      "id": "N0222",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0222",
+      "named": false
+    },
+    {
+      "id": "N0223",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0223",
+      "named": false
+    },
+    {
+      "id": "N0224",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Gehele operatoraantallen",
+      "named": true
+    },
+    {
+      "id": "N0225",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0225",
+      "named": false
+    },
+    {
+      "id": "N0226",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0226",
+      "named": false
+    },
+    {
+      "id": "N0227",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0227",
+      "named": false
+    },
+    {
+      "id": "N0228",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0228",
+      "named": false
+    },
+    {
+      "id": "N0229",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0229",
+      "named": false
+    },
+    {
+      "id": "N0230",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0230",
+      "named": false
+    },
+    {
+      "id": "N0231",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0231",
+      "named": false
+    },
+    {
+      "id": "N0232",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0232",
+      "named": false
+    },
+    {
+      "id": "N0233",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0233",
+      "named": false
+    },
+    {
+      "id": "N0234",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0234",
+      "named": false
+    },
+    {
+      "id": "N0235",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0235",
+      "named": false
+    },
+    {
+      "id": "N0236",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0236",
+      "named": false
+    },
+    {
+      "id": "N0237",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0237",
+      "named": false
+    },
+    {
+      "id": "N0238",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0238",
+      "named": false
+    },
+    {
+      "id": "N0239",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0239",
+      "named": false
+    },
+    {
+      "id": "N0240",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0240",
+      "named": false
+    },
+    {
+      "id": "N0241",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0241",
+      "named": false
+    },
+    {
+      "id": "N0242",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0242",
+      "named": false
+    },
+    {
+      "id": "N0243",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0243",
+      "named": false
+    },
+    {
+      "id": "N0244",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0244",
+      "named": false
+    },
+    {
+      "id": "N0245",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0245",
+      "named": false
+    },
+    {
+      "id": "N0246",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0246",
+      "named": false
+    },
+    {
+      "id": "N0247",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0247",
+      "named": false
+    },
+    {
+      "id": "N0248",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0248",
+      "named": false
+    },
+    {
+      "id": "N0249",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0249",
+      "named": false
+    },
+    {
+      "id": "N0250",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0250",
+      "named": false
+    },
+    {
+      "id": "N0251",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0251",
+      "named": false
+    },
+    {
+      "id": "N0252",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0252",
+      "named": false
+    },
+    {
+      "id": "N0253",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0253",
+      "named": false
+    },
+    {
+      "id": "N0254",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0254",
+      "named": false
+    },
+    {
+      "id": "N0255",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0255",
+      "named": false
+    },
+    {
+      "id": "N0256",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0256",
+      "named": false
+    },
+    {
+      "id": "N0257",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0257",
+      "named": false
+    },
+    {
+      "id": "N0258",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0258",
+      "named": false
+    },
+    {
+      "id": "N0259",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0259",
+      "named": false
+    },
+    {
+      "id": "N0260",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0260",
+      "named": false
+    },
+    {
+      "id": "N0261",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0261",
+      "named": false
+    },
+    {
+      "id": "N0262",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0262",
+      "named": false
+    },
+    {
+      "id": "N0263",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0263",
+      "named": false
+    },
+    {
+      "id": "N0264",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0264",
+      "named": false
+    },
+    {
+      "id": "N0265",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0265",
+      "named": false
+    },
+    {
+      "id": "N0266",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0266",
+      "named": false
+    },
+    {
+      "id": "N0267",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0267",
+      "named": false
+    },
+    {
+      "id": "N0268",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0268",
+      "named": false
+    },
+    {
+      "id": "N0269",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0269",
+      "named": false
+    },
+    {
+      "id": "N0270",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0270",
+      "named": false
+    },
+    {
+      "id": "N0271",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0271",
+      "named": false
+    },
+    {
+      "id": "N0272",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0272",
+      "named": false
+    },
+    {
+      "id": "N0273",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0273",
+      "named": false
+    },
+    {
+      "id": "N0274",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0274",
+      "named": false
+    },
+    {
+      "id": "N0275",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0275",
+      "named": false
+    },
+    {
+      "id": "N0276",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0276",
+      "named": false
+    },
+    {
+      "id": "N0277",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0277",
+      "named": false
+    },
+    {
+      "id": "N0278",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0278",
+      "named": false
+    },
+    {
+      "id": "N0279",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0279",
+      "named": false
+    },
+    {
+      "id": "N0280",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0280",
+      "named": false
+    },
+    {
+      "id": "N0281",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0281",
+      "named": false
+    },
+    {
+      "id": "N0282",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0282",
+      "named": false
+    },
+    {
+      "id": "N0283",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0283",
+      "named": false
+    },
+    {
+      "id": "N0284",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0284",
+      "named": false
+    },
+    {
+      "id": "N0285",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0285",
+      "named": false
+    },
+    {
+      "id": "N0286",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0286",
+      "named": false
+    },
+    {
+      "id": "N0287",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0287",
+      "named": false
+    },
+    {
+      "id": "N0288",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0288",
+      "named": false
+    },
+    {
+      "id": "N0289",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0289",
+      "named": false
+    },
+    {
+      "id": "N0290",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0290",
+      "named": false
+    },
+    {
+      "id": "N0291",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0291",
+      "named": false
+    },
+    {
+      "id": "N0292",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0292",
+      "named": false
+    },
+    {
+      "id": "N0293",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0293",
+      "named": false
+    },
+    {
+      "id": "N0294",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0294",
+      "named": false
+    },
+    {
+      "id": "N0295",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0295",
+      "named": false
+    },
+    {
+      "id": "N0296",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0296",
+      "named": false
+    },
+    {
+      "id": "N0297",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0297",
+      "named": false
+    },
+    {
+      "id": "N0298",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0298",
+      "named": false
+    },
+    {
+      "id": "N0299",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0299",
+      "named": false
+    },
+    {
+      "id": "N0300",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0300",
+      "named": false
+    },
+    {
+      "id": "N0301",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0301",
+      "named": false
+    },
+    {
+      "id": "N0302",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0302",
+      "named": false
+    },
+    {
+      "id": "N0303",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0303",
+      "named": false
+    },
+    {
+      "id": "N0304",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0304",
+      "named": false
+    },
+    {
+      "id": "N0305",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0305",
+      "named": false
+    },
+    {
+      "id": "N0306",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0306",
+      "named": false
+    },
+    {
+      "id": "N0307",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0307",
+      "named": false
+    },
+    {
+      "id": "N0308",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0308",
+      "named": false
+    },
+    {
+      "id": "N0309",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0309",
+      "named": false
+    },
+    {
+      "id": "N0310",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0310",
+      "named": false
+    },
+    {
+      "id": "N0311",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0311",
+      "named": false
+    },
+    {
+      "id": "N0312",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0312",
+      "named": false
+    },
+    {
+      "id": "N0313",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0313",
+      "named": false
+    },
+    {
+      "id": "N0314",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0314",
+      "named": false
+    },
+    {
+      "id": "N0315",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0315",
+      "named": false
+    },
+    {
+      "id": "N0316",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0316",
+      "named": false
+    },
+    {
+      "id": "N0317",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Historische dominantiegrondslag",
+      "named": true
+    },
+    {
+      "id": "N0318",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0318",
+      "named": false
+    },
+    {
+      "id": "N0319",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0319",
+      "named": false
+    },
+    {
+      "id": "N0320",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0320",
+      "named": false
+    },
+    {
+      "id": "N0321",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0321",
+      "named": false
+    },
+    {
+      "id": "N0322",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0322",
+      "named": false
+    },
+    {
+      "id": "N0323",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0323",
+      "named": false
+    },
+    {
+      "id": "N0324",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0324",
+      "named": false
+    },
+    {
+      "id": "N0325",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0325",
+      "named": false
+    },
+    {
+      "id": "N0326",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0326",
+      "named": false
+    },
+    {
+      "id": "N0327",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0327",
+      "named": false
+    },
+    {
+      "id": "N0328",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0328",
+      "named": false
+    },
+    {
+      "id": "N0329",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0329",
+      "named": false
+    },
+    {
+      "id": "N0330",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0330",
+      "named": false
+    },
+    {
+      "id": "N0331",
+      "kind": "statement",
+      "layer": 0,
+      "label": "Kennisknoop N0331",
+      "named": false
+    },
+    {
+      "id": "N0332",
+      "kind": "statement",
+      "layer": 0,
+      "label": "Kennisknoop N0332",
+      "named": false
+    },
+    {
+      "id": "N0333",
+      "kind": "statement",
+      "layer": 0,
+      "label": "Kennisknoop N0333",
+      "named": false
+    },
+    {
+      "id": "N0334",
+      "kind": "statement",
+      "layer": 0,
+      "label": "Kennisknoop N0334",
+      "named": false
+    },
+    {
+      "id": "N0335",
+      "kind": "statement",
+      "layer": 0,
+      "label": "Kennisknoop N0335",
+      "named": false
+    },
+    {
+      "id": "N0336",
+      "kind": "statement",
+      "layer": 0,
+      "label": "Kennisknoop N0336",
+      "named": false
+    },
+    {
+      "id": "N0337",
+      "kind": "statement",
+      "layer": 0,
+      "label": "Kennisknoop N0337",
+      "named": false
+    },
+    {
+      "id": "N0338",
+      "kind": "statement",
+      "layer": 0,
+      "label": "Kennisknoop N0338",
+      "named": false
+    },
+    {
+      "id": "N0339",
+      "kind": "statement",
+      "layer": 0,
+      "label": "Kennisknoop N0339",
+      "named": false
+    },
+    {
+      "id": "N0340",
+      "kind": "statement",
+      "layer": 0,
+      "label": "Kennisknoop N0340",
+      "named": false
+    },
+    {
+      "id": "N0341",
+      "kind": "statement",
+      "layer": 0,
+      "label": "Kennisknoop N0341",
+      "named": false
+    },
+    {
+      "id": "N0342",
+      "kind": "statement",
+      "layer": 0,
+      "label": "Kennisknoop N0342",
+      "named": false
+    },
+    {
+      "id": "N0343",
+      "kind": "statement",
+      "layer": 0,
+      "label": "Kennisknoop N0343",
+      "named": false
+    },
+    {
+      "id": "N0344",
+      "kind": "statement",
+      "layer": 0,
+      "label": "Kennisknoop N0344",
+      "named": false
+    },
+    {
+      "id": "N0345",
+      "kind": "statement",
+      "layer": 0,
+      "label": "Kennisknoop N0345",
+      "named": false
+    },
+    {
+      "id": "N0346",
+      "kind": "statement",
+      "layer": 0,
+      "label": "Kennisknoop N0346",
+      "named": false
+    },
+    {
+      "id": "N0347",
+      "kind": "statement",
+      "layer": 0,
+      "label": "Kennisknoop N0347",
+      "named": false
+    },
+    {
+      "id": "N0348",
+      "kind": "result",
+      "layer": 0,
+      "label": "Kennisknoop N0348",
+      "named": false
+    },
+    {
+      "id": "N0349",
+      "kind": "result",
+      "layer": 0,
+      "label": "Kennisknoop N0349",
+      "named": false
+    },
+    {
+      "id": "N0350",
+      "kind": "statement",
+      "layer": 0,
+      "label": "Kennisknoop N0350",
+      "named": false
+    },
+    {
+      "id": "N0351",
+      "kind": "result",
+      "layer": 0,
+      "label": "Kennisknoop N0351",
+      "named": false
+    },
+    {
+      "id": "N0352",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0352",
+      "named": false
+    },
+    {
+      "id": "N0353",
+      "kind": "statement",
+      "layer": 0,
+      "label": "Kennisknoop N0353",
+      "named": false
+    },
+    {
+      "id": "N0354",
+      "kind": "statement",
+      "layer": 0,
+      "label": "Kennisknoop N0354",
+      "named": false
+    },
+    {
+      "id": "N0355",
+      "kind": "statement",
+      "layer": 0,
+      "label": "Kennisknoop N0355",
+      "named": false
+    },
+    {
+      "id": "N0356",
+      "kind": "statement",
+      "layer": 0,
+      "label": "Kennisknoop N0356",
+      "named": false
+    },
+    {
+      "id": "N0357",
+      "kind": "statement",
+      "layer": 0,
+      "label": "Kennisknoop N0357",
+      "named": false
+    },
+    {
+      "id": "N0358",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0358",
+      "named": false
+    },
+    {
+      "id": "N0359",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0359",
+      "named": false
+    },
+    {
+      "id": "N0360",
+      "kind": "result",
+      "layer": 0,
+      "label": "Kennisknoop N0360",
+      "named": false
+    },
+    {
+      "id": "N0361",
+      "kind": "result",
+      "layer": 0,
+      "label": "Kennisknoop N0361",
+      "named": false
+    },
+    {
+      "id": "N0362",
+      "kind": "result",
+      "layer": 0,
+      "label": "Kennisknoop N0362",
+      "named": false
+    },
+    {
+      "id": "N0363",
+      "kind": "statement",
+      "layer": 0,
+      "label": "Kennisknoop N0363",
+      "named": false
+    },
+    {
+      "id": "N0364",
+      "kind": "statement",
+      "layer": 0,
+      "label": "Kennisknoop N0364",
+      "named": false
+    },
+    {
+      "id": "N0365",
+      "kind": "result",
+      "layer": 0,
+      "label": "Kennisknoop N0365",
+      "named": false
+    },
+    {
+      "id": "N0366",
+      "kind": "result",
+      "layer": 0,
+      "label": "Kennisknoop N0366",
+      "named": false
+    },
+    {
+      "id": "N0367",
+      "kind": "result",
+      "layer": 0,
+      "label": "Kennisknoop N0367",
+      "named": false
+    },
+    {
+      "id": "N0368",
+      "kind": "result",
+      "layer": 0,
+      "label": "Kennisknoop N0368",
+      "named": false
+    },
+    {
+      "id": "N0369",
+      "kind": "statement",
+      "layer": 0,
+      "label": "Kennisknoop N0369",
+      "named": false
+    },
+    {
+      "id": "N0370",
+      "kind": "statement",
+      "layer": 0,
+      "label": "Kennisknoop N0370",
+      "named": false
+    },
+    {
+      "id": "N0371",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0371",
+      "named": false
+    },
+    {
+      "id": "N0372",
+      "kind": "statement",
+      "layer": 0,
+      "label": "Kennisknoop N0372",
+      "named": false
+    },
+    {
+      "id": "N0373",
+      "kind": "result",
+      "layer": 0,
+      "label": "Kennisknoop N0373",
+      "named": false
+    },
+    {
+      "id": "N0374",
+      "kind": "result",
+      "layer": 0,
+      "label": "Kennisknoop N0374",
+      "named": false
+    },
+    {
+      "id": "N0375",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0375",
+      "named": false
+    },
+    {
+      "id": "N0376",
+      "kind": "result",
+      "layer": 0,
+      "label": "Kennisknoop N0376",
+      "named": false
+    },
+    {
+      "id": "N0377",
+      "kind": "result",
+      "layer": 0,
+      "label": "Kennisknoop N0377",
+      "named": false
+    },
+    {
+      "id": "N0378",
+      "kind": "result",
+      "layer": 0,
+      "label": "Kennisknoop N0378",
+      "named": false
+    },
+    {
+      "id": "N0379",
+      "kind": "statement",
+      "layer": 0,
+      "label": "Kennisknoop N0379",
+      "named": false
+    },
+    {
+      "id": "N0380",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0380",
+      "named": false
+    },
+    {
+      "id": "N0381",
+      "kind": "statement",
+      "layer": 0,
+      "label": "Gewogen kostenondergrens",
+      "named": true
+    },
+    {
+      "id": "N0382",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0382",
+      "named": false
+    },
+    {
+      "id": "N0383",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0383",
+      "named": false
+    },
+    {
+      "id": "N0384",
+      "kind": "result",
+      "layer": 0,
+      "label": "Kennisknoop N0384",
+      "named": false
+    },
+    {
+      "id": "N0385",
+      "kind": "statement",
+      "layer": 0,
+      "label": "Kennisknoop N0385",
+      "named": false
+    },
+    {
+      "id": "N0386",
+      "kind": "statement",
+      "layer": 0,
+      "label": "Kennisknoop N0386",
+      "named": false
+    },
+    {
+      "id": "N0387",
+      "kind": "statement",
+      "layer": 0,
+      "label": "Kennisknoop N0387",
+      "named": false
+    },
+    {
+      "id": "N0388",
+      "kind": "statement",
+      "layer": 0,
+      "label": "Kennisknoop N0388",
+      "named": false
+    },
+    {
+      "id": "N0389",
+      "kind": "hypothesis",
+      "layer": 0,
+      "label": "Kennisknoop N0389",
+      "named": false
+    },
+    {
+      "id": "N0390",
+      "kind": "hypothesis",
+      "layer": 0,
+      "label": "Kennisknoop N0390",
+      "named": false
+    },
+    {
+      "id": "N0391",
+      "kind": "hypothesis",
+      "layer": 0,
+      "label": "Kennisknoop N0391",
+      "named": false
+    },
+    {
+      "id": "N0392",
+      "kind": "hypothesis",
+      "layer": 0,
+      "label": "Kennisknoop N0392",
+      "named": false
+    },
+    {
+      "id": "N0393",
+      "kind": "hypothesis",
+      "layer": 0,
+      "label": "Kennisknoop N0393",
+      "named": false
+    },
+    {
+      "id": "N0394",
+      "kind": "hypothesis",
+      "layer": 0,
+      "label": "Kennisknoop N0394",
+      "named": false
+    },
+    {
+      "id": "N0395",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0395",
+      "named": false
+    },
+    {
+      "id": "N0396",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0396",
+      "named": false
+    },
+    {
+      "id": "N0397",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0397",
+      "named": false
+    },
+    {
+      "id": "N0398",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0398",
+      "named": false
+    },
+    {
+      "id": "N0399",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0399",
+      "named": false
+    },
+    {
+      "id": "N0400",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0400",
+      "named": false
+    },
+    {
+      "id": "N0401",
+      "kind": "result",
+      "layer": 0,
+      "label": "Kennisknoop N0401",
+      "named": false
+    },
+    {
+      "id": "N0402",
+      "kind": "result",
+      "layer": 0,
+      "label": "Kennisknoop N0402",
+      "named": false
+    },
+    {
+      "id": "N0403",
+      "kind": "result",
+      "layer": 0,
+      "label": "Kennisknoop N0403",
+      "named": false
+    },
+    {
+      "id": "N0404",
+      "kind": "statement",
+      "layer": 0,
+      "label": "Kennisknoop N0404",
+      "named": false
+    },
+    {
+      "id": "N0405",
+      "kind": "statement",
+      "layer": 0,
+      "label": "Kennisknoop N0405",
+      "named": false
+    },
+    {
+      "id": "N0406",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Inverse-hits",
+      "named": true
+    },
+    {
+      "id": "N0407",
+      "kind": "statement",
+      "layer": 0,
+      "label": "Gewogen singletoncorrecties",
+      "named": true
+    },
+    {
+      "id": "N0408",
+      "kind": "result",
+      "layer": 0,
+      "label": "Kennisknoop N0408",
+      "named": false
+    },
+    {
+      "id": "N0409",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Sparse inverse-index",
+      "named": true
+    },
+    {
+      "id": "N0410",
+      "kind": "statement",
+      "layer": 0,
+      "label": "Vijfcyclusobstructie",
+      "named": true
+    },
+    {
+      "id": "N0411",
+      "kind": "result",
+      "layer": 0,
+      "label": "Kennisknoop N0411",
+      "named": false
+    },
+    {
+      "id": "N0412",
+      "kind": "result",
+      "layer": 0,
+      "label": "Kennisknoop N0412",
+      "named": false
+    },
+    {
+      "id": "N0413",
+      "kind": "result",
+      "layer": 0,
+      "label": "Kennisknoop N0413",
+      "named": false
+    },
+    {
+      "id": "N0414",
+      "kind": "result",
+      "layer": 0,
+      "label": "Kennisknoop N0414",
+      "named": false
+    },
+    {
+      "id": "N0415",
+      "kind": "result",
+      "layer": 0,
+      "label": "Kennisknoop N0415",
+      "named": false
+    },
+    {
+      "id": "N0416",
+      "kind": "result",
+      "layer": 0,
+      "label": "Kennisknoop N0416",
+      "named": false
+    },
+    {
+      "id": "N0417",
+      "kind": "statement",
+      "layer": 0,
+      "label": "Kennisknoop N0417",
+      "named": false
+    },
+    {
+      "id": "N0418",
+      "kind": "result",
+      "layer": 0,
+      "label": "Kennisknoop N0418",
+      "named": false
+    },
+    {
+      "id": "N0419",
+      "kind": "result",
+      "layer": 0,
+      "label": "Kennisknoop N0419",
+      "named": false
+    },
+    {
+      "id": "N0420",
+      "kind": "result",
+      "layer": 0,
+      "label": "Kennisknoop N0420",
+      "named": false
+    },
+    {
+      "id": "N0421",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0421",
+      "named": false
+    },
+    {
+      "id": "N0422",
+      "kind": "historical",
+      "layer": 0,
+      "label": "Kennisknoop N0422",
+      "named": false
+    },
+    {
+      "id": "N0423",
+      "kind": "unresolved",
+      "layer": 0,
+      "label": "Kennisknoop N0423",
+      "named": false
+    },
+    {
+      "id": "N0424",
+      "kind": "unresolved",
+      "layer": 0,
+      "label": "Kennisknoop N0424",
+      "named": false
+    },
+    {
+      "id": "N0425",
+      "kind": "unresolved",
+      "layer": 0,
+      "label": "Kennisknoop N0425",
+      "named": false
+    },
+    {
+      "id": "N0426",
+      "kind": "unresolved",
+      "layer": 0,
+      "label": "Kennisknoop N0426",
+      "named": false
+    },
+    {
+      "id": "N0427",
+      "kind": "unresolved",
+      "layer": 0,
+      "label": "Kennisknoop N0427",
+      "named": false
+    },
+    {
+      "id": "N0428",
+      "kind": "unresolved",
+      "layer": 0,
+      "label": "Kennisknoop N0428",
+      "named": false
+    },
+    {
+      "id": "N0429",
+      "kind": "unresolved",
+      "layer": 0,
+      "label": "Kennisknoop N0429",
+      "named": false
+    },
+    {
+      "id": "N0430",
+      "kind": "unresolved",
+      "layer": 0,
+      "label": "Kennisknoop N0430",
+      "named": false
+    },
+    {
+      "id": "N0431",
+      "kind": "unresolved",
+      "layer": 0,
+      "label": "Kennisknoop N0431",
+      "named": false
+    },
+    {
+      "id": "N0432",
+      "kind": "unresolved",
+      "layer": 0,
+      "label": "Kennisknoop N0432",
+      "named": false
+    },
+    {
+      "id": "N0433",
+      "kind": "unresolved",
+      "layer": 0,
+      "label": "Kennisknoop N0433",
+      "named": false
+    },
+    {
+      "id": "N0434",
+      "kind": "unresolved",
+      "layer": 0,
+      "label": "Kennisknoop N0434",
+      "named": false
+    },
+    {
+      "id": "N0435",
+      "kind": "unresolved",
+      "layer": 0,
+      "label": "Kennisknoop N0435",
+      "named": false
+    },
+    {
+      "id": "N0436",
+      "kind": "unresolved",
+      "layer": 0,
+      "label": "Kennisknoop N0436",
+      "named": false
+    },
+    {
+      "id": "N0437",
+      "kind": "unresolved",
+      "layer": 0,
+      "label": "Kennisknoop N0437",
+      "named": false
+    },
+    {
+      "id": "N0438",
+      "kind": "unresolved",
+      "layer": 0,
+      "label": "Kennisknoop N0438",
+      "named": false
+    },
+    {
+      "id": "N0439",
+      "kind": "unresolved",
+      "layer": 0,
+      "label": "Kennisknoop N0439",
+      "named": false
+    },
+    {
+      "id": "N0440",
+      "kind": "unresolved",
+      "layer": 0,
+      "label": "Kennisknoop N0440",
+      "named": false
+    },
+    {
+      "id": "N0441",
+      "kind": "unresolved",
+      "layer": 0,
+      "label": "Kennisknoop N0441",
+      "named": false
+    },
+    {
+      "id": "N0442",
+      "kind": "unresolved",
+      "layer": 0,
+      "label": "Kennisknoop N0442",
+      "named": false
+    },
+    {
+      "id": "N0443",
+      "kind": "unresolved",
+      "layer": 0,
+      "label": "Kennisknoop N0443",
+      "named": false
+    },
+    {
+      "id": "N0444",
+      "kind": "unresolved",
+      "layer": 0,
+      "label": "Kennisknoop N0444",
+      "named": false
+    },
+    {
+      "id": "N0445",
+      "kind": "unresolved",
+      "layer": 0,
+      "label": "Kennisknoop N0445",
+      "named": false
+    },
+    {
+      "id": "N0446",
+      "kind": "unresolved",
+      "layer": 0,
+      "label": "Kennisknoop N0446",
+      "named": false
+    },
+    {
+      "id": "N0447",
+      "kind": "unresolved",
+      "layer": 0,
+      "label": "Kennisknoop N0447",
+      "named": false
+    },
+    {
+      "id": "N0448",
+      "kind": "unresolved",
+      "layer": 0,
+      "label": "Kennisknoop N0448",
+      "named": false
+    },
+    {
+      "id": "N0449",
+      "kind": "unresolved",
+      "layer": 0,
+      "label": "Kennisknoop N0449",
+      "named": false
+    },
+    {
+      "id": "N0450",
+      "kind": "unresolved",
+      "layer": 0,
+      "label": "Kennisknoop N0450",
+      "named": false
+    },
+    {
+      "id": "N0451",
+      "kind": "unresolved",
+      "layer": 0,
+      "label": "Kennisknoop N0451",
+      "named": false
+    },
+    {
+      "id": "N0452",
+      "kind": "unresolved",
+      "layer": 0,
+      "label": "Kennisknoop N0452",
+      "named": false
+    },
+    {
+      "id": "N0453",
+      "kind": "unresolved",
+      "layer": 0,
+      "label": "Kennisknoop N0453",
+      "named": false
+    },
+    {
+      "id": "N0454",
+      "kind": "unresolved",
+      "layer": 0,
+      "label": "Kennisknoop N0454",
+      "named": false
+    },
+    {
+      "id": "N0455",
+      "kind": "unresolved",
+      "layer": 0,
+      "label": "Kennisknoop N0455",
+      "named": false
+    },
+    {
+      "id": "N0456",
+      "kind": "unresolved",
+      "layer": 0,
+      "label": "Kennisknoop N0456",
+      "named": false
+    },
+    {
+      "id": "N0457",
+      "kind": "unresolved",
+      "layer": 0,
+      "label": "Kennisknoop N0457",
+      "named": false
+    },
+    {
+      "id": "N0458",
+      "kind": "unresolved",
+      "layer": 0,
+      "label": "Kennisknoop N0458",
+      "named": false
+    },
+    {
+      "id": "N0459",
+      "kind": "unresolved",
+      "layer": 0,
+      "label": "Kennisknoop N0459",
+      "named": false
+    },
+    {
+      "id": "N0460",
+      "kind": "unresolved",
+      "layer": 0,
+      "label": "Kennisknoop N0460",
+      "named": false
+    },
+    {
+      "id": "N0461",
+      "kind": "unresolved",
+      "layer": 0,
+      "label": "Kennisknoop N0461",
+      "named": false
+    },
+    {
+      "id": "N0462",
+      "kind": "unresolved",
+      "layer": 0,
+      "label": "Kennisknoop N0462",
+      "named": false
+    },
+    {
+      "id": "N0463",
+      "kind": "unresolved",
+      "layer": 0,
+      "label": "Kennisknoop N0463",
+      "named": false
+    },
+    {
+      "id": "N0464",
+      "kind": "unresolved",
+      "layer": 0,
+      "label": "Kennisknoop N0464",
+      "named": false
+    },
+    {
+      "id": "N0465",
+      "kind": "unresolved",
+      "layer": 0,
+      "label": "Kennisknoop N0465",
+      "named": false
+    },
+    {
+      "id": "N0466",
+      "kind": "unresolved",
+      "layer": 0,
+      "label": "Kennisknoop N0466",
+      "named": false
+    },
+    {
+      "id": "N0467",
+      "kind": "unresolved",
+      "layer": 0,
+      "label": "Kennisknoop N0467",
+      "named": false
+    },
+    {
+      "id": "N0468",
+      "kind": "unresolved",
+      "layer": 0,
+      "label": "Kennisknoop N0468",
+      "named": false
+    },
+    {
+      "id": "N0469",
+      "kind": "unresolved",
+      "layer": 0,
+      "label": "Kennisknoop N0469",
+      "named": false
+    },
+    {
+      "id": "N0470",
+      "kind": "opportunity",
+      "layer": 0,
+      "label": "Kennisknoop N0470",
+      "named": false
+    },
+    {
+      "id": "N0471",
+      "kind": "opportunity",
+      "layer": 0,
+      "label": "Kennisknoop N0471",
+      "named": false
+    },
+    {
+      "id": "N0472",
+      "kind": "opportunity",
+      "layer": 0,
+      "label": "Kennisknoop N0472",
+      "named": false
+    },
+    {
+      "id": "N0473",
+      "kind": "opportunity",
+      "layer": 0,
+      "label": "Kennisknoop N0473",
+      "named": false
+    },
+    {
+      "id": "N0474",
+      "kind": "opportunity",
+      "layer": 0,
+      "label": "Kennisknoop N0474",
+      "named": false
+    },
+    {
+      "id": "N0475",
+      "kind": "opportunity",
+      "layer": 0,
+      "label": "Kennisknoop N0475",
+      "named": false
+    },
+    {
+      "id": "N0476",
+      "kind": "opportunity",
+      "layer": 0,
+      "label": "Kennisknoop N0476",
+      "named": false
+    },
+    {
+      "id": "N0477",
+      "kind": "opportunity",
+      "layer": 0,
+      "label": "Kennisknoop N0477",
+      "named": false
+    },
+    {
+      "id": "N0478",
+      "kind": "opportunity",
+      "layer": 0,
+      "label": "Kennisknoop N0478",
+      "named": false
+    },
+    {
+      "id": "N0479",
+      "kind": "opportunity",
+      "layer": 0,
+      "label": "Kennisknoop N0479",
+      "named": false
+    },
+    {
+      "id": "N0480",
+      "kind": "opportunity",
+      "layer": 0,
+      "label": "Kennisknoop N0480",
+      "named": false
+    },
+    {
+      "id": "N0481",
+      "kind": "opportunity",
+      "layer": 0,
+      "label": "Kennisknoop N0481",
+      "named": false
+    },
+    {
+      "id": "N0482",
+      "kind": "opportunity",
+      "layer": 0,
+      "label": "Kennisknoop N0482",
+      "named": false
+    },
+    {
+      "id": "N0483",
+      "kind": "opportunity",
+      "layer": 0,
+      "label": "Kennisknoop N0483",
+      "named": false
+    },
+    {
+      "id": "N0484",
+      "kind": "opportunity",
+      "layer": 0,
+      "label": "Kennisknoop N0484",
+      "named": false
+    },
+    {
+      "id": "N0485",
+      "kind": "opportunity",
+      "layer": 0,
+      "label": "Kennisknoop N0485",
+      "named": false
+    },
+    {
+      "id": "N0486",
+      "kind": "opportunity",
+      "layer": 0,
+      "label": "Kennisknoop N0486",
+      "named": false
+    },
+    {
+      "id": "N0487",
+      "kind": "opportunity",
+      "layer": 0,
+      "label": "Kennisknoop N0487",
+      "named": false
+    },
+    {
+      "id": "N0488",
+      "kind": "opportunity",
+      "layer": 0,
+      "label": "Kennisknoop N0488",
+      "named": false
+    },
+    {
+      "id": "N0489",
+      "kind": "result",
+      "layer": 0,
+      "label": "Kennisknoop N0489",
+      "named": false
+    },
+    {
+      "id": "N0490",
+      "kind": "statement",
+      "layer": 0,
+      "label": "Kennisknoop N0490",
+      "named": false
+    },
+    {
+      "id": "N0491",
+      "kind": "statement",
+      "layer": 0,
+      "label": "Kennisknoop N0491",
+      "named": false
+    },
+    {
+      "id": "N0492",
+      "kind": "statement",
+      "layer": 0,
+      "label": "Kennisknoop N0492",
+      "named": false
+    },
+    {
+      "id": "N0493",
+      "kind": "statement",
+      "layer": 0,
+      "label": "Kennisknoop N0493",
+      "named": false
+    },
+    {
+      "id": "N0494",
+      "kind": "hypothesis",
+      "layer": 0,
+      "label": "Kennisknoop N0494",
+      "named": false
+    },
+    {
+      "id": "N0495",
+      "kind": "hypothesis",
+      "layer": 0,
+      "label": "Kennisknoop N0495",
+      "named": false
+    },
+    {
+      "id": "N0496",
+      "kind": "hypothesis",
+      "layer": 0,
+      "label": "Kennisknoop N0496",
+      "named": false
+    },
+    {
+      "id": "N0497",
+      "kind": "hypothesis",
+      "layer": 0,
+      "label": "Kennisknoop N0497",
+      "named": false
+    },
+    {
+      "id": "N0498",
+      "kind": "hypothesis",
+      "layer": 0,
+      "label": "Kennisknoop N0498",
+      "named": false
+    },
+    {
+      "id": "N0499",
+      "kind": "hypothesis",
+      "layer": 0,
+      "label": "Kennisknoop N0499",
+      "named": false
+    },
+    {
+      "id": "N0500",
+      "kind": "hypothesis",
+      "layer": 0,
+      "label": "Kennisknoop N0500",
+      "named": false
+    },
+    {
+      "id": "N0501",
+      "kind": "hypothesis",
+      "layer": 0,
+      "label": "Kennisknoop N0501",
+      "named": false
+    },
+    {
+      "id": "N0502",
+      "kind": "hypothesis",
+      "layer": 0,
+      "label": "Kennisknoop N0502",
+      "named": false
+    },
+    {
+      "id": "N0503",
+      "kind": "opportunity",
+      "layer": 0,
+      "label": "Kennisknoop N0503",
+      "named": false
+    },
+    {
+      "id": "N0504",
+      "kind": "opportunity",
+      "layer": 0,
+      "label": "Kennisknoop N0504",
+      "named": false
+    },
+    {
+      "id": "N0505",
+      "kind": "opportunity",
+      "layer": 0,
+      "label": "Kennisknoop N0505",
+      "named": false
+    },
+    {
+      "id": "N0506",
+      "kind": "opportunity",
+      "layer": 0,
+      "label": "Kennisknoop N0506",
+      "named": false
+    },
+    {
+      "id": "N0507",
+      "kind": "opportunity",
+      "layer": 0,
+      "label": "Kennisknoop N0507",
+      "named": false
+    },
+    {
+      "id": "N0508",
+      "kind": "opportunity",
+      "layer": 0,
+      "label": "Kennisknoop N0508",
+      "named": false
+    },
+    {
+      "id": "N0509",
+      "kind": "opportunity",
+      "layer": 0,
+      "label": "Kennisknoop N0509",
+      "named": false
+    },
+    {
+      "id": "N0510",
+      "kind": "opportunity",
+      "layer": 0,
+      "label": "Kennisknoop N0510",
+      "named": false
+    },
+    {
+      "id": "N0511",
+      "kind": "opportunity",
+      "layer": 0,
+      "label": "Kennisknoop N0511",
+      "named": false
+    },
+    {
+      "id": "N0512",
+      "kind": "evidence",
+      "layer": 0,
+      "label": "Kennisknoop N0512",
+      "named": false
+    },
+    {
+      "id": "N0513",
+      "kind": "evidence",
+      "layer": 0,
+      "label": "Kennisknoop N0513",
+      "named": false
+    },
+    {
+      "id": "N0514",
+      "kind": "evidence",
+      "layer": 0,
+      "label": "Kennisknoop N0514",
+      "named": false
+    },
+    {
+      "id": "N0515",
+      "kind": "evidence",
+      "layer": 0,
+      "label": "Kennisknoop N0515",
+      "named": false
+    },
+    {
+      "id": "N0516",
+      "kind": "evidence",
+      "layer": 0,
+      "label": "Kennisknoop N0516",
+      "named": false
+    },
+    {
+      "id": "N0517",
+      "kind": "lemma",
+      "layer": 0,
+      "label": "Gewogen macrorangschikking",
+      "named": true
+    },
+    {
+      "id": "N0518",
+      "kind": "algorithm",
+      "layer": 0,
+      "label": "Kennisknoop N0518",
+      "named": false
+    },
+    {
+      "id": "N0519",
+      "kind": "theorem",
+      "layer": 0,
+      "label": "Sparse selector",
+      "named": true
+    },
+    {
+      "id": "N0520",
+      "kind": "theorem",
+      "layer": 0,
+      "label": "Kennisknoop N0520",
+      "named": false
+    },
+    {
+      "id": "N0521",
+      "kind": "lemma",
+      "layer": 0,
+      "label": "Kennisknoop N0521",
+      "named": false
+    },
+    {
+      "id": "N0522",
+      "kind": "hypothesis",
+      "layer": 0,
+      "label": "Kennisknoop N0522",
+      "named": false
+    },
+    {
+      "id": "N0523",
+      "kind": "evidence",
+      "layer": 0,
+      "label": "Onafhankelijke bewijsbeoordeling",
+      "named": true
+    },
+    {
+      "id": "N0524",
+      "kind": "evidence",
+      "layer": 0,
+      "label": "Fysieke evaluatieverplichting",
+      "named": true
+    },
+    {
+      "id": "N0525",
+      "kind": "decision",
+      "layer": 0,
+      "label": "Geëvalueerde selector",
+      "named": true
+    },
+    {
+      "id": "N0526",
+      "kind": "statement",
+      "layer": 0,
+      "label": "Kennisknoop N0526",
+      "named": false
+    },
+    {
+      "id": "N0527",
+      "kind": "counterexample",
+      "layer": 0,
+      "label": "Kennisknoop N0527",
+      "named": false
+    },
+    {
+      "id": "N0528",
+      "kind": "result",
+      "layer": 0,
+      "label": "Kennisknoop N0528",
+      "named": false
+    },
+    {
+      "id": "N0529",
+      "kind": "result",
+      "layer": 0,
+      "label": "Kennisknoop N0529",
+      "named": false
+    },
+    {
+      "id": "N0530",
+      "kind": "result",
+      "layer": 0,
+      "label": "Kennisknoop N0530",
+      "named": false
+    },
+    {
+      "id": "N0531",
+      "kind": "result",
+      "layer": 0,
+      "label": "Kennisknoop N0531",
+      "named": false
+    },
+    {
+      "id": "N0532",
+      "kind": "result",
+      "layer": 0,
+      "label": "Kennisknoop N0532",
+      "named": false
+    },
+    {
+      "id": "N0533",
+      "kind": "result",
+      "layer": 0,
+      "label": "Kennisknoop N0533",
+      "named": false
+    },
+    {
+      "id": "N0534",
+      "kind": "hypothesis",
+      "layer": 0,
+      "label": "Kennisknoop N0534",
+      "named": false
+    },
+    {
+      "id": "N0535",
+      "kind": "hypothesis",
+      "layer": 0,
+      "label": "Kennisknoop N0535",
+      "named": false
+    },
+    {
+      "id": "N0536",
+      "kind": "hypothesis",
+      "layer": 0,
+      "label": "Kennisknoop N0536",
+      "named": false
+    },
+    {
+      "id": "N0537",
+      "kind": "decision",
+      "layer": 0,
+      "label": "Kennisknoop N0537",
+      "named": false
+    },
+    {
+      "id": "N0538",
+      "kind": "hypothesis",
+      "layer": 0,
+      "label": "Kennisknoop N0538",
+      "named": false
+    },
+    {
+      "id": "N0539",
+      "kind": "result",
+      "layer": 0,
+      "label": "Kennisknoop N0539",
+      "named": false
+    },
+    {
+      "id": "N0540",
+      "kind": "result",
+      "layer": 0,
+      "label": "Meertraps macroconstructie",
+      "named": true
+    },
+    {
+      "id": "N0541",
+      "kind": "statement",
+      "layer": 0,
+      "label": "Kennisknoop N0541",
+      "named": false
+    },
+    {
+      "id": "N0542",
+      "kind": "statement",
+      "layer": 0,
+      "label": "Kennisknoop N0542",
+      "named": false
+    },
+    {
+      "id": "N0543",
+      "kind": "statement",
+      "layer": 0,
+      "label": "Kennisknoop N0543",
+      "named": false
+    },
+    {
+      "id": "N0544",
+      "kind": "statement",
+      "layer": 0,
+      "label": "Kennisknoop N0544",
+      "named": false
+    },
+    {
+      "id": "N0545",
+      "kind": "opportunity",
+      "layer": 0,
+      "label": "Kennisknoop N0545",
+      "named": false
+    },
+    {
+      "id": "N0546",
+      "kind": "statement",
+      "layer": 0,
+      "label": "Kennisknoop N0546",
+      "named": false
+    },
+    {
+      "id": "N0547",
+      "kind": "statement",
+      "layer": 0,
+      "label": "Kennisknoop N0547",
+      "named": false
+    },
+    {
+      "id": "N0548",
+      "kind": "statement",
+      "layer": 0,
+      "label": "Kennisknoop N0548",
+      "named": false
+    },
+    {
+      "id": "N0549",
+      "kind": "statement",
+      "layer": 0,
+      "label": "Kennisknoop N0549",
+      "named": false
+    },
+    {
+      "id": "N0550",
+      "kind": "statement",
+      "layer": 0,
+      "label": "Kennisknoop N0550",
+      "named": false
+    },
+    {
+      "id": "N0551",
+      "kind": "statement",
+      "layer": 0,
+      "label": "Kennisknoop N0551",
+      "named": false
+    },
+    {
+      "id": "N0552",
+      "kind": "statement",
+      "layer": 0,
+      "label": "Kennisknoop N0552",
+      "named": false
+    },
+    {
+      "id": "N0553",
+      "kind": "statement",
+      "layer": 0,
+      "label": "Kennisknoop N0553",
+      "named": false
+    },
+    {
+      "id": "N0554",
+      "kind": "statement",
+      "layer": 0,
+      "label": "Kennisknoop N0554",
+      "named": false
+    },
+    {
+      "id": "N0555",
+      "kind": "statement",
+      "layer": 0,
+      "label": "Kennisknoop N0555",
+      "named": false
+    },
+    {
+      "id": "N0556",
+      "kind": "statement",
+      "layer": 0,
+      "label": "Kennisknoop N0556",
+      "named": false
+    },
+    {
+      "id": "N0557",
+      "kind": "statement",
+      "layer": 0,
+      "label": "Kennisknoop N0557",
+      "named": false
+    },
+    {
+      "id": "N0558",
+      "kind": "statement",
+      "layer": 0,
+      "label": "Kennisknoop N0558",
+      "named": false
+    },
+    {
+      "id": "N0559",
+      "kind": "statement",
+      "layer": 0,
+      "label": "Positieve laatste-macrovoorwaarde",
+      "named": true
+    },
+    {
+      "id": "N0560",
+      "kind": "statement",
+      "layer": 0,
+      "label": "Exacte tweemacrozoekactie",
+      "named": true
+    },
+    {
+      "id": "N0561",
+      "kind": "unresolved",
+      "layer": 0,
+      "label": "Kennisknoop N0561",
+      "named": false
+    },
+    {
+      "id": "N0562",
+      "kind": "evidence",
+      "layer": 0,
+      "label": "Kennisknoop N0562",
+      "named": false
+    },
+    {
+      "id": "N0563",
+      "kind": "counterexample",
+      "layer": 0,
+      "label": "Kennisknoop N0563",
+      "named": false
+    },
+    {
+      "id": "N0564",
+      "kind": "counterexample",
+      "layer": 0,
+      "label": "Kennisknoop N0564",
+      "named": false
+    },
+    {
+      "id": "N0565",
+      "kind": "decision",
+      "layer": 0,
+      "label": "Kennisknoop N0565",
+      "named": false
+    },
+    {
+      "id": "N0566",
+      "kind": "statement",
+      "layer": 1,
+      "label": "K01 · dominantie",
+      "named": true
+    },
+    {
+      "id": "N0567",
+      "kind": "statement",
+      "layer": 1,
+      "label": "K01 · gedeelde Knowledge Debt",
+      "named": true
+    },
+    {
+      "id": "N0568",
+      "kind": "statement",
+      "layer": 1,
+      "label": "K01 · exacte voortzettingsenvelop",
+      "named": true
+    },
+    {
+      "id": "N0569",
+      "kind": "statement",
+      "layer": 1,
+      "label": "Getypeerde capaciteitsanalyse",
+      "named": true
+    },
+    {
+      "id": "N0570",
+      "kind": "result",
+      "layer": 1,
+      "label": "Exacte zoekhorizonnen tot drie",
+      "named": true
+    },
+    {
+      "id": "N0571",
+      "kind": "result",
+      "layer": 1,
+      "label": "320 raw QTM · paaroptimum",
+      "named": true
+    },
+    {
+      "id": "N0572",
+      "kind": "result",
+      "layer": 1,
+      "label": "400 raw QTM · viercyclus",
+      "named": true
+    },
+    {
+      "id": "N0573",
+      "kind": "result",
+      "layer": 1,
+      "label": "Uniform zes · viermacrogrens",
+      "named": true
+    },
+    {
+      "id": "N0574",
+      "kind": "lemma",
+      "layer": 1,
+      "label": "Lagrangiaanse lokale-actiebound",
+      "named": true
+    },
+    {
+      "id": "N0575",
+      "kind": "lemma",
+      "layer": 1,
+      "label": "Type- en pariteitsgrenzen",
+      "named": true
+    },
+    {
+      "id": "N0576",
+      "kind": "lemma",
+      "layer": 1,
+      "label": "Gemeenschappelijke vervolgwoorden",
+      "named": true
+    },
+    {
+      "id": "N0577",
+      "kind": "result",
+      "layer": 1,
+      "label": "Gezamenlijke certificaatkosten",
+      "named": true
+    },
+    {
+      "id": "N0578",
+      "kind": "opportunity",
+      "layer": 1,
+      "label": "Fysieke verificatievraag",
+      "named": true
+    },
+    {
+      "id": "N0579",
+      "kind": "result",
+      "layer": 2,
+      "label": "198 QTM · fysieke route",
+      "named": true
+    },
+    {
+      "id": "N0580",
+      "kind": "algorithm",
+      "layer": 2,
+      "label": "960 samengestelde operatoren",
+      "named": true
+    },
+    {
+      "id": "N0581",
+      "kind": "result",
+      "layer": 2,
+      "label": "594 QTM · uniform zes",
+      "named": true
+    },
+    {
+      "id": "N0582",
+      "kind": "result",
+      "layer": 2,
+      "label": "800 raw QTM · horizon vier",
+      "named": true
+    },
+    {
+      "id": "N0583",
+      "kind": "result",
+      "layer": 2,
+      "label": "1.916 QTM · minimale schuldpiek",
+      "named": true
+    },
+    {
+      "id": "N0584",
+      "kind": "lemma",
+      "layer": 2,
+      "label": "Gekoppelde dominantie",
+      "named": true
+    },
+    {
+      "id": "N0585",
+      "kind": "experiment",
+      "layer": 2,
+      "label": "K02 · constraint propagation",
+      "named": true
+    },
+    {
+      "id": "N0586",
+      "kind": "lemma",
+      "layer": 2,
+      "label": "Dominantieblokken tot vier sites",
+      "named": true
+    },
+    {
+      "id": "N0587",
+      "kind": "lemma",
+      "layer": 2,
+      "label": "Chronologische getypeerde pariteit",
+      "named": true
+    },
+    {
+      "id": "N0588",
+      "kind": "experiment",
+      "layer": 2,
+      "label": "Gemeten zoekkosten",
+      "named": true
+    }
+  ],
+  "relations": [
+    {
+      "id": "H0001",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0090"
+      ],
+      "conclusions": [
+        "N0091"
+      ]
+    },
+    {
+      "id": "H0002",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0090"
+      ],
+      "conclusions": [
+        "N0092"
+      ]
+    },
+    {
+      "id": "H0003",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0090"
+      ],
+      "conclusions": [
+        "N0093"
+      ]
+    },
+    {
+      "id": "H0004",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0094"
+      ],
+      "conclusions": [
+        "N0095"
+      ]
+    },
+    {
+      "id": "H0005",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0094"
+      ],
+      "conclusions": [
+        "N0096"
+      ]
+    },
+    {
+      "id": "H0006",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0094"
+      ],
+      "conclusions": [
+        "N0097"
+      ]
+    },
+    {
+      "id": "H0007",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0094"
+      ],
+      "conclusions": [
+        "N0098"
+      ]
+    },
+    {
+      "id": "H0008",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0094"
+      ],
+      "conclusions": [
+        "N0099"
+      ]
+    },
+    {
+      "id": "H0009",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0100"
+      ],
+      "conclusions": [
+        "N0101"
+      ]
+    },
+    {
+      "id": "H0010",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0100"
+      ],
+      "conclusions": [
+        "N0102"
+      ]
+    },
+    {
+      "id": "H0011",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0100"
+      ],
+      "conclusions": [
+        "N0103"
+      ]
+    },
+    {
+      "id": "H0012",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0100"
+      ],
+      "conclusions": [
+        "N0104"
+      ]
+    },
+    {
+      "id": "H0013",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0105"
+      ],
+      "conclusions": [
+        "N0106"
+      ]
+    },
+    {
+      "id": "H0014",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0105"
+      ],
+      "conclusions": [
+        "N0107"
+      ]
+    },
+    {
+      "id": "H0015",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0105"
+      ],
+      "conclusions": [
+        "N0108"
+      ]
+    },
+    {
+      "id": "H0016",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0109"
+      ],
+      "conclusions": [
+        "N0110"
+      ]
+    },
+    {
+      "id": "H0017",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0109"
+      ],
+      "conclusions": [
+        "N0111"
+      ]
+    },
+    {
+      "id": "H0018",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0112"
+      ],
+      "conclusions": [
+        "N0113"
+      ]
+    },
+    {
+      "id": "H0019",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0112"
+      ],
+      "conclusions": [
+        "N0114"
+      ]
+    },
+    {
+      "id": "H0020",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0115"
+      ],
+      "conclusions": [
+        "N0116"
+      ]
+    },
+    {
+      "id": "H0021",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0115"
+      ],
+      "conclusions": [
+        "N0117"
+      ]
+    },
+    {
+      "id": "H0022",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0115"
+      ],
+      "conclusions": [
+        "N0118"
+      ]
+    },
+    {
+      "id": "H0023",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0119"
+      ],
+      "conclusions": [
+        "N0120"
+      ]
+    },
+    {
+      "id": "H0024",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0119"
+      ],
+      "conclusions": [
+        "N0121"
+      ]
+    },
+    {
+      "id": "H0025",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0119"
+      ],
+      "conclusions": [
+        "N0122"
+      ]
+    },
+    {
+      "id": "H0026",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0119"
+      ],
+      "conclusions": [
+        "N0123"
+      ]
+    },
+    {
+      "id": "H0027",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0124"
+      ],
+      "conclusions": [
+        "N0125"
+      ]
+    },
+    {
+      "id": "H0028",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0124"
+      ],
+      "conclusions": [
+        "N0126"
+      ]
+    },
+    {
+      "id": "H0029",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0127"
+      ],
+      "conclusions": [
+        "N0128"
+      ]
+    },
+    {
+      "id": "H0030",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0127"
+      ],
+      "conclusions": [
+        "N0129"
+      ]
+    },
+    {
+      "id": "H0031",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0130"
+      ],
+      "conclusions": [
+        "N0131"
+      ]
+    },
+    {
+      "id": "H0032",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0130"
+      ],
+      "conclusions": [
+        "N0132"
+      ]
+    },
+    {
+      "id": "H0033",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0130"
+      ],
+      "conclusions": [
+        "N0133"
+      ]
+    },
+    {
+      "id": "H0034",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0130"
+      ],
+      "conclusions": [
+        "N0134"
+      ]
+    },
+    {
+      "id": "H0035",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0130"
+      ],
+      "conclusions": [
+        "N0135"
+      ]
+    },
+    {
+      "id": "H0036",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0136"
+      ],
+      "conclusions": [
+        "N0137"
+      ]
+    },
+    {
+      "id": "H0037",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0136"
+      ],
+      "conclusions": [
+        "N0138"
+      ]
+    },
+    {
+      "id": "H0038",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0136"
+      ],
+      "conclusions": [
+        "N0139"
+      ]
+    },
+    {
+      "id": "H0039",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0140"
+      ],
+      "conclusions": [
+        "N0141"
+      ]
+    },
+    {
+      "id": "H0040",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0140"
+      ],
+      "conclusions": [
+        "N0142"
+      ]
+    },
+    {
+      "id": "H0041",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0143"
+      ],
+      "conclusions": [
+        "N0144"
+      ]
+    },
+    {
+      "id": "H0042",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0143"
+      ],
+      "conclusions": [
+        "N0145"
+      ]
+    },
+    {
+      "id": "H0043",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0143"
+      ],
+      "conclusions": [
+        "N0146"
+      ]
+    },
+    {
+      "id": "H0044",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0143"
+      ],
+      "conclusions": [
+        "N0147"
+      ]
+    },
+    {
+      "id": "H0045",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0148"
+      ],
+      "conclusions": [
+        "N0149"
+      ]
+    },
+    {
+      "id": "H0046",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0148"
+      ],
+      "conclusions": [
+        "N0150"
+      ]
+    },
+    {
+      "id": "H0047",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0151"
+      ],
+      "conclusions": [
+        "N0152"
+      ]
+    },
+    {
+      "id": "H0048",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0151"
+      ],
+      "conclusions": [
+        "N0153"
+      ]
+    },
+    {
+      "id": "H0049",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0154"
+      ],
+      "conclusions": [
+        "N0155"
+      ]
+    },
+    {
+      "id": "H0050",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0154"
+      ],
+      "conclusions": [
+        "N0156"
+      ]
+    },
+    {
+      "id": "H0051",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0157"
+      ],
+      "conclusions": [
+        "N0158"
+      ]
+    },
+    {
+      "id": "H0052",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0157"
+      ],
+      "conclusions": [
+        "N0159"
+      ]
+    },
+    {
+      "id": "H0053",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0001"
+      ],
+      "conclusions": [
+        "N0026"
+      ]
+    },
+    {
+      "id": "H0054",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0002"
+      ],
+      "conclusions": [
+        "N0032"
+      ]
+    },
+    {
+      "id": "H0055",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0003"
+      ],
+      "conclusions": [
+        "N0032"
+      ]
+    },
+    {
+      "id": "H0056",
+      "kind": "dependency",
+      "layer": 0,
+      "premises": [
+        "N0030"
+      ],
+      "conclusions": [
+        "N0013"
+      ]
+    },
+    {
+      "id": "H0057",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0033"
+      ],
+      "conclusions": [
+        "N0029"
+      ]
+    },
+    {
+      "id": "H0058",
+      "kind": "test",
+      "layer": 0,
+      "premises": [
+        "N0007"
+      ],
+      "conclusions": [
+        "N0014"
+      ]
+    },
+    {
+      "id": "H0059",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0027"
+      ],
+      "conclusions": [
+        "N0028"
+      ]
+    },
+    {
+      "id": "H0060",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0016"
+      ],
+      "conclusions": [
+        "N0017"
+      ]
+    },
+    {
+      "id": "H0061",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0017"
+      ],
+      "conclusions": [
+        "N0018"
+      ]
+    },
+    {
+      "id": "H0062",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0012"
+      ],
+      "conclusions": [
+        "N0029"
+      ]
+    },
+    {
+      "id": "H0063",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0035"
+      ],
+      "conclusions": [
+        "N0036"
+      ]
+    },
+    {
+      "id": "H0064",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0036"
+      ],
+      "conclusions": [
+        "N0040"
+      ]
+    },
+    {
+      "id": "H0065",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0040"
+      ],
+      "conclusions": [
+        "N0041"
+      ]
+    },
+    {
+      "id": "H0066",
+      "kind": "falsifier",
+      "layer": 0,
+      "premises": [
+        "N0021"
+      ],
+      "conclusions": [
+        "N0022"
+      ]
+    },
+    {
+      "id": "H0067",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0028"
+      ],
+      "conclusions": [
+        "N0010"
+      ]
+    },
+    {
+      "id": "H0068",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0004",
+        "N0096",
+        "N0033"
+      ],
+      "conclusions": [
+        "N0423"
+      ]
+    },
+    {
+      "id": "H0069",
+      "kind": "dependency",
+      "layer": 0,
+      "premises": [
+        "N0116",
+        "N0131",
+        "N0424",
+        "N0251"
+      ],
+      "conclusions": [
+        "N0423"
+      ]
+    },
+    {
+      "id": "H0070",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0423",
+        "N0425"
+      ],
+      "conclusions": [
+        "N0274"
+      ]
+    },
+    {
+      "id": "H0071",
+      "kind": "hypothesis",
+      "layer": 0,
+      "premises": [
+        "N0005",
+        "N0099",
+        "N0135"
+      ],
+      "conclusions": [
+        "N0282"
+      ]
+    },
+    {
+      "id": "H0072",
+      "kind": "falsifier",
+      "layer": 0,
+      "premises": [
+        "N0043",
+        "N0084"
+      ],
+      "conclusions": [
+        "N0275"
+      ]
+    },
+    {
+      "id": "H0073",
+      "kind": "falsifier",
+      "layer": 0,
+      "premises": [
+        "N0066",
+        "N0033"
+      ],
+      "conclusions": [
+        "N0276"
+      ]
+    },
+    {
+      "id": "H0074",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0063",
+        "N0088",
+        "N0065"
+      ],
+      "conclusions": [
+        "N0276"
+      ]
+    },
+    {
+      "id": "H0075",
+      "kind": "falsifier",
+      "layer": 0,
+      "premises": [
+        "N0049",
+        "N0058"
+      ],
+      "conclusions": [
+        "N0277"
+      ]
+    },
+    {
+      "id": "H0076",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0066",
+        "N0067",
+        "N0074"
+      ],
+      "conclusions": [
+        "N0278"
+      ]
+    },
+    {
+      "id": "H0077",
+      "kind": "provenance",
+      "layer": 0,
+      "premises": [
+        "N0050",
+        "N0081",
+        "N0082"
+      ],
+      "conclusions": [
+        "N0279"
+      ]
+    },
+    {
+      "id": "H0078",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0093",
+        "N0042"
+      ],
+      "conclusions": [
+        "N0280"
+      ]
+    },
+    {
+      "id": "H0079",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0070",
+        "N0071"
+      ],
+      "conclusions": [
+        "N0281"
+      ]
+    },
+    {
+      "id": "H0080",
+      "kind": "provenance",
+      "layer": 0,
+      "premises": [
+        "N0053",
+        "N0055",
+        "N0056"
+      ],
+      "conclusions": [
+        "N0283"
+      ]
+    },
+    {
+      "id": "H0081",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0145",
+        "N0146",
+        "N0076"
+      ],
+      "conclusions": [
+        "N0284"
+      ]
+    },
+    {
+      "id": "H0082",
+      "kind": "falsifier",
+      "layer": 0,
+      "premises": [
+        "N0110",
+        "N0147",
+        "N0046"
+      ],
+      "conclusions": [
+        "N0285"
+      ]
+    },
+    {
+      "id": "H0083",
+      "kind": "provenance",
+      "layer": 0,
+      "premises": [
+        "N0072",
+        "N0078",
+        "N0075"
+      ],
+      "conclusions": [
+        "N0081"
+      ]
+    },
+    {
+      "id": "H0084",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0064",
+        "N0065"
+      ],
+      "conclusions": [
+        "N0088"
+      ]
+    },
+    {
+      "id": "H0085",
+      "kind": "dependency",
+      "layer": 0,
+      "premises": [
+        "N0066",
+        "N0067",
+        "N0068",
+        "N0069"
+      ],
+      "conclusions": [
+        "N0089"
+      ]
+    },
+    {
+      "id": "H0086",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0093"
+      ],
+      "conclusions": [
+        "N0132"
+      ]
+    },
+    {
+      "id": "H0087",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0132"
+      ],
+      "conclusions": [
+        "N0131"
+      ]
+    },
+    {
+      "id": "H0088",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0116"
+      ],
+      "conclusions": [
+        "N0131"
+      ]
+    },
+    {
+      "id": "H0089",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0139"
+      ],
+      "conclusions": [
+        "N0131"
+      ]
+    },
+    {
+      "id": "H0090",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0131"
+      ],
+      "conclusions": [
+        "N0137"
+      ]
+    },
+    {
+      "id": "H0091",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0134"
+      ],
+      "conclusions": [
+        "N0137"
+      ]
+    },
+    {
+      "id": "H0092",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0117"
+      ],
+      "conclusions": [
+        "N0118"
+      ]
+    },
+    {
+      "id": "H0093",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0117"
+      ],
+      "conclusions": [
+        "N0120"
+      ]
+    },
+    {
+      "id": "H0094",
+      "kind": "hypothesis",
+      "layer": 0,
+      "premises": [
+        "N0121"
+      ],
+      "conclusions": [
+        "N0122"
+      ]
+    },
+    {
+      "id": "H0095",
+      "kind": "hypothesis",
+      "layer": 0,
+      "premises": [
+        "N0122"
+      ],
+      "conclusions": [
+        "N0108"
+      ]
+    },
+    {
+      "id": "H0096",
+      "kind": "hypothesis",
+      "layer": 0,
+      "premises": [
+        "N0139"
+      ],
+      "conclusions": [
+        "N0122"
+      ]
+    },
+    {
+      "id": "H0097",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0095"
+      ],
+      "conclusions": [
+        "N0103"
+      ]
+    },
+    {
+      "id": "H0098",
+      "kind": "falsifier",
+      "layer": 0,
+      "premises": [
+        "N0110"
+      ],
+      "conclusions": [
+        "N0147"
+      ]
+    },
+    {
+      "id": "H0099",
+      "kind": "dependency",
+      "layer": 0,
+      "premises": [
+        "N0147"
+      ],
+      "conclusions": [
+        "N0113"
+      ]
+    },
+    {
+      "id": "H0100",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0113"
+      ],
+      "conclusions": [
+        "N0114"
+      ]
+    },
+    {
+      "id": "H0101",
+      "kind": "hypothesis",
+      "layer": 0,
+      "premises": [
+        "N0120"
+      ],
+      "conclusions": [
+        "N0125"
+      ]
+    },
+    {
+      "id": "H0102",
+      "kind": "dependency",
+      "layer": 0,
+      "premises": [
+        "N0108"
+      ],
+      "conclusions": [
+        "N0149"
+      ]
+    },
+    {
+      "id": "H0103",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0114"
+      ],
+      "conclusions": [
+        "N0152"
+      ]
+    },
+    {
+      "id": "H0104",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0099"
+      ],
+      "conclusions": [
+        "N0135"
+      ]
+    },
+    {
+      "id": "H0105",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0135"
+      ],
+      "conclusions": [
+        "N0137"
+      ]
+    },
+    {
+      "id": "H0106",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0160"
+      ],
+      "conclusions": [
+        "N0251"
+      ]
+    },
+    {
+      "id": "H0107",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0160"
+      ],
+      "conclusions": [
+        "N0243"
+      ]
+    },
+    {
+      "id": "H0108",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0161"
+      ],
+      "conclusions": [
+        "N0185"
+      ]
+    },
+    {
+      "id": "H0109",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0161"
+      ],
+      "conclusions": [
+        "N0243"
+      ]
+    },
+    {
+      "id": "H0110",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0162"
+      ],
+      "conclusions": [
+        "N0274"
+      ]
+    },
+    {
+      "id": "H0111",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0162"
+      ],
+      "conclusions": [
+        "N0285"
+      ]
+    },
+    {
+      "id": "H0112",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0163"
+      ],
+      "conclusions": [
+        "N0185"
+      ]
+    },
+    {
+      "id": "H0113",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0164"
+      ],
+      "conclusions": [
+        "N0181"
+      ]
+    },
+    {
+      "id": "H0114",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0164"
+      ],
+      "conclusions": [
+        "N0279"
+      ]
+    },
+    {
+      "id": "H0115",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0165"
+      ],
+      "conclusions": [
+        "N0181"
+      ]
+    },
+    {
+      "id": "H0116",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0166"
+      ],
+      "conclusions": [
+        "N0172"
+      ]
+    },
+    {
+      "id": "H0117",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0167"
+      ],
+      "conclusions": [
+        "N0170"
+      ]
+    },
+    {
+      "id": "H0118",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0167"
+      ],
+      "conclusions": [
+        "N0179"
+      ]
+    },
+    {
+      "id": "H0119",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0167"
+      ],
+      "conclusions": [
+        "N0276"
+      ]
+    },
+    {
+      "id": "H0120",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0167"
+      ],
+      "conclusions": [
+        "N0277"
+      ]
+    },
+    {
+      "id": "H0121",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0168"
+      ],
+      "conclusions": [
+        "N0180"
+      ]
+    },
+    {
+      "id": "H0122",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0168"
+      ],
+      "conclusions": [
+        "N0279"
+      ]
+    },
+    {
+      "id": "H0123",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0169"
+      ],
+      "conclusions": [
+        "N0183"
+      ]
+    },
+    {
+      "id": "H0124",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0169"
+      ],
+      "conclusions": [
+        "N0278"
+      ]
+    },
+    {
+      "id": "H0125",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0170"
+      ],
+      "conclusions": [
+        "N0179"
+      ]
+    },
+    {
+      "id": "H0126",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0170"
+      ],
+      "conclusions": [
+        "N0276"
+      ]
+    },
+    {
+      "id": "H0127",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0170"
+      ],
+      "conclusions": [
+        "N0285"
+      ]
+    },
+    {
+      "id": "H0128",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0171"
+      ],
+      "conclusions": [
+        "N0177"
+      ]
+    },
+    {
+      "id": "H0129",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0171"
+      ],
+      "conclusions": [
+        "N0261"
+      ]
+    },
+    {
+      "id": "H0130",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0171"
+      ],
+      "conclusions": [
+        "N0275"
+      ]
+    },
+    {
+      "id": "H0131",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0172"
+      ],
+      "conclusions": [
+        "N0262"
+      ]
+    },
+    {
+      "id": "H0132",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0172"
+      ],
+      "conclusions": [
+        "N0268"
+      ]
+    },
+    {
+      "id": "H0133",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0172"
+      ],
+      "conclusions": [
+        "N0283"
+      ]
+    },
+    {
+      "id": "H0134",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0173"
+      ],
+      "conclusions": [
+        "N0184"
+      ]
+    },
+    {
+      "id": "H0135",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0173"
+      ],
+      "conclusions": [
+        "N0201"
+      ]
+    },
+    {
+      "id": "H0136",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0173"
+      ],
+      "conclusions": [
+        "N0275"
+      ]
+    },
+    {
+      "id": "H0137",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0174"
+      ],
+      "conclusions": [
+        "N0185"
+      ]
+    },
+    {
+      "id": "H0138",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0174"
+      ],
+      "conclusions": [
+        "N0189"
+      ]
+    },
+    {
+      "id": "H0139",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0175"
+      ],
+      "conclusions": [
+        "N0191"
+      ]
+    },
+    {
+      "id": "H0140",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0175"
+      ],
+      "conclusions": [
+        "N0203"
+      ]
+    },
+    {
+      "id": "H0141",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0176"
+      ],
+      "conclusions": [
+        "N0251"
+      ]
+    },
+    {
+      "id": "H0142",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0176"
+      ],
+      "conclusions": [
+        "N0263"
+      ]
+    },
+    {
+      "id": "H0143",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0176"
+      ],
+      "conclusions": [
+        "N0282"
+      ]
+    },
+    {
+      "id": "H0144",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0177"
+      ],
+      "conclusions": [
+        "N0426"
+      ]
+    },
+    {
+      "id": "H0145",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0177"
+      ],
+      "conclusions": [
+        "N0261"
+      ]
+    },
+    {
+      "id": "H0146",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0177"
+      ],
+      "conclusions": [
+        "N0275"
+      ]
+    },
+    {
+      "id": "H0147",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0178"
+      ],
+      "conclusions": [
+        "N0261"
+      ]
+    },
+    {
+      "id": "H0148",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0178"
+      ],
+      "conclusions": [
+        "N0275"
+      ]
+    },
+    {
+      "id": "H0149",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0179"
+      ],
+      "conclusions": [
+        "N0276"
+      ]
+    },
+    {
+      "id": "H0150",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0179"
+      ],
+      "conclusions": [
+        "N0279"
+      ]
+    },
+    {
+      "id": "H0151",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0179"
+      ],
+      "conclusions": [
+        "N0285"
+      ]
+    },
+    {
+      "id": "H0152",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0180"
+      ],
+      "conclusions": [
+        "N0277"
+      ]
+    },
+    {
+      "id": "H0153",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0180"
+      ],
+      "conclusions": [
+        "N0279"
+      ]
+    },
+    {
+      "id": "H0154",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0181"
+      ],
+      "conclusions": [
+        "N0427"
+      ]
+    },
+    {
+      "id": "H0155",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0181"
+      ],
+      "conclusions": [
+        "N0279"
+      ]
+    },
+    {
+      "id": "H0156",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0182"
+      ],
+      "conclusions": [
+        "N0200"
+      ]
+    },
+    {
+      "id": "H0157",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0182"
+      ],
+      "conclusions": [
+        "N0267"
+      ]
+    },
+    {
+      "id": "H0158",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0182"
+      ],
+      "conclusions": [
+        "N0277"
+      ]
+    },
+    {
+      "id": "H0159",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0183"
+      ],
+      "conclusions": [
+        "N0197"
+      ]
+    },
+    {
+      "id": "H0160",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0183"
+      ],
+      "conclusions": [
+        "N0266"
+      ]
+    },
+    {
+      "id": "H0161",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0184"
+      ],
+      "conclusions": [
+        "N0426"
+      ]
+    },
+    {
+      "id": "H0162",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0184"
+      ],
+      "conclusions": [
+        "N0255"
+      ]
+    },
+    {
+      "id": "H0163",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0184"
+      ],
+      "conclusions": [
+        "N0259"
+      ]
+    },
+    {
+      "id": "H0164",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0185"
+      ],
+      "conclusions": [
+        "N0243"
+      ]
+    },
+    {
+      "id": "H0165",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0185"
+      ],
+      "conclusions": [
+        "N0282"
+      ]
+    },
+    {
+      "id": "H0166",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0185"
+      ],
+      "conclusions": [
+        "N0285"
+      ]
+    },
+    {
+      "id": "H0167",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0186"
+      ],
+      "conclusions": [
+        "N0194"
+      ]
+    },
+    {
+      "id": "H0168",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0186"
+      ],
+      "conclusions": [
+        "N0189"
+      ]
+    },
+    {
+      "id": "H0169",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0187"
+      ],
+      "conclusions": [
+        "N0428"
+      ]
+    },
+    {
+      "id": "H0170",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0187"
+      ],
+      "conclusions": [
+        "N0248"
+      ]
+    },
+    {
+      "id": "H0171",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0187"
+      ],
+      "conclusions": [
+        "N0282"
+      ]
+    },
+    {
+      "id": "H0172",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0188"
+      ],
+      "conclusions": [
+        "N0187"
+      ]
+    },
+    {
+      "id": "H0173",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0188"
+      ],
+      "conclusions": [
+        "N0282"
+      ]
+    },
+    {
+      "id": "H0174",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0189"
+      ],
+      "conclusions": [
+        "N0429"
+      ]
+    },
+    {
+      "id": "H0175",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0189"
+      ],
+      "conclusions": [
+        "N0430"
+      ]
+    },
+    {
+      "id": "H0176",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0189"
+      ],
+      "conclusions": [
+        "N0428"
+      ]
+    },
+    {
+      "id": "H0177",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0189"
+      ],
+      "conclusions": [
+        "N0426"
+      ]
+    },
+    {
+      "id": "H0178",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0190"
+      ],
+      "conclusions": [
+        "N0431"
+      ]
+    },
+    {
+      "id": "H0179",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0190"
+      ],
+      "conclusions": [
+        "N0259"
+      ]
+    },
+    {
+      "id": "H0180",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0190"
+      ],
+      "conclusions": [
+        "N0281"
+      ]
+    },
+    {
+      "id": "H0181",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0191"
+      ],
+      "conclusions": [
+        "N0195"
+      ]
+    },
+    {
+      "id": "H0182",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0191"
+      ],
+      "conclusions": [
+        "N0203"
+      ]
+    },
+    {
+      "id": "H0183",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0192"
+      ],
+      "conclusions": [
+        "N0203"
+      ]
+    },
+    {
+      "id": "H0184",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0192"
+      ],
+      "conclusions": [
+        "N0271"
+      ]
+    },
+    {
+      "id": "H0185",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0192"
+      ],
+      "conclusions": [
+        "N0285"
+      ]
+    },
+    {
+      "id": "H0186",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0193"
+      ],
+      "conclusions": [
+        "N0189"
+      ]
+    },
+    {
+      "id": "H0187",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0193"
+      ],
+      "conclusions": [
+        "N0431"
+      ]
+    },
+    {
+      "id": "H0188",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0193"
+      ],
+      "conclusions": [
+        "N0245"
+      ]
+    },
+    {
+      "id": "H0189",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0193"
+      ],
+      "conclusions": [
+        "N0278"
+      ]
+    },
+    {
+      "id": "H0190",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0193"
+      ],
+      "conclusions": [
+        "N0281"
+      ]
+    },
+    {
+      "id": "H0191",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0194"
+      ],
+      "conclusions": [
+        "N0431"
+      ]
+    },
+    {
+      "id": "H0192",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0194"
+      ],
+      "conclusions": [
+        "N0278"
+      ]
+    },
+    {
+      "id": "H0193",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0194"
+      ],
+      "conclusions": [
+        "N0281"
+      ]
+    },
+    {
+      "id": "H0194",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0195"
+      ],
+      "conclusions": [
+        "N0283"
+      ]
+    },
+    {
+      "id": "H0195",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0196"
+      ],
+      "conclusions": [
+        "N0242"
+      ]
+    },
+    {
+      "id": "H0196",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0196"
+      ],
+      "conclusions": [
+        "N0278"
+      ]
+    },
+    {
+      "id": "H0197",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0197"
+      ],
+      "conclusions": [
+        "N0432"
+      ]
+    },
+    {
+      "id": "H0198",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0197"
+      ],
+      "conclusions": [
+        "N0266"
+      ]
+    },
+    {
+      "id": "H0199",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0197"
+      ],
+      "conclusions": [
+        "N0277"
+      ]
+    },
+    {
+      "id": "H0200",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0197"
+      ],
+      "conclusions": [
+        "N0283"
+      ]
+    },
+    {
+      "id": "H0201",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0198"
+      ],
+      "conclusions": [
+        "N0182"
+      ]
+    },
+    {
+      "id": "H0202",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0198"
+      ],
+      "conclusions": [
+        "N0432"
+      ]
+    },
+    {
+      "id": "H0203",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0198"
+      ],
+      "conclusions": [
+        "N0283"
+      ]
+    },
+    {
+      "id": "H0204",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0199"
+      ],
+      "conclusions": [
+        "N0247"
+      ]
+    },
+    {
+      "id": "H0205",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0199"
+      ],
+      "conclusions": [
+        "N0251"
+      ]
+    },
+    {
+      "id": "H0206",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0200"
+      ],
+      "conclusions": [
+        "N0243"
+      ]
+    },
+    {
+      "id": "H0207",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0200"
+      ],
+      "conclusions": [
+        "N0251"
+      ]
+    },
+    {
+      "id": "H0208",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0200"
+      ],
+      "conclusions": [
+        "N0283"
+      ]
+    },
+    {
+      "id": "H0209",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0201"
+      ],
+      "conclusions": [
+        "N0433"
+      ]
+    },
+    {
+      "id": "H0210",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0201"
+      ],
+      "conclusions": [
+        "N0247"
+      ]
+    },
+    {
+      "id": "H0211",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0201"
+      ],
+      "conclusions": [
+        "N0278"
+      ]
+    },
+    {
+      "id": "H0212",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0202"
+      ],
+      "conclusions": [
+        "N0432"
+      ]
+    },
+    {
+      "id": "H0213",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0202"
+      ],
+      "conclusions": [
+        "N0271"
+      ]
+    },
+    {
+      "id": "H0214",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0202"
+      ],
+      "conclusions": [
+        "N0283"
+      ]
+    },
+    {
+      "id": "H0215",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0203"
+      ],
+      "conclusions": [
+        "N0432"
+      ]
+    },
+    {
+      "id": "H0216",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0203"
+      ],
+      "conclusions": [
+        "N0268"
+      ]
+    },
+    {
+      "id": "H0217",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0203"
+      ],
+      "conclusions": [
+        "N0283"
+      ]
+    },
+    {
+      "id": "H0218",
+      "kind": "dependency",
+      "layer": 0,
+      "premises": [
+        "N0212",
+        "N0213",
+        "N0217",
+        "N0218"
+      ],
+      "conclusions": [
+        "N0235"
+      ]
+    },
+    {
+      "id": "H0219",
+      "kind": "dependency",
+      "layer": 0,
+      "premises": [
+        "N0213",
+        "N0218"
+      ],
+      "conclusions": [
+        "N0219"
+      ]
+    },
+    {
+      "id": "H0220",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0208",
+        "N0236",
+        "N0255",
+        "N0209"
+      ],
+      "conclusions": [
+        "N0259"
+      ]
+    },
+    {
+      "id": "H0221",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0204",
+        "N0247"
+      ],
+      "conclusions": [
+        "N0258"
+      ]
+    },
+    {
+      "id": "H0222",
+      "kind": "hypothesis",
+      "layer": 0,
+      "premises": [
+        "N0242",
+        "N0243",
+        "N0253"
+      ],
+      "conclusions": [
+        "N0282"
+      ]
+    },
+    {
+      "id": "H0223",
+      "kind": "hypothesis",
+      "layer": 0,
+      "premises": [
+        "N0251",
+        "N0269",
+        "N0224",
+        "N0261"
+      ],
+      "conclusions": [
+        "N0275"
+      ]
+    },
+    {
+      "id": "H0224",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0268",
+        "N0269",
+        "N0262"
+      ],
+      "conclusions": [
+        "N0284"
+      ]
+    },
+    {
+      "id": "H0225",
+      "kind": "provenance",
+      "layer": 0,
+      "premises": [
+        "N0272",
+        "N0273"
+      ],
+      "conclusions": [
+        "N0276"
+      ]
+    },
+    {
+      "id": "H0226",
+      "kind": "dependency",
+      "layer": 0,
+      "premises": [
+        "N0254",
+        "N0256",
+        "N0270"
+      ],
+      "conclusions": [
+        "N0288"
+      ]
+    },
+    {
+      "id": "H0227",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0230",
+        "N0266"
+      ],
+      "conclusions": [
+        "N0266"
+      ]
+    },
+    {
+      "id": "H0228",
+      "kind": "falsifier",
+      "layer": 0,
+      "premises": [
+        "N0267",
+        "N0021"
+      ],
+      "conclusions": [
+        "N0277"
+      ]
+    },
+    {
+      "id": "H0229",
+      "kind": "test",
+      "layer": 0,
+      "premises": [
+        "N0262",
+        "N0434"
+      ],
+      "conclusions": [
+        "N0294"
+      ]
+    },
+    {
+      "id": "H0230",
+      "kind": "falsifier",
+      "layer": 0,
+      "premises": [
+        "N0224",
+        "N0026"
+      ],
+      "conclusions": [
+        "N0275"
+      ]
+    },
+    {
+      "id": "H0231",
+      "kind": "falsifier",
+      "layer": 0,
+      "premises": [
+        "N0215",
+        "N0216",
+        "N0245"
+      ],
+      "conclusions": [
+        "N0278"
+      ]
+    },
+    {
+      "id": "H0232",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0260",
+        "N0226"
+      ],
+      "conclusions": [
+        "N0281"
+      ]
+    },
+    {
+      "id": "H0233",
+      "kind": "falsifier",
+      "layer": 0,
+      "premises": [
+        "N0228",
+        "N0081",
+        "N0232"
+      ],
+      "conclusions": [
+        "N0279"
+      ]
+    },
+    {
+      "id": "H0234",
+      "kind": "provenance",
+      "layer": 0,
+      "premises": [
+        "N0265",
+        "N0268"
+      ],
+      "conclusions": [
+        "N0283"
+      ]
+    },
+    {
+      "id": "H0235",
+      "kind": "hypothesis",
+      "layer": 0,
+      "premises": [
+        "N0269",
+        "N0242",
+        "N0251"
+      ],
+      "conclusions": [
+        "N0287"
+      ]
+    },
+    {
+      "id": "H0236",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0207",
+        "N0243"
+      ],
+      "conclusions": [
+        "N0274"
+      ]
+    },
+    {
+      "id": "H0237",
+      "kind": "falsifier",
+      "layer": 0,
+      "premises": [
+        "N0248",
+        "N0253",
+        "N0005"
+      ],
+      "conclusions": [
+        "N0286"
+      ]
+    },
+    {
+      "id": "H0238",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0232",
+        "N0234"
+      ],
+      "conclusions": [
+        "N0279"
+      ]
+    },
+    {
+      "id": "H0239",
+      "kind": "falsifier",
+      "layer": 0,
+      "premises": [
+        "N0205",
+        "N0248",
+        "N0219"
+      ],
+      "conclusions": [
+        "N0293"
+      ]
+    },
+    {
+      "id": "H0240",
+      "kind": "hypothesis",
+      "layer": 0,
+      "premises": [
+        "N0273",
+        "N0256",
+        "N0224"
+      ],
+      "conclusions": [
+        "N0298"
+      ]
+    },
+    {
+      "id": "H0241",
+      "kind": "hypothesis",
+      "layer": 0,
+      "premises": [
+        "N0228",
+        "N0232",
+        "N0088"
+      ],
+      "conclusions": [
+        "N0299"
+      ]
+    },
+    {
+      "id": "H0242",
+      "kind": "falsifier",
+      "layer": 0,
+      "premises": [
+        "N0215"
+      ],
+      "conclusions": [
+        "N0278"
+      ]
+    },
+    {
+      "id": "H0243",
+      "kind": "falsifier",
+      "layer": 0,
+      "premises": [
+        "N0224"
+      ],
+      "conclusions": [
+        "N0275"
+      ]
+    },
+    {
+      "id": "H0244",
+      "kind": "falsifier",
+      "layer": 0,
+      "premises": [
+        "N0229"
+      ],
+      "conclusions": [
+        "N0277"
+      ]
+    },
+    {
+      "id": "H0245",
+      "kind": "falsifier",
+      "layer": 0,
+      "premises": [
+        "N0232"
+      ],
+      "conclusions": [
+        "N0279"
+      ]
+    },
+    {
+      "id": "H0246",
+      "kind": "falsifier",
+      "layer": 0,
+      "premises": [
+        "N0242"
+      ],
+      "conclusions": [
+        "N0292"
+      ]
+    },
+    {
+      "id": "H0247",
+      "kind": "falsifier",
+      "layer": 0,
+      "premises": [
+        "N0245"
+      ],
+      "conclusions": [
+        "N0278"
+      ]
+    },
+    {
+      "id": "H0248",
+      "kind": "falsifier",
+      "layer": 0,
+      "premises": [
+        "N0256"
+      ],
+      "conclusions": [
+        "N0280"
+      ]
+    },
+    {
+      "id": "H0249",
+      "kind": "falsifier",
+      "layer": 0,
+      "premises": [
+        "N0260"
+      ],
+      "conclusions": [
+        "N0292"
+      ]
+    },
+    {
+      "id": "H0250",
+      "kind": "falsifier",
+      "layer": 0,
+      "premises": [
+        "N0261"
+      ],
+      "conclusions": [
+        "N0284"
+      ]
+    },
+    {
+      "id": "H0251",
+      "kind": "falsifier",
+      "layer": 0,
+      "premises": [
+        "N0264"
+      ],
+      "conclusions": [
+        "N0278"
+      ]
+    },
+    {
+      "id": "H0252",
+      "kind": "falsifier",
+      "layer": 0,
+      "premises": [
+        "N0268"
+      ],
+      "conclusions": [
+        "N0284"
+      ]
+    },
+    {
+      "id": "H0253",
+      "kind": "falsifier",
+      "layer": 0,
+      "premises": [
+        "N0273"
+      ],
+      "conclusions": [
+        "N0276"
+      ]
+    },
+    {
+      "id": "H0254",
+      "kind": "hypothesis",
+      "layer": 0,
+      "premises": [
+        "N0243",
+        "N0268",
+        "N0262",
+        "N0004"
+      ],
+      "conclusions": [
+        "N0274"
+      ]
+    },
+    {
+      "id": "H0255",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0079"
+      ],
+      "conclusions": [
+        "N0274"
+      ]
+    },
+    {
+      "id": "H0256",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0086"
+      ],
+      "conclusions": [
+        "N0274"
+      ]
+    },
+    {
+      "id": "H0257",
+      "kind": "hypothesis",
+      "layer": 0,
+      "premises": [
+        "N0269",
+        "N0251",
+        "N0224",
+        "N0261"
+      ],
+      "conclusions": [
+        "N0275"
+      ]
+    },
+    {
+      "id": "H0258",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0075"
+      ],
+      "conclusions": [
+        "N0275"
+      ]
+    },
+    {
+      "id": "H0259",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0084"
+      ],
+      "conclusions": [
+        "N0275"
+      ]
+    },
+    {
+      "id": "H0260",
+      "kind": "hypothesis",
+      "layer": 0,
+      "premises": [
+        "N0254",
+        "N0273",
+        "N0247",
+        "N0008",
+        "N0015"
+      ],
+      "conclusions": [
+        "N0276"
+      ]
+    },
+    {
+      "id": "H0261",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0086"
+      ],
+      "conclusions": [
+        "N0276"
+      ]
+    },
+    {
+      "id": "H0262",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0088"
+      ],
+      "conclusions": [
+        "N0276"
+      ]
+    },
+    {
+      "id": "H0263",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0089"
+      ],
+      "conclusions": [
+        "N0276"
+      ]
+    },
+    {
+      "id": "H0264",
+      "kind": "hypothesis",
+      "layer": 0,
+      "premises": [
+        "N0267",
+        "N0265",
+        "N0021",
+        "N0083",
+        "N0014"
+      ],
+      "conclusions": [
+        "N0277"
+      ]
+    },
+    {
+      "id": "H0265",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0073"
+      ],
+      "conclusions": [
+        "N0277"
+      ]
+    },
+    {
+      "id": "H0266",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0076"
+      ],
+      "conclusions": [
+        "N0277"
+      ]
+    },
+    {
+      "id": "H0267",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0083"
+      ],
+      "conclusions": [
+        "N0277"
+      ]
+    },
+    {
+      "id": "H0268",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0087"
+      ],
+      "conclusions": [
+        "N0277"
+      ]
+    },
+    {
+      "id": "H0269",
+      "kind": "hypothesis",
+      "layer": 0,
+      "premises": [
+        "N0209",
+        "N0246",
+        "N0003",
+        "N0009",
+        "N0227"
+      ],
+      "conclusions": [
+        "N0278"
+      ]
+    },
+    {
+      "id": "H0270",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0074"
+      ],
+      "conclusions": [
+        "N0278"
+      ]
+    },
+    {
+      "id": "H0271",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0085"
+      ],
+      "conclusions": [
+        "N0278"
+      ]
+    },
+    {
+      "id": "H0272",
+      "kind": "hypothesis",
+      "layer": 0,
+      "premises": [
+        "N0232",
+        "N0251",
+        "N0029",
+        "N0010",
+        "N0033"
+      ],
+      "conclusions": [
+        "N0279"
+      ]
+    },
+    {
+      "id": "H0273",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0080"
+      ],
+      "conclusions": [
+        "N0279"
+      ]
+    },
+    {
+      "id": "H0274",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0081"
+      ],
+      "conclusions": [
+        "N0279"
+      ]
+    },
+    {
+      "id": "H0275",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0082"
+      ],
+      "conclusions": [
+        "N0279"
+      ]
+    },
+    {
+      "id": "H0276",
+      "kind": "hypothesis",
+      "layer": 0,
+      "premises": [
+        "N0255",
+        "N0256",
+        "N0242",
+        "N0270",
+        "N0224"
+      ],
+      "conclusions": [
+        "N0280"
+      ]
+    },
+    {
+      "id": "H0277",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0084"
+      ],
+      "conclusions": [
+        "N0280"
+      ]
+    },
+    {
+      "id": "H0278",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0075"
+      ],
+      "conclusions": [
+        "N0280"
+      ]
+    },
+    {
+      "id": "H0279",
+      "kind": "hypothesis",
+      "layer": 0,
+      "premises": [
+        "N0260",
+        "N0210",
+        "N0225",
+        "N0245",
+        "N0031"
+      ],
+      "conclusions": [
+        "N0281"
+      ]
+    },
+    {
+      "id": "H0280",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0078"
+      ],
+      "conclusions": [
+        "N0281"
+      ]
+    },
+    {
+      "id": "H0281",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0086"
+      ],
+      "conclusions": [
+        "N0281"
+      ]
+    },
+    {
+      "id": "H0282",
+      "kind": "hypothesis",
+      "layer": 0,
+      "premises": [
+        "N0243",
+        "N0253",
+        "N0263",
+        "N0224"
+      ],
+      "conclusions": [
+        "N0282"
+      ]
+    },
+    {
+      "id": "H0283",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0075"
+      ],
+      "conclusions": [
+        "N0282"
+      ]
+    },
+    {
+      "id": "H0284",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0084"
+      ],
+      "conclusions": [
+        "N0282"
+      ]
+    },
+    {
+      "id": "H0285",
+      "kind": "hypothesis",
+      "layer": 0,
+      "premises": [
+        "N0268",
+        "N0231",
+        "N0262",
+        "N0014",
+        "N0036"
+      ],
+      "conclusions": [
+        "N0283"
+      ]
+    },
+    {
+      "id": "H0286",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0079"
+      ],
+      "conclusions": [
+        "N0283"
+      ]
+    },
+    {
+      "id": "H0287",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0083"
+      ],
+      "conclusions": [
+        "N0283"
+      ]
+    },
+    {
+      "id": "H0288",
+      "kind": "hypothesis",
+      "layer": 0,
+      "premises": [
+        "N0269",
+        "N0268",
+        "N0271",
+        "N0028",
+        "N0037"
+      ],
+      "conclusions": [
+        "N0284"
+      ]
+    },
+    {
+      "id": "H0289",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0076"
+      ],
+      "conclusions": [
+        "N0284"
+      ]
+    },
+    {
+      "id": "H0290",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0077"
+      ],
+      "conclusions": [
+        "N0284"
+      ]
+    },
+    {
+      "id": "H0291",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0084"
+      ],
+      "conclusions": [
+        "N0284"
+      ]
+    },
+    {
+      "id": "H0292",
+      "kind": "hypothesis",
+      "layer": 0,
+      "premises": [
+        "N0243",
+        "N0267",
+        "N0271",
+        "N0033"
+      ],
+      "conclusions": [
+        "N0285"
+      ]
+    },
+    {
+      "id": "H0293",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0079"
+      ],
+      "conclusions": [
+        "N0285"
+      ]
+    },
+    {
+      "id": "H0294",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0088"
+      ],
+      "conclusions": [
+        "N0285"
+      ]
+    },
+    {
+      "id": "H0295",
+      "kind": "hypothesis",
+      "layer": 0,
+      "premises": [
+        "N0248",
+        "N0253",
+        "N0269",
+        "N0005",
+        "N0026"
+      ],
+      "conclusions": [
+        "N0286"
+      ]
+    },
+    {
+      "id": "H0296",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0084"
+      ],
+      "conclusions": [
+        "N0286"
+      ]
+    },
+    {
+      "id": "H0297",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0075"
+      ],
+      "conclusions": [
+        "N0286"
+      ]
+    },
+    {
+      "id": "H0298",
+      "kind": "hypothesis",
+      "layer": 0,
+      "premises": [
+        "N0269",
+        "N0242",
+        "N0255",
+        "N0030",
+        "N0034"
+      ],
+      "conclusions": [
+        "N0287"
+      ]
+    },
+    {
+      "id": "H0299",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0079"
+      ],
+      "conclusions": [
+        "N0287"
+      ]
+    },
+    {
+      "id": "H0300",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0075"
+      ],
+      "conclusions": [
+        "N0287"
+      ]
+    },
+    {
+      "id": "H0301",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0084"
+      ],
+      "conclusions": [
+        "N0287"
+      ]
+    },
+    {
+      "id": "H0302",
+      "kind": "hypothesis",
+      "layer": 0,
+      "premises": [
+        "N0254",
+        "N0273",
+        "N0247",
+        "N0033"
+      ],
+      "conclusions": [
+        "N0288"
+      ]
+    },
+    {
+      "id": "H0303",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0086"
+      ],
+      "conclusions": [
+        "N0288"
+      ]
+    },
+    {
+      "id": "H0304",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0088"
+      ],
+      "conclusions": [
+        "N0288"
+      ]
+    },
+    {
+      "id": "H0305",
+      "kind": "hypothesis",
+      "layer": 0,
+      "premises": [
+        "N0209",
+        "N0239",
+        "N0268",
+        "N0037"
+      ],
+      "conclusions": [
+        "N0289"
+      ]
+    },
+    {
+      "id": "H0306",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0079"
+      ],
+      "conclusions": [
+        "N0289"
+      ]
+    },
+    {
+      "id": "H0307",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0084"
+      ],
+      "conclusions": [
+        "N0289"
+      ]
+    },
+    {
+      "id": "H0308",
+      "kind": "hypothesis",
+      "layer": 0,
+      "premises": [
+        "N0251",
+        "N0224",
+        "N0261",
+        "N0273"
+      ],
+      "conclusions": [
+        "N0290"
+      ]
+    },
+    {
+      "id": "H0309",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0075"
+      ],
+      "conclusions": [
+        "N0290"
+      ]
+    },
+    {
+      "id": "H0310",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0084"
+      ],
+      "conclusions": [
+        "N0290"
+      ]
+    },
+    {
+      "id": "H0311",
+      "kind": "hypothesis",
+      "layer": 0,
+      "premises": [
+        "N0256",
+        "N0267",
+        "N0271",
+        "N0014"
+      ],
+      "conclusions": [
+        "N0291"
+      ]
+    },
+    {
+      "id": "H0312",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0083"
+      ],
+      "conclusions": [
+        "N0291"
+      ]
+    },
+    {
+      "id": "H0313",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0086"
+      ],
+      "conclusions": [
+        "N0291"
+      ]
+    },
+    {
+      "id": "H0314",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0087"
+      ],
+      "conclusions": [
+        "N0291"
+      ]
+    },
+    {
+      "id": "H0315",
+      "kind": "hypothesis",
+      "layer": 0,
+      "premises": [
+        "N0254",
+        "N0247",
+        "N0271",
+        "N0035"
+      ],
+      "conclusions": [
+        "N0292"
+      ]
+    },
+    {
+      "id": "H0316",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0079"
+      ],
+      "conclusions": [
+        "N0292"
+      ]
+    },
+    {
+      "id": "H0317",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0089"
+      ],
+      "conclusions": [
+        "N0292"
+      ]
+    },
+    {
+      "id": "H0318",
+      "kind": "hypothesis",
+      "layer": 0,
+      "premises": [
+        "N0219",
+        "N0249",
+        "N0246",
+        "N0009"
+      ],
+      "conclusions": [
+        "N0293"
+      ]
+    },
+    {
+      "id": "H0319",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0074"
+      ],
+      "conclusions": [
+        "N0293"
+      ]
+    },
+    {
+      "id": "H0320",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0085"
+      ],
+      "conclusions": [
+        "N0293"
+      ]
+    },
+    {
+      "id": "H0321",
+      "kind": "hypothesis",
+      "layer": 0,
+      "premises": [
+        "N0261",
+        "N0268",
+        "N0273",
+        "N0034",
+        "N0014"
+      ],
+      "conclusions": [
+        "N0294"
+      ]
+    },
+    {
+      "id": "H0322",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0079"
+      ],
+      "conclusions": [
+        "N0294"
+      ]
+    },
+    {
+      "id": "H0323",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0088"
+      ],
+      "conclusions": [
+        "N0294"
+      ]
+    },
+    {
+      "id": "H0324",
+      "kind": "hypothesis",
+      "layer": 0,
+      "premises": [
+        "N0256",
+        "N0259",
+        "N0242",
+        "N0032"
+      ],
+      "conclusions": [
+        "N0295"
+      ]
+    },
+    {
+      "id": "H0325",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0075"
+      ],
+      "conclusions": [
+        "N0295"
+      ]
+    },
+    {
+      "id": "H0326",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0076"
+      ],
+      "conclusions": [
+        "N0295"
+      ]
+    },
+    {
+      "id": "H0327",
+      "kind": "hypothesis",
+      "layer": 0,
+      "premises": [
+        "N0231",
+        "N0268",
+        "N0271",
+        "N0029",
+        "N0037"
+      ],
+      "conclusions": [
+        "N0296"
+      ]
+    },
+    {
+      "id": "H0328",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0072"
+      ],
+      "conclusions": [
+        "N0296"
+      ]
+    },
+    {
+      "id": "H0329",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0081"
+      ],
+      "conclusions": [
+        "N0296"
+      ]
+    },
+    {
+      "id": "H0330",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0085"
+      ],
+      "conclusions": [
+        "N0296"
+      ]
+    },
+    {
+      "id": "H0331",
+      "kind": "hypothesis",
+      "layer": 0,
+      "premises": [
+        "N0269",
+        "N0251",
+        "N0262",
+        "N0028"
+      ],
+      "conclusions": [
+        "N0297"
+      ]
+    },
+    {
+      "id": "H0332",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0076"
+      ],
+      "conclusions": [
+        "N0297"
+      ]
+    },
+    {
+      "id": "H0333",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0084"
+      ],
+      "conclusions": [
+        "N0297"
+      ]
+    },
+    {
+      "id": "H0334",
+      "kind": "hypothesis",
+      "layer": 0,
+      "premises": [
+        "N0256",
+        "N0273",
+        "N0248",
+        "N0224"
+      ],
+      "conclusions": [
+        "N0298"
+      ]
+    },
+    {
+      "id": "H0335",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0084"
+      ],
+      "conclusions": [
+        "N0298"
+      ]
+    },
+    {
+      "id": "H0336",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0089"
+      ],
+      "conclusions": [
+        "N0298"
+      ]
+    },
+    {
+      "id": "H0337",
+      "kind": "hypothesis",
+      "layer": 0,
+      "premises": [
+        "N0228",
+        "N0232",
+        "N0273",
+        "N0033",
+        "N0088"
+      ],
+      "conclusions": [
+        "N0299"
+      ]
+    },
+    {
+      "id": "H0338",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0088"
+      ],
+      "conclusions": [
+        "N0299"
+      ]
+    },
+    {
+      "id": "H0339",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0081"
+      ],
+      "conclusions": [
+        "N0299"
+      ]
+    },
+    {
+      "id": "H0340",
+      "kind": "hypothesis",
+      "layer": 0,
+      "premises": [
+        "N0268",
+        "N0269",
+        "N0243",
+        "N0261",
+        "N0033"
+      ],
+      "conclusions": [
+        "N0300"
+      ]
+    },
+    {
+      "id": "H0341",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0084"
+      ],
+      "conclusions": [
+        "N0300"
+      ]
+    },
+    {
+      "id": "H0342",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0075"
+      ],
+      "conclusions": [
+        "N0300"
+      ]
+    },
+    {
+      "id": "H0343",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0435",
+        "N0436"
+      ],
+      "conclusions": [
+        "N0301"
+      ]
+    },
+    {
+      "id": "H0344",
+      "kind": "provenance",
+      "layer": 0,
+      "premises": [
+        "N0437"
+      ],
+      "conclusions": [
+        "N0301"
+      ]
+    },
+    {
+      "id": "H0345",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0301",
+        "N0438"
+      ],
+      "conclusions": [
+        "N0302"
+      ]
+    },
+    {
+      "id": "H0346",
+      "kind": "provenance",
+      "layer": 0,
+      "premises": [
+        "N0437"
+      ],
+      "conclusions": [
+        "N0302"
+      ]
+    },
+    {
+      "id": "H0347",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0269",
+        "N0439",
+        "N0440",
+        "N0441"
+      ],
+      "conclusions": [
+        "N0303"
+      ]
+    },
+    {
+      "id": "H0348",
+      "kind": "provenance",
+      "layer": 0,
+      "premises": [
+        "N0437"
+      ],
+      "conclusions": [
+        "N0303"
+      ]
+    },
+    {
+      "id": "H0349",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0303",
+        "N0251"
+      ],
+      "conclusions": [
+        "N0304"
+      ]
+    },
+    {
+      "id": "H0350",
+      "kind": "provenance",
+      "layer": 0,
+      "premises": [
+        "N0437"
+      ],
+      "conclusions": [
+        "N0304"
+      ]
+    },
+    {
+      "id": "H0351",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0303",
+        "N0442",
+        "N0443"
+      ],
+      "conclusions": [
+        "N0305"
+      ]
+    },
+    {
+      "id": "H0352",
+      "kind": "provenance",
+      "layer": 0,
+      "premises": [
+        "N0437"
+      ],
+      "conclusions": [
+        "N0305"
+      ]
+    },
+    {
+      "id": "H0353",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0444",
+        "N0445"
+      ],
+      "conclusions": [
+        "N0306"
+      ]
+    },
+    {
+      "id": "H0354",
+      "kind": "provenance",
+      "layer": 0,
+      "premises": [
+        "N0437"
+      ],
+      "conclusions": [
+        "N0306"
+      ]
+    },
+    {
+      "id": "H0355",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0301",
+        "N0303",
+        "N0285"
+      ],
+      "conclusions": [
+        "N0307"
+      ]
+    },
+    {
+      "id": "H0356",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0254",
+        "N0273"
+      ],
+      "conclusions": [
+        "N0308"
+      ]
+    },
+    {
+      "id": "H0357",
+      "kind": "provenance",
+      "layer": 0,
+      "premises": [
+        "N0446"
+      ],
+      "conclusions": [
+        "N0308"
+      ]
+    },
+    {
+      "id": "H0358",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0254",
+        "N0447",
+        "N0448"
+      ],
+      "conclusions": [
+        "N0309"
+      ]
+    },
+    {
+      "id": "H0359",
+      "kind": "provenance",
+      "layer": 0,
+      "premises": [
+        "N0446"
+      ],
+      "conclusions": [
+        "N0309"
+      ]
+    },
+    {
+      "id": "H0360",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0308",
+        "N0309"
+      ],
+      "conclusions": [
+        "N0310"
+      ]
+    },
+    {
+      "id": "H0361",
+      "kind": "provenance",
+      "layer": 0,
+      "premises": [
+        "N0446"
+      ],
+      "conclusions": [
+        "N0310"
+      ]
+    },
+    {
+      "id": "H0362",
+      "kind": "dependency",
+      "layer": 0,
+      "premises": [
+        "N0287",
+        "N0033",
+        "N0251"
+      ],
+      "conclusions": [
+        "N0311"
+      ]
+    },
+    {
+      "id": "H0363",
+      "kind": "provenance",
+      "layer": 0,
+      "premises": [
+        "N0437"
+      ],
+      "conclusions": [
+        "N0311"
+      ]
+    },
+    {
+      "id": "H0364",
+      "kind": "dependency",
+      "layer": 0,
+      "premises": [
+        "N0311",
+        "N0259"
+      ],
+      "conclusions": [
+        "N0312"
+      ]
+    },
+    {
+      "id": "H0365",
+      "kind": "provenance",
+      "layer": 0,
+      "premises": [
+        "N0437"
+      ],
+      "conclusions": [
+        "N0312"
+      ]
+    },
+    {
+      "id": "H0366",
+      "kind": "hypothesis",
+      "layer": 0,
+      "premises": [
+        "N0311",
+        "N0268",
+        "N0262",
+        "N0283"
+      ],
+      "conclusions": [
+        "N0313"
+      ]
+    },
+    {
+      "id": "H0367",
+      "kind": "provenance",
+      "layer": 0,
+      "premises": [
+        "N0449"
+      ],
+      "conclusions": [
+        "N0313"
+      ]
+    },
+    {
+      "id": "H0368",
+      "kind": "falsifier",
+      "layer": 0,
+      "premises": [
+        "N0313",
+        "N0251"
+      ],
+      "conclusions": [
+        "N0314"
+      ]
+    },
+    {
+      "id": "H0369",
+      "kind": "provenance",
+      "layer": 0,
+      "premises": [
+        "N0449"
+      ],
+      "conclusions": [
+        "N0314"
+      ]
+    },
+    {
+      "id": "H0370",
+      "kind": "test",
+      "layer": 0,
+      "premises": [
+        "N0284",
+        "N0269",
+        "N0268"
+      ],
+      "conclusions": [
+        "N0315"
+      ]
+    },
+    {
+      "id": "H0371",
+      "kind": "provenance",
+      "layer": 0,
+      "premises": [
+        "N0450"
+      ],
+      "conclusions": [
+        "N0315"
+      ]
+    },
+    {
+      "id": "H0372",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0315",
+        "N0287"
+      ],
+      "conclusions": [
+        "N0316"
+      ]
+    },
+    {
+      "id": "H0373",
+      "kind": "provenance",
+      "layer": 0,
+      "premises": [
+        "N0450"
+      ],
+      "conclusions": [
+        "N0316"
+      ]
+    },
+    {
+      "id": "H0374",
+      "kind": "hypothesis",
+      "layer": 0,
+      "premises": [
+        "N0179",
+        "N0299",
+        "N0270"
+      ],
+      "conclusions": [
+        "N0317"
+      ]
+    },
+    {
+      "id": "H0375",
+      "kind": "provenance",
+      "layer": 0,
+      "premises": [
+        "N0449"
+      ],
+      "conclusions": [
+        "N0317"
+      ]
+    },
+    {
+      "id": "H0376",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0309",
+        "N0308",
+        "N0255",
+        "N0298"
+      ],
+      "conclusions": [
+        "N0318"
+      ]
+    },
+    {
+      "id": "H0377",
+      "kind": "provenance",
+      "layer": 0,
+      "premises": [
+        "N0451"
+      ],
+      "conclusions": [
+        "N0318"
+      ]
+    },
+    {
+      "id": "H0378",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0318",
+        "N0308"
+      ],
+      "conclusions": [
+        "N0319"
+      ]
+    },
+    {
+      "id": "H0379",
+      "kind": "provenance",
+      "layer": 0,
+      "premises": [
+        "N0451"
+      ],
+      "conclusions": [
+        "N0319"
+      ]
+    },
+    {
+      "id": "H0380",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0315"
+      ],
+      "conclusions": [
+        "N0320"
+      ]
+    },
+    {
+      "id": "H0381",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0313"
+      ],
+      "conclusions": [
+        "N0320"
+      ]
+    },
+    {
+      "id": "H0382",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0301"
+      ],
+      "conclusions": [
+        "N0321"
+      ]
+    },
+    {
+      "id": "H0383",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0313"
+      ],
+      "conclusions": [
+        "N0321"
+      ]
+    },
+    {
+      "id": "H0384",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0318"
+      ],
+      "conclusions": [
+        "N0322"
+      ]
+    },
+    {
+      "id": "H0385",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0426"
+      ],
+      "conclusions": [
+        "N0322"
+      ]
+    },
+    {
+      "id": "H0386",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0308"
+      ],
+      "conclusions": [
+        "N0323"
+      ]
+    },
+    {
+      "id": "H0387",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0317"
+      ],
+      "conclusions": [
+        "N0324"
+      ]
+    },
+    {
+      "id": "H0388",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0325"
+      ],
+      "conclusions": [
+        "N0322"
+      ]
+    },
+    {
+      "id": "H0389",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0322"
+      ],
+      "conclusions": [
+        "N0327"
+      ]
+    },
+    {
+      "id": "H0390",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0318"
+      ],
+      "conclusions": [
+        "N0326"
+      ]
+    },
+    {
+      "id": "H0391",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0321"
+      ],
+      "conclusions": [
+        "N0326"
+      ]
+    },
+    {
+      "id": "H0392",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0317"
+      ],
+      "conclusions": [
+        "N0328"
+      ]
+    },
+    {
+      "id": "H0393",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0328"
+      ],
+      "conclusions": [
+        "N0329"
+      ]
+    },
+    {
+      "id": "H0394",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0323"
+      ],
+      "conclusions": [
+        "N0329"
+      ]
+    },
+    {
+      "id": "H0395",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0320"
+      ],
+      "conclusions": [
+        "N0330"
+      ]
+    },
+    {
+      "id": "H0396",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0301"
+      ],
+      "conclusions": [
+        "N0331"
+      ]
+    },
+    {
+      "id": "H0397",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0321"
+      ],
+      "conclusions": [
+        "N0331"
+      ]
+    },
+    {
+      "id": "H0398",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0303"
+      ],
+      "conclusions": [
+        "N0332"
+      ]
+    },
+    {
+      "id": "H0399",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0426"
+      ],
+      "conclusions": [
+        "N0332"
+      ]
+    },
+    {
+      "id": "H0400",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0332"
+      ],
+      "conclusions": [
+        "N0333"
+      ]
+    },
+    {
+      "id": "H0401",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0331"
+      ],
+      "conclusions": [
+        "N0333"
+      ]
+    },
+    {
+      "id": "H0402",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0317"
+      ],
+      "conclusions": [
+        "N0334"
+      ]
+    },
+    {
+      "id": "H0403",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0334"
+      ],
+      "conclusions": [
+        "N0335"
+      ]
+    },
+    {
+      "id": "H0404",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0315"
+      ],
+      "conclusions": [
+        "N0336"
+      ]
+    },
+    {
+      "id": "H0405",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0331"
+      ],
+      "conclusions": [
+        "N0336"
+      ]
+    },
+    {
+      "id": "H0406",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0334"
+      ],
+      "conclusions": [
+        "N0337"
+      ]
+    },
+    {
+      "id": "H0407",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0332"
+      ],
+      "conclusions": [
+        "N0338"
+      ]
+    },
+    {
+      "id": "H0408",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0336"
+      ],
+      "conclusions": [
+        "N0452"
+      ]
+    },
+    {
+      "id": "H0409",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0335"
+      ],
+      "conclusions": [
+        "N0452"
+      ]
+    },
+    {
+      "id": "H0410",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0336"
+      ],
+      "conclusions": [
+        "N0339"
+      ]
+    },
+    {
+      "id": "H0411",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0334"
+      ],
+      "conclusions": [
+        "N0340"
+      ]
+    },
+    {
+      "id": "H0412",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0340"
+      ],
+      "conclusions": [
+        "N0341"
+      ]
+    },
+    {
+      "id": "H0413",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0341"
+      ],
+      "conclusions": [
+        "N0342"
+      ]
+    },
+    {
+      "id": "H0414",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0340"
+      ],
+      "conclusions": [
+        "N0343"
+      ]
+    },
+    {
+      "id": "H0415",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0301"
+      ],
+      "conclusions": [
+        "N0345"
+      ]
+    },
+    {
+      "id": "H0416",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0331"
+      ],
+      "conclusions": [
+        "N0344"
+      ]
+    },
+    {
+      "id": "H0417",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0339"
+      ],
+      "conclusions": [
+        "N0346"
+      ]
+    },
+    {
+      "id": "H0418",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0346"
+      ],
+      "conclusions": [
+        "N0347"
+      ]
+    },
+    {
+      "id": "H0419",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0341"
+      ],
+      "conclusions": [
+        "N0347"
+      ]
+    },
+    {
+      "id": "H0420",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0346"
+      ],
+      "conclusions": [
+        "N0349"
+      ]
+    },
+    {
+      "id": "H0421",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0332"
+      ],
+      "conclusions": [
+        "N0348"
+      ]
+    },
+    {
+      "id": "H0422",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0342"
+      ],
+      "conclusions": [
+        "N0350"
+      ]
+    },
+    {
+      "id": "H0423",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0350"
+      ],
+      "conclusions": [
+        "N0353"
+      ]
+    },
+    {
+      "id": "H0424",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0350"
+      ],
+      "conclusions": [
+        "N0354"
+      ]
+    },
+    {
+      "id": "H0425",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0355"
+      ],
+      "conclusions": [
+        "N0358"
+      ]
+    },
+    {
+      "id": "H0426",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0349"
+      ],
+      "conclusions": [
+        "N0358"
+      ]
+    },
+    {
+      "id": "H0427",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0356"
+      ],
+      "conclusions": [
+        "N0349"
+      ]
+    },
+    {
+      "id": "H0428",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0357"
+      ],
+      "conclusions": [
+        "N0359"
+      ]
+    },
+    {
+      "id": "H0429",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0351"
+      ],
+      "conclusions": [
+        "N0359"
+      ]
+    },
+    {
+      "id": "H0430",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0360"
+      ],
+      "conclusions": [
+        "N0361"
+      ]
+    },
+    {
+      "id": "H0431",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0362"
+      ],
+      "conclusions": [
+        "N0349"
+      ]
+    },
+    {
+      "id": "H0432",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0362"
+      ],
+      "conclusions": [
+        "N0355"
+      ]
+    },
+    {
+      "id": "H0433",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0364"
+      ],
+      "conclusions": [
+        "N0356"
+      ]
+    },
+    {
+      "id": "H0434",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0352"
+      ],
+      "conclusions": [
+        "N0360"
+      ]
+    },
+    {
+      "id": "H0435",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0361"
+      ],
+      "conclusions": [
+        "N0366"
+      ]
+    },
+    {
+      "id": "H0436",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0366"
+      ],
+      "conclusions": [
+        "N0367"
+      ]
+    },
+    {
+      "id": "H0437",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0364"
+      ],
+      "conclusions": [
+        "N0368"
+      ]
+    },
+    {
+      "id": "H0438",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0368"
+      ],
+      "conclusions": [
+        "N0349"
+      ]
+    },
+    {
+      "id": "H0439",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0363"
+      ],
+      "conclusions": [
+        "N0365"
+      ]
+    },
+    {
+      "id": "H0440",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0362"
+      ],
+      "conclusions": [
+        "N0369"
+      ]
+    },
+    {
+      "id": "H0441",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0370"
+      ],
+      "conclusions": [
+        "N0372"
+      ]
+    },
+    {
+      "id": "H0442",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0360"
+      ],
+      "conclusions": [
+        "N0371"
+      ]
+    },
+    {
+      "id": "H0443",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0349"
+      ],
+      "conclusions": [
+        "N0373"
+      ]
+    },
+    {
+      "id": "H0444",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0368"
+      ],
+      "conclusions": [
+        "N0373"
+      ]
+    },
+    {
+      "id": "H0445",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0360"
+      ],
+      "conclusions": [
+        "N0374"
+      ]
+    },
+    {
+      "id": "H0446",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0371"
+      ],
+      "conclusions": [
+        "N0374"
+      ]
+    },
+    {
+      "id": "H0447",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0368"
+      ],
+      "conclusions": [
+        "N0375"
+      ]
+    },
+    {
+      "id": "H0448",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0373"
+      ],
+      "conclusions": [
+        "N0375"
+      ]
+    },
+    {
+      "id": "H0449",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0366"
+      ],
+      "conclusions": [
+        "N0376"
+      ]
+    },
+    {
+      "id": "H0450",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0379"
+      ],
+      "conclusions": [
+        "N0376"
+      ]
+    },
+    {
+      "id": "H0451",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0376"
+      ],
+      "conclusions": [
+        "N0380"
+      ]
+    },
+    {
+      "id": "H0452",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0369"
+      ],
+      "conclusions": [
+        "N0378"
+      ]
+    },
+    {
+      "id": "H0453",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0377"
+      ],
+      "conclusions": [
+        "N0361"
+      ]
+    },
+    {
+      "id": "H0454",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0380"
+      ],
+      "conclusions": [
+        "N0381"
+      ]
+    },
+    {
+      "id": "H0455",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0381"
+      ],
+      "conclusions": [
+        "N0382"
+      ]
+    },
+    {
+      "id": "H0456",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0382"
+      ],
+      "conclusions": [
+        "N0383"
+      ]
+    },
+    {
+      "id": "H0457",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0378"
+      ],
+      "conclusions": [
+        "N0384"
+      ]
+    },
+    {
+      "id": "H0458",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0384"
+      ],
+      "conclusions": [
+        "N0349"
+      ]
+    },
+    {
+      "id": "H0459",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0373"
+      ],
+      "conclusions": [
+        "N0389"
+      ]
+    },
+    {
+      "id": "H0460",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0384"
+      ],
+      "conclusions": [
+        "N0389"
+      ]
+    },
+    {
+      "id": "H0461",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0385"
+      ],
+      "conclusions": [
+        "N0389"
+      ]
+    },
+    {
+      "id": "H0462",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0379"
+      ],
+      "conclusions": [
+        "N0390"
+      ]
+    },
+    {
+      "id": "H0463",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0381"
+      ],
+      "conclusions": [
+        "N0390"
+      ]
+    },
+    {
+      "id": "H0464",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0387"
+      ],
+      "conclusions": [
+        "N0390"
+      ]
+    },
+    {
+      "id": "H0465",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0366"
+      ],
+      "conclusions": [
+        "N0390"
+      ]
+    },
+    {
+      "id": "H0466",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0376"
+      ],
+      "conclusions": [
+        "N0390"
+      ]
+    },
+    {
+      "id": "H0467",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0360"
+      ],
+      "conclusions": [
+        "N0391"
+      ]
+    },
+    {
+      "id": "H0468",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0374"
+      ],
+      "conclusions": [
+        "N0391"
+      ]
+    },
+    {
+      "id": "H0469",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0386"
+      ],
+      "conclusions": [
+        "N0392"
+      ]
+    },
+    {
+      "id": "H0470",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0384"
+      ],
+      "conclusions": [
+        "N0392"
+      ]
+    },
+    {
+      "id": "H0471",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0368"
+      ],
+      "conclusions": [
+        "N0393"
+      ]
+    },
+    {
+      "id": "H0472",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0373"
+      ],
+      "conclusions": [
+        "N0393"
+      ]
+    },
+    {
+      "id": "H0473",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0388"
+      ],
+      "conclusions": [
+        "N0394"
+      ]
+    },
+    {
+      "id": "H0474",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0381"
+      ],
+      "conclusions": [
+        "N0394"
+      ]
+    },
+    {
+      "id": "H0475",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0366"
+      ],
+      "conclusions": [
+        "N0394"
+      ]
+    },
+    {
+      "id": "H0476",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0369"
+      ],
+      "conclusions": [
+        "N0385"
+      ]
+    },
+    {
+      "id": "H0477",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0369"
+      ],
+      "conclusions": [
+        "N0386"
+      ]
+    },
+    {
+      "id": "H0478",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0392"
+      ],
+      "conclusions": [
+        "N0389"
+      ]
+    },
+    {
+      "id": "H0479",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0390"
+      ],
+      "conclusions": [
+        "N0394"
+      ]
+    },
+    {
+      "id": "H0480",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0375"
+      ],
+      "conclusions": [
+        "N0393"
+      ]
+    },
+    {
+      "id": "H0481",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0393"
+      ],
+      "conclusions": [
+        "N0389"
+      ]
+    },
+    {
+      "id": "H0482",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0211",
+        "N0241",
+        "N0246",
+        "N0264",
+        "N0400"
+      ],
+      "conclusions": [
+        "N0453"
+      ]
+    },
+    {
+      "id": "H0483",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0265",
+        "N0228",
+        "N0323",
+        "N0398",
+        "N0399"
+      ],
+      "conclusions": [
+        "N0454"
+      ]
+    },
+    {
+      "id": "H0484",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0267",
+        "N0277",
+        "N0291",
+        "N0397"
+      ],
+      "conclusions": [
+        "N0455"
+      ]
+    },
+    {
+      "id": "H0485",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0285",
+        "N0300",
+        "N0373",
+        "N0385"
+      ],
+      "conclusions": [
+        "N0456"
+      ]
+    },
+    {
+      "id": "H0486",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0458",
+        "N0265",
+        "N0379",
+        "N0398",
+        "N0399"
+      ],
+      "conclusions": [
+        "N0457"
+      ]
+    },
+    {
+      "id": "H0487",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0401",
+        "N0396",
+        "N0228",
+        "N0400"
+      ],
+      "conclusions": [
+        "N0459"
+      ]
+    },
+    {
+      "id": "H0488",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0403",
+        "N0404",
+        "N0267",
+        "N0291"
+      ],
+      "conclusions": [
+        "N0460"
+      ]
+    },
+    {
+      "id": "H0489",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0405",
+        "N0402",
+        "N0398",
+        "N0265"
+      ],
+      "conclusions": [
+        "N0461"
+      ]
+    },
+    {
+      "id": "H0490",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0401",
+        "N0398",
+        "N0406",
+        "N0385"
+      ],
+      "conclusions": [
+        "N0462"
+      ]
+    },
+    {
+      "id": "H0491",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0406",
+        "N0409",
+        "N0407",
+        "N0401"
+      ],
+      "conclusions": [
+        "N0463"
+      ]
+    },
+    {
+      "id": "H0492",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0411",
+        "N0412",
+        "N0415",
+        "N0363"
+      ],
+      "conclusions": [
+        "N0464"
+      ]
+    },
+    {
+      "id": "H0493",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0416",
+        "N0412",
+        "N0404",
+        "N0408"
+      ],
+      "conclusions": [
+        "N0465"
+      ]
+    },
+    {
+      "id": "H0494",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0399",
+        "N0417",
+        "N0402"
+      ],
+      "conclusions": [
+        "N0466"
+      ]
+    },
+    {
+      "id": "H0495",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0418",
+        "N0408",
+        "N0404",
+        "N0406",
+        "N0421"
+      ],
+      "conclusions": [
+        "N0467"
+      ]
+    },
+    {
+      "id": "H0496",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0420",
+        "N0414",
+        "N0413",
+        "N0412"
+      ],
+      "conclusions": [
+        "N0468"
+      ]
+    },
+    {
+      "id": "H0497",
+      "kind": "unresolved",
+      "layer": 0,
+      "premises": [
+        "N0422",
+        "N0278",
+        "N0410",
+        "N0421"
+      ],
+      "conclusions": [
+        "N0469"
+      ]
+    },
+    {
+      "id": "H0498",
+      "kind": "provenance",
+      "layer": 0,
+      "premises": [
+        "N0518"
+      ],
+      "conclusions": [
+        "N0401"
+      ]
+    },
+    {
+      "id": "H0499",
+      "kind": "formal",
+      "layer": 0,
+      "premises": [
+        "N0407",
+        "N0406",
+        "N0409",
+        "N0517"
+      ],
+      "conclusions": [
+        "N0519"
+      ]
+    },
+    {
+      "id": "H0500",
+      "kind": "formal",
+      "layer": 0,
+      "premises": [
+        "N0407",
+        "N0406",
+        "N0401"
+      ],
+      "conclusions": [
+        "N0520"
+      ]
+    },
+    {
+      "id": "H0501",
+      "kind": "formal",
+      "layer": 0,
+      "premises": [
+        "N0407",
+        "N0517"
+      ],
+      "conclusions": [
+        "N0521"
+      ]
+    },
+    {
+      "id": "H0502",
+      "kind": "hypothesis",
+      "layer": 0,
+      "premises": [
+        "N0521",
+        "N0518",
+        "N0401"
+      ],
+      "conclusions": [
+        "N0522"
+      ]
+    },
+    {
+      "id": "H0503",
+      "kind": "formal",
+      "layer": 0,
+      "premises": [
+        "N0519",
+        "N0523",
+        "N0524"
+      ],
+      "conclusions": [
+        "N0525"
+      ]
+    },
+    {
+      "id": "H0504",
+      "kind": "hypothesis",
+      "layer": 0,
+      "premises": [
+        "N0407",
+        "N0406",
+        "N0409",
+        "N0517"
+      ],
+      "conclusions": [
+        "N0534"
+      ]
+    },
+    {
+      "id": "H0505",
+      "kind": "hypothesis",
+      "layer": 0,
+      "premises": [
+        "N0544",
+        "N0418",
+        "N0417"
+      ],
+      "conclusions": [
+        "N0535"
+      ]
+    },
+    {
+      "id": "H0506",
+      "kind": "hypothesis",
+      "layer": 0,
+      "premises": [
+        "N0542",
+        "N0543",
+        "N0419"
+      ],
+      "conclusions": [
+        "N0536"
+      ]
+    },
+    {
+      "id": "H0507",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0406",
+        "N0409",
+        "N0407",
+        "N0418"
+      ],
+      "conclusions": [
+        "N0526"
+      ]
+    },
+    {
+      "id": "H0508",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0544",
+        "N0417",
+        "N0418"
+      ],
+      "conclusions": [
+        "N0527"
+      ]
+    },
+    {
+      "id": "H0509",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0542",
+        "N0543",
+        "N0517",
+        "N0530"
+      ],
+      "conclusions": [
+        "N0528"
+      ]
+    },
+    {
+      "id": "H0510",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0528",
+        "N0529",
+        "N0531",
+        "N0418"
+      ],
+      "conclusions": [
+        "N0537"
+      ]
+    },
+    {
+      "id": "H0511",
+      "kind": "hypothesis",
+      "layer": 0,
+      "premises": [
+        "N0527",
+        "N0533",
+        "N0417",
+        "N0531"
+      ],
+      "conclusions": [
+        "N0538"
+      ]
+    },
+    {
+      "id": "H0512",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0546",
+        "N0407",
+        "N0561"
+      ],
+      "conclusions": [
+        "N0539"
+      ]
+    },
+    {
+      "id": "H0513",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0548",
+        "N0549",
+        "N0418",
+        "N0539"
+      ],
+      "conclusions": [
+        "N0540"
+      ]
+    },
+    {
+      "id": "H0514",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0540",
+        "N0406",
+        "N0517"
+      ],
+      "conclusions": [
+        "N0541"
+      ]
+    },
+    {
+      "id": "H0515",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0548",
+        "N0555",
+        "N0556"
+      ],
+      "conclusions": [
+        "N0557"
+      ]
+    },
+    {
+      "id": "H0516",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0554",
+        "N0551"
+      ],
+      "conclusions": [
+        "N0558"
+      ]
+    },
+    {
+      "id": "H0517",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0406",
+        "N0526",
+        "N0540"
+      ],
+      "conclusions": [
+        "N0559"
+      ]
+    },
+    {
+      "id": "H0518",
+      "kind": "association",
+      "layer": 0,
+      "premises": [
+        "N0559",
+        "N0540",
+        "N0556"
+      ],
+      "conclusions": [
+        "N0560"
+      ]
+    },
+    {
+      "id": "H0519",
+      "kind": "dependency",
+      "layer": 1,
+      "premises": [
+        "N0171",
+        "N0224",
+        "N0381",
+        "N0407",
+        "N0559"
+      ],
+      "conclusions": [
+        "N0574"
+      ]
+    },
+    {
+      "id": "H0520",
+      "kind": "dependency",
+      "layer": 1,
+      "premises": [
+        "N0409",
+        "N0559",
+        "N0560",
+        "N0574"
+      ],
+      "conclusions": [
+        "N0570"
+      ]
+    },
+    {
+      "id": "H0521",
+      "kind": "dependency",
+      "layer": 1,
+      "premises": [
+        "N0570",
+        "N0540",
+        "N0407"
+      ],
+      "conclusions": [
+        "N0571"
+      ]
+    },
+    {
+      "id": "H0522",
+      "kind": "dependency",
+      "layer": 1,
+      "premises": [
+        "N0570",
+        "N0540",
+        "N0560"
+      ],
+      "conclusions": [
+        "N0572"
+      ]
+    },
+    {
+      "id": "H0523",
+      "kind": "dependency",
+      "layer": 1,
+      "premises": [
+        "N0570",
+        "N0540",
+        "N0560"
+      ],
+      "conclusions": [
+        "N0573"
+      ]
+    },
+    {
+      "id": "H0524",
+      "kind": "dependency",
+      "layer": 1,
+      "premises": [
+        "N0569",
+        "N0574",
+        "N0407",
+        "N0171"
+      ],
+      "conclusions": [
+        "N0575"
+      ]
+    },
+    {
+      "id": "H0525",
+      "kind": "dependency",
+      "layer": 1,
+      "premises": [
+        "N0317",
+        "N0566",
+        "N0568",
+        "N0407"
+      ],
+      "conclusions": [
+        "N0576"
+      ]
+    },
+    {
+      "id": "H0526",
+      "kind": "dependency",
+      "layer": 1,
+      "premises": [
+        "N0567",
+        "N0570",
+        "N0575"
+      ],
+      "conclusions": [
+        "N0577"
+      ]
+    },
+    {
+      "id": "H0527",
+      "kind": "hypothesis",
+      "layer": 1,
+      "premises": [
+        "N0571",
+        "N0577",
+        "N0407"
+      ],
+      "conclusions": [
+        "N0578"
+      ]
+    },
+    {
+      "id": "H0528",
+      "kind": "dependency",
+      "layer": 2,
+      "premises": [
+        "N0578",
+        "N0571",
+        "N0407"
+      ],
+      "conclusions": [
+        "N0579"
+      ]
+    },
+    {
+      "id": "H0529",
+      "kind": "dependency",
+      "layer": 2,
+      "premises": [
+        "N0579",
+        "N0540",
+        "N0407"
+      ],
+      "conclusions": [
+        "N0580"
+      ]
+    },
+    {
+      "id": "H0530",
+      "kind": "dependency",
+      "layer": 2,
+      "premises": [
+        "N0580",
+        "N0573",
+        "N0540"
+      ],
+      "conclusions": [
+        "N0581"
+      ]
+    },
+    {
+      "id": "H0531",
+      "kind": "dependency",
+      "layer": 2,
+      "premises": [
+        "N0573",
+        "N0570",
+        "N0577"
+      ],
+      "conclusions": [
+        "N0582"
+      ]
+    },
+    {
+      "id": "H0532",
+      "kind": "dependency",
+      "layer": 2,
+      "premises": [
+        "N0571",
+        "N0577",
+        "N0570"
+      ],
+      "conclusions": [
+        "N0583"
+      ]
+    },
+    {
+      "id": "H0533",
+      "kind": "dependency",
+      "layer": 2,
+      "premises": [
+        "N0576",
+        "N0566",
+        "N0317"
+      ],
+      "conclusions": [
+        "N0584"
+      ]
+    },
+    {
+      "id": "H0534",
+      "kind": "dependency",
+      "layer": 2,
+      "premises": [
+        "N0567",
+        "N0584",
+        "N0577"
+      ],
+      "conclusions": [
+        "N0585"
+      ]
+    },
+    {
+      "id": "H0535",
+      "kind": "dependency",
+      "layer": 2,
+      "premises": [
+        "N0584",
+        "N0585",
+        "N0568"
+      ],
+      "conclusions": [
+        "N0586"
+      ]
+    },
+    {
+      "id": "H0536",
+      "kind": "dependency",
+      "layer": 2,
+      "premises": [
+        "N0575",
+        "N0574",
+        "N0407"
+      ],
+      "conclusions": [
+        "N0587"
+      ]
+    },
+    {
+      "id": "H0537",
+      "kind": "dependency",
+      "layer": 2,
+      "premises": [
+        "N0584",
+        "N0576",
+        "N0577"
+      ],
+      "conclusions": [
+        "N0588"
+      ]
+    }
+  ],
+  "description": "Gesaneerde actieve incidentietopologie. Alle actieve knopen en hyperrelaties in de drie gecontroleerde versies zijn opgenomen. Alleen geselecteerde onderzoekslabels zijn publiek gemaakt. Overige labels, bronpinnen, guards, bewijsdata en interne toelatingsstatus blijven privé. Een relationele verbinding is geen formele bewijsacceptatie. CHAIN-03/04 zijn research-overlays, geen nieuwe canonieke toelatingen."
+}

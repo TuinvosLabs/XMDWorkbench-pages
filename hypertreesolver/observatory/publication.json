@@ -1,0 +1,17 @@
+{
+  "schema": "observatory-publication/1",
+  "version": "1.0",
+  "lastEvent": "2026-11-26T08:48:31Z",
+  "graphVersion": "v3",
+  "timelineCount": 23,
+  "graphCounts": {
+    "id": "v3",
+    "layer": 2,
+    "label": "CHAIN-04 onderzoekslaag",
+    "nodes": 588,
+    "relations": 537,
+    "sources": 80,
+    "date": "2026-11-26"
+  },
+  "notice": "Publieke afgeleide onderzoeksweergave. Geen interne bronregisters of ruwe bewijzen. Wetenschappelijke resultaten zijn gebonden aan de getoonde onderzoekscontracten."
+}

@@ -1,0 +1,175 @@
+{
+  "schema": "observatory-backlog/1",
+  "items": [
+    {
+      "id": "S01",
+      "track": "solver",
+      "title": "Composite Macro Contract"
+    },
+    {
+      "id": "S02",
+      "track": "solver",
+      "title": "Mixed Macro Matching & Iterative Repair"
+    },
+    {
+      "id": "S03",
+      "track": "solver",
+      "title": "Boundary-aware Word Reduction"
+    },
+    {
+      "id": "S04",
+      "track": "solver",
+      "title": "Exacte raw zoekdiepte"
+    },
+    {
+      "id": "S05",
+      "track": "solver",
+      "title": "Non-monotone Search"
+    },
+    {
+      "id": "S06",
+      "track": "solver",
+      "title": "Typed Geometry & Bounds"
+    },
+    {
+      "id": "S07",
+      "track": "solver",
+      "title": "Hierarchical Continuation Dominance"
+    },
+    {
+      "id": "S08",
+      "track": "solver",
+      "title": "Gecombineerde C6/C7/C8"
+    },
+    {
+      "id": "S09",
+      "track": "solver",
+      "title": "Contextcache"
+    },
+    {
+      "id": "S10",
+      "track": "solver",
+      "title": "Early Nomination"
+    },
+    {
+      "id": "S11",
+      "track": "solver",
+      "title": "Goal-directed Terminals"
+    },
+    {
+      "id": "S12",
+      "track": "solver",
+      "title": "Abstraction & Generalization"
+    },
+    {
+      "id": "S13",
+      "track": "solver",
+      "title": "Cross-wave Discovery"
+    },
+    {
+      "id": "S14",
+      "track": "solver",
+      "title": "ML-guided Search"
+    },
+    {
+      "id": "S15",
+      "track": "solver",
+      "title": "Native Engineering"
+    },
+    {
+      "id": "S16",
+      "track": "solver",
+      "title": "Scientific Evaluation"
+    },
+    {
+      "id": "K01",
+      "track": "knowledge",
+      "title": "Algebra Foundations"
+    },
+    {
+      "id": "K02",
+      "track": "knowledge",
+      "title": "Mandatory Debt Closure"
+    },
+    {
+      "id": "K03",
+      "track": "knowledge",
+      "title": "Reconciliation & Scope"
+    },
+    {
+      "id": "K04",
+      "track": "knowledge",
+      "title": "Knowledge Ingestion"
+    },
+    {
+      "id": "K05",
+      "track": "knowledge",
+      "title": "Evidence & Provenance"
+    },
+    {
+      "id": "K06",
+      "track": "knowledge",
+      "title": "Revision & Equivalence"
+    },
+    {
+      "id": "K07",
+      "track": "knowledge",
+      "title": "Knowledge Operators"
+    },
+    {
+      "id": "K08",
+      "track": "knowledge",
+      "title": "Higher-order Discovery"
+    },
+    {
+      "id": "K09",
+      "track": "knowledge",
+      "title": "Hybrid RAG"
+    },
+    {
+      "id": "K10",
+      "track": "knowledge",
+      "title": "KAI Model Integration"
+    },
+    {
+      "id": "K11",
+      "track": "knowledge",
+      "title": "Knowledge Solver"
+    },
+    {
+      "id": "K12",
+      "track": "knowledge",
+      "title": "Knowledge Abstraction"
+    },
+    {
+      "id": "K13",
+      "track": "knowledge",
+      "title": "ML-guided Discovery"
+    },
+    {
+      "id": "K14",
+      "track": "knowledge",
+      "title": "Portfolio Optimization"
+    },
+    {
+      "id": "K15",
+      "track": "knowledge",
+      "title": "Scientific Evaluation"
+    },
+    {
+      "id": "K16",
+      "track": "knowledge",
+      "title": "Cross-domain Transfer"
+    },
+    {
+      "id": "K17",
+      "track": "knowledge",
+      "title": "Knowledge Platform"
+    },
+    {
+      "id": "K18",
+      "track": "knowledge",
+      "title": "ResearchAtlas"
+    }
+  ]
+}

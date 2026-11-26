@@ -1,0 +1,384 @@
+{
+  "schema": "observatory-timeline/1",
+  "events": [
+    {
+      "id": "w50",
+      "date": "2026-11-25",
+      "track": "solver",
+      "wave": "W50",
+      "title": "Cross-wave discovery",
+      "summary": "Historische inventaris met 319 claims en 379 relaties; gezamenlijke mechanismen en expliciete weerleggingen.",
+      "status": "result"
+    },
+    {
+      "id": "w51-w53",
+      "date": "2026-11-25",
+      "track": "solver",
+      "wave": "W51–W53",
+      "title": "Doelgerichte en constructieve zoekmethoden",
+      "summary": "Quotientterminals, contextbehoud, K80, getypeerde lokale prijzen en multi-site repair.",
+      "status": "result"
+    },
+    {
+      "id": "kh-km",
+      "date": "2026-11-26",
+      "track": "knowledge",
+      "wave": "KH/KM",
+      "title": "Canonieke kennishypergraaf",
+      "summary": "Getypeerde incidenties, bronrevisies, formele toelatingsvoorwaarden, bewijsverplichtingen en kennismacro’s. Canonieke herstelsnapshot: 565 knopen, 518 relaties en 56 bronnen.",
+      "status": "result"
+    },
+    {
+      "id": "ka00",
+      "date": "2026-11-26",
+      "track": "knowledge",
+      "wave": "KA-00",
+      "title": "Eerste uitvoerbare kennisalgebra",
+      "summary": "Alternatieve en gezamenlijke minimale bewijsverplichtingen; kostenoptimalisatie met gedeeld onderzoekswerk.",
+      "status": "result"
+    },
+    {
+      "id": "k01",
+      "date": "2026-11-26T07:35:21Z",
+      "track": "knowledge",
+      "wave": "K01",
+      "title": "Dominantie en Knowledge Debt",
+      "summary": "10.340 prototypevergelijkingen, 1.698 KH-vragen en 791.856 dominantietoetsen zonder gerapporteerde afwijking. De resultaten gelden binnen het vaste positieve verplichtingenmodel.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "K01",
+          "status": "checkpoint"
+        }
+      ]
+    },
+    {
+      "id": "chain03",
+      "date": "2026-11-26T07:42:15Z",
+      "track": "solver",
+      "wave": "CHAIN-03",
+      "title": "Niet-monotone optimale macroroute",
+      "summary": "Binnen de oorspronkelijke raw-QTM-catalogus is 320 QTM optimaal voor het gelijke paar. De singletonvoltooiing kost 476; het optimum bij maximaal twee macro’s is 400. Dezelfde orbit omvat 960 beginstanden.",
+      "status": "result",
+      "metrics": [
+        {
+          "series": "pair-raw",
+          "label": "Singleton",
+          "value": 476
+        },
+        {
+          "series": "pair-raw",
+          "label": "Max. 2",
+          "value": 400
+        },
+        {
+          "series": "pair-raw",
+          "label": "Max. 3",
+          "value": 360
+        },
+        {
+          "series": "pair-raw",
+          "label": "Max. 4",
+          "value": 320
+        },
+        {
+          "series": "six-raw",
+          "label": "Max. 3",
+          "value": 1076
+        }
+      ]
+    },
+    {
+      "id": "k02",
+      "date": "2026-11-26T07:48:25Z",
+      "track": "knowledge",
+      "wave": "K02",
+      "title": "Mandatory Debt Closure",
+      "summary": "9.216 sluitingsvergelijkingen; paarsgewijze propagatie detecteerde 1.695 extra onhaalbare modellen. Een symbolische 20-uit-40-familie telt 137.846.528.820 routes met 420 beslisknopen.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "K02",
+          "status": "checkpoint"
+        }
+      ]
+    },
+    {
+      "id": "debt-barrier",
+      "date": "2026-11-26T08:02:05Z",
+      "track": "solver",
+      "wave": "CHAIN-04",
+      "title": "Noodzakelijke schuldbarrière",
+      "summary": "De minimale piek van gewogen singletonschuld op een optimale raw-320-route is 1.916 QTM. Dit is een tussenstandsmaat, geen betaalde routeprijs.",
+      "status": "result",
+      "debt": [
+        476,
+        1196,
+        1916,
+        1196,
+        0
+      ]
+    },
+    {
+      "id": "ki1",
+      "date": "2026-11-26T08:02:55Z",
+      "track": "knowledge",
+      "wave": "KI Stage 1",
+      "title": "Gecontroleerde kennisacquisitie",
+      "summary": "380 bestanden geïnventariseerd; twaalf gelezen; 497 kandidaat-occurrences. Exacte bronankers 416, ID-only 19, geen directe match 62. Kandidaatstatus is geen toelating.",
+      "status": "result",
+      "coverage": [
+        416,
+        19,
+        62
+      ]
+    },
+    {
+      "id": "chain04-bound",
+      "date": "2026-11-26T08:07:57Z",
+      "track": "solver",
+      "wave": "CHAIN-04",
+      "title": "Gekoppelde grenzen en horizon vier",
+      "summary": "Exact 800 raw QTM voor uniform zes binnen maximaal vier oudermacro’s. Gekoppelde siteparen verminderen de relaxatiekloof, maar kostten in de kleine timingproef meer tijd dan directe enumeratie.",
+      "status": "result",
+      "metrics": [
+        {
+          "series": "six-raw",
+          "label": "Max. 4",
+          "value": 800
+        },
+        {
+          "series": "gap",
+          "label": "Sites",
+          "value": 716.9375
+        },
+        {
+          "series": "gap",
+          "label": "Siteparen",
+          "value": 119.25
+        }
+      ]
+    },
+    {
+      "id": "chain04-pair",
+      "date": "2026-11-26T08:10:28Z",
+      "track": "solver",
+      "wave": "CHAIN-04",
+      "title": "Fysiek gereduceerde paarroute",
+      "summary": "De 320-literal is gereproduceerd; met vier beschermde macroblokken 240 QTM, met buitenste fasegrenzen 198 QTM. De gereduceerde route is een constructieve bovengrens.",
+      "status": "result",
+      "metrics": [
+        {
+          "series": "pair-protected",
+          "label": "Interne cuts",
+          "value": 240
+        },
+        {
+          "series": "pair-reduced",
+          "label": "CHAIN-04",
+          "value": 198
+        }
+      ]
+    },
+    {
+      "id": "knowledge-backlog",
+      "date": "2026-11-26T08:14:55Z",
+      "track": "knowledge",
+      "wave": "K03–K18",
+      "title": "Doorlopend Knowledge Research",
+      "summary": "Zestien vervolgonderzoeken met expliciete afhankelijkheden, kandidaatkennis en aparte evaluatie.",
+      "status": "plan"
+    },
+    {
+      "id": "k03-start",
+      "date": "2026-11-26T08:17:28Z",
+      "track": "knowledge",
+      "wave": "K03",
+      "title": "Reconciliation en scope",
+      "summary": "Onderzoek naar claimidentiteit, bronankers, scopes en betrouwbare contractbinding.",
+      "status": "active",
+      "updates": [
+        {
+          "id": "K03",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "chain04-composites",
+      "date": "2026-11-26T08:20:32Z",
+      "track": "solver",
+      "wave": "CHAIN-04",
+      "title": "Composieten en hogere-orde dominantie",
+      "summary": "960 expansies fysiek gecontroleerd. Twee disjuncte composieten leveren 396 QTM en drie leveren 594 QTM. Gekoppelde blokken tot vier sites: 30 van 32 exacte grenzen, gemiddelde kloof 0,25 QTM.",
+      "status": "result",
+      "metrics": [
+        {
+          "series": "four-reduced",
+          "label": "CHAIN-04",
+          "value": 396
+        },
+        {
+          "series": "six-reduced",
+          "label": "CHAIN-04",
+          "value": 594
+        },
+        {
+          "series": "gap",
+          "label": "Blokken ≤4",
+          "value": 0.25
+        }
+      ]
+    },
+    {
+      "id": "chain04-done",
+      "date": "2026-11-26T08:24:58Z",
+      "track": "joint",
+      "wave": "CHAIN-04",
+      "title": "Cross-track checkpoint",
+      "summary": "De CHAIN-04-kennislaag omvat tien nieuwe knopen en tien relaties. De raw-prijzen, uitvoerbare woorden en dominantiegrenzen behouden afzonderlijke toepassingsgebieden.",
+      "status": "result"
+    },
+    {
+      "id": "k03-transfer",
+      "date": "2026-11-26T08:33:09Z",
+      "track": "joint",
+      "wave": "K03",
+      "title": "Boundary-aware prijsverschillen",
+      "summary": "De gezamenlijke envelop van raw-prijsverschil en reductiebesparing kan strikter zijn dan twee onafhankelijk gemaximaliseerde termen. Geen uniforme marge uit één gevonden woord.",
+      "status": "result"
+    },
+    {
+      "id": "solver-backlog",
+      "date": "2026-11-26T08:34:32Z",
+      "track": "solver",
+      "wave": "S01–S16",
+      "title": "Doorlopend Solver Research",
+      "summary": "Zestien vervolgonderzoeken naar macro-algebra, grenzen, zoekstrategie, context, generalisatie en evaluatie.",
+      "status": "plan"
+    },
+    {
+      "id": "k03-done",
+      "date": "2026-11-26T08:36:25Z",
+      "track": "knowledge",
+      "wave": "K03",
+      "title": "Scope en reconciliation checkpoint",
+      "summary": "81 afwijkingen en tien controles beoordeeld; 256 scopeparen en 1.698 KH-vragen gecontroleerd. Retrieval-baseline nog open.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "K03",
+          "status": "partial"
+        },
+        {
+          "id": "K04",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "s01-start",
+      "date": "2026-11-26T08:41:02Z",
+      "track": "solver",
+      "wave": "S01/S02",
+      "title": "Mixed macroselectie gestart",
+      "summary": "Onderzoek naar composietcontract, selectie en boundary-aware optimalisatie; behoud bestaande beste uitvoerbare woorden.",
+      "status": "active",
+      "updates": [
+        {
+          "id": "S01",
+          "status": "active"
+        },
+        {
+          "id": "S02",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "k04",
+      "date": "2026-11-26T08:42:21Z",
+      "track": "knowledge",
+      "wave": "K04",
+      "title": "Incrementele bronacquisitie",
+      "summary": "Vier Git-bomen, zes verschillende blobs en 94 occurrences in een begrensde revisieproef; twee primaire artikelen onderzocht.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "K04",
+          "status": "checkpoint"
+        },
+        {
+          "id": "K05",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "k05",
+      "date": "2026-11-26T08:46:49Z",
+      "track": "knowledge",
+      "wave": "K05",
+      "title": "Evidence en provenance algebra",
+      "summary": "Gedeelde evidence is geen onafhankelijke replicatie. C# en C++ vergelijken 64 circuits, 640 coëfficiënten en 256 Booleaanse toewijzingen.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "K05",
+          "status": "checkpoint"
+        }
+      ]
+    },
+    {
+      "id": "k06",
+      "date": "2026-11-26T08:47:53Z",
+      "track": "knowledge",
+      "wave": "K06",
+      "title": "Revisie en incrementele invalidatie",
+      "summary": "Nieuwe proef voor oude en nieuwe reverse dependencies, alternatieve bewijzen en cycli tegenover schone fixed-point-herbouw.",
+      "status": "active",
+      "updates": [
+        {
+          "id": "K06",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "s03-196",
+      "date": "2026-11-26T08:48:31Z",
+      "track": "solver",
+      "wave": "S01/S03",
+      "title": "196, 392 en 588 QTM",
+      "summary": "Offline conjugatie van het volledige woord levert kortere buiten-cut-getuigen op dezelfde ontworpen bronnen. C# en C++ controleren de 2.430 markers vooruit en invers; geen primitieve optimaliteitsclaim.",
+      "status": "result",
+      "metrics": [
+        {
+          "series": "pair-reduced",
+          "label": "S03",
+          "value": 196
+        },
+        {
+          "series": "four-reduced",
+          "label": "S03",
+          "value": 392
+        },
+        {
+          "series": "six-reduced",
+          "label": "S03",
+          "value": 588
+        }
+      ],
+      "updates": [
+        {
+          "id": "S01",
+          "status": "active"
+        },
+        {
+          "id": "S03",
+          "status": "active"
+        }
+      ]
+    }
+  ]
+}
