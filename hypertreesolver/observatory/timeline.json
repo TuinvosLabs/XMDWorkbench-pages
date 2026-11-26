@@ -1631,6 +1631,227 @@
           "status": "checkpoint"
         }
       ]
+    },
+    {
+      "id": "k44-k45-visible-parity-character",
+      "date": "2026-11-26T17:24:29Z",
+      "track": "joint",
+      "wave": "K44/K45",
+      "title": "Exact gezamenlijk beeld van verborgen framepariteit",
+      "summary": "Binnen de vaste bereikbare 3^5-geometrie nemen de tien axiale framepariteiten op Color- en Labels-doelen precies de 512 even bitvectoren aan. Negen fysiek gelifte onafhankelijke vectoren leveren rang 9; de bovengrens gebruikt het volledige alfabet van 180 primitieve zetten. Het gezamenlijke niet-abelse framebeeld blijft open. De centrum-/K4-projectie is opnieuw gecontroleerd. Een fysieke eenzet-tegenproef weerlegt optelling van beide grenzen; hun maximum is toegestaan. Producentbewijs; onafhankelijke review open.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "K44",
+          "status": "checkpoint"
+        },
+        {
+          "id": "K45",
+          "status": "checkpoint"
+        }
+      ]
+    },
+    {
+      "id": "s43-character-max-transfer",
+      "date": "2026-11-26T17:28:56Z",
+      "track": "joint",
+      "wave": "S43/K45",
+      "title": "Karaktergrens in de fysieke solver",
+      "summary": "De solvercontrole reproduceert rang 9 en controleert 1.260 fysieke overgangen. De extra karaktergrens boven vijf zichtbare patronen is strikt op 60 van 180 eenzetburen van opgelost, maar op geen van 1.080 eenzetburen van zes eerdere ontwikkelstanden. Twee eenheidsgrenzen kunnen tegelijk door één fysieke kwartslag worden bereikt; gebruik maximum, geen som. Producentcontrole, geen algemene snelheidsclaim.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "S43",
+          "status": "checkpoint"
+        }
+      ]
+    },
+    {
+      "id": "k35-k42-custody-partial",
+      "date": "2026-11-26T17:39:21Z",
+      "track": "knowledge",
+      "wave": "K35–K42",
+      "title": "Oorspronkelijke kennisoplevering gedeeltelijk veiliggesteld",
+      "summary": "Dertien oorspronkelijke onderzoeksbestanden zijn met identieke bronidentiteiten teruggelezen. De complete oorspronkelijke eindoverdracht ontbreekt. K35–K39 en K41–K42 zijn gedeeltelijk aantoonbaar; voor K40 ontbreekt de oorspronkelijke schemawijziging. Nieuwere controles gelden afzonderlijk. De eerdere onafhankelijke beoordeling blijft beperkt tot haar eigen bewijsroutes.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "K35",
+          "status": "partial"
+        },
+        {
+          "id": "K36",
+          "status": "partial"
+        },
+        {
+          "id": "K37",
+          "status": "partial"
+        },
+        {
+          "id": "K38",
+          "status": "partial"
+        },
+        {
+          "id": "K39",
+          "status": "partial"
+        },
+        {
+          "id": "K40",
+          "status": "blocked"
+        },
+        {
+          "id": "K41",
+          "status": "partial"
+        },
+        {
+          "id": "K42",
+          "status": "partial"
+        }
+      ]
+    },
+    {
+      "id": "k43-reconciled-research-lineage",
+      "date": "2026-11-26T17:39:21Z",
+      "track": "knowledge",
+      "wave": "K43",
+      "title": "Gereconcilieerde onderzoeksafstamming",
+      "summary": "Vijf eerdere snapshots zijn opnieuw afgeleid en een afzonderlijke kandidaatdelta is aan de solverlijn toegevoegd. De resulterende onderzoekssnapshot bevat volgens het producentreceipt 652 knopen, 601 relaties en 150 bronbestanden, zonder gevonden ID- of bronbotsingen. De oorspronkelijke zustertak blijft behouden. De publieke graaf blijft ongewijzigd: de concurrerende vervolgbranches en hun bewijsindex zijn nog niet verliesvrij in de bestaande publicatiestructuur gevalideerd.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "K43",
+          "status": "checkpoint"
+        }
+      ]
+    },
+    {
+      "id": "k46-k50-route-bound-knowledge-handoff",
+      "date": "2026-11-26T17:39:21Z",
+      "track": "knowledge",
+      "wave": "K46–K50",
+      "title": "Routegebonden bewijscontracten en literatuuroverdracht",
+      "summary": "Een fysieke vaste-volgordecontrole verkort zes naar vier letters; omwisseling geeft een ander netto-effect. Zichtbaar equivalente acties hoeven op verborgen frames niet te commuteren. Getypeerde controles scheiden fysieke liften, eindige modellen, disjuncte productfamilies en routegebonden revisies. Twee literatuurtransfers behouden afzonderlijke geometrie- en kostencontracten. Zes onderzoeksvoorstellen en acht bewijsgevallen zijn geregistreerd. Een klein herhaalpakket reproduceert de projectie- en contractreceipts. Producentstatus; onafhankelijke review van nieuwe resultaten open.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "K46",
+          "status": "checkpoint"
+        },
+        {
+          "id": "K47",
+          "status": "checkpoint"
+        },
+        {
+          "id": "K48",
+          "status": "checkpoint"
+        },
+        {
+          "id": "K49",
+          "status": "checkpoint"
+        },
+        {
+          "id": "K50",
+          "status": "checkpoint"
+        }
+      ]
+    },
+    {
+      "id": "s41-s42-factorial-beam-retention",
+      "date": "2026-11-26T17:44:09Z",
+      "track": "solver",
+      "wave": "S41/S42",
+      "title": "Zoekbreedte verklaart eerdere extra oplossing",
+      "summary": "Op dezelfde zes ontwikkelstanden geeft breedte 16 zowel bij diepte 21 als 30 twee Full-treffers; breedte 32 geeft op beide diepten drie. De extra oplossing van 18 primitieve QTM blijft bij de bredere zoekactie behouden. Bij breedte 16 gaat de benoemde route op laag 9 verloren op unieke rang 21. Andere benoemde routes kunnen al op laag 4, 3 en 1 verdwijnen. De zes referentie-uitvoeringen reproduceren de oorspronkelijke laaguitvoer. Producentresultaat op hergebruikte standen, geen populatieclaim.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "S41",
+          "status": "checkpoint"
+        },
+        {
+          "id": "S42",
+          "status": "checkpoint"
+        }
+      ]
+    },
+    {
+      "id": "s43-five-visible-pattern-search",
+      "date": "2026-11-26T17:44:09Z",
+      "track": "solver",
+      "wave": "S43",
+      "title": "Vijf zichtbare patronen verbeteren begrensde zoekactie",
+      "summary": "Vijf via assymmetrie getransporteerde tabellen omvatten samen 2.880.000 consistente projectieranden. Op een ontworpen driezettentoestand vindt de vijfpatroonzoeker een fysiek geverifieerde oplossing na 7.636 kindkandidaten, terwijl één patroon binnen het afgebakende zoekvenster onbeslist blijft. Een tweezettencontrole bereikt hetzelfde doel met minder kandidaten. Specifieke korte zoekhorizon, geen algemene prestatie- of optimaliteitsclaim. Onafhankelijke review open.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "S43",
+          "status": "checkpoint"
+        }
+      ]
+    },
+    {
+      "id": "s44-paired-width-pilot-null",
+      "date": "2026-11-26T17:44:09Z",
+      "track": "solver",
+      "wave": "S44",
+      "title": "Nieuwe breedtevergelijking levert geen extra treffer",
+      "summary": "Beide vooraf vastgelegde zoekarmen bereiken vier van zes gevallen in een ontwikkelpilot; de voorspelde extra treffer blijft uit. De teruggegeven doelprefixen zijn fysiek gecontroleerd. De oorspronkelijke generatieopslag ging verloren; vier oorspronkelijke generatie-identiteiten zijn achteraf exact hersteld, twee blijven ongeopend. De ontbrekende generatieadministratie en onbesliste gevallen beperken de interpretatie. Geen onafhankelijke populatieproef; producentstatus.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "S44",
+          "status": "checkpoint"
+        }
+      ]
+    },
+    {
+      "id": "s45-s46-physical-overlap-macro-cost",
+      "date": "2026-11-26T17:44:09Z",
+      "track": "solver",
+      "wave": "S45/S46",
+      "title": "Gedeelde voorbereiding en winst bij gewenst overlapeffect",
+      "summary": "Bij de vaste achttegelvolgorde verwijdert de bestaande collector de 42 gedeelde tussenletters al; geen verbetering op de bestaande 5.440 QTM-constructie is gevonden. Voor een afzonderlijk zevenhoekdoel met gewenste geordende compositie op de overlap kosten twee fysieke macrowoorden samen 1.360 raw QTM; na woordreductie resteert 1.352 QTM tegenover 1.636 QTM voor de beste geteste S08-reparatie na dezelfde reductiepoging. Beide volledige effecten zijn vooruit en invers fysiek gecontroleerd. De gereduceerde constructieve winst is 284 QTM op dit doel, geen primitief optimum of algemene winst.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "S45",
+          "status": "checkpoint"
+        },
+        {
+          "id": "S46",
+          "status": "checkpoint"
+        }
+      ]
+    },
+    {
+      "id": "s47-six-k-exclusion-union",
+      "date": "2026-11-26T17:44:09Z",
+      "track": "solver",
+      "wave": "S47",
+      "title": "Exacte unie van catalogusuitsluitingen",
+      "summary": "Vier disjuncte tariefbehoudende celbeelden dekken 943.718.400 geordende zesfactorwoorden. Daarvan liggen 98.304.000 ook in de bestaande ordeningsuitsluiting. De additionele dekking is 845.414.400 woorden, zonder dubbeltelling. De globale raw-catalogusgrenzen blijven 480–800 QTM; geen nieuw primitief optimum. Producentafleiding, onafhankelijke review open.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "S47",
+          "status": "checkpoint"
+        }
+      ]
+    },
+    {
+      "id": "s48-integrated-solver-handoff",
+      "date": "2026-11-26T17:44:09Z",
+      "track": "solver",
+      "wave": "S48",
+      "title": "Solveroverdracht met afzonderlijke kennisuitbreiding",
+      "summary": "De acht solverwaves zijn overgedragen op producentniveau. De eindcontrole omvat 24 zoektraces, 32 doelprefixen en 30 macrowoordvarianten. De gereconcilieerde kennisbasis is opnieuw afgeleid en uitgebreid op een afzonderlijke onderzoeksbranch. Deze nieuwe kandidaatkennislaag is niet aan de publieke graaf toegevoegd. De nieuwe resultaten wachten op gerichte onafhankelijke review.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "S48",
+          "status": "checkpoint"
+        }
+      ]
     }
   ]
 }

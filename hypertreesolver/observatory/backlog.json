@@ -370,6 +370,126 @@
       "id": "S40",
       "track": "solver",
       "title": "Geïntegreerde solveroverdracht"
+    },
+    {
+      "id": "S41",
+      "track": "solver",
+      "title": "Retentiediagnose"
+    },
+    {
+      "id": "S42",
+      "track": "solver",
+      "title": "Factoriële zoekbreedte en diepte"
+    },
+    {
+      "id": "S43",
+      "track": "solver",
+      "title": "Zichtbare projecties en karaktergrens"
+    },
+    {
+      "id": "S44",
+      "track": "solver",
+      "title": "Gepaarde breedteproef"
+    },
+    {
+      "id": "S45",
+      "track": "solver",
+      "title": "Gedeelde macrovoorbereiding"
+    },
+    {
+      "id": "S46",
+      "track": "solver",
+      "title": "Constructieve overlapeffecten"
+    },
+    {
+      "id": "S47",
+      "track": "solver",
+      "title": "Unie van catalogusuitsluitingen"
+    },
+    {
+      "id": "S48",
+      "track": "solver",
+      "title": "Geïntegreerde solveroverdracht"
+    },
+    {
+      "id": "K35",
+      "track": "knowledge",
+      "title": "Kennisreconciliatie"
+    },
+    {
+      "id": "K36",
+      "track": "knowledge",
+      "title": "Axiale bewijscontracten"
+    },
+    {
+      "id": "K37",
+      "track": "knowledge",
+      "title": "Geometrische pariteitsvoorwaarden"
+    },
+    {
+      "id": "K38",
+      "track": "knowledge",
+      "title": "Kostenverdelingscontract"
+    },
+    {
+      "id": "K39",
+      "track": "knowledge",
+      "title": "Routegebonden bewijsregistratie"
+    },
+    {
+      "id": "K40",
+      "track": "knowledge",
+      "title": "Bewijsschema en reader"
+    },
+    {
+      "id": "K41",
+      "track": "knowledge",
+      "title": "Getypeerde discovery-queries"
+    },
+    {
+      "id": "K42",
+      "track": "knowledge",
+      "title": "Kennisoverdracht en verificatie"
+    },
+    {
+      "id": "K43",
+      "track": "knowledge",
+      "title": "Reconciliatie onderzoeksafstamming"
+    },
+    {
+      "id": "K44",
+      "track": "knowledge",
+      "title": "Exact zichtbaar karakterbeeld"
+    },
+    {
+      "id": "K45",
+      "track": "knowledge",
+      "title": "Compositie zichtbare grenzen"
+    },
+    {
+      "id": "K46",
+      "track": "knowledge",
+      "title": "Fysieke macrocontracten"
+    },
+    {
+      "id": "K47",
+      "track": "knowledge",
+      "title": "Getypeerde bewijscontroles"
+    },
+    {
+      "id": "K48",
+      "track": "knowledge",
+      "title": "Literatuurtransfer"
+    },
+    {
+      "id": "K49",
+      "track": "knowledge",
+      "title": "Onderzoeksnominatie"
+    },
+    {
+      "id": "K50",
+      "track": "knowledge",
+      "title": "Routegebonden PAX-catalogus"
     }
   ]
 }
