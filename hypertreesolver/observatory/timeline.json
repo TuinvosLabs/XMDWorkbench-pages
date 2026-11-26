@@ -379,6 +379,250 @@
           "status": "active"
         }
       ]
+    },
+    {
+      "id": "k06-revision-checkpoint",
+      "date": "2026-11-26T08:52:10Z",
+      "track": "knowledge",
+      "wave": "K06",
+      "title": "Incrementele revisie gecontroleerd",
+      "summary": "1.024 geordende revisies stemmen overeen met schone herbouw; 32 no-ops en 4.978 regelinspecties. Zes artefacttypen weigeren verouderde snapshots. Producentcheckpoint; onafhankelijke review gevraagd.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "K06",
+          "status": "checkpoint"
+        },
+        {
+          "id": "K08",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "k08-free-word-envelope",
+      "date": "2026-11-26T08:55:24Z",
+      "track": "knowledge",
+      "wave": "K08",
+      "title": "Exacte eindige vervolgmarge",
+      "summary": "Voor vrije aangrenzende inverse-annulering komen 11.236 eindige vervolgmarges overeen met enumeratie; 6.952 zijn strikter dan de onbeperkte marge. Geen gevolg voor extra commutaties of beschermde sneden zonder nieuw bewijs. Producentcheckpoint; onafhankelijke review gevraagd.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "K08",
+          "status": "checkpoint"
+        }
+      ]
+    },
+    {
+      "id": "s02-s04-mixed-selection",
+      "date": "2026-11-26T08:59:24Z",
+      "track": "solver",
+      "wave": "S02/S04",
+      "title": "Exacte disjuncte macroselectie",
+      "summary": "192 deelverzamelingsvergelijkingen en 22 fysiek gecontroleerde routes. Voor uniform zes zijn twee van twaalf betaalbare familieprofielen uitgesloten; tien blijven open. Binnen de oorspronkelijke raw-catalogus ligt de prijs tussen 400 en 800 QTM. Producentcheckpoint; onafhankelijke review gevraagd.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "S02",
+          "status": "checkpoint"
+        },
+        {
+          "id": "S04",
+          "status": "partial"
+        }
+      ]
+    },
+    {
+      "id": "s05-s13-five-cycle-tiling",
+      "date": "2026-11-26T09:01:46Z",
+      "track": "solver",
+      "wave": "S05/S13",
+      "title": "Zelfde histogram, ander optimum",
+      "summary": "Op ontworpen vijfcyclusstanden geeft disjuncte reparatie 3.840 tegenover 7.680 QTM bij identieke type- en pariteitstellingen. Het verschil falsifieert exacte type-only voorspelling voor dit deelprobleem, niet een primitieve ondergrens. Producentcheckpoint; onafhankelijke review gevraagd.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "S05",
+          "status": "checkpoint"
+        },
+        {
+          "id": "S13",
+          "status": "partial"
+        },
+        {
+          "id": "S06",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "s03-primitive-pair-floor",
+      "date": "2026-11-26T09:11:00Z",
+      "track": "solver",
+      "wave": "S01/S03",
+      "title": "Primitieve ondergrens voor het gelijke paar",
+      "summary": "De gezamenlijke hoekframeprojectie geeft afstand vijf; pariteit sluit vijf uit. De primitieve optimumprijs ligt volgens de producent tussen 6 en 196 QTM op hetzelfde doel. De 320 raw-catalogusprijs is een ander contract. Onafhankelijke review gevraagd.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "S01",
+          "status": "checkpoint"
+        },
+        {
+          "id": "S03",
+          "status": "checkpoint"
+        }
+      ]
+    },
+    {
+      "id": "k07-operator-algebra",
+      "date": "2026-11-26T09:12:20Z",
+      "track": "knowledge",
+      "wave": "K07",
+      "title": "Uitvoerbare positieve kennisoperatoren",
+      "summary": "4.096 operatorparen leveren 1.331 dominantiegevallen en 1.728 commutaties. Zestien volledige referentie-uitvoeren, vier composities en drie onderzoeksvoorstellen stemmen overeen; zeven ongeldige gevallen geweigerd. Geldig binnen het vaste positieve kennismodel. Producentcheckpoint; onafhankelijke review gevraagd.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "K07",
+          "status": "checkpoint"
+        }
+      ]
+    },
+    {
+      "id": "k09-retrieval-baseline",
+      "date": "2026-11-26T09:18:07Z",
+      "track": "knowledge",
+      "wave": "K03/K09",
+      "title": "Gelijke retrievalresultaten",
+      "summary": "Op zes openbare ontwikkelvragen vinden tekst en tekst plus graaf elk zes van acht relevante bronankers; gemiddelde recall@5 is 0,80 op vijf beantwoordbare vragen. Twee scopemissers per arm. Geen algemene superioriteitsclaim. Producentcheckpoint; onafhankelijke review gevraagd.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "K03",
+          "status": "checkpoint"
+        },
+        {
+          "id": "K09",
+          "status": "checkpoint"
+        }
+      ]
+    },
+    {
+      "id": "solver-knowledge-intake",
+      "date": "2026-11-26T09:20:43Z",
+      "track": "joint",
+      "wave": "S/K",
+      "title": "Herleidbare solverkennis",
+      "summary": "Zeven nieuwe solverknopen en zeven getypeerde relaties zijn in een afzonderlijke research-overlay opnieuw ingelezen. Veertien bronankers zijn herleid naar acht bronbestanden. Scopeverschillen tussen primitieve grens, uitvoerbaar woord en raw-catalogusprijs blijven intact. Geen nieuwe fysieke meting.",
+      "status": "result"
+    },
+    {
+      "id": "s08-public-factorial-start",
+      "date": "2026-11-26T09:41:46Z",
+      "track": "solver",
+      "wave": "S08",
+      "title": "Gecombineerde solverproef gestart",
+      "summary": "Twee openbare ontwikkelstanden, vooraf vastgelegde referentie en acht combinatiearmen. Gelijke meetvoorwaarden en fysieke doelverificatie; geen populatieclaim.",
+      "status": "active",
+      "updates": [
+        {
+          "id": "S08",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "k10-model-orchestration",
+      "date": "2026-11-26T09:42:53Z",
+      "track": "knowledge",
+      "wave": "K10",
+      "title": "Gecontroleerde modelorkestratie",
+      "summary": "Deterministische mock, twee HTTP-contracten en vier geweigerde gevallen getest. Broninhoud kan geen kennisstatus wijzigen. Live modelkwaliteit en daadwerkelijke integratie met een modeldienst blijven open. Producentcheckpoint; onafhankelijke review gevraagd.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "K10",
+          "status": "checkpoint"
+        },
+        {
+          "id": "K11",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "s08-first-paired-observation",
+      "date": "2026-11-26T09:47:05Z",
+      "track": "solver",
+      "wave": "S08",
+      "title": "Eerste gepaarde ontwikkelmeting",
+      "summary": "Op één openbare bron daalt de beste geverifieerde Color/Labels-prijs van 33.939 naar 30.063 QTM en Oriented/Full van 39.239 naar 35.363 QTM. Gezamenlijke wijziging van C6-compositie en gewogen singletons; geen afzonderlijk causaal effect of populatieclaim. Producentmeting; onafhankelijke reconstructie gevraagd.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "S08",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "k11-exact-knowledge-portfolios",
+      "date": "2026-11-26T09:47:18Z",
+      "track": "knowledge",
+      "wave": "K11",
+      "title": "Exacte kennisportfolio’s",
+      "summary": "136 eindige modellen stemmen overeen met het referentieorakel, waaronder veertien onhaalbare. Alle 408 begrensde vergelijkingen leveren geldige intervallen. In deze kleine proef bespaart paarsgewijze propagatie weinig expansies. Producentcheckpoint; onafhankelijke review gevraagd.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "K11",
+          "status": "checkpoint"
+        },
+        {
+          "id": "K12",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "k12-projection-tables",
+      "date": "2026-11-26T09:50:17Z",
+      "track": "knowledge",
+      "wave": "K12",
+      "title": "Projectiegrenzen en herbruikbare tabellen",
+      "summary": "Het volledige beslisdiagram klopt voor 768 toestanden. Disjuncte sommen verbeteren 49 grenzen; 78 van 452 eindige grenzen blijven te laag. Geen aangetoonde snelheidswinst of nieuwe fysieke ondergrens. Producentcheckpoint; onafhankelijke review gevraagd.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "K12",
+          "status": "checkpoint"
+        },
+        {
+          "id": "K13",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "s04-five-conjugate-exact",
+      "date": "2026-11-26T09:52:04Z",
+      "track": "solver",
+      "wave": "S04/S06",
+      "title": "Exacte prijs binnen K80-conjugaatklasse",
+      "summary": "Voor uniform zes is de vijf-factorconjugaatprijs exact 1.832 raw QTM; bij één conjugator 1.672 raw. Gedeelde prefixprojectie behoudt echte generatortupels. De tien onbeperkte profielen blijven open; geen gereduceerde of primitieve optimumclaim. Producentcheckpoint; onafhankelijke review gevraagd.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "S04",
+          "status": "partial"
+        },
+        {
+          "id": "S06",
+          "status": "partial"
+        }
+      ]
     }
   ]
 }
