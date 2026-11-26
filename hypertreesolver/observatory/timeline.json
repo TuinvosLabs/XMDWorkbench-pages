@@ -623,6 +623,278 @@
           "status": "partial"
         }
       ]
+    },
+    {
+      "id": "k13-discovery-diversity",
+      "date": "2026-11-26T09:53:07Z",
+      "track": "knowledge",
+      "wave": "K13",
+      "title": "Diversiteit in onderzoeksrangschikking",
+      "summary": "Elf latere kandidaten en drie eerdere vragen zijn op gedeelde afstamming getoetst. De diversiteitsrangschikker dekt vier mechanismen in de top vier versus drie bij de baselines. Nul onafhankelijke uitkomstlabels; training en kalibratie blijven uitgesteld. Producentcheckpoint.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "K13",
+          "status": "checkpoint"
+        },
+        {
+          "id": "K14",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "s09-s11-first-hit-extrema",
+      "date": "2026-11-26T09:57:06Z",
+      "track": "solver",
+      "wave": "S09/S11",
+      "title": "Eerste fysieke doeltijd bij gedeelde fasegrens",
+      "summary": "Bij dezelfde legale vervolgtaal en beschermde grens volstaan de twee bereikbare vertragingsextremen per doel om universele dominantie te toetsen. Fysieke controle toont een omkering van de rangorde bij verschillende vervolgen. Geen algemene reductieregel over een onbeschermde grens. Producentcheckpoint; onafhankelijke review open.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "S09",
+          "status": "partial"
+        },
+        {
+          "id": "S11",
+          "status": "partial"
+        }
+      ]
+    },
+    {
+      "id": "k14-robust-review-planning",
+      "date": "2026-11-26T09:57:35Z",
+      "track": "knowledge",
+      "wave": "K14",
+      "title": "Robuuste gezamenlijke reviewplanning",
+      "summary": "In een eindig geconstrueerd scenariomodel geeft exacte planning bij negen symbolische tijdseenheden een worst-case nut van 11 tegenover 7 bij greedy planning; het nominale nut is 11 tegenover 12. Geen empirische effect- of tijdschatting. Producentcheckpoint.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "K14",
+          "status": "checkpoint"
+        },
+        {
+          "id": "K15",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "k08-k11-joint-envelope",
+      "date": "2026-11-26T10:02:55Z",
+      "track": "knowledge",
+      "wave": "K08/K11",
+      "title": "Gezamenlijke vervolggrenzen",
+      "summary": "8.959 eindige taal- en prefixvergelijkingen stemmen overeen met de referentie; 2.288 gezamenlijke grenzen zijn strikt scherper dan losse maxima. Vrije inverse-annulering en beschermde doeltijden vereisen dezelfde werkelijk bereikbare vervolgen. Nog geen fysiek snelheidsvoordeel. Producentcheckpoint.",
+      "status": "result",
+      "updates": []
+    },
+    {
+      "id": "s08-matched-factorial-complete",
+      "date": "2026-11-26T10:04:10Z",
+      "track": "solver",
+      "wave": "S08",
+      "title": "Volledige gepaarde ontwikkelproef",
+      "summary": "Alle 18 uitvoeringen voltooid op twee openbare bronstanden van één generator. Color/Labels: 33.939 naar 25.977 en 33.237 naar 25.583 QTM. Oriented/Full: 39.239 naar 31.277 en 38.665 naar 31.011 QTM. Afzonderlijke replay controleerde 55 routes en 440 beschermde fasegrenzen. Twee factorcombinaties bereiken dezelfde beste prijs. Producentresultaat; geen populatie- of primitieve optimumclaim.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "S08",
+          "status": "checkpoint"
+        }
+      ]
+    },
+    {
+      "id": "k15-component-evaluation",
+      "date": "2026-11-26T10:04:25Z",
+      "track": "knowledge",
+      "wave": "K15",
+      "title": "Componentproef voor wetenschappelijke evaluatie",
+      "summary": "30 geconstrueerde taken: zes direct beantwoord, twaalf conditioneel, twaalf geblokkeerd. Alle uitkomsten komen overeen met exhaustieve enumeratie. Geen onafhankelijke replicaten of effectschatting voor de modelarmen. Producentcheckpoint.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "K15",
+          "status": "checkpoint"
+        },
+        {
+          "id": "K16",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "k16-contract-transfer",
+      "date": "2026-11-26T10:07:11Z",
+      "track": "knowledge",
+      "wave": "K16",
+      "title": "Getypeerde domeinoverdracht",
+      "summary": "Tien ongeldige transfers afgewezen in een geconstrueerde typecontrole. Twee gesimuleerde spectra laten beide kandidaatstructuren open. De derde gemengde prijsdifferenties van de solverfactoren zijn −142 en −100 QTM op de twee ontwikkelbronnen. Geen materiaaldomeinvalidatie. Producentcheckpoint.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "K16",
+          "status": "checkpoint"
+        },
+        {
+          "id": "K17",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "s07-s09-paid-projection-cache",
+      "date": "2026-11-26T10:07:52Z",
+      "track": "solver",
+      "wave": "S07/S09",
+      "title": "Betaalde suffixprojecties en contextcache",
+      "summary": "2.376 betaalde queryvoorkomens geven dezelfde exacte prijzen, gekozen getuigen en dominantie. Directe enumeratie wint bij één aanvraag in negen strata; groepering bij 32 aanvragen in negen strata. Bij 48 fysieke faseaanvragen geeft de getypeerde cache 24 koude en 48 warme treffers zonder fouten; alleen fysieke toestand geeft zeven fouten per pass. Geen end-to-end solverlatentieclaim. Producentcheckpoint.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "S07",
+          "status": "checkpoint"
+        },
+        {
+          "id": "S09",
+          "status": "partial"
+        }
+      ]
+    },
+    {
+      "id": "s12-radial-parity",
+      "date": "2026-11-26T10:07:52Z",
+      "track": "solver",
+      "wave": "S12",
+      "title": "Straalpariteit als primitieve ondergrens",
+      "summary": "Voor oneven laaggetal en dimensie minstens drie geven positiepariteiten afzonderlijke selectorstraalbits. Een 5³ Full-controle heeft exact drie primitieve kwartslagen als afstand. Bij even laaggetal en dimensie groter dan drie vervalt deze specifieke positiepariteit. Producentcheckpoint; geen algemene optimale solverclaim.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "S12",
+          "status": "partial"
+        }
+      ]
+    },
+    {
+      "id": "k17-local-platform",
+      "date": "2026-11-26T10:12:19Z",
+      "track": "knowledge",
+      "wave": "K17",
+      "title": "Lokaal kennisplatformprototype",
+      "summary": "16 gelijktijdige identieke imports leveren één record. 64 reads, acht onafhankelijke schrijvers, 58 afwijzingen, migratie en herstel gecontroleerd. Testtransport door de applicatiemiddleware; netwerkvalidatie en productacceptatie staan open. Producentcheckpoint.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "K17",
+          "status": "checkpoint"
+        },
+        {
+          "id": "K18",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "k18-readonly-studio",
+      "date": "2026-11-26T10:15:22Z",
+      "track": "knowledge",
+      "wave": "K18",
+      "title": "Read-only kennisstudio",
+      "summary": "Prototype met zeven knopen, zeven hyperrelaties, veertien bronankers en acht secties. Structurele controles uitgevoerd; geen schrijfacties. Eigenaar- en toegankelijkheidsreview blijven open. Producentcheckpoint, geen productintegratie.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "K18",
+          "status": "checkpoint"
+        }
+      ]
+    },
+    {
+      "id": "s08-physical-language-null",
+      "date": "2026-11-26T10:17:49Z",
+      "track": "joint",
+      "wave": "S08/K08/K11",
+      "title": "Fysieke toets van gezamenlijke grenzen",
+      "summary": "384 gemodelleerde vergelijkingen op twee bestaande fysieke fasegrenzen stemmen overeen; nul extra aanscherpingen. De vrije spelling en beschermde eerste doeltijd zijn afzonderlijk gecontroleerd. De synthetische aanscherping bewijst geen fysieke winst. Producentcheckpoint.",
+      "status": "result",
+      "updates": []
+    },
+    {
+      "id": "s03-s10-frozen-order-nomination",
+      "date": "2026-11-26T10:17:49Z",
+      "track": "solver",
+      "wave": "S03/S10",
+      "title": "Nulresultaten voor volgorde en nominatie",
+      "summary": "Alle 120 volgorden per ontwikkelbron geven dezelfde gereduceerde faseprijs van 3.318 respectievelijk 3.556 QTM binnen de bevroren deelopgave. Vier nominatiearmen leveren Labels bij 6 en 10 QTM op twee controles en geen Labels-treffer binnen horizon 12 op de derde. Geen extra oplossingswinst. Producentcheckpoint.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "S10",
+          "status": "partial"
+        }
+      ]
+    },
+    {
+      "id": "s04-unrestricted-five-exclusion",
+      "date": "2026-11-26T10:21:20Z",
+      "track": "solver",
+      "wave": "S04",
+      "title": "Uitsluiting van vijf vrije catalogusfactoren",
+      "summary": "Voor de uniforme zesplaatsstand zijn alle 1.920 eerste-actierepresentanten gedekt, zonder toegestane reststand. De vrije ruwe catalogusprijs ligt volgens de producent nu tussen 480 en 800 QTM. De afzonderlijke gereduceerde constructie van 588 QTM blijft ongewijzigd. Geen primitieve ondergrens van 480. Onafhankelijke review open.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "S04",
+          "status": "partial"
+        }
+      ]
+    },
+    {
+      "id": "s09-s14-reinvestment",
+      "date": "2026-11-26T10:38:01Z",
+      "track": "solver",
+      "wave": "S09/S14",
+      "title": "Hergebruik en herinvestering in zoekalternatieven",
+      "summary": "Exploratief vervolg op dezelfde twee ontwikkelbronnen: Full 31.077 en 30.853 QTM, 200 en 158 minder dan de eerdere gecombineerde proef. Beide woorden fysiek vooruit en invers gecontroleerd. Overdracht van een beperkte kandidatenlijst mist alle zestien geselecteerde paren op de tweede bron; volledige rescue blijft nodig. Geen nieuwe onafhankelijke populatie.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "S09",
+          "status": "checkpoint"
+        },
+        {
+          "id": "S14",
+          "status": "partial"
+        }
+      ]
+    },
+    {
+      "id": "s05-neutral-two-step",
+      "date": "2026-11-26T10:43:10Z",
+      "track": "solver",
+      "wave": "S05",
+      "title": "Neutrale tweestapsroute bij vijfcycli",
+      "summary": "3.317.760 overlappende vervolgen over 24 homogene labels leveren geen positieve nettowinst. Binnen het specifieke tweestapscontract blijft de prijs 7.680 QTM; een representant is fysiek vooruit en invers geverifieerd. Langere, gemengde en verliesgevende eerste stappen blijven open. Producentcheckpoint.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "S05",
+          "status": "partial"
+        }
+      ]
+    },
+    {
+      "id": "s08-source-history-control",
+      "date": "2026-11-26T10:51:10Z",
+      "track": "solver",
+      "wave": "S08",
+      "title": "Afzonderlijke bronhistoriecontrole",
+      "summary": "De broninversen van 9 en 17 QTM zijn na afloop van de ontwikkelproef fysiek in beide richtingen gecontroleerd. Deze controle ligt buiten de oorspronkelijke solverarmen. De constructieve winst is daarom uitsluitend een vergelijking binnen het afgebakende solvercontract, geen bewijs van nabijheid tot een primitief optimum. Producentcheckpoint.",
+      "status": "result",
+      "updates": []
     }
   ]
 }
