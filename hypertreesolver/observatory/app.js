@@ -7,7 +7,7 @@ const fmt=x=>Number(x).toLocaleString("nl-NL",{maximumFractionDigits:2});
 const datefmt=x=>x.length===10?x:new Intl.DateTimeFormat("nl-NL",{timeZone:"Europe/Amsterdam",dateStyle:"short",timeStyle:"short"}).format(new Date(x))+" CET/CEST";
 const statusName={planned:"Gepland",plan:"Werkvoorraad",active:"Geclaimd",result:"Resultaat",checkpoint:"Checkpoint",partial:"Deels afgerond",deferred:"Uitgesteld",blocked:"Geblokkeerd",accepted:"Geaccepteerd",joint:"Kruisbestuiving"};
 const trackName={solver:"Solver Research",knowledge:"Knowledge Research",joint:"Kruisbestuiving"};
-const kindName={formal:"Formele relatie",hypothesis:"Hypothese",test:"Test",falsifier:"Weerlegging",association:"Associatie",provenance:"Herkomstrelatie",dependency:"Afhankelijkheid",unresolved:"Onopgelost"};
+const kindName={historical:"Historisch onderzoek",statement:"Uitspraak",result:"Resultaat",opportunity:"Onderzoekskans",evidence:"Bewijsbron",lemma:"Lemma",algorithm:"Algoritme",theorem:"Stelling",decision:"Besluit",counterexample:"Tegenvoorbeeld",experiment:"Experiment",formal:"Formele relatie",hypothesis:"Hypothese",test:"Test",falsifier:"Weerlegging",association:"Associatie",provenance:"Herkomstrelatie",dependency:"Afhankelijkheid",unresolved:"Onopgelost"};
 const fetchJson=async n=>{const r=await fetch(n,{cache:"no-cache"});if(!r.ok)throw Error(n+" HTTP "+r.status);return r.json()};
 const allMetrics=t=>t.events.flatMap(e=>(e.metrics||[]).map(m=>({...m,event:e.id,date:e.date})));
 function validate(t,g,b,p){
@@ -56,18 +56,27 @@ function showOverview(t,g,b,p){
 function showVersions(g){const p=$("versions");if(!p)return;for(const v of g.versions){const c=el("div",null,"card");put(c,el("div",v.label,"muted"),el("div",fmt(v.nodes)+" / "+fmt(v.relations),"metric"),el("p","Knopen / hyperrelaties", "muted"),el("div",fmt(v.sources)+" bronpinnen in private bronlaag","muted"));put(p,c)}}
 const NS="http://www.w3.org/2000/svg";
 function svg(tag,attrs={},label){const x=document.createElementNS(NS,tag);for(const [k,v] of Object.entries(attrs))x.setAttribute(k,String(v));if(label!=null)x.textContent=label;return x}
-function graphExplorer(g){
+function graphExplorer(g,topicData){
  if(!$("snapshot"))return;
- const labels=new Map(g.nodes.map(n=>[n.id,n.label]));for(const r of g.relations)labels.set(r.id,(kindName[r.kind]||r.kind)+" "+r.id);
+ const topic=topicData&&topicData.schema==="observatory-topic-labels/1"?topicData.labels:{};
+ const labels=new Map(g.nodes.map(n=>[n.id,topic[n.id]||n.label]));
+ const named=n=>Boolean(topic[n.id]||n.named);
+ const nodeLabel=id=>labels.get(id)||"Hyperrelatie "+id;
+ for(const r of g.relations){
+  const targets=r.conclusions.map(nodeLabel);
+  const title=(kindName[r.kind]||r.kind)+" → "+(targets[0]||"onbekend doel")+(targets.length>1?" (+"+(targets.length-1)+")":"");
+  labels.set(r.id,title);
+ }
  const nodeBy=new Map(g.nodes.map(x=>[x.id,x])),relBy=new Map(g.relations.map(x=>[x.id,x]));
  const fullBy=new Map([...g.nodes,...g.relations].map(x=>[x.id,x]));
  const select=$("snapshot"),kind=$("gkind"),list=$("entities"),detail=$("detail"),box=$("graphbox");
  for(const v of g.versions){const o=el("option",v.label+" · "+v.nodes+"/"+v.relations);o.value=v.id;put(select,o)}select.value=g.versions[g.versions.length-1].id;
  for(const k of [...new Set([...g.nodes,...g.relations].map(x=>x.kind))].sort()){const o=el("option",kindName[k]||k);o.value=k;put(kind,o)}
- let activeVersion=()=>g.versions.find(x=>x.id===select.value),mode="neighborhood",sel=g.nodes.slice().reverse().find(n=>n.named)?.id||g.nodes[0].id;
+ let activeVersion=()=>g.versions.find(x=>x.id===select.value),mode="neighborhood",sel=g.nodes.slice().reverse().find(n=>named(n)&&g.relations.some(r=>r.premises.includes(n.id)||r.conclusions.includes(n.id)))?.id||g.nodes[0].id;
  let active=x=>x.layer<=activeVersion().layer,relActive=()=>g.relations.filter(active);
  let incident=id=>relActive().filter(e=>e.id===id||e.premises.includes(id)||e.conclusions.includes(id));
- const shorten=(s,n)=>s.length>n?s.slice(0,n-1)+"…":s;
+ const wrapLabel=(s,max=25,limit=3)=>{const rows=[];for(const word of s.split(/\s+/)){if(rows.length&&rows[rows.length-1].length+word.length+1<=max){rows[rows.length-1]+=" "+word}else{rows.push(word)}}if(rows.length>limit){rows.length=limit;rows[limit-1]=rows[limit-1].slice(0,max-1)+"…"}return rows.map(r=>r.length>max?r.slice(0,max-1)+"…":r)};
+ const searchText=x=>[x.id,labels.get(x.id),kindName[x.kind]||x.kind,...(relBy.has(x.id)?[...x.premises,...x.conclusions].map(nodeLabel):[])].join(" ").toLocaleLowerCase("nl-NL");
  function choose(id){if(!fullBy.has(id)||!active(fullBy.get(id)))return;sel=id;mode="neighborhood";draw();renderList()}
  function linkButton(id){const b=el("button",(labels.get(id)||id)+" · "+id);b.type="button";b.addEventListener("click",()=>choose(id));return b}
  function group(title,arr){put(detail,el("h3",title));const p=el("div",null,"related");if(!arr.length)put(p,el("p","Geen.","muted"));for(const id of arr)put(p,linkButton(id));put(detail,p)}
@@ -75,22 +84,22 @@ function graphExplorer(g){
  const obj=fullBy.get(sel);detail.replaceChildren();put(detail,el("span",sel+" · "+(obj.layer===0?"Canonieke basis":"Onderzoeks-overlay"),"pill"),el("h2",labels.get(sel)||sel),el("p","Type: "+(kindName[obj.kind]||obj.kind),"muted"));
  if(relBy.has(sel)){put(detail,el("p","Geordende incidenties. Alle premissen horen bij dezelfde hyperrelatie; type en richting zijn zichtbaar, maar geen formeel toelatingsbesluit."));group("Premissen ("+obj.premises.length+")",obj.premises);group("Conclusies ("+obj.conclusions.length+")",obj.conclusions)}
  const rs=incident(sel).filter(e=>e.id!==sel);group("Verbonden hyperrelaties ("+rs.length+")",rs.map(e=>e.id));
- if(!relBy.has(sel)&&!obj.named)put(detail,el("p","Oorspronkelijke claimtekst blijft in de private bronlaag.","muted"));
+ if(!relBy.has(sel))put(detail,el("p",named(obj)?"Publieke onderzoekstitel. De exacte stelling, voorwaarden en herkomst blijven in de private bronlaag.":"Voor dit onderwerp is nog geen publieke titel vastgesteld.","muted"));
  }
  function attach(gp,id){gp.setAttribute("tabindex","0");gp.setAttribute("role","button");gp.setAttribute("aria-label",labels.get(id)||id);gp.addEventListener("click",()=>choose(id));gp.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();choose(id)}})}
  function drawNeighborhood(){
  const obj=fullBy.get(sel),relations=relBy.has(sel)?[obj]:incident(sel).slice(0,12);
  const universe=new Set([sel]);for(const r of relations){universe.add(r.id);r.premises.forEach(x=>universe.add(x));r.conclusions.forEach(x=>universe.add(x))}
- const keys=[...universe],center={x:440,y:0},radius=Math.max(180,Math.min(390,keys.length*14)),height=Math.max(530,radius*2+120);center.y=height/2;
+ const keys=[...universe],center={x:440,y:0},radius=Math.max(210,Math.min(430,keys.length*23)),height=Math.max(600,radius*2+180);center.y=height/2;
  const root=svg("svg",{viewBox:"0 0 880 "+height,role:"img","aria-label":"Buurtgraaf van "+(labels.get(sel)||sel)});
  const defs=svg("defs"),marker=svg("marker",{id:"arr",markerWidth:8,markerHeight:8,refX:7,refY:3,orient:"auto"});put(marker,svg("path",{d:"M0 0 L7 3 L0 6",fill:"#8295a7"}));put(defs,marker);put(root,defs);
  const pos=new Map([[sel,center]]),others=keys.filter(x=>x!==sel);
- others.forEach((id,i)=>{const a=2*Math.PI*i/Math.max(1,others.length)-Math.PI/2;pos.set(id,{x:center.x+Math.cos(a)*Math.min(radius,315),y:center.y+Math.sin(a)*radius})});
- function line(a,b){const p=pos.get(a),q=pos.get(b);if(!p||!q)return;let dx=q.x-p.x,dy=q.y-p.y,d=Math.hypot(dx,dy)||1;let gap=relBy.has(b)?19:35;put(root,svg("path",{d:"M"+p.x+" "+p.y+" L"+(q.x-dx/d*gap)+" "+(q.y-dy/d*gap),stroke:"#8295a7","stroke-width":1.2,fill:"none","marker-end":"url(#arr)",opacity:.68}))}
+ others.forEach((id,i)=>{const a=2*Math.PI*i/Math.max(1,others.length)-Math.PI/2;pos.set(id,{x:center.x+Math.cos(a)*Math.min(radius,320),y:center.y+Math.sin(a)*radius})});
+ function line(a,b){const p=pos.get(a),q=pos.get(b);if(!p||!q)return;let dx=q.x-p.x,dy=q.y-p.y,d=Math.hypot(dx,dy)||1;let gap=relBy.has(b)?21:67;put(root,svg("path",{d:"M"+p.x+" "+p.y+" L"+(q.x-dx/d*gap)+" "+(q.y-dy/d*gap),stroke:"#8295a7","stroke-width":1.2,fill:"none","marker-end":"url(#arr)",opacity:.68}))}
  for(const r of relations){for(const a of r.premises)line(a,r.id);for(const b of r.conclusions)line(r.id,b)}
  for(const id of keys){const p=pos.get(id),r=relBy.has(id),n=fullBy.get(id),gp=svg("g",{transform:"translate("+p.x+" "+p.y+")"}),color=r?"#a36b20":n.layer===0?"#255c99":"#087d78",chosen=id===sel;put(gp,svg("title",{},labels.get(id)||id));
- if(r){put(gp,svg("path",{d:"M0 -16 L16 0 L0 16 L-16 0 Z",fill:chosen?"#f4d99e":"#fff8e6",stroke:color,"stroke-width":chosen?3:1.5}),svg("text",{y:3,"font-size":9,"text-anchor":"middle",fill:color},n.kind==="formal"?"AND":"H"));put(gp,svg("text",{y:29,"font-size":10,"text-anchor":"middle",fill:"#506476"},id))}
- else{const l=shorten(labels.get(id)||id,24);put(gp,svg("rect",{x:-63,y:-19,width:126,height:38,rx:6,fill:chosen?"#d9edea":"white",stroke:color,"stroke-width":chosen?3:1.5}),svg("text",{y:-2,"font-size":10,"text-anchor":"middle",fill:"#18334a","font-weight":chosen?700:500},l),svg("text",{y:12,"font-size":9,"text-anchor":"middle",fill:"#63778a"},id))}
+ if(r){put(gp,svg("path",{d:"M0 -20 L20 0 L0 20 L-20 0 Z",fill:chosen?"#f4d99e":"#fff8e6",stroke:color,"stroke-width":chosen?3:1.5}),svg("text",{y:3,"font-size":9,"text-anchor":"middle",fill:color},n.kind==="formal"?"AND":"H"));const rr=wrapLabel(labels.get(id)||id,27,2);for(let i=0;i<rr.length;i++)put(gp,svg("text",{y:33+i*13,"font-size":10,"text-anchor":"middle",fill:"#506476","paint-order":"stroke",stroke:"#f8fbfd","stroke-width":3},rr[i]));}
+ else{const rows=wrapLabel(labels.get(id)||id,25,3),hh=rows.length*13+31;put(gp,svg("rect",{x:-89,y:-hh/2,width:178,height:hh,rx:7,fill:chosen?"#d9edea":"white",stroke:color,"stroke-width":chosen?3:1.5}));for(let i=0;i<rows.length;i++)put(gp,svg("text",{y:-hh/2+15+i*13,"font-size":11,"text-anchor":"middle",fill:"#18334a","font-weight":chosen?700:600},rows[i]));put(gp,svg("text",{y:hh/2-9,"font-size":9,"text-anchor":"middle",fill:"#63778a"},id+" · "+(kindName[n.kind]||n.kind)))}
  attach(gp,id);put(root,gp)}
  box.replaceChildren(root);
  if(!relBy.has(sel)&&incident(sel).length>relations.length){const note=el("p","Beeld beperkt tot de eerste "+relations.length+" verbonden relaties. Alle relaties blijven selecteerbaar in het detailpaneel.","muted");note.style.padding="10px";put(box,note)}
@@ -102,13 +111,13 @@ function graphExplorer(g){
  rels.forEach((r,i)=>{const known=[...r.premises,...r.conclusions].map(x=>positions.get(x)).filter(Boolean),angle=2*Math.PI*i/Math.max(1,rels.length);let x=known.length?known.reduce((s,p)=>s+p[0],0)/known.length:cx+160*Math.cos(angle),y=known.length?known.reduce((s,p)=>s+p[1],0)/known.length:cy+160*Math.sin(angle);positions.set(r.id,[x,y])});
  ctx.fillStyle="#f8fbfd";ctx.fillRect(0,0,1200,850);ctx.lineWidth=.6;ctx.strokeStyle="rgba(70,100,130,.19)";for(const r of rels){const p=positions.get(r.id);for(const id of [...r.premises,...r.conclusions]){const q=positions.get(id);if(!q)continue;ctx.beginPath();ctx.moveTo(p[0],p[1]);ctx.lineTo(q[0],q[1]);ctx.stroke()}}
  for(const r of rels){const [x,y]=positions.get(r.id);ctx.fillStyle="#b58a4b";ctx.fillRect(x-1.7,y-1.7,3.4,3.4)}
- for(const n of nodes){const [x,y]=positions.get(n.id);ctx.beginPath();ctx.arc(x,y,n.named?3.6:2.2,0,Math.PI*2);ctx.fillStyle=n.layer===0?"#255c99":"#087d78";ctx.fill()}
+ for(const n of nodes){const [x,y]=positions.get(n.id);ctx.beginPath();ctx.arc(x,y,named(n)?3.6:2.2,0,Math.PI*2);ctx.fillStyle=n.layer===0?"#255c99":"#087d78";ctx.fill()}
  const current=positions.get(sel);if(current){ctx.strokeStyle="#0a7d78";ctx.lineWidth=3;ctx.beginPath();ctx.arc(current[0],current[1],9,0,Math.PI*2);ctx.stroke()}
  canvas.addEventListener("click",ev=>{const r=canvas.getBoundingClientRect(),x=(ev.clientX-r.left)*canvas.width/r.width,y=(ev.clientY-r.top)*canvas.height/r.height;let best=null,dist=Infinity;for(const [id,p] of positions){const d=Math.hypot(x-p[0],y-p[1]);if(d<dist){best=id;dist=d}}if(best&&dist<18)choose(best)});
  box.replaceChildren(canvas);const desc=el("p","Alle "+nodes.length+" knopen en "+rels.length+" hyperrelaties. De overzichtslay-out is illustratief; selecteer een entiteit voor exacte premissen, conclusies en richting.","muted");desc.style.padding="10px";put(box,desc)
  }
- function draw(){const v=activeVersion();if(!active(fullBy.get(sel)))sel=g.nodes.filter(active).slice().reverse().find(n=>n.named)?.id||g.nodes.filter(active)[0].id;$("graphCounts").textContent=fmt(v.nodes)+" knopen · "+fmt(v.relations)+" relaties";$("neighborhood").setAttribute("aria-pressed",String(mode==="neighborhood"));$("full").setAttribute("aria-pressed",String(mode==="full"));if(mode==="full")drawFull();else drawNeighborhood();showDetail()}
- function renderList(){const q=$("gquery").value.toLowerCase(),k=kind.value,named=$("named").checked;let arr=[...g.nodes,...g.relations].filter(x=>active(x)&&(k==="all"||x.kind===k)&&(!named||q||nodeBy.has(x.id)&&x.named)&&(!q||[x.id,labels.get(x.id),x.kind].join(" ").toLowerCase().includes(q)));arr.sort((a,b)=>(b.named?1:0)-(a.named?1:0)||b.layer-a.layer||a.id.localeCompare(b.id));$("listCount").textContent=fmt(arr.length)+" entiteiten; alle resultaten selecteerbaar";list.replaceChildren();const frag=document.createDocumentFragment();for(const x of arr){const b=el("button",null,x.id===sel?"selected":"");b.type="button";put(b,el("strong",labels.get(x.id)||x.id),el("span",x.id+" · "+x.kind,"muted"));b.addEventListener("click",()=>choose(x.id));put(frag,b)}put(list,frag);if(!arr.length)put(list,el("p","Geen resultaten.","muted"))}
+ function draw(){const v=activeVersion();if(!active(fullBy.get(sel)))sel=g.nodes.filter(active).slice().reverse().find(n=>named(n))?.id||g.nodes.filter(active)[0].id;$("graphCounts").textContent=fmt(v.nodes)+" knopen · "+fmt(v.relations)+" relaties";$("neighborhood").setAttribute("aria-pressed",String(mode==="neighborhood"));$("full").setAttribute("aria-pressed",String(mode==="full"));if(mode==="full")drawFull();else drawNeighborhood();showDetail()}
+ function renderList(){const q=$("gquery").value.trim().toLocaleLowerCase("nl-NL"),k=kind.value,onlyNodes=$("named").checked;let arr=[...g.nodes,...g.relations].filter(x=>active(x)&&(k==="all"||x.kind===k)&&(!onlyNodes||nodeBy.has(x.id))&&(!q||q.split(/\s+/).every(w=>searchText(x).includes(w))));arr.sort((a,b)=>b.layer-a.layer||(labels.get(a.id)||a.id).localeCompare(labels.get(b.id)||b.id,"nl")||a.id.localeCompare(b.id));$("listCount").textContent=fmt(arr.length)+" entiteiten · "+fmt(g.nodes.filter(x=>active(x)&&named(x)).length)+" knopen met onderzoekstitel";list.replaceChildren();const frag=document.createDocumentFragment();for(const x of arr){const b=el("button",null,x.id===sel?"selected":"");b.type="button";b.title=labels.get(x.id)||x.id;put(b,el("strong",labels.get(x.id)||x.id),el("span",(kindName[x.kind]||x.kind)+" · "+x.id,"muted"));const n=relBy.has(x.id)?x.premises.length+" premissen · "+x.conclusions.length+" conclusies":incident(x.id).length+" verbonden relaties";put(b,el("span",n,"entitymeta"));b.addEventListener("click",()=>choose(x.id));put(frag,b)}put(list,frag);if(!arr.length)put(list,el("p","Geen resultaten.","muted"))}
  select.addEventListener("change",()=>{draw();renderList()});kind.addEventListener("change",renderList);$("gquery").addEventListener("input",renderList);$("named").addEventListener("change",renderList);$("neighborhood").addEventListener("click",()=>{mode="neighborhood";draw()});$("full").addEventListener("click",()=>{mode="full";draw()});draw();renderList()
 }
-(async()=>{try{const [t,g,b,p]=await Promise.all(["timeline.json","hypergraph.json","backlog.json","publication.json"].map(fetchJson));validate(t,g,b,p);$("publication").textContent="Versie "+p.version+" · Laatste onderzoeksevent "+datefmt(p.lastEvent)+" · Graaf "+p.graphVersion;showOverview(t,g,b,p);showVersions(g);graphExplorer(g)}catch(e){const x=$("error");x.hidden=false;x.className="err";x.textContent="Onderzoeksgegevens konden niet betrouwbaar worden geladen: "+e.message}})();
+(async()=>{try{const [t,g,b,p]=await Promise.all(["timeline.json","hypergraph.json","backlog.json","publication.json"].map(fetchJson));validate(t,g,b,p);$("publication").textContent="Versie "+p.version+" · Laatste onderzoeksevent "+datefmt(p.lastEvent)+" · Graaf "+p.graphVersion;showOverview(t,g,b,p);showVersions(g);const topicData=$("snapshot")?await fetchJson("topic-labels.json").catch(()=>null):null;graphExplorer(g,topicData)}catch(e){const x=$("error");x.hidden=false;x.className="err";x.textContent="Onderzoeksgegevens konden niet betrouwbaar worden geladen: "+e.message}})();

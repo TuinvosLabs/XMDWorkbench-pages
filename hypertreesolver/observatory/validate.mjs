@@ -10,4 +10,6 @@ for(const r of g.relations){assert(r.conclusions.length);for(const id of [...r.p
 for(const v of g.versions){assert.equal(g.nodes.filter(n=>n.layer<=v.layer).length,v.nodes);assert.equal(g.relations.filter(r=>r.layer<=v.layer).length,v.relations)}
 assert(g.versions.some(v=>v.id===p.graphVersion&&v.nodes===p.graphCounts.nodes&&v.relations===p.graphCounts.relations));
 assert(!/github\.com\/TuinvosLabs\/HyperTreeSolver|issuecomment-|runner_name|source_condition|source_dossier|blob\.core\.windows\.net|work-budget/i.test(JSON.stringify([t,g,b,p])));
-console.log("PASS",t.events.length,"events",g.nodes.length,"nodes",g.relations.length,"relations");
+const labels=read("topic-labels.json");assert.equal(labels.schema,"observatory-topic-labels/1");
+const nodeIds=new Set(g.nodes.map(x=>x.id));for(const [id,title] of Object.entries(labels.labels)){assert(nodeIds.has(id),"Unknown topic label ID: "+id);assert(typeof title==="string"&&title.trim().length>0&&title.length<=150);assert(!/https?:\/\/|issuecomment-|source_condition|source_dossier|blob\.core\.windows\.net|runner_name/i.test(title))}
+console.log("PASS",t.events.length,"events",g.nodes.length,"nodes",g.relations.length,"relations",Object.keys(labels.labels).length,"topic titles");
