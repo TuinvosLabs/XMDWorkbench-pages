@@ -1533,6 +1533,104 @@
       "summary": "Een eindige producentproef in de vaste 3^5-geometrie telt 3.200 bereikbare projectietoestanden en 576.000 gerichte overgangen. De gezamenlijke exacte projectieafstand is op 1.982 toestanden strikt groter dan het maximum van de afzonderlijke afstanden, met maximaal twee QTM verschil. Dit betreft de projectieruimte voor het volledige hersteldoel, geen algemene solverwinst of overname naar zichtbare doelen zonder afzonderlijke bewijscontrole. Onafhankelijke beoordeling open.",
       "status": "result",
       "updates": []
+    },
+    {
+      "id": "s33-visible-axial-pair-goal-image",
+      "date": "2026-11-26T15:53:47Z",
+      "track": "solver",
+      "wave": "S33",
+      "title": "Exact doelbeeld van één axiaal paar voor zichtbare doelen",
+      "summary": "Twee bereikbare zichtbaar opgeloste eindstanden, negen fysieke liften en 1.620 legale generatorconjugaties leveren het volledige afzonderlijke doelbeeld van 36.864 waarden voor één axiaal paar. Daardoor kan uitsluitend dat paar geen positieve Color- of Labels-ondergrens geven. Dit bewijst geen onafhankelijke combinatie van alle vijf paren. De centrum-/rank-4-productprojectie uit het vorige checkpoint is volgens het nieuwe producentbewijs wel een zichtbare doelgrens; de historische wortelgrenzen worden hiermee niet verhoogd. Onafhankelijke review open.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "S33",
+          "status": "checkpoint"
+        }
+      ]
+    },
+    {
+      "id": "s35-s36-paired-state-only-portfolio",
+      "date": "2026-11-26T15:53:47Z",
+      "track": "solver",
+      "wave": "S35/S36",
+      "title": "State-only portfolio bereikt één extra ontwikkelstand",
+      "summary": "Op zes nieuwe producentstanden zijn twaalf vooraf vastgelegde gepaarde trials uitgevoerd. De referentie bereikt alle vier doelen op twee standen; de portfolio op drie, inclusief één extra oplossing van 18 primitieve QTM. De diepere Full-stage levert de extra route; de zichtbare rangschikking voegt geen kortere route toe. Veertig eerste en beste doelprefixregistraties zijn vooruit en invers gecontroleerd, deels dezelfde woorden. De producent verzorgde trekking en evaluatie; missers zijn onbeslist, geen optimum- of algemene prestatieclaim. Onafhankelijke review open.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "S35",
+          "status": "checkpoint"
+        },
+        {
+          "id": "S36",
+          "status": "checkpoint"
+        }
+      ]
+    },
+    {
+      "id": "s37-overlap-commutator-single-corner",
+      "date": "2026-11-26T15:53:47Z",
+      "track": "solver",
+      "wave": "S37",
+      "title": "Lokale hoekactie via overlappende macro’s",
+      "summary": "Twee niet-commuterende plaatsfixerende acties op vierpuntssteunen met één gemeenschappelijke hoek leveren via vier fasen een geïsoleerde driecyclus op die hoek. De concrete constructie kost 2.720 raw QTM en is op alle vier fasegrenzen vooruit en invers fysiek gecontroleerd. Een bestaande singletonmethode is goedkoper; geen optimumclaim. Onafhankelijke review open.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "S37",
+          "status": "checkpoint"
+        }
+      ]
+    },
+    {
+      "id": "s38-six-k-symmetry-cell-coverage",
+      "date": "2026-11-26T15:53:47Z",
+      "track": "solver",
+      "wave": "S38",
+      "title": "Symmetrie verdubbelt gedekte zesfactorcel",
+      "summary": "Binnen de uniforme zesplaatsstand stijgt de gedekte geordende 6K-catalogusruimte door een tariefbehoudende symmetrie van 235.929.600 naar 471.859.200 woorden. De nieuwe cel is disjunct van de oude; er is geen nieuwe uitputtende zoekrun uitgevoerd. De globale raw-catalogusband blijft 480–800 QTM. De afzonderlijke reductie van disjuncte eerste paren kan met de celdekking overlappen. Producentresultaat, onafhankelijke review open.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "S38",
+          "status": "checkpoint"
+        }
+      ]
+    },
+    {
+      "id": "s39-root-nomination-paired-control",
+      "date": "2026-11-26T15:53:47Z",
+      "track": "solver",
+      "wave": "S39",
+      "title": "Gezamenlijke onderzoeksnominatie en wortelrangschikking",
+      "summary": "Vier unieke voorstellen zijn gezamenlijk geregistreerd. Bij de gekozen zoekrichting staat de bekende eerste generator op rang 1 en 4 voor twee historische ontwikkelstanden; bij de tweede stand geeft de andere richting rang 1. Dit is een beperkte wortelcontrole, geen bewijs van betere retentie in een volledige zoekboom of onafhankelijke discovery-opbrengst. Producentcheckpoint.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "S39",
+          "status": "checkpoint"
+        }
+      ]
+    },
+    {
+      "id": "s33-s40-final-producer-handoff",
+      "date": "2026-11-26T15:53:47Z",
+      "track": "solver",
+      "wave": "S34/S40",
+      "title": "Afgeronde solveroverdracht en afgebakende bewijskaarten",
+      "summary": "De acht solverwaves zijn op producentniveau overgedragen, met vier statische bewijskaarten en een afzonderlijke kandidaatkennisuitbreiding. De historische stand B blijft voor alle vier doelen onafhankelijk afgesloten op 17 primitieve QTM; deze ronde herhaalde de eerdere uitsluitingsproeven niet. Nieuwe onderzoeksresultaten wachten op onafhankelijke beoordeling. De kandidaatkennislaag is niet aan de publieke graaf toegevoegd.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "S34",
+          "status": "checkpoint"
+        },
+        {
+          "id": "S40",
+          "status": "checkpoint"
+        }
+      ]
     }
   ]
 }

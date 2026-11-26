@@ -330,6 +330,46 @@
       "id": "K34",
       "track": "knowledge",
       "title": "Wetenschappelijke evaluatie en overdracht"
+    },
+    {
+      "id": "S33",
+      "track": "solver",
+      "title": "Zichtbare doelprojecties"
+    },
+    {
+      "id": "S34",
+      "track": "solver",
+      "title": "Exacte historische doelgrenzen"
+    },
+    {
+      "id": "S35",
+      "track": "solver",
+      "title": "State-only zoekportfolio"
+    },
+    {
+      "id": "S36",
+      "track": "solver",
+      "title": "Gepaarde ontwikkelproef"
+    },
+    {
+      "id": "S37",
+      "track": "solver",
+      "title": "Overlappende macroconstructie"
+    },
+    {
+      "id": "S38",
+      "track": "solver",
+      "title": "Symmetriereductie raw-catalogus"
+    },
+    {
+      "id": "S39",
+      "track": "solver",
+      "title": "Getypeerde onderzoeksnominatie"
+    },
+    {
+      "id": "S40",
+      "track": "solver",
+      "title": "Geïntegreerde solveroverdracht"
     }
   ]
 }
