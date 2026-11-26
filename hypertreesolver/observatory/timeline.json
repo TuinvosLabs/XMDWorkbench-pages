@@ -1493,6 +1493,46 @@
           "status": "checkpoint"
         }
       ]
+    },
+    {
+      "id": "s26-historical-b-all-goals-exact-independent",
+      "date": "2026-11-26T15:26:31Z",
+      "track": "solver",
+      "wave": "S26/S29/S30",
+      "title": "Historische stand B: exact 17 voor alle vier doelen, onafhankelijk bevestigd",
+      "summary": "In de vaste bereikbare 3^5-geometrie is de primitieve afstand voor Color, Labels, Oriented en Full exact 17 QTM op deze ene ontwikkelstand. Een onafhankelijk orakel reproduceert nul buitenwoorden tot lengte 10 en precies twaalf op lengte 11 per richting. Minstens vier middendraaien zijn nodig; 17.280 afzonderlijke invoegcontroles geven minimaal 83 vereiste treffers tegenover capaciteit 64. Daarmee is lengte 15 uitgesloten, en oneven pariteit sluit 16 uit. Het bestaande 17-woord is fysiek gereplayd op alle 2.430 markers. De onafhankelijke scoped review is positief; geen nieuwe geblindeerde zoekproef of algemene prestatieclaim.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "S26",
+          "status": "checkpoint"
+        }
+      ]
+    },
+    {
+      "id": "s28-eight-label-tiles-independent",
+      "date": "2026-11-26T15:26:31Z",
+      "track": "solver",
+      "wave": "S28",
+      "title": "16.777.216 bereikbare gemengde doelen met constructieve bovengrens",
+      "summary": "Acht verschillende labels per vaste tegel op acht disjuncte steunen geven 8^8 verschillende bereikbare eindstanden. Voor elke stand bestaat een constructie van 5.440 raw QTM. Onafhankelijke controle reproduceert alle 64 lokale tegelwoorden en inverses op 2.430 markers, plus acht cumulatieve opbouwfasen. De onafhankelijke review bevestigt de constructieve familie; geen kortste prijs of uitspraak over willekeurige standen.",
+      "status": "result",
+      "updates": [
+        {
+          "id": "S28",
+          "status": "checkpoint"
+        }
+      ]
+    },
+    {
+      "id": "s33-center-rank4-product-projection",
+      "date": "2026-11-26T15:41:53Z",
+      "track": "solver",
+      "wave": "S33",
+      "title": "Gezamenlijke centrum- en rank-4-projectie",
+      "summary": "Een eindige producentproef in de vaste 3^5-geometrie telt 3.200 bereikbare projectietoestanden en 576.000 gerichte overgangen. De gezamenlijke exacte projectieafstand is op 1.982 toestanden strikt groter dan het maximum van de afzonderlijke afstanden, met maximaal twee QTM verschil. Dit betreft de projectieruimte voor het volledige hersteldoel, geen algemene solverwinst of overname naar zichtbare doelen zonder afzonderlijke bewijscontrole. Onafhankelijke beoordeling open.",
+      "status": "result",
+      "updates": []
     }
   ]
 }
