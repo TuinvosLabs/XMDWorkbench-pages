@@ -2,15 +2,15 @@
   "schema": "observatory-publication/1",
   "version": "1.0",
   "lastEvent": "2026-11-26T13:46:45Z",
-  "graphVersion": "v9",
+  "graphVersion": "v10",
   "timelineCount": 91,
   "graphCounts": {
-    "id": "v9",
-    "layer": 8,
-    "label": "Solver-vervolg en gezamenlijke verliesgrenzen",
-    "nodes": 624,
-    "relations": 573,
-    "sources": 119,
+    "id": "v10",
+    "layer": 9,
+    "label": "Langere state-only zoekactie en constructieve discovery",
+    "nodes": 634,
+    "relations": 583,
+    "sources": 130,
     "date": "2026-11-26"
   },
   "notice": "Publieke afgeleide onderzoeksweergave. Geen interne bronregisters of ruwe bewijzen. Wetenschappelijke resultaten zijn gebonden aan de getoonde onderzoekscontracten."

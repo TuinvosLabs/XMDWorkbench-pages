@@ -81,6 +81,15 @@
       "relations": 573,
       "sources": 119,
       "date": "2026-11-26"
+    },
+    {
+      "id": "v10",
+      "layer": 9,
+      "label": "Langere state-only zoekactie en constructieve discovery",
+      "nodes": 634,
+      "relations": 583,
+      "sources": 130,
+      "date": "2026-11-26"
     }
   ],
   "nodes": [
@@ -4450,6 +4459,76 @@
       "kind": "result",
       "layer": 8,
       "label": "Zichtbaar eerste doel in solverprototype",
+      "named": true
+    },
+    {
+      "id": "N0625",
+      "kind": "result",
+      "layer": 9,
+      "label": "Retentieverlies in langere zoekactie",
+      "named": true
+    },
+    {
+      "id": "N0626",
+      "kind": "result",
+      "layer": 9,
+      "label": "Exacte state-only doelcertificaten",
+      "named": true
+    },
+    {
+      "id": "N0627",
+      "kind": "result",
+      "layer": 9,
+      "label": "Historische grens vóór vervolgonderzoek",
+      "named": true
+    },
+    {
+      "id": "N0628",
+      "kind": "result",
+      "layer": 9,
+      "label": "Volledige zesfactorcataloguscel",
+      "named": true
+    },
+    {
+      "id": "N0629",
+      "kind": "result",
+      "layer": 9,
+      "label": "Heterogene macrotransporttegels",
+      "named": true
+    },
+    {
+      "id": "N0630",
+      "kind": "result",
+      "layer": 9,
+      "label": "Gezamenlijk beschermd W28-conflict",
+      "named": true
+    },
+    {
+      "id": "N0631",
+      "kind": "result",
+      "layer": 9,
+      "label": "Tegenvoorbeeld bij taaluitbreiding",
+      "named": true
+    },
+    {
+      "id": "N0632",
+      "kind": "lemma",
+      "layer": 9,
+      "label": "Doelafhankelijke productprojectie",
+      "named": true
+    },
+    {
+      "id": "N0633",
+      "kind": "result",
+      "layer": 9,
+      "label": "Getypeerde discovery-mechanismen",
+      "named": true
+    },
+    {
+      "id": "N0634",
+      "kind": "result",
+      "layer": 9,
+      "label": "Geïntegreerde solververificatie",
       "named": true
     }
   ],
@@ -11162,6 +11241,122 @@
       ],
       "conclusions": [
         "N0624"
+      ]
+    },
+    {
+      "id": "H0574",
+      "kind": "dependency",
+      "layer": 9,
+      "premises": [
+        "N0619"
+      ],
+      "conclusions": [
+        "N0625"
+      ]
+    },
+    {
+      "id": "H0575",
+      "kind": "dependency",
+      "layer": 9,
+      "premises": [
+        "N0623",
+        "N0624"
+      ],
+      "conclusions": [
+        "N0626"
+      ]
+    },
+    {
+      "id": "H0576",
+      "kind": "dependency",
+      "layer": 9,
+      "premises": [
+        "N0626"
+      ],
+      "conclusions": [
+        "N0627"
+      ]
+    },
+    {
+      "id": "H0577",
+      "kind": "dependency",
+      "layer": 9,
+      "premises": [
+        "N0614",
+        "N0611"
+      ],
+      "conclusions": [
+        "N0628"
+      ]
+    },
+    {
+      "id": "H0578",
+      "kind": "dependency",
+      "layer": 9,
+      "premises": [
+        "N0617",
+        "N0618"
+      ],
+      "conclusions": [
+        "N0629"
+      ]
+    },
+    {
+      "id": "H0579",
+      "kind": "dependency",
+      "layer": 9,
+      "premises": [
+        "N0622",
+        "N0616"
+      ],
+      "conclusions": [
+        "N0630"
+      ]
+    },
+    {
+      "id": "H0580",
+      "kind": "dependency",
+      "layer": 9,
+      "premises": [
+        "N0630"
+      ],
+      "conclusions": [
+        "N0631"
+      ]
+    },
+    {
+      "id": "H0581",
+      "kind": "dependency",
+      "layer": 9,
+      "premises": [
+        "N0623"
+      ],
+      "conclusions": [
+        "N0632"
+      ]
+    },
+    {
+      "id": "H0582",
+      "kind": "dependency",
+      "layer": 9,
+      "premises": [
+        "N0630",
+        "N0632",
+        "N0618"
+      ],
+      "conclusions": [
+        "N0633"
+      ]
+    },
+    {
+      "id": "H0583",
+      "kind": "dependency",
+      "layer": 9,
+      "premises": [
+        "N0624"
+      ],
+      "conclusions": [
+        "N0634"
       ]
     }
   ],
