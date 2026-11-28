@@ -1,9 +1,9 @@
 {
   "schema": "observatory-publication/1",
   "version": "1.0",
-  "lastEvent": "2026-11-28T11:07:19Z",
+  "lastEvent": "2026-11-28T11:38:45Z",
   "graphVersion": "v10",
-  "timelineCount": 122,
+  "timelineCount": 124,
   "graphCounts": {
     "id": "v10",
     "layer": 9,

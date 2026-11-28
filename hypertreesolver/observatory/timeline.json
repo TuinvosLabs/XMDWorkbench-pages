@@ -1942,6 +1942,24 @@
       "title": "Onderzoeksprojecties S48 en K50 gereconcilieerd",
       "summary": "Een nieuwe onderzoeksrapportage beschrijft de reconstructie en vereniging van twee afzonderlijke onderzoeksprojecties met behoud van hun oorspronkelijke bronherkomst. De gerapporteerde gezamenlijke projectie telt 665 actieve knopen, 612 hyperrelaties en 167 bronverwijzingen. De oorspronkelijke projecties blijven afzonderlijk reproduceerbaar. Dit is een research-checkpoint, geen claim van nieuwe formele bewijsacceptatie of een uitbreiding van de hier gepubliceerde graaf. De publieke projectie blijft op de laatst volledig gecontroleerde versie.",
       "status": "result"
+    },
+    {
+      "id": "vis1-provider-automatic-source-horizon",
+      "date": "2026-11-28T11:38:45Z",
+      "track": "solver",
+      "wave": "VIS1",
+      "title": "Brongebonden zoekhorizon geïmplementeerd in de provider",
+      "summary": "Voor vaste 3^5 Color en Labels kiest de korte portfoliozoekarm bij ontbrekende expliciete diepte een brongebonden horizon met pariteitscorrectie, standaarddiepte 6 en absolute grens 12. Expliciete diepten blijven hard; op een fysieke ontwikkelbron boven de grens rapporteert de korte arm nul kindovergangen. In een producentvergelijking via een lokale kopie van de echte adapter vindt de nieuwe provider op beide achtzettenaanvragen 8 primitieve QTM in plaats van 39.466, met L=U=8. Geverifieerde plannen keren terug na respectievelijk 1,875 en 1,537 s. Een meting per versie en aanvraag; onafhankelijke review van de nieuwe implementatie en echte paneelintegratie blijven open.",
+      "status": "result"
+    },
+    {
+      "id": "vis1-dev24-first-verified-route-and-reduction",
+      "date": "2026-11-28T11:38:45Z",
+      "track": "solver",
+      "wave": "VIS1",
+      "title": "Langere ontwikkelbron levert eerste geverifieerde route en afzonderlijke reductie",
+      "summary": "Vervolg op het eerdere checkpoint zonder bovengrens: in een nieuwe producentvergelijking op vaste 3^5 Color leveren beide providerversies voor de langere vrijgegeven ontwikkelbron een afspeelbare route van 40.994 primitieve QTM (L=12). Voor de nieuwe provider is de gemeten tijd tot terugkeer van het geverifieerde plan 20,407 s, geen paneelresponsmeting. Een afzonderlijke vervolgreductie brengt het woord naar 40.880 QTM (114 minder), met dezelfde volledige eindstand, eerste zichtbare doelhit en inversecontrole op alle 2.430 markers. De twaalfzettenontwikkelbron levert opnieuw 39.096 QTM. Geen geïntegreerde reductie, algemene dekking, algemene tijdgarantie of bewezen optimum voor de lange route. Eerdere negatieve proeven blijven geldig; onafhankelijke review staat open.",
+      "status": "result"
     }
   ]
 }
