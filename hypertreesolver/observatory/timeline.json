@@ -1861,6 +1861,15 @@
       "title": "Gecomprimeerde pariteitsafstanden voor zichtbare patronen",
       "summary": "De gesynchroniseerde markerpaarprojectie met twee pariteitsbits heeft 12.800 abstracte toestanden. Een kortstepadmasker reproduceert volgens de producent alle productafstanden exact; 2.304.000 gerichte abstracte randen zijn gecontroleerd. Een theoretische gepakte tabel vraagt 3.200 in plaats van 12.800 bytes bij één byte per oorspronkelijke afstand. De nieuwe grens is op 6.983 abstracte toestanden sterker dan het gewone maximum en op 584 sterker dan het pariteitsafgeronde maximum. Bij vijf patronen is de verbetering op 107 van 240 deterministische ontwikkelwoorden zichtbaar ten opzichte van het gewone maximum en op 11 ten opzichte van het pariteitsafgeronde maximum; dit zijn geen aantallen unieke fysieke standen. Voor drie ontwikkelgetuigen van vier primitieve kwartslagen stijgt de grens van 2 naar 4; de inverse van lengte 4 levert onder de beschreven doelinclusie een exact optimum voor de vier vaste 3^5-doelen. De overige abstracte afstanden zijn ondergrenzen voor de fysieke doelafstand, geen algemene primitieve optima. Geen optelling met andere patroontabellen, geen gemeten geheugengebruik, snelheids- of populatieclaim. Producentresultaat; onafhankelijke review open.",
       "status": "result"
+    },
+    {
+      "id": "a3-lbp-layer-profile-intersection",
+      "date": "2026-11-28T07:27:44Z",
+      "track": "joint",
+      "wave": "A3-LBP",
+      "title": "Gedeelde laagzetprofielen: exacte abstractie, geen extra winst boven sterke grens",
+      "summary": "Voor bereikbare vaste 3^5-standen met 180 primitieve laagkwartslagen (1 QTM per zet) onderscheidt de producent de aantallen buiten- en middenzetten. Op 3.200 abstracte markerpaartoestanden zijn 8.421 minimale tweedimensionale kostenlabels gevonden; 259.200 exacte-aantalcontroles en 12.800 pariteitsproductreconstructies bevestigen de abstracte representatie. De doorsnede van vijf profielen met pariteit en afzonderlijke centrum- en hoekcapaciteitsgrenzen geeft volgens de afleiding een toelaatbare en consistente ondergrens voor alle vier vaste doelen, geen exacte fysieke afstand. Op 480 deterministische ontwikkelwoorden is de gezamenlijke grens 388 keer sterker dan vijf pariteitspatronen alleen; alleen de profieldoorsnede is 9 keer sterker. Tegen het maximum van de vijf pariteitspatronen en de pariteitsafgeronde gescheiden capaciteitsgrens is de winst 0 van 480, met maximale verbetering 0 QTM. Alle 480 volledige inversecontroles en 1.800 fysieke buurconsistentiecontroles zijn door de producent gerapporteerd. Geen gemeten zoekwinst, algemene solverdekking of primitieve optimaliteitsclaim; onafhankelijke review open.",
+      "status": "result"
     }
   ]
 }
