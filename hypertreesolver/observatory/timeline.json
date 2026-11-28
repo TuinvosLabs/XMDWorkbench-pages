@@ -1870,6 +1870,15 @@
       "title": "Gedeelde laagzetprofielen: exacte abstractie, geen extra winst boven sterke grens",
       "summary": "Voor bereikbare vaste 3^5-standen met 180 primitieve laagkwartslagen (1 QTM per zet) onderscheidt de producent de aantallen buiten- en middenzetten. Op 3.200 abstracte markerpaartoestanden zijn 8.421 minimale tweedimensionale kostenlabels gevonden; 259.200 exacte-aantalcontroles en 12.800 pariteitsproductreconstructies bevestigen de abstracte representatie. De doorsnede van vijf profielen met pariteit en afzonderlijke centrum- en hoekcapaciteitsgrenzen geeft volgens de afleiding een toelaatbare en consistente ondergrens voor alle vier vaste doelen, geen exacte fysieke afstand. Op 480 deterministische ontwikkelwoorden is de gezamenlijke grens 388 keer sterker dan vijf pariteitspatronen alleen; alleen de profieldoorsnede is 9 keer sterker. Tegen het maximum van de vijf pariteitspatronen en de pariteitsafgeronde gescheiden capaciteitsgrens is de winst 0 van 480, met maximale verbetering 0 QTM. Alle 480 volledige inversecontroles en 1.800 fysieke buurconsistentiecontroles zijn door de producent gerapporteerd. Geen gemeten zoekwinst, algemene solverdekking of primitieve optimaliteitsclaim; onafhankelijke review open.",
       "status": "result"
+    },
+    {
+      "id": "w21c-visible-weighted-parity-bound",
+      "date": "2026-11-28T09:26:40Z",
+      "track": "joint",
+      "wave": "W21c",
+      "title": "Scherpere gewogen zichtbare ondergrens: exact acht kwartslagen voor één ontwikkelgeval",
+      "summary": "Voor legaal bereikbare vaste 3^5-standen met Color/Labels als doel en 180 primitieve laagkwartslagen (1 QTM per zet) is een gewogen ondergrens op basis van werkelijk veranderende zichtbare waarnemingen in twee stukklassen afgeleid. Een afzonderlijke wiskundige controle bevestigt de capaciteiten voor alle 180 generatoren, de wisselende positiepariteit en consistentie van de pariteitsafgeronde grens. Voor één deterministisch ontwikkelgeval vallen ondergrens en fysiek gereplayde inverse-bovengrens samen op 8 QTM: exact zichtbaar optimum voor die bron en dat doel. De vergelijking met de eerdere sterke ondergrens is niet onafhankelijk herhaald; geen vergelijking met alle Paretoprofielen, geen algemene zoekwinst of optimaliteit voor andere bronnen. Een conceptimplementatie met regressietest is beschikbaar; uitvoering van de nieuwe code, implementatiereview en productacceptatie zijn nog niet bevestigd. Geen wijziging aan Full/Oriented, andere geometrieën of uniforme fasegrenzen.",
+      "status": "result"
     }
   ]
 }
