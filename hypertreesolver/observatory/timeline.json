@@ -1906,6 +1906,42 @@
       "title": "Onafhankelijke zichtbare grenscontrole en tegenvoorbeeld voor eerste-doelprefix",
       "summary": "Een afzonderlijke review van vaste 3^5 Color/Labels bevestigt overeenstemming van Python en C# op vier ontwikkelbronnen en de controle van alle 180 primitieve buren per bron. De vaste pariteitsgecorrigeerde grenzen zijn 8, 10, 12 en 1 QTM; de oude gedeelde integerbegroting met vijf volledige profielen gaf 6, 10, 12 en 1. Automatische duale gewichten geven hier geen extra afgeronde winst; de nieuwe gezamenlijke integerbegroting bevestigt dezelfde vier waarden. De algemene drie-laags afleiding en 630 eindige generatorcontroles zijn afzonderlijk beoordeeld; een numerieke afwijking in de generieke JavaScript-capaciteitsberekening bij d=12 begrenst de implementatieclaim. Een fysiek gereproduceerde ontvangerproef accepteert voor beide zichtbare doelen een woord van 3 QTM terwijl de eerste doelhit bij 1 QTM ligt; beide woorden zijn afspeelbaar en inverse replay herstelt de oorsprong. De eerste-doelprefix heeft op deze specifieke proef L=U=1. De ontvangertests tonen geen complete producent-consumentketen; eerste productroute, streaming en algemene dekking blijven open. Geen gemeten zoekwinst of generalisatie van primitieve optimaliteit.",
       "status": "result"
+    },
+    {
+      "id": "vis1-source-bound-horizon-known8",
+      "date": "2026-11-28T11:07:19Z",
+      "track": "solver",
+      "wave": "VIS1",
+      "title": "Brongebonden zoekhorizon vindt exacte achtzettenroute",
+      "summary": "Op een vrijgegeven ontwikkelstand van vaste 3^5 vindt dezelfde provider vanuit uitsluitend de fysieke stand voor Color en Labels een woord van 8 primitieve QTM, tegen 39.466 bij de standaardaanroep. De enige gewijzigde zoekparameter is de horizon: minstens de bewezen zichtbare ondergrens 8 in plaats van de standaarddiepte 6. De eerste doelhit ligt op 8; afzonderlijke fysieke replay en inverse controleren alle 2.430 markers. L=U=8 voor deze specifieke bron en beide doelen. De gemeten eerste interne verificatie is 0,203 s; dit is geen paneelresponsmeting. De nieuwe horizon is nog geen productinstelling en garandeert geen algemene oplossing op de ondergrens.",
+      "status": "result"
+    },
+    {
+      "id": "vis1-dev12-route-and-distance-producer",
+      "date": "2026-11-28T11:07:19Z",
+      "track": "solver",
+      "wave": "VIS1",
+      "title": "Langere ontwikkelbron: eerste constructieve route en afzonderlijke afstandsafleiding",
+      "summary": "Voor vaste 3^5 Color levert de fysieke state-only provider op een vrijgegeven twaalfzettenontwikkelbron een afspeelbare constructieve route van 39.096 primitieve QTM. Een afzonderlijke fysieke woordreductie brengt deze naar 39.020 met dezelfde volledige eindstand, eerste doelhit en inversecontrole. De producent rapporteert een volledig uitgeputte zoekstraal 10 met 48.869 bezoeken; even pariteit sluit 11 uit en een afzonderlijke twaalfzettenfixturegetuige bereikt Color en Labels. De afgeleide exacte afstand 12 voor beide doelen wacht nog op onafhankelijke bewijsreview; het fixturewoord is geen door de state-only provider gevonden oplossing. Op de langere ontwikkelbron blijft een afspeelbare bovengrens onbekend. Geen algemene dekking of geïntegreerde reductie geclaimd.",
+      "status": "result"
+    },
+    {
+      "id": "vis1-first-goal-prefix-repair-review",
+      "date": "2026-11-28T11:07:19Z",
+      "track": "joint",
+      "wave": "VIS1",
+      "title": "Eerste-doelprefix gerepareerd en afzonderlijk gecontroleerd",
+      "summary": "De ontvangende kandidaatcomponent is op een nieuwe revisie afzonderlijk gecontroleerd voor vaste 3^5 Color en Labels. Zowel de eerdere driezettencasus als een aanbod van 23 primitieve QTM behouden de eerste zichtbare doelhit bij 1 QTM. Een volledig eindpunt van het aangeboden woord kan verschillen van dat van de prefix; de prefix bewaart haar eigen volledige eindstand en inversecontrole. Een onjuiste aangeboden eindstand wordt geweigerd. Een reeds zichtbaar opgeloste bron behoudt de nulzettenprefix. Technische ontvanger- en synthetische paneelproeven zijn geslaagd; een echte producer-naar-paneelstroom en productconsolidatie blijven open.",
+      "status": "result"
+    },
+    {
+      "id": "s48-k50-reconciled-research-projection",
+      "date": "2026-11-28T11:07:19Z",
+      "track": "knowledge",
+      "wave": "S48/K50",
+      "title": "Onderzoeksprojecties S48 en K50 gereconcilieerd",
+      "summary": "Een nieuwe onderzoeksrapportage beschrijft de reconstructie en vereniging van twee afzonderlijke onderzoeksprojecties met behoud van hun oorspronkelijke bronherkomst. De gerapporteerde gezamenlijke projectie telt 665 actieve knopen, 612 hyperrelaties en 167 bronverwijzingen. De oorspronkelijke projecties blijven afzonderlijk reproduceerbaar. Dit is een research-checkpoint, geen claim van nieuwe formele bewijsacceptatie of een uitbreiding van de hier gepubliceerde graaf. De publieke projectie blijft op de laatst volledig gecontroleerde versie.",
+      "status": "result"
     }
   ]
 }
