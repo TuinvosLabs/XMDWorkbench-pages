@@ -1879,6 +1879,33 @@
       "title": "Scherpere gewogen zichtbare ondergrens: exact acht kwartslagen voor één ontwikkelgeval",
       "summary": "Voor legaal bereikbare vaste 3^5-standen met Color/Labels als doel en 180 primitieve laagkwartslagen (1 QTM per zet) is een gewogen ondergrens op basis van werkelijk veranderende zichtbare waarnemingen in twee stukklassen afgeleid. Een afzonderlijke wiskundige controle bevestigt de capaciteiten voor alle 180 generatoren, de wisselende positiepariteit en consistentie van de pariteitsafgeronde grens. Voor één deterministisch ontwikkelgeval vallen ondergrens en fysiek gereplayde inverse-bovengrens samen op 8 QTM: exact zichtbaar optimum voor die bron en dat doel. De vergelijking met de eerdere sterke ondergrens is niet onafhankelijk herhaald; geen vergelijking met alle Paretoprofielen, geen algemene zoekwinst of optimaliteit voor andere bronnen. Een conceptimplementatie met regressietest is beschikbaar; uitvoering van de nieuwe code, implementatiereview en productacceptatie zijn nog niet bevestigd. Geen wijziging aan Full/Oriented, andere geometrieën of uniforme fasegrenzen.",
       "status": "result"
+    },
+    {
+      "id": "vis1-general-visible-capacity-envelope",
+      "date": "2026-11-28T09:53:02Z",
+      "track": "joint",
+      "wave": "VIS1",
+      "title": "Automatisch gewogen zichtbare capaciteitsgrens voor drie lagen",
+      "summary": "Voor legaal bereikbare vaste 3^d-standen, d≥3, en zichtbare Color/Labels-doelen leidt de producent exacte combinatorische capaciteiten per stukrang af voor buiten- en middenlaagkwartslagen (1 QTM per zet). De lineaire relaxatie heeft een duale grens met maximaal twee positieve gewichten per hoekpunt; het maximum over de vaste familie, naar lengtepariteit afgerond, is volgens de afleiding consistent. Op 630 generatorcontroles in dimensies 3–6 zijn de capaciteiten en rang-twee-pariteiten bevestigd. De bekende 3^5-ontwikkelstand selecteert dezelfde gewichten en 8 QTM als de bestaande vaste grens. De continue relaxatie is geen fysieke afstand; de capaciteitstoets alleen omvat niet alle patroonprofielen of afzonderlijke resourcepariteiten. Onafhankelijke review was bij dit checkpoint nog open. Geen claim voor meer dan drie lagen, Full of productdekking.",
+      "status": "result"
+    },
+    {
+      "id": "vis1-visible-product-development-baseline",
+      "date": "2026-11-28T09:55:00Z",
+      "track": "solver",
+      "wave": "VIS1",
+      "title": "Zichtbare productbaseline: vier ontwikkelproeven zonder gevonden route",
+      "summary": "Een uitgevoerde ontwikkelmeting voor vaste 3^5, met uitsluitend de huidige fysieke stand als solverinvoer en primitieve kwartslagen als kosteneenheid, omvat vier bron-doelproeven voor Color/Labels. De gerapporteerde ondergrenzen zijn 8, 8, 10 en 12 QTM. Binnen circa 15 seconden per proef is geen afspeelbare oplossing gevonden (0/4), zonder uitvoeringsfouten. De bovengrenzen en optimaliteitsverschillen zijn onbekend, niet nul. Een geslaagde technische testuitvoering toont geen solverdekking aan. Dit is geen blind cohort en geen bewijs dat de constructie onmogelijk is.",
+      "status": "result"
+    },
+    {
+      "id": "vis1-independent-bound-and-prefix-review",
+      "date": "2026-11-28T10:42:49Z",
+      "track": "joint",
+      "wave": "VIS1",
+      "title": "Onafhankelijke zichtbare grenscontrole en tegenvoorbeeld voor eerste-doelprefix",
+      "summary": "Een afzonderlijke review van vaste 3^5 Color/Labels bevestigt overeenstemming van Python en C# op vier ontwikkelbronnen en de controle van alle 180 primitieve buren per bron. De vaste pariteitsgecorrigeerde grenzen zijn 8, 10, 12 en 1 QTM; de oude gedeelde integerbegroting met vijf volledige profielen gaf 6, 10, 12 en 1. Automatische duale gewichten geven hier geen extra afgeronde winst; de nieuwe gezamenlijke integerbegroting bevestigt dezelfde vier waarden. De algemene drie-laags afleiding en 630 eindige generatorcontroles zijn afzonderlijk beoordeeld; een numerieke afwijking in de generieke JavaScript-capaciteitsberekening bij d=12 begrenst de implementatieclaim. Een fysiek gereproduceerde ontvangerproef accepteert voor beide zichtbare doelen een woord van 3 QTM terwijl de eerste doelhit bij 1 QTM ligt; beide woorden zijn afspeelbaar en inverse replay herstelt de oorsprong. De eerste-doelprefix heeft op deze specifieke proef L=U=1. De ontvangertests tonen geen complete producent-consumentketen; eerste productroute, streaming en algemene dekking blijven open. Geen gemeten zoekwinst of generalisatie van primitieve optimaliteit.",
+      "status": "result"
     }
   ]
 }
